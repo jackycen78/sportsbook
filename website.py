@@ -11,6 +11,7 @@ class Website:
 
         service = Service('./chromedriver')
         options = ChromeOptions()
+        options.add_argument('--disable-blink-features=AutomationControlled')
 
         self.driver = Chrome(options=options, service=service)
         self.driver.set_window_size(1720, 1329)

@@ -3,4 +3,7 @@ from website import Website
 
 
 site = Website()
-getPlayNowBets(site)
+getSportsInteractionBets(site)
+
+#getPlayNowBets(site)
+#getBet365Bets(site)
