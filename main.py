@@ -1,9 +1,12 @@
 from automate import *
 from website import Website
-
+from allbets import AllBets
 
 site = Website()
-getSportsInteractionBets(site)
+allBets = AllBets()
 
-#getPlayNowBets(site)
-#getBet365Bets(site)
+allBets.addBet(getSportsInteractionBets(site))
+allBets.addBet(getPlayNowBets(site))
+allBets.addBet(getBet365Bets(site))
+
+allBets.printBets()

@@ -1,35 +1,42 @@
-from parser import *
+from dataparser import *
 
 class Bet:
 
     def __init__(self):
-        self.homeTeam = {'name': None,
-                         'spread' : None,
-                         'spreadOdds' : None,
-                         'moneyline': None,
-                        }
-        self.awayTeam = {'name': None,
-                         'spread' : None,
-                         'spreadOdds' : None,
-                         'moneyline': None,
-                        }
+        self.homeTeam = None
+        self.awayTeam = None
+        self.time = None
+        self.book = None
+
+        self.spread = {'homeSpread' : None,
+                       'homeSpreadOdds' : None,
+                       'awaySpread' : None,
+                       'awaySpreadOdds' : None,
+                       }
+
+        self.moneyLine = {'homeMoneyLine' : None,
+                          'awayMoneyLine' : None,
+                          }
+
         self.overUnder = {'over': None,
                           'overOdds': None,
                           'under': None,
                           'underOdds': None,
                           }
-        self.time = None
+
+    def to_dict(self):
+        pass
 
     def __str__(self) -> str:
         return \
-               f'Home Team: {self.homeTeam["name"]} \n \
-                 Money Line: {self.homeTeam["moneyline"]} \n \
-                 Spread: {self.homeTeam["spread"]}   \n \
-                 Spread Odds: {self.homeTeam["spreadOdds"]}   \n \n \
-                 Away Team: {self.awayTeam["name"]} \n \
-                 Money Line: {self.awayTeam["moneyline"]} \n \
-                 Spread: {self.awayTeam["spread"]}  \n \
-                 Spread Odds: {self.awayTeam["spreadOdds"]}   \n \n \
+               f'Home Team: {self.homeTeam} \n \
+                 Money Line: {self.moneyLine["homeMoneyLine"]} \n \
+                 Spread: {self.spread["homeSpread"]}   \n \
+                 Spread Odds: {self.spread["homeSpreadOdds"]}   \n \n \
+                 Away Team: {self.awayTeam} \n \
+                 Money Line: {self.moneyLine["awayMoneyLine"]} \n \
+                 Spread: {self.spread["awaySpread"]}  \n \
+                 Spread Odds: {self.spread["awaySpreadOdds"]}   \n \n \
                  Over {self.overUnder["over"]}: {self.overUnder["overOdds"]} \n \
                  Under {self.overUnder["under"]}: {self.overUnder["underOdds"]} \n \
                  '
@@ -39,13 +46,25 @@ class PlayNowBet(Bet):
 
     def __init__(self, data):
         super().__init__()
-        self.homeTeam, self.awayTeam, self.overUnder = PlayNowParser(data)
+        self.book = 'Play Now'
+        self.homeTeam, self.awayTeam, self.spread, self.moneyLine, self.overUnder = PlayNowParser(data)
 
 class SportsInteractionBet(Bet):
 
     def __init__(self, data):
         super().__init__()
-        self.homeTeam, self.awayTeam, self.overUnder = SportsInteractionParser(data)
+        self.book = 'Sports Interaction'
+        self.homeTeam, self.awayTeam, self.spread, self.moneyLine, self.overUnder = SportsInteractionParser(data)
+
+
+class Bet365Bet(Bet):
+
+    def __init__(self, data):
+        super().__init__()
+        self.book = 'Bet 365'
+        self.homeTeam, self.awayTeam, self.spread, self.moneyLine, self.overUnder = Bet365Parser(data)
+
+
 
 
 
