@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 
 class Website:
 
@@ -22,8 +23,26 @@ class Website:
 
     def locate(self, xpath, time=10):
         return WebDriverWait(self.driver, time).until(
-            EC.presence_of_element_located((By.XPATH, xpath))
+            EC.visibility_of_any_elements_located((By.XPATH, xpath))
+        )[0]
+
+    def class_locate(self, class_name, time=10):
+        return WebDriverWait(self.driver, time).until(
+            EC.visibility_of_any_elements_located((By.CLASS_NAME, class_name))
         )
+
+    def class_locate_all(self, class_name, time=10):
+        return WebDriverWait(self.driver, time).until(
+            EC.visibility_of_any_elements_located((By.CLASS_NAME, class_name))
+        )
+
+    def find_child_by_class(self, parent, childClassName, time = 2):
+        try: 
+            return WebDriverWait(parent, time).until(
+                EC.visibility_of_all_elements_located((By.CLASS_NAME, childClassName))
+            )[0]
+        except TimeoutException:
+            return None
 
     def click(self, location, time=10):        
         self.locate(location, time).click()

@@ -5,24 +5,26 @@ def getPlayNowBets(site):
 
     playNowURL = 'https://www.playnow.com/sports/sport/9/basketball/matches?preselectedFilters=49'
     showmore = '//*[@id="sports-wrapper"]/div/div/div/div/main/section/div[2]/div[2]/div/div/div[2]/div/article/div/div/div[1]/article/div[2]/div/div[2]/div/div[2]/div/a'
-    table = '/html/body/section/section/div[2]/div/div/div/div/main/section/div[2]/div[2]/div/div/div[2]/div/article/div/div/div[1]/article/div[2]/div/div[2]'
+    nbaClass = 'event-list__item--basketball'
+    teamClass = 'event-card__body__name'
+    spreadClass = 'market__body--WH'
+    moneyLineClass = 'market__body--HH'
+    overUnderClass = 'market__body--HL'
 
     site.go_to(playNowURL)
     time.sleep(2)
     site.click(showmore)
     time.sleep(1)
     
-    data = site.locate(table).text.split('\n')
-    dataLength = 18
-    # Remove header
-    data = data[5:]
-
+    bets = site.class_locate_all(nbaClass)
     betsList = []
-    numBets = len(data) // dataLength
 
-    
-    for i in range(numBets):
-        betsList.append(PlayNowBet(data[i * dataLength: (i + 1) * dataLength]))
+    for bet in bets:
+        teams = site.find_child_by_class(bet, teamClass)
+        spread = site.find_child_by_class(bet, spreadClass)
+        moneyLine = site.find_child_by_class(bet, moneyLineClass)
+        overUnder = site.find_child_by_class(bet, overUnderClass)
+        betsList.append(PlayNowParser([teams, spread, moneyLine, overUnder]))
 
     return betsList
 
@@ -51,7 +53,6 @@ def getSportsInteractionBets(site):
 def getBet365Bets(site):
 
     bet365URL = 'https://www.bet365.com/#/AC/B18/C20604387/D48/E1453/F10/'
-    table = '/html/body/div[1]/div/div[4]/div[2]/div/div/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div[2]'
     teamsLoc = '/html/body/div[1]/div/div[4]/div[2]/div[1]/div/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div[2]/div/div[1]'
     spreadLoc = '/html/body/div[1]/div/div[4]/div[2]/div[1]/div/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div[2]/div/div[2]'
     overunderLoc = '/html/body/div[1]/div/div[4]/div[2]/div[1]/div/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div[2]/div/div[3]'
@@ -67,7 +68,7 @@ def getBet365Bets(site):
     moneyLines = site.locate(moneylineLoc).text.split('\n')[1:]
     numBets = len(teams) // 3
 
- 
+
     betsList = []
     
     for i in range(numBets):

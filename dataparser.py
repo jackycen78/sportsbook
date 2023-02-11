@@ -1,40 +1,55 @@
 from teamNames import bet365NameChanges
 
+teamNames = ['away', 'home']
+spreadNames = ['awaySpread', 'awaySpreadOdds', 'homeSpread', 'homeSpreadOdds']
+overUnderNames = ['over', 'overOdds', 'under', 'underOdds']
+moneyLineNames = ['awayMoneyLine', 'homeMoneyLine']
+
+emptyTeams = ['', '']
+emptySpreads = ['', '', '', '']
+emmptyOverUnders = ['', '', '', '']
+emptyMoneyLines = ['', '']
+
 def PlayNowParser(data):
 
+    teams, spreads, moneyLines, overUnders = data
     
-    spread = {}
-    moneyLine = {}
-    overUnder = {}
+    if teams:
+        teams = teams.text.split('\n')
+    else:
+        teams = emptyTeams
 
-    awayTeam = data[0]
-    homeTeam = data[1]
+    if spreads:
+        spreads = spreads.text.split('\n')
+    else:
+        spreads = emptySpreads
 
-    spread['awaySpread'] = data[2]
-    spread['awaySpreadOdds'] = data[3]
+    if moneyLines:
+        moneyLines = moneyLines.text.split('\n')
+        moneyLines = [moneyLines[1], moneyLines[3]]
+    else:
+        moneyLines = emptyMoneyLines
 
-    spread['homeSpread'] = data[4]
-    spread['homeSpreadOdds'] = data[5]
-    
-    moneyLine['awayMoneyLine'] = data[7]
-    moneyLine['homeMoneyLine'] = data[9]
+    if overUnders:
+        overUnders = overUnders.text.split('\n')
+        overUnders = [overUnders[1], overUnders[2], overUnders[4], overUnders[5]]
+    else:
+        overUnders = emmptyOverUnders
 
-    overUnder['over'] = data[11]
-    overUnder['overOdds'] = data[12]
-
-    overUnder['under'] = data[14]
-    overUnder['underOdds'] = data[15]
-
-    return homeTeam, awayTeam, spread, moneyLine, overUnder
+    return dict(zip(teamNames, teams)), \
+           dict(zip(spreadNames, spreads)), \
+           dict(zip(overUnderNames, overUnders)), \
+           dict(zip(moneyLineNames, moneyLines)) 
 
 def SportsInteractionParser(data):
 
+    teams = {}
     spread = {}
     moneyLine = {}
     overUnder = {}
 
-    awayTeam = data[2]
-    homeTeam = data[3]
+    teams['away'] = data[2]
+    teams['home'] = data[3]
 
     spread['awaySpread'] = data[5]
     spread['awaySpreadOdds'] = data[6]
@@ -51,18 +66,19 @@ def SportsInteractionParser(data):
     overUnder['under'] = data[15][1:]
     overUnder['underOdds'] = data[16]
 
-    return homeTeam, awayTeam, spread, moneyLine, overUnder
+    return teams, spread, moneyLine, overUnder
 
 def Bet365Parser(data):
 
-    teams, spreads, overUnders, moneyLines = data
+    team, spreads, overUnders, moneyLines = data
 
+    teams = {}
     spread = {}
     moneyLine = {}
     overUnder = {}
 
-    awayTeam = bet365NameChanges[teams[0]]
-    homeTeam = bet365NameChanges[teams[1]]
+    teams['away'] = bet365NameChanges[team[0]]
+    teams['home'] = bet365NameChanges[team[1]]
 
     spread['awaySpread'] = spreads[0]
     spread['awaySpreadOdds'] = spreads[1]
@@ -79,4 +95,4 @@ def Bet365Parser(data):
     overUnder['under'] = overUnders[2][2:]
     overUnder['underOdds'] = overUnders[3]
 
-    return homeTeam, awayTeam, spread, moneyLine, overUnder
+    return teams, spread, moneyLine, overUnder
