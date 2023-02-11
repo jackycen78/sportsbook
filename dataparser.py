@@ -16,19 +16,19 @@ def PlayNowParser(data):
     teamsData, spreadsData, moneyLinesData, overUndersData = data
     teams, spreads, overUnders, moneyLines = emptyLists
 
-    if teams:
-        teams = teams.text.split('\n')
+    if teamsData:
+        teams = teamsData.text.split('\n')
 
-    if spreads:
-        spreads = spreads.text.split('\n')
+    if spreadsData:
+        spreads = spreadsData.text.split('\n')
 
-    if moneyLines:
-        moneyLines = moneyLines.text.split('\n')
-        moneyLines = [moneyLines[1], moneyLines[3]]
+    if moneyLinesData:
+        moneyLinesData = moneyLinesData.text.split('\n')
+        moneyLines = [moneyLinesData[1], moneyLinesData[3]]
 
-    if overUnders:
-        overUnders = overUnders.text.split('\n')
-        overUnders = [overUnders[1], overUnders[2], overUnders[4], overUnders[5]]
+    if overUndersData:
+        overUndersData = overUndersData.text.split('\n')
+        overUnders = [overUndersData[1], overUndersData[2], overUndersData[4], overUndersData[5]]
 
     return dict(zip(teamNames, teams)), \
            dict(zip(spreadNames, spreads)), \
