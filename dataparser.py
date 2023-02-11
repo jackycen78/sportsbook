@@ -5,36 +5,30 @@ spreadNames = ['awaySpread', 'awaySpreadOdds', 'homeSpread', 'homeSpreadOdds']
 overUnderNames = ['over', 'overOdds', 'under', 'underOdds']
 moneyLineNames = ['awayMoneyLine', 'homeMoneyLine']
 
-emptyTeams = ['', '']
-emptySpreads = ['', '', '', '']
-emmptyOverUnders = ['', '', '', '']
-emptyMoneyLines = ['', '']
+emptyLists = [['', ''],
+              ['', '', '', ''],
+              ['', '', '', ''],
+              ['', ''],
+             ]
 
 def PlayNowParser(data):
 
-    teams, spreads, moneyLines, overUnders = data
-    
+    teamsData, spreadsData, moneyLinesData, overUndersData = data
+    teams, spreads, overUnders, moneyLines = emptyLists
+
     if teams:
         teams = teams.text.split('\n')
-    else:
-        teams = emptyTeams
 
     if spreads:
         spreads = spreads.text.split('\n')
-    else:
-        spreads = emptySpreads
 
     if moneyLines:
         moneyLines = moneyLines.text.split('\n')
         moneyLines = [moneyLines[1], moneyLines[3]]
-    else:
-        moneyLines = emptyMoneyLines
 
     if overUnders:
         overUnders = overUnders.text.split('\n')
         overUnders = [overUnders[1], overUnders[2], overUnders[4], overUnders[5]]
-    else:
-        overUnders = emmptyOverUnders
 
     return dict(zip(teamNames, teams)), \
            dict(zip(spreadNames, spreads)), \
