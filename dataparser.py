@@ -11,6 +11,13 @@ emptyLists = [['', ''],
               ['', ''],
              ]
 
+def zipData(teams, spreads, moneyLines, overUnders):
+
+    return dict(zip(teamNames, teams)), \
+           dict(zip(spreadNames, spreads)), \
+           dict(zip(overUnderNames, overUnders)), \
+           dict(zip(moneyLineNames, moneyLines)) 
+
 def PlayNowParser(data):
 
     teamsData, spreadsData, moneyLinesData, overUndersData = data
@@ -24,43 +31,43 @@ def PlayNowParser(data):
 
     if moneyLinesData:
         moneyLinesData = moneyLinesData.text.split('\n')
-        moneyLines = [moneyLinesData[1], moneyLinesData[3]]
+        moneyLines = [moneyLinesData[1], 
+                      moneyLinesData[3]]
 
     if overUndersData:
         overUndersData = overUndersData.text.split('\n')
-        overUnders = [overUndersData[1], overUndersData[2], overUndersData[4], overUndersData[5]]
+        overUnders = [overUndersData[1], 
+                      overUndersData[2], 
+                      overUndersData[4], 
+                      overUndersData[5]]
 
-    return dict(zip(teamNames, teams)), \
-           dict(zip(spreadNames, spreads)), \
-           dict(zip(overUnderNames, overUnders)), \
-           dict(zip(moneyLineNames, moneyLines)) 
+    return zipData(teams, spreads, moneyLines, overUnders)
+    
 
 def SportsInteractionParser(data):
 
-    teams = {}
-    spread = {}
-    moneyLine = {}
-    overUnder = {}
+    teamsData, spreadsData, moneyLinesData, overUndersData = data
+    teams, spreads, overUnders, moneyLines = emptyLists
 
-    teams['away'] = data[2]
-    teams['home'] = data[3]
+    if teamsData:
+        teams = teamsData.text.split(' ')
+        atIndex = teams.index('@')
+        teams = [" ".join(teams[0: atIndex]), 
+                 " ".join(teams[atIndex + 1:])
+                ]
 
-    spread['awaySpread'] = data[5]
-    spread['awaySpreadOdds'] = data[6]
+    if 'Closed' not in spreadsData.text:
+        spreads = spreadsData.text.split('\n')[1:]
 
-    spread['homeSpread'] = data[7]
-    spread['homeSpreadOdds'] = data[8]
+    if 'Closed' not in moneyLinesData.text:
+        moneyLines = moneyLinesData.text.split('\n')[1:]
 
-    moneyLine['awayMoneyLine'] = data[10]
-    moneyLine['homeMoneyLine'] = data[11]
+    if 'Closed' not in overUndersData.text:
+        overUnders = overUndersData.text.split('\n')[1:]
+        overUnders[0] = overUnders[0][1:]
 
-    overUnder['over'] = data[13][1:]
-    overUnder['overOdds'] = data[14]
+    return zipData(teams, spreads, moneyLines, overUnders)
 
-    overUnder['under'] = data[15][1:]
-    overUnder['underOdds'] = data[16]
-
-    return teams, spread, moneyLine, overUnder
 
 def Bet365Parser(data):
 

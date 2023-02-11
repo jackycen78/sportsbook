@@ -5,48 +5,53 @@ def getPlayNowBets(site):
 
     playNowURL = 'https://www.playnow.com/sports/sport/9/basketball/matches?preselectedFilters=49'
     showmore = '//*[@id="sports-wrapper"]/div/div/div/div/main/section/div[2]/div[2]/div/div/div[2]/div/article/div/div/div[1]/article/div[2]/div/div[2]/div/div[2]/div/a'
+    showMoreClass = 'content-loader__load-more-link'
+    todayClass = 'heading--timeband--today'
     nbaClass = 'event-list__item--basketball'
     teamClass = 'event-card__body__name'
     spreadClass = 'market__body--WH'
     moneyLineClass = 'market__body--HH'
     overUnderClass = 'market__body--HL'
 
-    site.go_to(playNowURL)
-    time.sleep(2)
-    site.click(showmore)
-    time.sleep(1)
+    site.go_to(playNowURL, sleepTime=2)
+    site.click_by_class(showMoreClass, sleepTime=1)
     
-    bets = site.class_locate_all(nbaClass)
+    todayBets = site.class_locate(todayClass)[0]
+    bets = site.find_child_by_class(todayBets, nbaClass)
     betsList = []
 
     for bet in bets:
-        teams = site.find_child_by_class(bet, teamClass)
-        spread = site.find_child_by_class(bet, spreadClass)
-        moneyLine = site.find_child_by_class(bet, moneyLineClass)
-        overUnder = site.find_child_by_class(bet, overUnderClass)
-        betsList.append(PlayNowParser([teams, spread, moneyLine, overUnder]))
+        teams = site.find_child_by_class(bet, teamClass)[0]
+        spreads = site.find_child_by_class(bet, spreadClass)[0]
+        moneyLines = site.find_child_by_class(bet, moneyLineClass)[0]
+        overUnders = site.find_child_by_class(bet, overUnderClass)[0]
+        betsList.append(PlayNowParser([teams, 
+                                       spreads, 
+                                       moneyLines, 
+                                       overUnders]))
 
     return betsList
 
 def getSportsInteractionBets(site):
 
     sportsInteractionURL = 'https://www.sportsinteraction.com/basketball/nba-betting-lines/'
-    table = '/html/body/div[2]/div/div[4]/div[4]/div[2]/ul/li'
+    nbaClass = 'Game--mainMarkets'
+    teamClass = 'GameHeader__name'
+    betTypesClass = 'MainMarketTable__event'
 
-    site.go_to(sportsInteractionURL)
-    time.sleep(1)
+    site.go_to(sportsInteractionURL, sleepTime=2)
 
-    data = site.locate(table).text.split('\n')
-    dataLength = 17
-    # Remove header
-    data = data[1:]
-
+    bets = site.class_locate_all(nbaClass)
     betsList = []
-    numBets = len(data) // dataLength
-    
-    for i in range(numBets):
-        betsList.append(SportsInteractionBet(data[i * dataLength: (i + 1) * dataLength]))
 
+    for bet in bets:
+        teams = site.find_child_by_class(bet, teamClass) 
+        spreads, moneylines, overUnders = site.find_child_by_class(bet, betTypesClass)[:3]
+        betsList.append(SportsInteractionParser([teams[0], 
+                                                spreads, 
+                                                moneylines, 
+                                                overUnders]))
+    
     return betsList
 
 
