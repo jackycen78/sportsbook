@@ -77,11 +77,17 @@ def flatten(lst):
 def Bet365Parser(data):
 
     teamsData, spreadsData, moneyLinesData, overUndersData = data
+    teams, spreads, moneyLines, overUnders = emptyLists
     
     teams = [bet365NameChanges[team] for team in teamsData.text.split('\n')]
-    spreads = flatten([spread.text.split('\n') for spread in spreadsData])
+
+    if len(spreadsData[0].text.split('\n')) == 2:
+        spreads = flatten([spread.text.split('\n') for spread in spreadsData])
+
     moneyLines = [ml.text for ml in moneyLinesData]
-    overUnders = flatten([ou.text.split('\n') for ou in overUndersData])
+    
+    if len(overUndersData[0].text.split('\n')) == 2:
+        overUnders = flatten([ou.text.split('\n') for ou in overUndersData])
 
     """if overUnders[0]:
         overUnders[0] = overUnders[0][2:]
