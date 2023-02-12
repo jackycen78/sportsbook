@@ -11,4 +11,3 @@ allBets.addBet(getPlayNowBets(site))
 
 allBets.printBets()
 
-

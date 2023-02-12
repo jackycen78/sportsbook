@@ -28,17 +28,9 @@ class Website:
             EC.visibility_of_any_elements_located((By.XPATH, xpath))
         )[0]
 
-    def class_locate(self, class_name, waitSeconds=10):
-        return WebDriverWait(self.driver, waitSeconds).until(
-            EC.visibility_of_any_elements_located((By.CLASS_NAME, class_name))
-        )
-
-    def class_locate_all(self, class_name, waitSeconds=10):
-        return WebDriverWait(self.driver, waitSeconds).until(
-            EC.visibility_of_all_elements_located((By.CLASS_NAME, class_name))
-        )
-
-    def find_child_by_class(self, parent, childClassName, waitSeconds=5):
+    def find_class(self, childClassName, parent=None, waitSeconds=5):
+        if not parent:
+            parent = self.driver
         try: 
             return WebDriverWait(parent, waitSeconds).until(
                 EC.presence_of_all_elements_located((By.CLASS_NAME, childClassName))
@@ -51,10 +43,13 @@ class Website:
         time.sleep(sleepTime)
 
     def click_by_class(self, class_name, waitSeconds=10, sleepTime=0):
-        WebDriverWait(self.driver, waitSeconds).until(
-            EC.visibility_of_any_elements_located((By.CLASS_NAME, class_name))
-        )[0].click()
-        time.sleep(sleepTime)
+        try: 
+            WebDriverWait(self.driver, waitSeconds).until(
+                EC.visibility_of_any_elements_located((By.CLASS_NAME, class_name))
+            )[0].click()
+            time.sleep(sleepTime)
+        except TimeoutException:
+            return
 
     def enter_text(self, location, text):
         self.locate(location).send_keys(text)
