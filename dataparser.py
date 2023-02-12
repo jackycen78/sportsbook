@@ -7,21 +7,23 @@ moneyLineNames = ['awayMoneyLine', 'homeMoneyLine']
 
 emptyLists = [['', ''],
               ['', '', '', ''],
-              ['', '', '', ''],
               ['', ''],
+              ['', '', '', ''],
              ]
 
 def zipData(teams, spreads, moneyLines, overUnders):
 
-    return dict(zip(teamNames, teams)), \
-           dict(zip(spreadNames, spreads)), \
-           dict(zip(overUnderNames, overUnders)), \
-           dict(zip(moneyLineNames, moneyLines)) 
+    return [dict(zip(teamNames, teams)), \
+            dict(zip(spreadNames, spreads)), \
+            dict(zip(moneyLineNames, moneyLines)), \
+            dict(zip(overUnderNames, overUnders)), \
+           ]       
+
 
 def PlayNowParser(data):
 
     teamsData, spreadsData, moneyLinesData, overUndersData = data
-    teams, spreads, overUnders, moneyLines = emptyLists
+    teams, spreads, moneyLines, overUnders = emptyLists
 
     if teamsData:
         teams = teamsData.text.split('\n')
@@ -47,7 +49,7 @@ def PlayNowParser(data):
 def SportsInteractionParser(data):
 
     teamsData, spreadsData, moneyLinesData, overUndersData = data
-    teams, spreads, overUnders, moneyLines = emptyLists
+    teams, spreads, moneyLines, overUnders = emptyLists
 
     if teamsData:
         teams = teamsData.text.split(' ')
@@ -69,31 +71,23 @@ def SportsInteractionParser(data):
     return zipData(teams, spreads, moneyLines, overUnders)
 
 
+def flatten(lst):
+    return [item for sublist in lst for item in sublist]
+
 def Bet365Parser(data):
 
-    team, spreads, overUnders, moneyLines = data
+    teamsData, spreadsData, moneyLinesData, overUndersData = data
+    
+    teams = [bet365NameChanges[team] for team in teamsData.text.split('\n')]
+    spreads = flatten([spread.text.split('\n') for spread in spreadsData])
+    moneyLines = [ml.text for ml in moneyLinesData]
+    overUnders = flatten([ou.text.split('\n') for ou in overUndersData])
 
-    teams = {}
-    spread = {}
-    moneyLine = {}
-    overUnder = {}
+    """if overUnders[0]:
+        overUnders[0] = overUnders[0][2:]
+    if overUnders[2]:
+        overUnders[2] = overUnders[2][2:]"""
 
-    teams['away'] = bet365NameChanges[team[0]]
-    teams['home'] = bet365NameChanges[team[1]]
+    return zipData(teams, spreads, moneyLines, overUnders)
+    
 
-    spread['awaySpread'] = spreads[0]
-    spread['awaySpreadOdds'] = spreads[1]
-
-    spread['homeSpread'] = spreads[2]
-    spread['homeSpreadOdds'] = spreads[3]
-
-    moneyLine['awayMoneyLine'] = moneyLines[0]
-    moneyLine['homeMoneyLine'] = moneyLines[1]
-
-    overUnder['over'] = overUnders[0][2:]
-    overUnder['overOdds'] = overUnders[1]
-
-    overUnder['under'] = overUnders[2][2:]
-    overUnder['underOdds'] = overUnders[3]
-
-    return teams, spread, moneyLine, overUnder

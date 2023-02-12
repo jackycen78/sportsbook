@@ -22,7 +22,7 @@ def getPlayNowBets(site):
 
 
     bets = site.find_class(childClassName=nbaClass,
-                           parent=site.find_class(tmrClass)[0])
+                           parent=site.find_class(liveClass)[0])
     #bets = site.find_child_by_class(site.class_locate(todayClass)[0], nbaClass)
     #bets += site.find_child_by_class(site.class_locate(liveClass)[0], nbaClass)
     betsList = []
@@ -32,7 +32,7 @@ def getPlayNowBets(site):
         spreads = site.find_class(spreadClass, bet)[0]
         moneyLines = site.find_class(moneyLineClass, bet)[0]
         overUnders = site.find_class(overUnderClass, bet)[0]
-        betsList.append(PlayNowParser([teams, 
+        betsList.append(PlayNowBet([teams, 
                                        spreads, 
                                        moneyLines, 
                                        overUnders]))
@@ -55,7 +55,7 @@ def getSportsInteractionBets(site):
     for bet in bets:
         teams = site.find_class(teamClass, bet) 
         spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
-        betsList.append(SportsInteractionParser([teams[0], 
+        betsList.append(SportsInteractionBet([teams[0], 
                                                 spreads, 
                                                 moneylines, 
                                                 overUnders]))
@@ -65,27 +65,26 @@ def getSportsInteractionBets(site):
 def getBet365Bets(site):
 
     bet365URL = 'https://www.bet365.com/#/AC/B18/C20604387/D48/E1453/F10/'
-    teamsLoc = '/html/body/div[1]/div/div[4]/div[2]/div[1]/div/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div[2]/div/div[1]'
-    spreadLoc = '/html/body/div[1]/div/div[4]/div[2]/div[1]/div/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div[2]/div/div[2]'
-    overunderLoc = '/html/body/div[1]/div/div[4]/div[2]/div[1]/div/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div[2]/div/div[3]'
-    moneylineLoc = '/html/body/div[1]/div/div[4]/div[2]/div[1]/div/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div[2]/div/div[4]'
 
+    betTypesClass = 'gl-Participant_General'
+    teamsClass = 'scb-ParticipantFixtureDetailsHigherBasketball_TeamNames'
 
     site.go_to(bet365URL, sleepTime=1)
-    
-    teams = site.locate(teamsLoc).text.split('\n')[2:]
-    spreads = site.locate(spreadLoc).text.split('\n')[1:]
-    overUnders = site.locate(overunderLoc).text.split('\n')[1:]
-    moneyLines = site.locate(moneylineLoc).text.split('\n')[1:]
-    numBets = len(teams) // 3
-
     betsList = []
+
+    teams = site.find_class(teamsClass)
+    numTeams = len(teams)
+    betTypes = site.find_class(betTypesClass)
+
+    spreads = betTypes[:numTeams * 2]
+    overUnders = betTypes[numTeams * 2: numTeams * 4]
+    moneyLines = betTypes[numTeams * 4:]
     
-    for i in range(numBets):
-        betsList.append(Bet365Bet([teams[i * 3: i * 3 + 3], 
-                                   spreads[i * 4: i * 4 + 4], 
-                                   overUnders[i * 4: i * 4 + 4], 
-                                   moneyLines[i * 2: i * 2 + 2],
+    for i in range(numTeams):
+        betsList.append(Bet365Bet([teams[i], 
+                                   spreads[i * 2: (i + 1) * 2], 
+                                   moneyLines[i * 2: (i + 1) * 2], 
+                                   overUnders[i * 2: (i + 1) * 2], 
                                 ]))
 
     return betsList

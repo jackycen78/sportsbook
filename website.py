@@ -23,7 +23,7 @@ class Website:
         self.driver.get(website)
         time.sleep(sleepTime)
 
-    def locate(self, xpath, waitSeconds=10):
+    def locate(self, xpath, waitSeconds=5):
         return WebDriverWait(self.driver, waitSeconds).until(
             EC.visibility_of_any_elements_located((By.XPATH, xpath))
         )[0]
@@ -38,11 +38,11 @@ class Website:
         except TimeoutException:
             return [None]
 
-    def click(self, location, waitSeconds=10, sleepTime=0):        
+    def click(self, location, waitSeconds=2, sleepTime=0):        
         self.locate(location, waitSeconds).click()
         time.sleep(sleepTime)
 
-    def click_by_class(self, class_name, waitSeconds=10, sleepTime=0):
+    def click_by_class(self, class_name, waitSeconds=2, sleepTime=0):
         try: 
             WebDriverWait(self.driver, waitSeconds).until(
                 EC.visibility_of_any_elements_located((By.CLASS_NAME, class_name))
