@@ -22,7 +22,7 @@ def getPlayNowBets(site):
 
 
     bets = site.find_class(childClassName=nbaClass,
-                           parent=site.find_class(tmrClass)[0])
+                           parent=site.find_class(todayClass)[0])
     #bets = site.find_child_by_class(site.class_locate(todayClass)[0], nbaClass)
     #bets += site.find_child_by_class(site.class_locate(liveClass)[0], nbaClass)
     betsList = []

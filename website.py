@@ -24,9 +24,12 @@ class Website:
         time.sleep(sleepTime)
 
     def locate(self, xpath, waitSeconds=5):
-        return WebDriverWait(self.driver, waitSeconds).until(
+        try: 
+            return WebDriverWait(self.driver, waitSeconds).until(
             EC.visibility_of_any_elements_located((By.XPATH, xpath))
         )[0]
+        except TimeoutError:
+            return None
 
     def find_class(self, childClassName, parent=None, waitSeconds=5):
         if not parent:
