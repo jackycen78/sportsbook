@@ -43,7 +43,7 @@ class Bet:
     def __str__(self) -> str:
         return \
                f'Book: {self.book["name"]} \n \
-Home Team: {self.teams["home"]} \n \
+Home Team: {self.teams["home"]}\n \
 Money Line: {self.moneyLine["homeMoneyLine"]} \n \
 Spread: {self.spread["homeSpread"]}   \n \
 Spread Odds: {self.spread["homeSpreadOdds"]}   \n \n \

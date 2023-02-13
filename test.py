@@ -1,8 +1,7 @@
 from bet import *
 from allbets import AllBets
-import pandas as pd
 
-testPlayNowBet1 = PlayNowBet([
+"""testPlayNowBet1 = PlayNowBet([
     'Chicago Bulls',
     'Detroit Pistons',
     '+3.0',
@@ -93,15 +92,49 @@ testBet365Bet2 = Bet365Bet([
     ['O 232.0', '2.01', 'U 232.0', '1.79'],      # Over Under
     ['2.30', '135'],                            # Money Line
 ])
+"""
+
+testBet365Bet1 = Bet365Bet(['', '', '', ''])
+testBet365Bet1.teams = {'home': 'UTA Jazz',
+                        'away': 'TOR Raptors',
+                       }
+
+testBet365Bet1.spread = {'homeSpread' : '+9.5',
+                         'homeSpreadOdds' : '1.90',
+                         'awaySpread' : '-9.5',
+                         'awaySpreadOdds' : '1.90',
+                         }
+
+testBet365Bet1.moneyLine = {'homeMoneyLine' : '1.36',
+                            'awayMoneyLine' : '3.25',
+                            }
+
+testBet365Bet1.overUnder = {'over': '232.0',
+                            'overOdds': '2.01',
+                            'under': '232.0',
+                            'underOdds': '1.79',
+                            }
+
+testPlayNowBet1 = PlayNowBet(['', '', '', ''])
+testPlayNowBet1.teams = {'home': 'UTA Jazz',
+                         'away': 'TOR Raptors',
+                        }
+
+testPlayNowBet1.spread = {'homeSpread' : '+9.0',
+                          'homeSpreadOdds' : '1.90',
+                          'awaySpread' : '-9.0',
+                          'awaySpreadOdds' : '1.90',
+                         }
+
+testPlayNowBet1.moneyLine = {'homeMoneyLine' : '1.56',
+                             'awayMoneyLine' : '2.98',
+                            }
+
+testPlayNowBet1.overUnder = {'over': '231.0',
+                             'overOdds': '2.11',
+                             'under': '231.0',
+                             'underOdds': '1.75',
+                            }
 
 
-
-allBets = AllBets()
-allBets.addBet([testBet365Bet1, testBet365Bet2, testPlayNowBet1, testPlayNowBet2, testSportsInteractionBet1, testSportsInteractionBet2])
-
-
-df = pd.DataFrame([x.get_teams() | x.overUnder for x in allBets.betlist])
-
-df.sort_values(by='Teams')
-
-print(df)
+print(testPlayNowBet1)

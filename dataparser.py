@@ -79,20 +79,19 @@ def Bet365Parser(data):
     teamsData, spreadsData, moneyLinesData, overUndersData = data
     teams, spreads, moneyLines, overUnders = emptyLists
     
-    teams = [bet365NameChanges[team] for team in teamsData.text.split('\n')]
+    if teamsData:
+        teams = [bet365NameChanges[team] for team in teamsData.text.split('\n')]
 
-    if len(spreadsData[0].text.split('\n')) == 2:
+    if spreadsData and len(spreadsData[0].text.split('\n')) == 2:
         spreads = flatten([spread.text.split('\n') for spread in spreadsData])
+        spreads[0] = spreads[0][2:]
+        spreads[2] = spreads[2][2:]
 
-    moneyLines = [ml.text for ml in moneyLinesData]
+    if moneyLines:
+        moneyLines = [ml.text for ml in moneyLinesData]
     
-    if len(overUndersData[0].text.split('\n')) == 2:
+    if overUndersData and len(overUndersData[0].text.split('\n')) == 2:
         overUnders = flatten([ou.text.split('\n') for ou in overUndersData])
-
-    """if overUnders[0]:
-        overUnders[0] = overUnders[0][2:]
-    if overUnders[2]:
-        overUnders[2] = overUnders[2][2:]"""
 
     return zipData(teams, spreads, moneyLines, overUnders)
     
