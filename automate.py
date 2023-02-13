@@ -22,7 +22,7 @@ def getPlayNowBets(site):
 
 
     bets = site.find_class(childClassName=nbaClass,
-                           parent=site.find_class(liveClass)[0])
+                           parent=site.find_class(tmrClass)[0])
     #bets = site.find_child_by_class(site.class_locate(todayClass)[0], nbaClass)
     #bets += site.find_child_by_class(site.class_locate(liveClass)[0], nbaClass)
     betsList = []
@@ -33,9 +33,9 @@ def getPlayNowBets(site):
         moneyLines = site.find_class(moneyLineClass, bet)[0]
         overUnders = site.find_class(overUnderClass, bet)[0]
         betsList.append(PlayNowBet([teams, 
-                                       spreads, 
-                                       moneyLines, 
-                                       overUnders]))
+                                    spreads, 
+                                    moneyLines, 
+                                    overUnders]))
     return betsList
 
 def getSportsInteractionBets(site):
