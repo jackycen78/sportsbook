@@ -1,4 +1,4 @@
-from teamNames import bet365NameChanges
+from teamNames import bet365NameChanges, sportsInteractionNameChanges
 
 teamNames = ['away', 'home']
 spreadNames = ['awaySpread', 'awaySpreadOdds', 'homeSpread', 'homeSpreadOdds']
@@ -54,19 +54,25 @@ def SportsInteractionParser(data):
     if teamsData:
         teams = teamsData.text.split(' ')
         atIndex = teams.index('@')
-        teams = [" ".join(teams[0: atIndex]), 
-                 " ".join(teams[atIndex + 1:])
+        awayTeam = " ".join(teams[0: atIndex])
+        homeTeam = " ".join(teams[atIndex + 1:])
+        awayTeam = sportsInteractionNameChanges[awayTeam] if awayTeam in sportsInteractionNameChanges else awayTeam
+        homeTeam = sportsInteractionNameChanges[homeTeam] if homeTeam in sportsInteractionNameChanges else homeTeam
+
+        teams = [awayTeam,
+                 homeTeam,
                 ]
 
-    if 'Closed' not in spreadsData.text:
+    if spreadsData and len(spreadsData.text.split('\n')) == 5 and 'Closed' not in spreadsData.text:
         spreads = spreadsData.text.split('\n')[1:]
 
-    if 'Closed' not in moneyLinesData.text:
+    if moneyLinesData and 'Closed' not in moneyLinesData.text:
         moneyLines = moneyLinesData.text.split('\n')[1:]
 
-    if 'Closed' not in overUndersData.text:
+    if overUndersData and 'Closed' not in overUndersData.text:
         overUnders = overUndersData.text.split('\n')[1:]
         overUnders[0] = overUnders[0][1:]
+        overUnders[2] = overUnders[2][1:]
 
     return zipData(teams, spreads, moneyLines, overUnders)
 
@@ -84,14 +90,14 @@ def Bet365Parser(data):
 
     if spreadsData and len(spreadsData[0].text.split('\n')) == 2:
         spreads = flatten([spread.text.split('\n') for spread in spreadsData])
-        spreads[0] = spreads[0][2:]
-        spreads[2] = spreads[2][2:]
 
     if moneyLines:
         moneyLines = [ml.text for ml in moneyLinesData]
     
     if overUndersData and len(overUndersData[0].text.split('\n')) == 2:
         overUnders = flatten([ou.text.split('\n') for ou in overUndersData])
+        overUnders[0] = overUnders[0][2:]
+        overUnders[2] = overUnders[2][2:]
 
     return zipData(teams, spreads, moneyLines, overUnders)
     

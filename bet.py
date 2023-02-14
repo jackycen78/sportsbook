@@ -35,26 +35,31 @@ class Bet:
         return self.overUnder
 
     def get_teams(self):
-        return {'Teams': f'{self.teams["away"]} at {self.teams["home"]}'}
+        return f'{self.teams["away"]} at {self.teams["home"]}'
 
     def get_book(self):
-        return {'Sportsbook': self.book}
+        return self.books
 
     def __str__(self) -> str:
         return \
-               f'Book: {self.book["name"]} \n \
-Home Team: {self.teams["home"]}\n \
-Money Line: {self.moneyLine["homeMoneyLine"]} \n \
-Spread: {self.spread["homeSpread"]}   \n \
-Spread Odds: {self.spread["homeSpreadOdds"]}   \n \n \
-Away Team: {self.teams["away"]} \n \
-Money Line: {self.moneyLine["awayMoneyLine"]} \n \
-Spread: {self.spread["awaySpread"]}  \n \
-Spread Odds: {self.spread["awaySpreadOdds"]}   \n \n \
-Over {self.overUnder["over"]}: {self.overUnder["overOdds"]} \n \
-Under {self.overUnder["under"]}: {self.overUnder["underOdds"]} \n \
-                 '
+               f'''Book: {self.book["name"]} \n 
+                   Home Team: {self.teams["home"]}\n 
+                   Away Team: {self.teams["away"]} \n 
+                '''
 
+'''
+Book: {self.book["name"]} \n 
+Home Team: {self.teams["home"]}\n 
+Money Line: {self.moneyLine["homeMoneyLine"]} \n 
+Spread: {self.spread["homeSpread"]}   \n 
+Spread Odds: {self.spread["homeSpreadOdds"]}   \n \n 
+Away Team: {self.teams["away"]} \n 
+Money Line: {self.moneyLine["awayMoneyLine"]} \n 
+Spread: {self.spread["awaySpread"]}  \n 
+Spread Odds: {self.spread["awaySpreadOdds"]}   \n \n 
+Over {self.overUnder["over"]}: {self.overUnder["overOdds"]} \n 
+Under {self.overUnder["under"]}: {self.overUnder["underOdds"]} \n 
+'''
 
 class PlayNowBet(Bet):
 

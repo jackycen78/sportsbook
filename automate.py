@@ -56,9 +56,9 @@ def getSportsInteractionBets(site):
         teams = site.find_class(teamClass, bet) 
         spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
         betsList.append(SportsInteractionBet([teams[0], 
-                                                spreads, 
-                                                moneylines, 
-                                                overUnders]))
+                                              spreads, 
+                                              moneylines, 
+                                              overUnders]))
     return betsList
 
 

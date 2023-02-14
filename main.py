@@ -5,8 +5,8 @@ from allbets import AllBets
 site = Website()
 allBets = AllBets()
 
-allBets.addBet(getSportsInteractionBets(site))
-allBets.addBet(getPlayNowBets(site))
-allBets.addBet(getBet365Bets(site))
+allBets.add_bets(getSportsInteractionBets(site))
+allBets.add_bets(getPlayNowBets(site))
+allBets.add_bets(getBet365Bets(site))
 
-allBets.printBets()
+allBets.print_bets()
