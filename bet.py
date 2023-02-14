@@ -50,26 +50,6 @@ class Bet:
     def get_book(self):
         return self.books
 
-    def __str__(self) -> str:
-        return \
-               f'''Book: {self.book["name"]} \n 
-                   Home Team: {self.teams["home"]}\n 
-                   Away Team: {self.teams["away"]} \n 
-                '''
-
-'''
-Book: {self.book["name"]} \n 
-Home Team: {self.teams["home"]}\n 
-Money Line: {self.moneyLine["homeMoneyLine"]} \n 
-Spread: {self.spread["homeSpread"]}   \n 
-Spread Odds: {self.spread["homeSpreadOdds"]}   \n \n 
-Away Team: {self.teams["away"]} \n 
-Money Line: {self.moneyLine["awayMoneyLine"]} \n 
-Spread: {self.spread["awaySpread"]}  \n 
-Spread Odds: {self.spread["awaySpreadOdds"]}   \n \n 
-Over {self.overUnder["over"]}: {self.overUnder["overOdds"]} \n 
-Under {self.overUnder["under"]}: {self.overUnder["underOdds"]} \n 
-'''
 
 class PlayNowBet(Bet):
 
@@ -78,12 +58,14 @@ class PlayNowBet(Bet):
         self.book['name'] = 'Play Now'
         self.teams, self.spread, self.moneyLine, self.overUnder = PlayNowParser(data)
 
+
 class SportsInteractionBet(Bet):
 
     def __init__(self, data):
         super().__init__()
         self.book['name'] = 'Sports Interaction'
         self.teams, self.spread, self.moneyLine, self.overUnder = SportsInteractionParser(data)
+
 
 
 class Bet365Bet(Bet):

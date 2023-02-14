@@ -11,7 +11,7 @@ receiverAddress = 'jackycen78@gmail.com'
 
 curDate = datetime.now().strftime("%B %d")
 message = MIMEMultipart()
-message['From'] = senderAddress
+message['From'] = 'Betting Odds'
 message['To'] = receiverAddress
 message['Subject'] = f'NBA Odds {curDate}'
 message.attach(MIMEText(template, "html"))
