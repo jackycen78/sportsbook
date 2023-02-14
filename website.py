@@ -47,9 +47,11 @@ class Website:
 
     def click_by_class(self, class_name, waitSeconds=2, sleepTime=0):
         try: 
-            WebDriverWait(self.driver, waitSeconds).until(
+            buttons = WebDriverWait(self.driver, waitSeconds).until(
                 EC.visibility_of_any_elements_located((By.CLASS_NAME, class_name))
-            )[0].click()
+            )
+            for b in buttons:
+                b.click()
             time.sleep(sleepTime)
         except TimeoutException:
             return

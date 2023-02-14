@@ -12,10 +12,6 @@ class AllBets:
                 self.games[teams] = [bet]
 
     def print_bets(self):
-        i = 0
         for team in self.games:
-            if len(self.games[team]) == 3:
-                i += 1
             for bet in self.games[team]:
                 print(bet)
-        print(i)

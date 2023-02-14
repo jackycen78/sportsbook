@@ -1,4 +1,5 @@
 from dataparser import *
+from teamNames import teams, cities
 
 class Bet:
 
@@ -28,11 +29,20 @@ class Bet:
     def get_spread(self):
         return self.spread
 
-    def get_moneyLine(self):
-        return self.moneyLine
+    def get_cities(self):
+        return f'{self.get_away_city()} at {self.get_home_city()}'   
 
-    def get_overUnder(self):
-        return self.overUnder
+    def get_home_city(self):
+        return cities[self.teams["home"]]
+
+    def get_away_city(self):
+        return cities[self.teams["away"]]
+
+    def get_home_team(self):
+        return teams[self.teams["home"]]
+
+    def get_away_team(self):
+        return teams[self.teams["away"]]
 
     def get_teams(self):
         return f'{self.teams["away"]} at {self.teams["home"]}'

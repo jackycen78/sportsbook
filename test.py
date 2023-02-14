@@ -15,18 +15,37 @@ testBet365Bet1.spread = {'homeSpread' : '+9.5',
 testBet365Bet1.moneyLine = {'homeMoneyLine' : '1.36',
                             'awayMoneyLine' : '3.25',
                             }
+testBet365Bet1.overUnder = {'over': '250.0',
+                            'overOdds': '2.05',
+                            'under': '235.0',
+                            'underOdds': '1.89',
+                            }
 
-testBet365Bet1.overUnder = {'over': '232.0',
-                            'overOdds': '2.01',
-                            'under': '232.0',
-                            'underOdds': '1.79',
+testBet365Bet2 = Bet365Bet(['', '', '', ''])
+testBet365Bet2.teams = {'home': 'Brooklyn Nets',
+                        'away': 'Miami Heat',
+                        }
+
+testBet365Bet2.spread = {'homeSpread' : '+19.5',
+                         'homeSpreadOdds' : '1.90', 
+                         'awaySpread' : '-19.5',
+                         'awaySpreadOdds' : '1.90',
+                         }
+
+testBet365Bet2.moneyLine = {'homeMoneyLine' : '1.02',
+                            'awayMoneyLine' : '17.67',
+                            }
+
+testBet365Bet2.overUnder = {'over': '250.0',
+                            'overOdds': '2.05',
+                            'under': '235.0',
+                            'underOdds': '1.89',
                             }
 
 testPlayNowBet1 = PlayNowBet(['', '', '', ''])
 testPlayNowBet1.teams = {'home': 'Utah Jazz',
                          'away': 'Toronto Raptors',
                         }
-
 
 testPlayNowBet1.spread = {'homeSpread' : '+9.0',
                           'homeSpreadOdds' : '1.90',
@@ -44,11 +63,31 @@ testPlayNowBet1.overUnder = {'over': '231.0',
                              'underOdds': '1.75',
                             }
 
+testPlayNowBet2 = PlayNowBet(['', '', '', ''])
+testPlayNowBet2.teams = {'home': 'Brooklyn Nets',
+                        'away': 'Miami Heat',
+                        }
+
+testPlayNowBet2.spread = {'homeSpread' : '+18.5',
+                         'homeSpreadOdds' : '1.90', 
+                         'awaySpread' : '-18.5',
+                         'awaySpreadOdds' : '1.90',
+                         }
+
+testPlayNowBet2.moneyLine = {'homeMoneyLine' : '1.20',
+                            'awayMoneyLine' : '15.67',
+                            }
+
+testPlayNowBet2.overUnder = {'over': '247.0',
+                            'overOdds': '2.01',
+                            'under': '247.0',
+                            'underOdds': '1.98',
+                            }
+
 testSportsIntBet1 = SportsInteractionBet(['', '', '', ''])
 testSportsIntBet1.teams = {'home': 'Utah Jazz',
                            'away': 'Toronto Raptors',
                           }
-
 
 testSportsIntBet1.spread = {'homeSpread' : '+9.5',
                            'homeSpreadOdds' : '1.90',
@@ -66,4 +105,30 @@ testSportsIntBet1.overUnder = {'over': '233.0',
                              'underOdds': '1.85',
                             }
 
-listOfBets = [testBet365Bet1, testPlayNowBet1, testSportsIntBet1]
+testSportsIntBet2 = Bet365Bet(['', '', '', ''])
+testSportsIntBet2.teams = {'home': 'Brooklyn Nets',
+                            'away': 'Miami Heat',
+                        }
+
+testSportsIntBet2.spread = {'homeSpread' : '+21.5',
+                         'homeSpreadOdds' : '1.90', 
+                         'awaySpread' : '-21.5',
+                         'awaySpreadOdds' : '1.90',
+                         }
+
+testSportsIntBet2.moneyLine = {'homeMoneyLine' : '1.15',
+                            'awayMoneyLine' : '17.67',
+                            }
+
+testSportsIntBet2.overUnder = {'over': '217.0',
+                            'overOdds': '1.98',
+                            'under': '217.0',
+                            'underOdds': '2.08',
+                            }
+
+allBets = AllBets()
+allBets.add_bets([testPlayNowBet1, testPlayNowBet2])
+allBets.add_bets([testSportsIntBet1, testSportsIntBet2])
+allBets.add_bets([testBet365Bet1, testBet365Bet2])
+
+games = allBets.games
