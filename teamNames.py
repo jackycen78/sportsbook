@@ -31,6 +31,7 @@ bet365NameChanges = {'BOS Celtics' : 'Boston Celtics',
                      }
 
 sportsInteractionNameChanges = {'LA Lakers': 'Los Angeles Lakers',
+                                'LA Clippers': 'Los Angeles Clippers',
                                 'Oklahoma City': 'Oklahoma City Thunder',
                                 }
 

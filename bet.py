@@ -1,6 +1,18 @@
 from dataparser import *
 from teamNames import teams, cities
 
+def decimalToAmerican(odds):
+    try:
+        odds = float(odds)
+        if odds >= 2:
+            odds = int((odds - 1) * 100)
+            return f'+{odds}'
+        odds = int(-100 / (odds - 1))
+        return str(odds)
+    except:
+        return ''
+
+
 class Bet:
 
     def __init__(self):
@@ -26,6 +38,14 @@ class Bet:
                           'underOdds': None,
                           }
 
+    def changeToAmerican(self):
+        self.spread['homeSpreadOdds'] = decimalToAmerican(self.spread['homeSpreadOdds'])
+        self.spread['awaySpreadOdds'] = decimalToAmerican(self.spread['awaySpreadOdds'])
+        self.moneyLine['homeMoneyLine'] = decimalToAmerican(self.moneyLine['homeMoneyLine'])
+        self.moneyLine['awayMoneyLine'] = decimalToAmerican(self.moneyLine['awayMoneyLine'])
+        self.overUnder['overOdds'] = decimalToAmerican(self.overUnder['overOdds'])
+        self.overUnder['underOdds'] = decimalToAmerican(self.overUnder['underOdds'])
+
     def get_spread(self):
         return self.spread
 
@@ -50,7 +70,13 @@ class Bet:
     def get_book(self):
         return self.books
 
-
+    def __str__(self) -> str:
+        return \
+               f'''Book: {self.book["name"]} \n 
+                   Home Team: {self.teams["home"]}\n 
+                   Away Team: {self.teams["away"]} \n 
+                '''
+                
 class PlayNowBet(Bet):
 
     def __init__(self, data):
@@ -58,15 +84,12 @@ class PlayNowBet(Bet):
         self.book['name'] = 'Play Now'
         self.teams, self.spread, self.moneyLine, self.overUnder = PlayNowParser(data)
 
-
 class SportsInteractionBet(Bet):
 
     def __init__(self, data):
         super().__init__()
         self.book['name'] = 'Sports Interaction'
         self.teams, self.spread, self.moneyLine, self.overUnder = SportsInteractionParser(data)
-
-
 
 class Bet365Bet(Bet):
 

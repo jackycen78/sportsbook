@@ -1,6 +1,11 @@
 from bet import * 
 import time
 
+def checkAmericanOdds(odds):
+    if odds.startswith('+') or odds.startswith('-'):
+        return True
+    return False
+
 def getPlayNowBets(site):
 
     playNowURL = 'https://www.playnow.com/sports/sport/9/basketball/matches?preselectedFilters=49'
@@ -22,9 +27,9 @@ def getPlayNowBets(site):
 
 
     bets = site.find_class(childClassName=nbaClass,
-                           parent=site.find_class(tmrClass)[0])
-    #bets += site.find_class(childClassName=nbaClass,
-    #                       parent=site.find_class(todayClass)[0])
+                           parent=site.find_class(liveClass)[0])
+    bets += site.find_class(childClassName=nbaClass,
+                           parent=site.find_class(todayClass)[0])
     betsList = []
 
     for bet in bets:
@@ -32,10 +37,12 @@ def getPlayNowBets(site):
         spreads = site.find_class(spreadClass, bet)[0]
         moneyLines = site.find_class(moneyLineClass, bet)[0]
         overUnders = site.find_class(overUnderClass, bet)[0]
-        betsList.append(PlayNowBet([teams, 
-                                    spreads, 
-                                    moneyLines, 
-                                    overUnders]))
+        newBet = PlayNowBet([teams, 
+                             spreads, 
+                             moneyLines, 
+                             overUnders])
+        newBet.changeToAmerican()
+        betsList.append(newBet)
     return betsList
 
 def getSportsInteractionBets(site):
@@ -55,10 +62,11 @@ def getSportsInteractionBets(site):
     for bet in bets:
         teams = site.find_class(teamClass, bet) 
         spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
-        betsList.append(SportsInteractionBet([teams[0], 
-                                              spreads, 
-                                              moneylines, 
-                                              overUnders]))
+        newBet = SportsInteractionBet([teams[0], 
+                                       spreads, 
+                                       moneylines, 
+                                       overUnders])
+        betsList.append(newBet)
     return betsList
 
 
