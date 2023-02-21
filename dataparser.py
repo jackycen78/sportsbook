@@ -19,6 +19,10 @@ def zipData(teams, spreads, moneyLines, overUnders):
             dict(zip(overUnderNames, overUnders)), \
            ]       
 
+def flatten(lst):
+    return [item for sublist in lst for item in sublist]
+
+
 
 def PlayNowParser(data):
 
@@ -77,9 +81,6 @@ def SportsInteractionParser(data):
     return zipData(teams, spreads, moneyLines, overUnders)
 
 
-def flatten(lst):
-    return [item for sublist in lst for item in sublist]
-
 def Bet365Parser(data):
 
     teamsData, spreadsData, moneyLinesData, overUndersData = data
@@ -100,5 +101,13 @@ def Bet365Parser(data):
         overUnders[2] = overUnders[2][2:]
 
     return zipData(teams, spreads, moneyLines, overUnders)
+
+
+def PinnacleParser(data):
+    
+    teamsData, spreadsData, moneyLinesData, overUndersData = data
+    teams, spreads, moneyLines, overUnders = emptyLists
     
 
+
+    return zipData(teams, spreads, moneyLines, overUnders)

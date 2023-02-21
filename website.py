@@ -40,6 +40,18 @@ class Website:
             )
         except TimeoutException:
             return [None]
+        
+    def class_exists(self, className, parent=None, waitSeconds=2): 
+        if not parent:
+            parent = self.driver
+        try: 
+            WebDriverWait(parent, waitSeconds).until(
+                EC.presence_of_all_elements_located((By.CLASS_NAME, className))
+            )
+            return True
+        except TimeoutException:
+            return False
+
 
     def click(self, location, waitSeconds=2, sleepTime=0):        
         self.locate(location, waitSeconds).click()

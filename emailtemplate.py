@@ -1,5 +1,5 @@
 from datatohtml import getMoneyLineHTML, getSpreadHTML, getOverUnderHTML, getCellHTML
-from main import games
+from test import games
 #from test import games
 
 template = """
@@ -29,6 +29,7 @@ template = """
                             {col2}
                             {col3}
                             {col4}
+                            {col5}
                         </tr>
                         {moneyLines}
                     </table>
@@ -48,6 +49,7 @@ template = """
                             {col2}
                             {col3}
                             {col4}
+                            {col5}
                         </tr>
                         {spreads}
                     </table>
@@ -67,6 +69,7 @@ template = """
                             {col2}
                             {col3}
                             {col4}
+                            {col5}
                         </tr>
                         {overUnders}
                     </table>
@@ -75,8 +78,9 @@ template = """
             </html>
             """.format(col1 = getCellHTML('Game'),
                        col2 = getCellHTML('PlayNow'),
-                       col3 = getCellHTML('Sports Interaction'),
+                       col3 = getCellHTML('Sports Interact'),
                        col4 = getCellHTML('Bet365'),
+                       col5 = getCellHTML('Pinnacle'),
                        moneyLines = getMoneyLineHTML(games),
                        spreads = getSpreadHTML(games),
                        overUnders = getOverUnderHTML(games),

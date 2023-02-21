@@ -1,7 +1,7 @@
 def getMoneyLineHTML(games):
     outputStr = ''
     for team in games:
-        if len(games[team]) == 3:
+        if len(games[team]) == 4:
                 curTeam = games[team][0]
                 outputStr += '<tr> \n'
                 outputStr += getCellHTML([curTeam.get_away_city(), 'at', curTeam.get_home_city()])
@@ -19,7 +19,7 @@ def getMoneyLineHTML(games):
 def getSpreadHTML(games):
     outputStr = ''
     for team in games:
-        if len(games[team]) == 3:
+        if len(games[team]) == 4:
                 curTeam = games[team][0]
                 outputStr += '<tr> \n'
                 outputStr += getCellHTML([curTeam.get_away_city(), 'at', curTeam.get_home_city()])
@@ -36,7 +36,7 @@ def getSpreadHTML(games):
 def getOverUnderHTML(games):
     outputStr = ''
     for team in games:
-        if len(games[team]) == 3:
+        if len(games[team]) == 4:
                 curTeam = games[team][0]
                 outputStr += '<tr> \n'
                 outputStr += getCellHTML([curTeam.get_away_city(), 'at', curTeam.get_home_city()])
@@ -54,7 +54,7 @@ def getCellHTML(text):
         return f'''
                 <td style="border-radius: 4px;
                         text-align: center;
-                        width: 25%;
+                        width: 20%;
                         "> 
                         {text}
                 </td>
@@ -64,7 +64,7 @@ def getCellHTML(text):
         outputStr =  '''
                         <td style="border-radius: 4px;
                                    text-align: center;
-                                   width: 25%;
+                                   width: 20%;
                                    "> 
                      '''
         for t in text:

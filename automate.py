@@ -24,12 +24,21 @@ def getPlayNowBets(site):
 
     site.go_to(playNowURL, sleepTime=2)
     site.click_by_class(showMoreClass, sleepTime=1)
+    bets = []
 
-
-    bets = site.find_class(childClassName=nbaClass,
-                           parent=site.find_class(liveClass)[0])
-    bets += site.find_class(childClassName=nbaClass,
-                           parent=site.find_class(todayClass)[0])
+    if site.class_exists(todayClass):
+        bets += site.find_class(childClassName=nbaClass,
+                            parent=site.find_class(todayClass)[0])
+    if site.class_exists(nextToGoClass):
+        bets = site.find_class(childClassName=nbaClass,
+                            parent=site.find_class(nextToGoClass)[0])
+    if site.class_exists(liveClass):
+        bets = site.find_class(childClassName=nbaClass,
+                            parent=site.find_class(liveClass)[0])
+    if site.class_exists(tmrClass):
+        bets = site.find_class(childClassName=nbaClass,
+                            parent=site.find_class(tmrClass)[0])
+        
     betsList = []
 
     for bet in bets:
@@ -97,3 +106,7 @@ def getBet365Bets(site):
 
     return betsList
 
+
+def getPinnacleBets(site):
+
+    pass

@@ -126,9 +126,52 @@ testSportsIntBet2.overUnder = {'over': '217.0',
                             'underOdds': '2.08',
                             }
 
+testPinnacleBet1 = PinnacleBet(['', '', '', ''])
+testPinnacleBet1.teams = {'home': 'Utah Jazz',
+                           'away': 'Toronto Raptors',
+                          }
+
+testPinnacleBet1.spread = {'homeSpread' : '+9.5',
+                           'homeSpreadOdds' : '1.90',
+                           'awaySpread' : '-9.5',
+                           'awaySpreadOdds' : '1.90',
+                          }
+
+testPinnacleBet1.moneyLine = {'homeMoneyLine' : '1.66',
+                             'awayMoneyLine' : '2.52',
+                            }
+
+testPinnacleBet1.overUnder = {'over': '233.0',
+                             'overOdds': '2.01',
+                             'under': '233.0',
+                             'underOdds': '1.85',
+                            }
+
+testPinnacleBet2 = PinnacleBet(['', '', '', ''])
+testPinnacleBet2.teams = {'home': 'Brooklyn Nets',
+                            'away': 'Miami Heat',
+                        }
+
+testPinnacleBet2.spread = {'homeSpread' : '+21.5',
+                         'homeSpreadOdds' : '1.90', 
+                         'awaySpread' : '-21.5',
+                         'awaySpreadOdds' : '1.90',
+                         }
+
+testPinnacleBet2.moneyLine = {'homeMoneyLine' : '1.15',
+                            'awayMoneyLine' : '17.67',
+                            }
+
+testPinnacleBet2.overUnder = {'over': '217.0',
+                            'overOdds': '1.98',
+                            'under': '217.0',
+                            'underOdds': '2.08',
+                            }
+
 allBets = AllBets()
 allBets.add_bets([testPlayNowBet1, testPlayNowBet2])
 allBets.add_bets([testSportsIntBet1, testSportsIntBet2])
 allBets.add_bets([testBet365Bet1, testBet365Bet2])
+allBets.add_bets([testPinnacleBet1, testPinnacleBet2])
 
 games = allBets.games

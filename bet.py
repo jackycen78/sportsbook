@@ -99,6 +99,13 @@ class Bet365Bet(Bet):
         self.teams, self.spread, self.moneyLine, self.overUnder = Bet365Parser(data)
 
 
+class PinnacleBet(Bet):
+
+    def __init__(self, data):
+        super().__init__()
+        self.book['name'] = 'Pinnacle'
+        self.teams, self.spread, self.moneyLine, self.overUnder = PinnacleParser(data)
+
 
 
 
