@@ -10,6 +10,8 @@ def decimalToAmerican(odds):
         odds = int(-100 / (odds - 1))
         return str(odds)
     except:
+        if odds:
+            return odds
         return ''
 
 

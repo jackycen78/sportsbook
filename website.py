@@ -19,7 +19,7 @@ class Website:
         self.driver.set_window_size(1720, 1329)
         self.driver.set_window_position(0, 0)
 
-    def go_to(self, website, sleepTime=0):
+    def go_to(self, website, sleepTime=1):
         self.driver.get(website)
         time.sleep(sleepTime)
 

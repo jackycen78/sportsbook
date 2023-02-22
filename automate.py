@@ -86,7 +86,7 @@ def getBet365Bets(site):
     betTypesClass = 'gl-Participant_General'
     teamsClass = 'scb-ParticipantFixtureDetailsHigherBasketball_TeamNames'
 
-    site.go_to(bet365URL, sleepTime=1)
+    site.go_to(bet365URL)
     betsList = []
 
     teams = site.find_class(teamsClass)
@@ -109,4 +109,24 @@ def getBet365Bets(site):
 
 def getPinnacleBets(site):
 
-    pass
+    pinnacleURL = 'https://www.pinnacle.com/en/basketball/nba/matchups#period:0'
+
+    betsClass = 'style_row__3q4g_'
+    teamClass = 'style_matchupMetadata__Ey_nj'
+    betTypesClass = 'style_buttons__XEQem'
+
+    site.go_to(pinnacleURL)
+    betsList = []
+
+    bets = site.find_class(betsClass)
+
+    for bet in bets:
+        teams = site.find_class(teamClass, bet) 
+        spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
+        newBet = PinnacleBet([teams[0], 
+                              spreads, 
+                              moneylines, 
+                              overUnders])
+        betsList.append(newBet)
+
+    return betsList

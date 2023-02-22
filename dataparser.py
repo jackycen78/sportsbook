@@ -107,7 +107,20 @@ def PinnacleParser(data):
     
     teamsData, spreadsData, moneyLinesData, overUndersData = data
     teams, spreads, moneyLines, overUnders = emptyLists
-    
 
+    if teamsData:
+        awayTeam, homeTeam, gameTime = teamsData.text.split('\n')
+        teams = [awayTeam,
+                 homeTeam,
+                ]
+
+    if spreadsData:
+        spreads = spreadsData.text.split('\n')
+
+    if moneyLinesData:
+        moneyLines = moneyLinesData.text.split('\n')
+
+    if overUndersData:
+        overUnders = overUndersData.text.split('\n')
 
     return zipData(teams, spreads, moneyLines, overUnders)
