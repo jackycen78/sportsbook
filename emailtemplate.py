@@ -1,5 +1,5 @@
 from datatohtml import getMoneyLineHTML, getSpreadHTML, getOverUnderHTML, getCellHTML
-from test import games
+from main import games
 #from test import games
 
 template = """

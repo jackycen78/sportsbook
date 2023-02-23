@@ -23,7 +23,6 @@ def flatten(lst):
     return [item for sublist in lst for item in sublist]
 
 
-
 def PlayNowParser(data):
 
     teamsData, spreadsData, moneyLinesData, overUndersData = data
@@ -122,5 +121,7 @@ def PinnacleParser(data):
 
     if overUndersData:
         overUnders = overUndersData.text.split('\n')
+
+    print(zipData(teams, spreads, moneyLines, overUnders))
 
     return zipData(teams, spreads, moneyLines, overUnders)

@@ -75,6 +75,7 @@ def getSportsInteractionBets(site):
                                        spreads, 
                                        moneylines, 
                                        overUnders])
+        newBet.changeToAmerican()
         betsList.append(newBet)
     return betsList
 
@@ -118,7 +119,7 @@ def getPinnacleBets(site):
     site.go_to(pinnacleURL)
     betsList = []
 
-    bets = site.find_class(betsClass)
+    bets = site.find_class(betsClass)[1:]
 
     for bet in bets:
         teams = site.find_class(teamClass, bet) 
@@ -127,6 +128,7 @@ def getPinnacleBets(site):
                               spreads, 
                               moneylines, 
                               overUnders])
+        newBet.changeToAmerican()
         betsList.append(newBet)
 
     return betsList

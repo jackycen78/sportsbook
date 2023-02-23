@@ -76,7 +76,7 @@ class Bet:
         return \
                f'''Book: {self.book["name"]} \n 
                    Home Team: {self.teams["home"]}\n 
-                   Away Team: {self.teams["away"]} \n 
+                   Away Team: {self.teams["away"]} \n
                 '''
                 
 class PlayNowBet(Bet):
