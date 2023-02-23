@@ -2,6 +2,9 @@ from dataparser import *
 from teamNames import teams, cities
 
 def decimalToAmerican(odds):
+    if odds.startswith('+') or odds.startswith('-'):
+        return odds
+    
     try:
         odds = float(odds)
         if odds >= 2:
@@ -10,8 +13,6 @@ def decimalToAmerican(odds):
         odds = int(-100 / (odds - 1))
         return str(odds)
     except:
-        if odds:
-            return odds
         return ''
 
 
