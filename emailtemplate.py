@@ -1,6 +1,8 @@
-from datatohtml import *
-from main import games
-#from test import games
+from tables import *
+#from main import games
+from test import games
+
+columns = ['Game', 'PlayNow', 'Sports Interact', 'Bet365', 'Pinnacle']
 
 template = """
             <!DOCTYPE html>
@@ -18,9 +20,15 @@ template = """
                     {overUnders}
                 </body>
             </html>
-            """.format(moneyLines = getTableHTML('Money Lines', getMoneyLineHTML(games)),
-                       spreads = getTableHTML('Spreads', getSpreadHTML(games)),
-                       overUnders = getTableHTML('Over Unders', getOverUnderHTML(games))
+            """.format(moneyLines = getTableHTML(titleName='Money Lines', 
+                                                 columnNames=columns,
+                                                 dataRows=getGamesHTML(games, moneyLineFormat)),
+                       spreads = getTableHTML(titleName='Spreads', 
+                                                 columnNames=columns,
+                                                 dataRows=getGamesHTML(games, spreadFormat)),
+                       overUnders = getTableHTML(titleName='Over Unders', 
+                                                 columnNames=columns,
+                                                 dataRows=getGamesHTML(games, overUnderFormat)),
                        )
 
 
