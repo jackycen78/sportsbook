@@ -1,4 +1,4 @@
-from tables import *
+from templates.tables import *
 #from main import games
 from test import games
 
