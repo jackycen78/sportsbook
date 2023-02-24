@@ -27,16 +27,16 @@ def getPlayNowBets(site):
     bets = []
 
     if site.class_exists(todayClass):
-        bets += site.find_class(childClassName=nbaClass,
+        bets += site.find_class(className=nbaClass,
                             parent=site.find_class(todayClass)[0])
     if site.class_exists(nextToGoClass):
-        bets = site.find_class(childClassName=nbaClass,
+        bets = site.find_class(className=nbaClass,
                             parent=site.find_class(nextToGoClass)[0])
     if site.class_exists(liveClass):
-        bets = site.find_class(childClassName=nbaClass,
+        bets = site.find_class(className=nbaClass,
                             parent=site.find_class(liveClass)[0])
     #if site.class_exists(tmrClass):
-    #    bets = site.find_class(childClassName=nbaClass,
+    #    bets = site.find_class(className=nbaClass,
     #                        parent=site.find_class(tmrClass)[0])
         
     betsList = []

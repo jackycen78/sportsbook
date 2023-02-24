@@ -51,7 +51,7 @@ class Website:
         time.sleep(sleepTime)
 
     def click_by_class(self, className, parent=None, waitSeconds=2, sleepTime=0):
-        buttons = self.find_class(className, parent, waitSeconds, sleepTime)
+        buttons = self.find_class(className, parent, waitSeconds)
         if buttons != [None]:
             for b in buttons:
                 b.click()
