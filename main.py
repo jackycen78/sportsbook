@@ -10,4 +10,6 @@ allBets.add_bets(getSportsInteractionBets(site))
 allBets.add_bets(getBet365Bets(site))
 allBets.add_bets(getPinnacleBets(site))
 
+allBets.print_bets()
+
 games = allBets.games

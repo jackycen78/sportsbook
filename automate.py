@@ -35,9 +35,9 @@ def getPlayNowBets(site):
     if site.class_exists(liveClass):
         bets = site.find_class(childClassName=nbaClass,
                             parent=site.find_class(liveClass)[0])
-    if site.class_exists(tmrClass):
-        bets = site.find_class(childClassName=nbaClass,
-                            parent=site.find_class(tmrClass)[0])
+    #if site.class_exists(tmrClass):
+    #    bets = site.find_class(childClassName=nbaClass,
+    #                        parent=site.find_class(tmrClass)[0])
         
     betsList = []
 
