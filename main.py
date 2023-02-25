@@ -2,7 +2,7 @@ from utils.automate import *
 from utils.website import Website
 from utils.sendEmail import sendEmail
 
-from utils.allbets import AllBets
+from models.allbets import AllBets
 from templates.tables import *
 from templates.email import *
 from test import games

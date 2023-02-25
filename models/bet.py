@@ -1,6 +1,6 @@
-from .dataparser import *
-from .teamNames import teams, cities
-from .helper import decimalToAmerican
+from utils.dataparser import *
+from utils.teamNames import teams, cities
+from utils.helper import decimalToAmerican
 
 class Bet:
 

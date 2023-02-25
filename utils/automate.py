@@ -1,4 +1,4 @@
-from .bet import * 
+from models.bet import * 
 
 def checkAmericanOdds(odds):
     if odds.startswith('+') or odds.startswith('-'):
