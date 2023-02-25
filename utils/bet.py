@@ -7,8 +7,8 @@ class Bet:
     def __init__(self):
         self.time = None
         self.book = {'name': None}
-        self.teams = {'homeCity': None,
-                      'awayCity': None,                      
+        self.teams = {'home': None,
+                      'away': None,                      
                      }
 
         self.spread = {'homeSpread' : None,
