@@ -1,35 +1,23 @@
-from templates.tables import *
-#from main import games
-from test import games
+def getEmailHTML(tables):
+    outputStr = '''
+                <!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Document</title>
+                    </head>
+                    <body>
 
-columns = ['Game', 'PlayNow', 'Sports Interact', 'Bet365', 'Pinnacle']
+                '''
+    for table in tables:
+        outputStr += f'{table} \n'
 
-template = """
-            <!DOCTYPE html>
-            <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Document</title>
-                </head>
+    outputStr += '''
 
-                <body>
-                    {moneyLines}
-                    {spreads}
-                    {overUnders}
-                </body>
-            </html>
-            """.format(moneyLines = getTableHTML(titleName='Money Lines', 
-                                                 columnNames=columns,
-                                                 dataRows=getGamesHTML(games, moneyLineFormat)),
-                       spreads = getTableHTML(titleName='Spreads', 
-                                                 columnNames=columns,
-                                                 dataRows=getGamesHTML(games, spreadFormat)),
-                       overUnders = getTableHTML(titleName='Over Unders', 
-                                                 columnNames=columns,
-                                                 dataRows=getGamesHTML(games, overUnderFormat)),
-                       )
-
-
+                    </body>
+                 </html>
+                 '''
+    return outputStr
 

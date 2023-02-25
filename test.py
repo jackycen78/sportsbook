@@ -1,5 +1,5 @@
-from bet import *
-from allbets import AllBets
+from utils.bet import *
+from utils.allbets import AllBets
 
 testBet365Bet1 = Bet365Bet(['', '', '', ''])
 testBet365Bet1.teams = {'home': 'Utah Jazz',

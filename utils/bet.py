@@ -1,28 +1,14 @@
-from dataparser import *
-from teamNames import teams, cities
-
-def decimalToAmerican(odds):
-    if odds.startswith('+') or odds.startswith('-'):
-        return odds
-    
-    try:
-        odds = float(odds)
-        if odds >= 2:
-            odds = int((odds - 1) * 100)
-            return f'+{odds}'
-        odds = int(-100 / (odds - 1))
-        return str(odds)
-    except:
-        return ''
-
+from .dataparser import *
+from .teamNames import teams, cities
+from .helper import decimalToAmerican
 
 class Bet:
 
     def __init__(self):
         self.time = None
         self.book = {'name': None}
-        self.teams = {'home': None,
-                      'away': None,
+        self.teams = {'homeCity': None,
+                      'awayCity': None,                      
                      }
 
         self.spread = {'homeSpread' : None,

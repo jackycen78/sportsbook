@@ -1,27 +1,11 @@
-from teamNames import bet365NameChanges, sportsInteractionNameChanges
-
-teamNames = ['away', 'home']
-spreadNames = ['awaySpread', 'awaySpreadOdds', 'homeSpread', 'homeSpreadOdds']
-overUnderNames = ['over', 'overOdds', 'under', 'underOdds']
-moneyLineNames = ['awayMoneyLine', 'homeMoneyLine']
+from .teamNames import bet365NameChanges, sportsInteractionNameChanges
+from .helper import zipData, flatten
 
 emptyLists = [['', ''],
               ['', '', '', ''],
               ['', ''],
               ['', '', '', ''],
              ]
-
-def zipData(teams, spreads, moneyLines, overUnders):
-
-    return [dict(zip(teamNames, teams)), \
-            dict(zip(spreadNames, spreads)), \
-            dict(zip(moneyLineNames, moneyLines)), \
-            dict(zip(overUnderNames, overUnders)), \
-           ]       
-
-def flatten(lst):
-    return [item for sublist in lst for item in sublist]
-
 
 def PlayNowParser(data):
 

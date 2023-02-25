@@ -1,5 +1,4 @@
-from bet import * 
-import time
+from .bet import * 
 
 def checkAmericanOdds(odds):
     if odds.startswith('+') or odds.startswith('-'):
