@@ -1,20 +1,16 @@
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from info import sender
-from datetime import datetime
 
-def sendEmail(content):
+def sendEmail(senderInfo, senderName, receiverAddress, subject, content):
     
-    senderAddress = sender['userEmail']
-    senderPass = sender['password']
-    receiverAddress = 'jackycen78@gmail.com'
-
-    curDate = datetime.now().strftime("%B %d")
+    senderAddress = senderInfo['userEmail']
+    senderPass = senderInfo['password']
+    
     message = MIMEMultipart()
-    message['From'] = 'Betting Odds'
+    message['From'] = senderName
     message['To'] = receiverAddress
-    message['Subject'] = f'NBA Odds {curDate}'
+    message['Subject'] = subject
     message.attach(MIMEText(content, "html"))
 
     session = smtplib.SMTP('smtp.gmail.com', 587) 

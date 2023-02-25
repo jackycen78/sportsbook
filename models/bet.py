@@ -1,5 +1,5 @@
 from utils.dataparser import *
-from utils.teamNames import teams, cities
+from utils.teamnames import teams, cities
 from utils.helper import decimalToAmerican
 
 class Bet:
