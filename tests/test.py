@@ -1,7 +1,7 @@
-from models.bet import *
+from models.gamebet import *
 from models.allbets import AllBets
 
-testBet365Bet1 = Bet365Bet(['', '', '', ''])
+testBet365Bet1 = Bet365GameBet(['', '', '', ''])
 testBet365Bet1.teams = {'home': 'Utah Jazz',
                         'away': 'Toronto Raptors',
                         }
@@ -21,7 +21,7 @@ testBet365Bet1.overUnder = {'over': '250.0',
                             'underOdds': '1.89',
                             }
 
-testBet365Bet2 = Bet365Bet(['', '', '', ''])
+testBet365Bet2 = Bet365GameBet(['', '', '', ''])
 testBet365Bet2.teams = {'home': 'Brooklyn Nets',
                         'away': 'Miami Heat',
                         }
@@ -42,7 +42,7 @@ testBet365Bet2.overUnder = {'over': '250.0',
                             'underOdds': '1.89',
                             }
 
-testPlayNowBet1 = PlayNowBet(['', '', '', ''])
+testPlayNowBet1 = PlayNowGameBet(['', '', '', ''])
 testPlayNowBet1.teams = {'home': 'Utah Jazz',
                          'away': 'Toronto Raptors',
                         }
@@ -63,7 +63,7 @@ testPlayNowBet1.overUnder = {'over': '231.0',
                              'underOdds': '1.75',
                             }
 
-testPlayNowBet2 = PlayNowBet(['', '', '', ''])
+testPlayNowBet2 = PlayNowGameBet(['', '', '', ''])
 testPlayNowBet2.teams = {'home': 'Brooklyn Nets',
                         'away': 'Miami Heat',
                         }
@@ -84,7 +84,7 @@ testPlayNowBet2.overUnder = {'over': '247.0',
                             'underOdds': '1.98',
                             }
 
-testSportsIntBet1 = SportsInteractionBet(['', '', '', ''])
+testSportsIntBet1 = SportsInteractionGameBet(['', '', '', ''])
 testSportsIntBet1.teams = {'home': 'Utah Jazz',
                            'away': 'Toronto Raptors',
                           }
@@ -105,7 +105,7 @@ testSportsIntBet1.overUnder = {'over': '233.0',
                              'underOdds': '1.85',
                             }
 
-testSportsIntBet2 = Bet365Bet(['', '', '', ''])
+testSportsIntBet2 = Bet365GameBet(['', '', '', ''])
 testSportsIntBet2.teams = {'home': 'Brooklyn Nets',
                             'away': 'Miami Heat',
                         }
@@ -126,7 +126,7 @@ testSportsIntBet2.overUnder = {'over': '217.0',
                             'underOdds': '2.08',
                             }
 
-testPinnacleBet1 = PinnacleBet(['', '', '', ''])
+testPinnacleBet1 = PinnacleGameBet(['', '', '', ''])
 testPinnacleBet1.teams = {'home': 'Utah Jazz',
                            'away': 'Toronto Raptors',
                           }
@@ -147,7 +147,7 @@ testPinnacleBet1.overUnder = {'over': '233.0',
                              'underOdds': '1.85',
                             }
 
-testPinnacleBet2 = PinnacleBet(['', '', '', ''])
+testPinnacleBet2 = PinnacleGameBet(['', '', '', ''])
 testPinnacleBet2.teams = {'home': 'Brooklyn Nets',
                             'away': 'Miami Heat',
                         }

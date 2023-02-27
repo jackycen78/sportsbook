@@ -14,7 +14,7 @@ def getGamePropsContent():
         contentHTML = getTableHTML(betType=prop, 
                                    columnNames=COLUMNS,
                                    dataRows=getGamesHTML(games, prop)
-                                    )
+                     )
         content.append(contentHTML)
     
     return getEmailHTML(content)

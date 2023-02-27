@@ -1,10 +1,9 @@
-from models.bet import * 
+from models.gamebet import * 
 from models.allbets import AllBets
 from utils.website import Website
-from utils.helper import checkAmericanOdds
 
 
-def getPlayNowBets(site):
+def getPlayNowGameBets(site):
 
     playNowURL = 'https://www.playnow.com/sports/sport/9/basketball/matches?preselectedFilters=49'
     showMoreClass = 'content-loader__load-more-link'
@@ -33,9 +32,6 @@ def getPlayNowBets(site):
     if site.class_exists(liveClass):
         bets = site.find_class(className=nbaClass,
                             parent=site.find_class(liveClass)[0])
-    #if site.class_exists(tmrClass):
-    #    bets = site.find_class(className=nbaClass,
-    #                        parent=site.find_class(tmrClass)[0])
         
     betsList = []
 
@@ -44,7 +40,7 @@ def getPlayNowBets(site):
         spreads = site.find_class(spreadClass, bet)[0]
         moneyLines = site.find_class(moneyLineClass, bet)[0]
         overUnders = site.find_class(overUnderClass, bet)[0]
-        newBet = PlayNowBet([teams, 
+        newBet = PlayNowGameBet([teams, 
                              spreads, 
                              moneyLines, 
                              overUnders])
@@ -52,7 +48,7 @@ def getPlayNowBets(site):
         betsList.append(newBet)
     return betsList
 
-def getSportsInteractionBets(site):
+def getSportsInteractionGameBets(site):
 
     sportsInteractionURL = 'https://www.sportsinteraction.com/basketball/nba-betting-lines/'
     nbaClass = 'Game--mainMarkets'
@@ -69,7 +65,7 @@ def getSportsInteractionBets(site):
     for bet in bets:
         teams = site.find_class(teamClass, bet) 
         spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
-        newBet = SportsInteractionBet([teams[0], 
+        newBet = SportsInteractionGameBet([teams[0], 
                                        spreads, 
                                        moneylines, 
                                        overUnders])
@@ -78,7 +74,7 @@ def getSportsInteractionBets(site):
     return betsList
 
 
-def getBet365Bets(site):
+def getBet365GameBets(site):
 
     bet365URL = 'https://www.bet365.com/#/AC/B18/C20604387/D48/E1453/F10/'
 
@@ -97,7 +93,7 @@ def getBet365Bets(site):
     moneyLines = betTypes[numTeams * 4:]
     
     for i in range(numTeams):
-        betsList.append(Bet365Bet([teams[i], 
+        betsList.append(Bet365GameBet([teams[i], 
                                    spreads[i * 2: (i + 1) * 2], 
                                    moneyLines[i * 2: (i + 1) * 2], 
                                    overUnders[i * 2: (i + 1) * 2], 
@@ -106,7 +102,7 @@ def getBet365Bets(site):
     return betsList
 
 
-def getPinnacleBets(site):
+def getPinnacleGameBets(site):
 
     pinnacleURL = 'https://www.pinnacle.com/en/basketball/nba/matchups#period:0'
 
@@ -122,7 +118,7 @@ def getPinnacleBets(site):
     for bet in bets:
         teams = site.find_class(teamClass, bet) 
         spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
-        newBet = PinnacleBet([teams[0], 
+        newBet = PinnacleGameBet([teams[0], 
                               spreads, 
                               moneylines, 
                               overUnders])
@@ -136,10 +132,10 @@ def getGameProps():
     site = Website()
     allBets = AllBets()
 
-    allBets.add_bets(getPlayNowBets(site))
-    allBets.add_bets(getSportsInteractionBets(site))
-    allBets.add_bets(getBet365Bets(site))
-    allBets.add_bets(getPinnacleBets(site))
+    allBets.add_bets(getPlayNowGameBets(site))
+    allBets.add_bets(getSportsInteractionGameBets(site))
+    allBets.add_bets(getBet365GameBets(site))
+    allBets.add_bets(getPinnacleGameBets(site))
 
     allBets.print_bets()
 
