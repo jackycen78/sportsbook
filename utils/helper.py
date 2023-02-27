@@ -26,3 +26,8 @@ def zipData(teams, spreads, moneyLines, overUnders):
 
 def flatten(lst):
     return [item for sublist in lst for item in sublist]
+
+def checkAmericanOdds(odds):
+    if odds.startswith('+') or odds.startswith('-'):
+        return True
+    return False

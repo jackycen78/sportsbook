@@ -6,7 +6,7 @@ from tests.test import games
 
 def getGamePropsContent():
 
-    #games = getGameProps()
+    games = getGameProps()
     columns = ['Game', 'PlayNow', 'Sports Interact', 'Bet365', 'Pinnacle']
 
     moneyLinesTable = getTableHTML(titleName='Money Lines', 

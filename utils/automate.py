@@ -1,11 +1,8 @@
 from models.bet import * 
 from models.allbets import AllBets
 from utils.website import Website
+from utils.helper import checkAmericanOdds
 
-def checkAmericanOdds(odds):
-    if odds.startswith('+') or odds.startswith('-'):
-        return True
-    return False
 
 def getPlayNowBets(site):
 
@@ -117,7 +114,7 @@ def getPinnacleBets(site):
     teamClass = 'style_matchupMetadata__Ey_nj'
     betTypesClass = 'style_buttons__XEQem'
 
-    site.go_to(pinnacleURL)
+    site.go_to(pinnacleURL, sleepTime=2)
     betsList = []
 
     bets = site.find_class(betsClass)[1:]
@@ -143,5 +140,7 @@ def getGameProps():
     allBets.add_bets(getSportsInteractionBets(site))
     allBets.add_bets(getBet365Bets(site))
     allBets.add_bets(getPinnacleBets(site))
+
+    allBets.print_bets()
 
     return allBets.games
