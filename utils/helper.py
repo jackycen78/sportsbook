@@ -1,3 +1,5 @@
+from datetime import datetime
+
 def decimalToAmerican(odds):
     if odds.startswith('+') or odds.startswith('-'):
         return odds
@@ -31,3 +33,6 @@ def checkAmericanOdds(odds):
     if odds.startswith('+') or odds.startswith('-'):
         return True
     return False
+
+def getDate():
+    return f'datetime.now().strftime("%B %d")'

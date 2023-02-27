@@ -41,12 +41,12 @@ class Website:
         except TimeoutException:
             return [None]
         
-    def find_name(self, name, parent=None, waitSeconds=5):
+    def find_name(self, name, path='', parent=None, waitSeconds=5):
         if not parent:
             parent = self.driver
         try: 
             return WebDriverWait(parent, waitSeconds).until(
-                EC.visibility_of_any_elements_located((By.XPATH, f'//*[text()={name}]'))
+                EC.visibility_of_any_elements_located((By.XPATH, f'//*[text()="{name}"]{path}'))
             )
         except TimeoutException:
             return None
@@ -62,6 +62,13 @@ class Website:
 
     def click_by_class(self, className, parent=None, waitSeconds=2, sleepTime=0):
         buttons = self.find_class(className, parent, waitSeconds)
+        if buttons != [None]:
+            for b in buttons:
+                b.click()
+            time.sleep(sleepTime)
+
+    def click_by_name(self, name, parent=None, waitSeconds=2, sleepTime=0):
+        buttons = self.find_name(name, parent, waitSeconds)[0]
         if buttons != [None]:
             for b in buttons:
                 b.click()

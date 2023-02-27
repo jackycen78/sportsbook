@@ -3,3 +3,7 @@ test1 = ['Player Points A. Horford\n5+\n1.20\n8+\n1.65\n10+\n2.25\n12+\n3.25\n15
 
 print(test1[0
 ])
+
+
+b365t = [' Bam Adebayo\nMIA Heat\nJimmy Butler\nMIA Heat\nJoel Embiid\nPHI 76ers\nJames Harden\nPHI 76ers\nTobias Harris\nPHI 76ers\nOver\n18.5\n-120\n21.5\n-115\n32.5\n-110\n21.5\n-115\n14.5\n-115\nUnder\n18.5\n-110\n21.5\n-115\n32.5\n-120\n21.5\n-115\n14.5\n-115',
+         ' Bam Adebayo\nMIA Heat\nJimmy Butler\nMIA Heat\nJoel Embiid\nPHI 76ers\nJames Harden\nPHI 76ers\nTobias Harris\nPHI 76ers\nOver\n2.5\n-160\n5.5\n+120\n3.5\n-125\n10.5\n+100\n1.5\n-200\nUnder\n2.5\n+130\n5.5\n-150\n3.5\n-105\n10.5\n-130\n1.5\n+165',]

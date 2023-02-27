@@ -98,7 +98,6 @@ def getBet365GameBets(site):
                                    moneyLines[i * 2: (i + 1) * 2], 
                                    overUnders[i * 2: (i + 1) * 2], 
                                 ]))
-
     return betsList
 
 
