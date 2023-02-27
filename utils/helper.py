@@ -1,6 +1,8 @@
 from datetime import datetime
 
 def decimalToAmerican(odds):
+    if not odds:
+        return ''
     if odds.startswith('+') or odds.startswith('-'):
         return odds
     

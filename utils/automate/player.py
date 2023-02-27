@@ -9,7 +9,6 @@ def playNowPlayerProps(site):
 
 def bet365PlayerProps(site):
 
-    playerprosxpath = '/html/body/div[1]/div/div[4]/div[2]/div[1]/div/div[2]/div[1]/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[4]'
 
     propTypes = ['Player Points',
                  'Player Assists',
