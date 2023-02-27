@@ -1,4 +1,4 @@
-from .automate import getGameProps
+from .automate.game import getGameProps
 from templates.tables import *
 from templates.email import *
 from tests.test import games

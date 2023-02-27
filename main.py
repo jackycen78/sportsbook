@@ -8,4 +8,5 @@ sendEmail(senderInfo=sender,
           senderName='Betting Odds', 
           receiverAddress=receivers, 
           subject= f'Game Props {datetime.now().strftime("%B %d")}', 
-          content=getGamePropsContent())
+          content=getGamePropsContent()
+          )
