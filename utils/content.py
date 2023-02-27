@@ -2,28 +2,19 @@ from .automate.game import getGameProps
 from templates.tables import *
 from templates.email import *
 from tests.test import games
+from .config import SITES, GAMEPROPS
 
+COLUMNS = ['Game'] + SITES
 
 def getGamePropsContent():
-
     games = getGameProps()
-    columns = ['Game', 'PlayNow', 'Sports Interact', 'Bet365', 'Pinnacle']
+    content = []
 
-    moneyLinesTable = getTableHTML(titleName='Money Lines', 
-                                   columnNames=columns,
-                                   dataRows=getGamesHTML(games, moneyLineFormat))
-
-    spreadsTable = getTableHTML(titleName='Spreads', 
-                                columnNames=columns,
-                                dataRows=getGamesHTML(games, spreadFormat))
-
-    overUndersTable = getTableHTML(titleName='Over Unders', 
-                                columnNames=columns,
-                                dataRows=getGamesHTML(games, overUnderFormat))
-
-    content = [moneyLinesTable,
-               spreadsTable,
-               overUndersTable,
-               ]
+    for prop in GAMEPROPS:
+        contentHTML = getTableHTML(betType=prop, 
+                                   columnNames=COLUMNS,
+                                   dataRows=getGamesHTML(games, prop)
+                                    )
+        content.append(contentHTML)
     
     return getEmailHTML(content)

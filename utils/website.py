@@ -41,13 +41,23 @@ class Website:
         except TimeoutException:
             return [None]
         
+    def find_name(self, name, parent=None, waitSeconds=5):
+        if not parent:
+            parent = self.driver
+        try: 
+            return WebDriverWait(parent, waitSeconds).until(
+                EC.visibility_of_any_elements_located((By.XPATH, f'//*[text()={name}]'))
+            )
+        except TimeoutException:
+            return None
+        
     def class_exists(self, className, parent=None, waitSeconds=2): 
         if self.find_class(className, parent, waitSeconds) == [None]:
             return False
         return True
         
     def click_by_xpath(self, location, waitSeconds=2, sleepTime=0):        
-        self.locate(location, waitSeconds).click()
+        self.find_xpath(location, waitSeconds).click()
         time.sleep(sleepTime)
 
     def click_by_class(self, className, parent=None, waitSeconds=2, sleepTime=0):

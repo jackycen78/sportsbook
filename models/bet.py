@@ -1,4 +1,4 @@
-from utils.dataparser import *
+from utils.parser.game import *
 from utils.teamnames import teams, cities
 from utils.helper import decimalToAmerican
 

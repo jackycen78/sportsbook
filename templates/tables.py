@@ -17,10 +17,10 @@ def getCellHTML(text):
     outputStr += '</td>'
     return outputStr
 
-def getTableHTML(titleName, columnNames, dataRows):
+def getTableHTML(betType, columnNames, dataRows):
      
     outputStr = f'''
-                    <h1> {titleName} </h1>
+                    <h1> {betType} </h1>
 
                         <table border="3" 
                             style="background-color: #FFFFFF;
@@ -47,7 +47,8 @@ def getTableHTML(titleName, columnNames, dataRows):
     
     return outputStr
 
-def getGamesHTML(games, format):
+def getGamesHTML(games, betType):
+    format = getFormat(betType)
     outputStr = ''
     for team in games:
         if len(games[team]) == 4:
@@ -62,6 +63,13 @@ def getGamesHTML(games, format):
             outputStr += '</tr>'
     return outputStr
 
+def getFormat(betType):
+    if betType == 'Money Lines':
+        return moneyLineFormat
+    if betType == 'Spreads':
+        return spreadFormat
+    if betType == 'Over Unders':
+        return overUnderFormat
 
 def moneyLineFormat(bet):
     format = [bet.get_away_team(),
