@@ -37,4 +37,4 @@ def checkAmericanOdds(odds):
     return False
 
 def getDate():
-    return f'datetime.now().strftime("%B %d")'
+    return datetime.now().strftime("%B %d")

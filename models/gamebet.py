@@ -27,17 +27,21 @@ class GameBet:
                           'underOdds': None,
                           }
         
-        self.odds = [self.spread['homeSpreadOdds'], 
-                     self.spread['awaySpreadOdds'],
-                     self.moneyLine['homeMoneyLine'],
-                     self.moneyLine['awayMoneyLine'],
-                     self.overUnder['overOdds'] ,
-                     self.overUnder['underOdds'], 
+        self.odds = [('spread', 'homeSpreadOdds'), 
+                     ('spread', 'awaySpreadOdds'),
+                     ('moneyLine', 'homeMoneyLine'),
+                     ('moneyLine', 'awayMoneyLine'),
+                     ('overUnder', 'overOdds'),
+                     ('overUnder', 'underOdds'), 
                      ]
 
     def changeToAmerican(self):
-        for odd in self.odds:
-            odd = decimalToAmerican(odd)
+        self.spread['homeSpreadOdds'] = decimalToAmerican(self.spread['homeSpreadOdds'])
+        self.spread['awaySpreadOdds'] = decimalToAmerican(self.spread['awaySpreadOdds'])
+        self.moneyLine['homeMoneyLine'] = decimalToAmerican(self.moneyLine['homeMoneyLine'])
+        self.moneyLine['awayMoneyLine'] = decimalToAmerican(self.moneyLine['awayMoneyLine'])
+        self.overUnder['overOdds'] = decimalToAmerican(self.overUnder['overOdds'])
+        self.overUnder['underOdds'] = decimalToAmerican(self.overUnder['underOdds'])
 
     def get_spread(self):
         return self.spread

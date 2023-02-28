@@ -23,7 +23,7 @@ class Website:
         self.driver.get(website)
         time.sleep(sleepTime)
 
-    def find_xpath(self, xpath, waitSeconds=5):
+    def find_xpath(self, xpath, waitSeconds=1):
         try: 
             return WebDriverWait(self.driver, waitSeconds).until(
             EC.visibility_of_any_elements_located((By.XPATH, xpath))
@@ -31,7 +31,7 @@ class Website:
         except TimeoutError:
             return None
 
-    def find_class(self, className, parent=None, waitSeconds=5):
+    def find_class(self, className, parent=None, waitSeconds=1):
         if not parent:
             parent = self.driver
         try: 
@@ -41,15 +41,18 @@ class Website:
         except TimeoutException:
             return [None]
         
-    def find_name(self, name, path='', parent=None, waitSeconds=5):
+    def find_name(self, name, path='', parent=None, waitSeconds=5, exact=False):
         if not parent:
             parent = self.driver
         try: 
+            string = f"//*[contains(text(),'{name}')]{path}"
+            if exact: 
+                string = f'//*[text() = "{name}"]{path}'
             return WebDriverWait(parent, waitSeconds).until(
-                EC.visibility_of_any_elements_located((By.XPATH, f'//*[text()="{name}"]{path}'))
+                EC.visibility_of_any_elements_located((By.XPATH, string))
             )
         except TimeoutException:
-            return None
+            return [None]
         
     def class_exists(self, className, parent=None, waitSeconds=2): 
         if self.find_class(className, parent, waitSeconds) == [None]:
@@ -67,12 +70,14 @@ class Website:
                 b.click()
             time.sleep(sleepTime)
 
-    def click_by_name(self, name, parent=None, waitSeconds=2, sleepTime=0):
-        buttons = self.find_name(name, parent, waitSeconds)[0]
-        if buttons != [None]:
-            for b in buttons:
-                b.click()
-            time.sleep(sleepTime)
+    def click_by_name(self, name, path='', parent=None, waitSeconds=2, exact=False):
+        button = self.find_name(name, path, parent, waitSeconds, exact)[0]
+        if button:
+            button.click()
+
+    def refresh_page(self):
+        self.driver.refresh()
+        time.sleep(1)
 
     def enter_text(self, location, text):
         self.locate(location).send_keys(text)

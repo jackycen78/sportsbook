@@ -7,7 +7,7 @@ from .config import SITES, GAMEPROPS
 COLUMNS = ['Game'] + SITES
 
 def getGamePropsContent():
-    #games = getGameProps()
+    games = getGameProps()
     content = []
 
     for prop in GAMEPROPS:
