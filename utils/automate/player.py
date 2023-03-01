@@ -7,8 +7,8 @@ def playNowPlayerProps(site):
     betClass = 'event-panel--market---'
     todayClass = 'heading--timeband--today'
     
-    site.go_to(playNowURL)
-    site.click_by_class(showMoreClass, sleepTime=1)
+    site.go_to(playNowURL, sleepTime=2)
+    site.click_by_class(showMoreClass, sleepTime=2)
 
     todayBets = site.find_class(todayClass)[0]
     numGames = len(site.find_class(gameClass, todayBets))
@@ -22,10 +22,13 @@ def playNowPlayerProps(site):
         site.click_by_name('Player Props')
         bets = site.find_class(betClass)
         for bet in bets:
-            playerProps.append(bet.text)
+            try:
+                playerProps.append(bet.text)
+            except:
+                pass
 
-        site.go_to(playNowURL)
-        site.click_by_class(showMoreClass, sleepTime=1)
+        site.go_to(playNowURL, sleepTime=2)
+        site.click_by_class(showMoreClass, sleepTime=2)
     print(playerProps)
 
 
@@ -84,7 +87,9 @@ def pinnaclePlayerProps(site):
     numGames = len(site.find_class(gameClass))
     playerProps = []
 
+    print(numGames)
     for i in range(numGames):
+        print(i)
         game = site.find_class(gameClass)[i]
         game.click()
 

@@ -14,5 +14,5 @@ from utils.website import Website
         )'''
 
 site = Website()
-#pinnaclePlayerProps(site)
-playNowPlayerProps(site)
+pinnaclePlayerProps(site)
+#playNowPlayerProps(site)

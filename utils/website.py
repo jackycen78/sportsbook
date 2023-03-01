@@ -31,12 +31,12 @@ class Website:
         except TimeoutError:
             return None
 
-    def find_class(self, className, parent=None, waitSeconds=1):
+    def find_class(self, className, parent=None, waitSeconds=5):
         if not parent:
             parent = self.driver
         try: 
             return WebDriverWait(parent, waitSeconds).until(
-                EC.presence_of_all_elements_located((By.CLASS_NAME, className))
+                EC.visibility_of_any_elements_located((By.CLASS_NAME, className))
             )
         except TimeoutException:
             return [None]
