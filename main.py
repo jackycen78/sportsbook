@@ -7,10 +7,12 @@ from utils.automate.player import pinnaclePlayerProps, playNowPlayerProps, bet36
 from utils.website import Website
 
 '''sendEmail(senderInfo=sender, 
-          senderName='Betting Odds', 
-          receiverAddress=receivers, 
-          subject= f'Game Props {getDate()}', 
-          content=getGamePropsContent()
-          )
-'''
-bet365PlayerProps(Website())
+        senderName='Betting Odds', 
+        receiverAddress=receivers, 
+        subject= f'Game Props {getDate()}', 
+        content=getGamePropsContent()
+        )'''
+
+site = Website()
+#pinnaclePlayerProps(site)
+playNowPlayerProps(site)
