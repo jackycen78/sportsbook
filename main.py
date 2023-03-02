@@ -3,7 +3,7 @@ from utils.content import getGamePropsContent
 from utils.helper import getDate
 from info import sender, receivers
 
-from utils.automate.player import pinnaclePlayerProps, playNowPlayerProps, bet365PlayerProps
+from utils.automate.player import Pinnacle, PlayNow, Bet365
 from utils.website import Website
 
 '''sendEmail(senderInfo=sender, 
@@ -15,4 +15,6 @@ from utils.website import Website
 
 site = Website()
 #pinnaclePlayerProps(site)
-playNowPlayerProps(site)
+p = PlayNow(site)
+p.automate()
+print(p.playerProps)

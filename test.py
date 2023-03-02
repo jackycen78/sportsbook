@@ -1,7 +1,11 @@
-from tests.playertest import getPlayNowTest
+from tests.playertest import *
 
-bet = getPlayNowTest()[0]
+propTypes = ['Player Points', 'Player Assists', 'Player Rebounds', 'Player Three Pointers', 'Player Points + Assists + Rebounds']
+games = getPlayNowTest2()
 
-for b in bet:
-    b = b.split('\n')
-    print(b)
+for game in games:
+    for bet in game:
+        for type in propTypes: 
+            if bet.startswith(type):
+                print(bet)
+
