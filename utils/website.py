@@ -31,7 +31,7 @@ class Website:
         except TimeoutError:
             return None
 
-    def find_class(self, className, parent=None, waitSeconds=5):
+    def find_class(self, className, parent=None, waitSeconds=2):
         if not parent:
             parent = self.driver
         try: 

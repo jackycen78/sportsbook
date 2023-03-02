@@ -1,3 +1,7 @@
-from tests.playertest import playNowAllBets2
+from tests.playertest import getPlayNowTest
 
-print(playNowAllBets2)
+bet = getPlayNowTest()[0]
+
+for b in bet:
+    b = b.split('\n')
+    print(b)
