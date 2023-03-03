@@ -1,7 +1,7 @@
 from .automate.game import getGameProps
 from templates.tables import *
 from templates.email import *
-from tests.test import games
+from tests.game import games
 from .config import SITES, GAMEPROPS
 
 COLUMNS = ['Game'] + SITES

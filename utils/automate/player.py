@@ -1,10 +1,4 @@
-'''
-Points 
-Assists
-Rebounds 
-3 point shots made
-Points + reb + ass 
-'''
+import time
 
 class PlayerProps():
     siteURL = ''
@@ -55,6 +49,8 @@ class PlayNow(PlayerProps):
         game = site.find_class(self.gameClass, todayBets)[index]
         game.click()
         site.click_by_name('Player Props')
+        time.sleep(2)
+
 
     def show_all_data(self):
         site = self.site

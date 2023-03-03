@@ -1,11 +1,28 @@
-from tests.playertest import *
+from tests.player import *
+from utils.parser.player import PlayNowPlayerParser
 
-propTypes = ['Player Points', 'Player Assists', 'Player Rebounds', 'Player Three Pointers', 'Player Points + Assists + Rebounds']
-games = getPlayNowTest2()
+propTypes = ['Pts+Rebs+Asts', 'Points', 'Assists', 'Rebounds', '3 Point FG']
+
+
+games = getPinnacleTest2()
 
 for game in games:
     for bet in game:
-        for type in propTypes: 
-            if bet.startswith(type):
-                print(bet)
 
+        betNameStart = bet.find('(')
+        betNameEnd = bet.find(')') + 1
+        last = bet.rfind(')') + 1
+
+        player = bet[:betNameStart - 1]
+        type = bet[betNameStart + 1: betNameEnd - 1]
+        info = bet[last:]
+
+        if info and type in propTypes:
+            info = info.split('\n')[1:]
+
+            #if info:
+            #print(f'{player} {type} {info}')
+
+games = getPlayNowTest2()
+p = PlayNowPlayerParser(games)
+p.parseAll()
