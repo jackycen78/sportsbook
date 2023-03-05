@@ -1,18 +1,32 @@
+from models.playerprop import PlayerProp
 import time
 
 class PlayerProps():
     siteURL = ''
     propTypes = ['Points', 'Assists', 'Rebounds', '3 Pts Made', 'Points + Reb + Ass']
+    betClass = ''
+    book = ''
 
     def __init__(self, site):
         self.site = site
         self.playerProps = []
 
-    def go_to_site(self):
-        self.site.go_to(self.siteURL)
+    def go_to_site(self, sleepTime=3):
+        self.site.go_to(self.siteURL, sleepTime)
+
+    def add_player_props(self):
+        site = self.site
+
+        bets = site.find_class(self.betClass)
+        for bet in bets:
+            try:
+                self.playerProps.append(PlayerProp(self.book, bet.text))
+            except:
+                pass
 
 class PlayNow(PlayerProps):
 
+    book = 'Play Now'
     siteURL = 'https://www.playnow.com/sports/sport/9/basketball/matches?preselectedFilters=49'
     showMoreClass = 'content-loader__load-more-link'
     gameClass = 'event-list__item__event-market__market-count__link'
@@ -39,7 +53,7 @@ class PlayNow(PlayerProps):
         for i in range(numGames):
             self.go_to_game(i)
             self.show_all_data()
-            self.get_player_props()
+            self.add_player_prop()
             self.go_to_site()
     
     def go_to_game(self, index):
@@ -62,17 +76,6 @@ class PlayNow(PlayerProps):
             if bet:
                 bet.click()
 
-    def get_player_props(self):
-        site = self.site
-
-        bets = site.find_class(self.betClass)
-        curGame = []
-        for bet in bets:
-            try:
-                curGame.append(bet.text)
-            except:
-                pass
-        self.playerProps.append(curGame)
 
 class Bet365(PlayerProps):
     
@@ -127,6 +130,7 @@ def bet365PlayerProps(site):
 
 class Pinnacle(PlayerProps):
 
+    book = 'Pinnacle'
     siteURL = 'https://www.pinnacle.com/en/basketball/nba/matchups#period:0'
     gameClass = 'style_metadata__1FIzs'
     betClass = 'style_marketGroup__1-qlF'
@@ -141,8 +145,9 @@ class Pinnacle(PlayerProps):
         numGames = len(site.find_class(self.gameClass))
 
         for i in range(numGames):
+            print(i, numGames)
             self.go_to_game(i)
-            self.get_player_props()
+            self.add_player_props()
             self.go_to_site()
 
     def go_to_game(self, index):
@@ -151,19 +156,6 @@ class Pinnacle(PlayerProps):
         game = site.find_class(self.gameClass)[index]
         game.click()
         site.click_by_name('Player Props')
-
-    def get_player_props(self):
-        site = self.site
-
-        bets = site.find_class(self.betClass)
-        curGame = []
-        for bet in bets:
-            try:
-                curGame.append(bet.text)
-            except:
-                pass
-        self.playerProps.append(curGame)
-        
 
 
 

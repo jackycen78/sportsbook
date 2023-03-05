@@ -1,36 +1,28 @@
-class GameBet:
+from utils.parser.player import PlayNowPlayerParser, PinnaclePlayerParser
 
-    def __init__(self):
-        self.time = None
-        self.book = {'name': None}
-        self.teams = {'home': None,
-                      'away': None,                      
-                     }
+class PlayerProp:
 
-        self.spread = {'homeSpread' : None,
-                       'homeSpreadOdds' : None,
-                       'awaySpread' : None,
-                       'awaySpreadOdds' : None,
-                       }
+    def __init__(self, book, bet):
+        self.book = book
+        self.parser = self.get_parser()
+        self.player, self.type, self.odds = self.parser.parseProp(bet)
 
-        self.moneyLine = {'homeMoneyLine' : None,
-                          'awayMoneyLine' : None,
-                          }
-
-        self.overUnder = {'over': None,
-                          'overOdds': None,
-                          'under': None,
-                          'underOdds': None,
-                          }
+    def get_parser(self):
+        books = {'Play Now': PlayNowPlayerParser(),
+                 'Pinnacle': PinnaclePlayerParser(),
+                 }
         
-        self.odds = [('spread', 'homeSpreadOdds'), 
-                     ('spread', 'awaySpreadOdds'),
-                     ('moneyLine', 'homeMoneyLine'),
-                     ('moneyLine', 'awayMoneyLine'),
-                     ('overUnder', 'overOdds'),
-                     ('overUnder', 'underOdds'), 
-                     ]
-
- 
+        return books[self.book]
     
+    def is_valid(self):
+        return self.player and self.type and self.odds
+
+    def __str__(self):
+        output =  f'{self.player}: {self.type} \n'
+        for amount, odd in self.odds:
+            overUnder = 'Over ' if amount[0] == 'O' else 'Under '
+            amount = overUnder + amount[1:]
+
+            output += f'    {amount}: {odd} \n'
+        return output
     
