@@ -19,10 +19,15 @@ class PlayerProps():
 
         bets = site.find_class(self.betClass)
         for bet in bets:
-            try:
-                self.playerProps.append(PlayerProp(self.book, bet.text))
-            except:
-                pass
+            if bet:
+                playerProp = PlayerProp(self.book, bet.text)
+                if playerProp.is_valid():
+                    self.playerProps.append(playerProp)
+                    print(playerProp)
+
+    def get_player_props(self):
+
+        return self.playerProps
 
 class PlayNow(PlayerProps):
 
@@ -53,7 +58,7 @@ class PlayNow(PlayerProps):
         for i in range(numGames):
             self.go_to_game(i)
             self.show_all_data()
-            self.add_player_prop()
+            self.add_player_props()
             self.go_to_site()
     
     def go_to_game(self, index):

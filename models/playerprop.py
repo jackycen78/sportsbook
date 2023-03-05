@@ -18,7 +18,8 @@ class PlayerProp:
         return self.player and self.type and self.odds
 
     def __str__(self):
-        output =  f'{self.player}: {self.type} \n'
+        output = f'{self.book} \n'
+        output +=  f'{self.player}: {self.type} \n'
         for amount, odd in self.odds:
             overUnder = 'Over ' if amount[0] == 'O' else 'Under '
             amount = overUnder + amount[1:]

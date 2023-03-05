@@ -1,8 +1,9 @@
+from utils.playernames import playNowPlayerName
+
 class PlayerParser():
 
     def __init__(self):
         pass
-
 
 class PlayNowPlayerParser(PlayerParser):
 
@@ -23,7 +24,7 @@ class PlayNowPlayerParser(PlayerParser):
                 betInfo = bet[len(type) + 1:].split('\n')
                 type = self.propTypes[type]
 
-                player = betInfo[0]
+                player = playNowPlayerName[betInfo[0]]
                 odds = []
                 for i in range(1, len(betInfo) - 1, 2):
                     amount = betInfo[i]

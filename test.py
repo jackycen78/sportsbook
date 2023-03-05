@@ -15,7 +15,6 @@ playerProps = []
 
 for bet in pinnacleGames:
     playerProp = PlayerProp('Pinnacle', bet)
-
     if playerProp.is_valid():
         playerProps.append(playerProp)
 
@@ -29,5 +28,4 @@ allProps = AllPlayerProps()
 allProps.add_prop(playerProps)
 
 
-for f in allProps.games:
-    print(allProps.games[f][2])
+print(allProps)

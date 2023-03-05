@@ -4,25 +4,31 @@ from utils.helper import getDate
 from info import sender, receivers
 
 from utils.automate.player import Pinnacle, PlayNow, Bet365
+from models.allplayerprops import AllPlayerProps
+
 from utils.website import Website
 
-sendEmail(senderInfo=sender, 
+'''sendEmail(senderInfo=sender, 
 senderName='Betting Odds', 
 receiverAddress=receivers, 
 subject= f'Game Props {getDate()}', 
 content=getGamePropsContent()
-)
+)'''
 
 
-'''site = Website()
-p = Pinnacle(site)
-p.automate()
+site = Website()
+#p = Pinnacle(site)
+#p.automate()
 
 q = PlayNow(site)
-q.automate
+q.automate()
 
-for f in p.playerProps:
-    print(f)
 
-for k in q.playerProps:
-    print(k)'''
+allProps = AllPlayerProps()
+
+#allProps.add_prop(p.get_player_props())
+allProps.add_prop(q.get_player_props())
+
+for prop in allProps.games:
+    print(prop)
+

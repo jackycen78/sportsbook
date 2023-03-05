@@ -39,7 +39,7 @@ def checkAmericanOdds(odds):
 def getDate():
     month = datetime.now().strftime("%B")
     day = datetime.now().strftime("%d")
-    if day.startswith('0')
+    if day.startswith('0'):
         day = day[1]
 
     return f'{month} {day}'
