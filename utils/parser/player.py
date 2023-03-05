@@ -24,7 +24,10 @@ class PlayNowPlayerParser(PlayerParser):
                 betInfo = bet[len(type) + 1:].split('\n')
                 type = self.propTypes[type]
 
-                player = playNowPlayerName[betInfo[0]]
+                player = betInfo[0]
+                if player in playNowPlayerName:
+                    player = playNowPlayerName[player]
+                    
                 odds = []
                 for i in range(1, len(betInfo) - 1, 2):
                     amount = betInfo[i]
@@ -37,6 +40,14 @@ class PlayNowPlayerParser(PlayerParser):
             
         return '', '', ''
 
+    def parseGameInfo(self, gameInfo):
+        try:
+            date, home, away = gameInfo.split('\n')
+            date = date.split(' ')[1]
+            return date, home, away
+        except:
+            return '', '', ''
+        
 
 class PinnaclePlayerParser(PlayerParser):
     propTypes = {'Pts+Rebs+Asts': 'Pts + Ast + Reb', 
@@ -75,3 +86,11 @@ class PinnaclePlayerParser(PlayerParser):
                 return player, type, odds
             
         return '', '', ''
+
+    def parseGameInfo(self, gameInfo):
+        try:
+            date, home, away = gameInfo.split('\n')
+            date = date.split(' ')[-1]
+            return date, home, away
+        except:
+            return '', '', ''

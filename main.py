@@ -17,18 +17,16 @@ content=getGamePropsContent()
 
 
 site = Website()
-#p = Pinnacle(site)
-#p.automate()
+
+p = Pinnacle(site)
+p.automate()
 
 q = PlayNow(site)
 q.automate()
 
-
 allProps = AllPlayerProps()
-
-#allProps.add_prop(p.get_player_props())
+allProps.add_prop(p.get_player_props())
 allProps.add_prop(q.get_player_props())
 
-for prop in allProps.games:
-    print(prop)
+print(allProps)
 

@@ -1,5 +1,5 @@
 from models.gamebet import * 
-from models.allbets import AllBets
+from models.allgamebets import AllBets
 from utils.website import Website
 
 

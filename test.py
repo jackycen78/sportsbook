@@ -3,23 +3,26 @@ from utils.parser.player import PlayNowPlayerParser, PinnaclePlayerParser
 from models.playerprop import PlayerProp
 from models.allplayerprops import AllPlayerProps
 
-'''
-pinnacleGames = getPinnacleTest3()
-q= PinnaclePlayerParser(pinnacleGames)
-q.parseAll()''' 
+pinProps = getPinnaclePlayerProps()
+pinGameInfo = getPinnacleGameInfo()
 
-pinnacleGames = getPinnacleTest3()
-playNowGames = getPlayNowTest3()
+playProps = getPlayNowPlayerProps()
+playGameInfo = getPlayNowPlayerProps()
 
 playerProps = []
 
-for bet in pinnacleGames:
-    playerProp = PlayerProp('Pinnacle', bet)
+for i in range(len(pinProps)):
+    prop = pinProps[i]
+    gameInfo = pinGameInfo[i]
+
+    playerProp = PlayerProp('Pinnacle', gameInfo, prop)
     if playerProp.is_valid():
         playerProps.append(playerProp)
 
-for bet in playNowGames:
-    playerProp = PlayerProp('Play Now', bet)
+for i in range(len(playProps)):
+    prop = playProps[i]
+    gameInfo = playGameInfo[i]
+    playerProp = PlayerProp('Play Now', gameInfo, prop)
 
     if playerProp.is_valid():
         playerProps.append(playerProp)

@@ -6,6 +6,16 @@ class AllPlayerProps:
     def add_prop(self, props):
 
         for prop in props:
+            team = f'{prop.away} at {prop.home}'
+            if team not in self.games:
+                self.games[team] = {}
+            
+            if prop.player not in self.games[team]:
+                self.games[team][prop.player] = []
+            
+            self.games[team][prop.player].append(prop)
+
+        for prop in props:
             if prop.player not in self.games:
                 self.games[prop.player] = []
                 
@@ -13,17 +23,20 @@ class AllPlayerProps:
 
     def __str__(self):
         output = ''
-        for player in self.games:
-            output += f'{player} \n'
+        for game in self.games:
+            output += f'{game} \n'
+            
+            for player in self.games[game]:
+                output += f'{player} \n'
 
-            for prop in self.games[player]:
-                output += f'{prop.book}: {prop.type} \n'
+                for prop in self.games[game][player]:
+                    output += f'{prop.book}: {prop.type} \n'
 
-                for amount, odd in prop.odds:
-                    overUnder = 'Over ' if amount[0] == 'O' else 'Under '
-                    amount = overUnder + amount[1:]
+                    '''  for amount, odd in prop.odds:
+                            overUnder = 'Over ' if amount[0] == 'O' else 'Under '
+                            amount = overUnder + amount[1:]
 
-                    output += f'    {amount}: {odd} \n'
-            output += '\n' 
-        
+                            output += f'    {amount}: {odd} \n' '''
+                output += '\n' 
+
         return output

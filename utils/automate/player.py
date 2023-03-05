@@ -4,8 +4,9 @@ import time
 class PlayerProps():
     siteURL = ''
     propTypes = ['Points', 'Assists', 'Rebounds', '3 Pts Made', 'Points + Reb + Ass']
-    betClass = ''
+    propClass = ''
     book = ''
+    gameInfo = ''
 
     def __init__(self, site):
         self.site = site
@@ -17,13 +18,19 @@ class PlayerProps():
     def add_player_props(self):
         site = self.site
 
-        bets = site.find_class(self.betClass)
-        for bet in bets:
-            if bet:
-                playerProp = PlayerProp(self.book, bet.text)
+        gameInfo = site.find_class(self.gameInfoClass)[0]
+        props = site.find_class(self.propClass)
+        for prop in props:
+            if prop:
+                playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
                 if playerProp.is_valid():
                     self.playerProps.append(playerProp)
-                    print(playerProp)
+
+                    f = open("gameinfos.txt", "a")
+                    f.write(f'{gameInfo.text} \n \n')
+                    
+                    f = open("prop.txt", "a")
+                    f.write(f'{prop.text} \n \n')
 
     def get_player_props(self):
 
@@ -35,10 +42,12 @@ class PlayNow(PlayerProps):
     siteURL = 'https://www.playnow.com/sports/sport/9/basketball/matches?preselectedFilters=49'
     showMoreClass = 'content-loader__load-more-link'
     gameClass = 'event-list__item__event-market__market-count__link'
-    betClass = 'event-panel--market---'
+    propClass = 'event-panel--market---'
     todayClass = 'heading--timeband--today'
+    tmrClass = 'heading--timeband--tomorrow'
+    gameInfoClass = 'scoreboard--teams'
     allBetsClass = 'event-markets--basketball'
-    hiddenBetsClass = 'collapsed'
+    hiddenPropsClass = 'collapsed'
 
     def __init__(self, site):
         super().__init__(site)
@@ -52,7 +61,7 @@ class PlayNow(PlayerProps):
         site = self.site
         self.go_to_site()
 
-        todayBets = site.find_class(self.todayClass)[0]
+        todayBets = site.find_class(self.tmrClass)[0]
         numGames = len(site.find_class(self.gameClass, todayBets))
 
         for i in range(numGames):
@@ -64,7 +73,7 @@ class PlayNow(PlayerProps):
     def go_to_game(self, index):
         site = self.site
 
-        todayBets = site.find_class(self.todayClass)[0]
+        todayBets = site.find_class(self.tmrClass)[0]
         game = site.find_class(self.gameClass, todayBets)[index]
         game.click()
         site.click_by_name('Player Props')
@@ -75,11 +84,11 @@ class PlayNow(PlayerProps):
         site = self.site
 
         allBets = site.find_class(self.allBetsClass)[0]
-        hiddenBets = site.find_class(self.hiddenBetsClass, allBets)
+        hiddenProps = site.find_class(self.hiddenPropsClass, allBets)
 
-        for bet in hiddenBets:
-            if bet:
-                bet.click()
+        for prop in hiddenProps:
+            if prop:
+                prop.click()
 
 
 class Bet365(PlayerProps):
@@ -89,7 +98,6 @@ class Bet365(PlayerProps):
 
     def __init__(self, site):
         super().__init__(site)
-
 
 def bet365PlayerProps(site):
 
@@ -138,7 +146,8 @@ class Pinnacle(PlayerProps):
     book = 'Pinnacle'
     siteURL = 'https://www.pinnacle.com/en/basketball/nba/matchups#period:0'
     gameClass = 'style_metadata__1FIzs'
-    betClass = 'style_marketGroup__1-qlF'
+    propClass = 'style_marketGroup__1-qlF'
+    gameInfoClass = 'style_content__1q8Kz'
 
     def __init__(self, site):
         super().__init__(site)
@@ -150,7 +159,6 @@ class Pinnacle(PlayerProps):
         numGames = len(site.find_class(self.gameClass))
 
         for i in range(numGames):
-            print(i, numGames)
             self.go_to_game(i)
             self.add_player_props()
             self.go_to_site()
