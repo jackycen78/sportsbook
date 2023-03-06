@@ -126,6 +126,20 @@ def getPinnacleGameBets(site):
 
     return betsList
 
+def getGameBets():
+
+    site = Website()
+    allBets = AllBets()
+
+    allBets.add_bets(getPlayNowGameBets(site))
+    allBets.add_bets(getSportsInteractionGameBets(site))
+    allBets.add_bets(getBet365GameBets(site))
+    allBets.add_bets(getPinnacleGameBets(site))
+
+    allBets.print_bets()
+
+    return allBets.games
+
 def getGameProps():
 
     site = Website()

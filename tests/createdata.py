@@ -2,12 +2,19 @@ PINNACLE_PLAYERFILE = 'tests/pinnacle/prop.txt'
 PINNACLE_GAMEFILE = 'tests/pinnacle/gameinfo.txt'
 PLAYNOW_PLAYERFILE = 'tests/playnow/prop.txt'
 PLAYNOW_GAMEFILE = 'tests/playnow/gameinfo.txt'
+SPORTSINTERACTION_PLAYERFILE = 'tests/sportsinteraction/prop.txt'
+SPORTSINTERACTION_GAMEFILE = 'tests/sportsinteraction/gameinfo.txt'
 
 def get_file(book, type):
     files = {'Pinnacle': {'Player': PINNACLE_PLAYERFILE,
-                         'Game': PINNACLE_GAMEFILE},
+                          'Game': PINNACLE_GAMEFILE,
+                          },
              'Play Now': {'Player': PLAYNOW_PLAYERFILE,
-                         'Game': PLAYNOW_GAMEFILE},
+                          'Game': PLAYNOW_GAMEFILE,
+                          },
+             'Sports Interaction': {'Player': SPORTSINTERACTION_PLAYERFILE,
+                                    'Game': SPORTSINTERACTION_GAMEFILE,
+                                    },
                          }
     return files[book][type]
 

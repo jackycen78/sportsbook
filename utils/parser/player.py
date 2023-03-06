@@ -27,7 +27,8 @@ class PlayNowPlayerParser(PlayerParser):
                 player = betInfo[0]
                 if player in playNowPlayerName:
                     player = playNowPlayerName[player]
-                    
+                player = player.upper()
+
                 odds = []
                 for i in range(1, len(betInfo) - 1, 2):
                     amount = betInfo[i]
@@ -42,9 +43,9 @@ class PlayNowPlayerParser(PlayerParser):
 
     def parseGameInfo(self, gameInfo):
         try:
-            date, home, away = gameInfo.split('\n')
-            date = date.split(' ')[1]
-            return date, home, away
+            time, home, away = gameInfo.split('\n')
+            time = time.split(' ')[1]
+            return time, home, away
         except:
             return '', '', ''
         
@@ -66,6 +67,7 @@ class PinnaclePlayerParser(PlayerParser):
         last = bet.rfind(')') + 1
 
         player = bet[:betNameStart - 1]
+        player = player.upper()
         type = bet[betNameStart + 1: betNameEnd - 1]
         info = bet[last:]
 
@@ -81,7 +83,8 @@ class PinnaclePlayerParser(PlayerParser):
                 under = 'U' + info[-2].split(' ')[1]
                 underOdds = info[-1][:4]
 
-                odds = [(over, overOdds), (under, underOdds)]
+                odds = [(over, overOdds), 
+                        (under, underOdds)]
 
                 return player, type, odds
             
@@ -89,8 +92,52 @@ class PinnaclePlayerParser(PlayerParser):
 
     def parseGameInfo(self, gameInfo):
         try:
-            date, home, away = gameInfo.split('\n')
-            date = date.split(' ')[-1]
-            return date, home, away
+            time, home, away = gameInfo.split('\n')
+            time = time.split(' ')[-1]
+            return time, home, away
+        except:
+            return '', '', ''
+        
+class SportsInteractionParser(PlayerParser):
+    propTypes = {'TOTAL PTS / ASSISTS / REBS': 'Pts + Ast + Reb', 
+                 'TOTAL POINTS': 'Points', 
+                 'TOTAL ASSISTS': 'Assists', 
+                 'TOTAL REBOUNDS': 'Rebounds',
+                 'TOTAL 3PT SHOTS MADE': 'Three Pointers'}
+
+    def __init__(self):
+        super().__init__()
+
+    def parseProp(self, bet):
+        
+        type, info = bet.split(' - ')
+        print([info])
+        info = info.split('\n')
+
+        if type in self.propTypes:
+            type = self.propTypes[type]
+
+            if len(info) == 5:
+                player = info[0]
+                if player[-1] == ']':
+                    player = player[:-6]
+
+                over = 'O' + info[1][4:]
+                overOdds = info[2]
+                under = 'U' + info[3][5:]
+                underOdds = info[4]
+
+                odds = [(over, overOdds), 
+                        (under, underOdds)]
+                    
+                return player, type, odds
+            
+        return '', '', ''
+    
+    def parseGameInfo(self, gameInfo):
+        try:
+            time, teams = gameInfo.split('\n')
+            away, home = teams.split(' @ ')
+            return time, home, away
         except:
             return '', '', ''

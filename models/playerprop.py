@@ -1,4 +1,4 @@
-from utils.parser.player import PlayNowPlayerParser, PinnaclePlayerParser
+from utils.parser.player import PlayNowPlayerParser, PinnaclePlayerParser, SportsInteractionParser
 
 class PlayerProp:
 
@@ -11,6 +11,7 @@ class PlayerProp:
     def get_parser(self):
         books = {'Play Now': PlayNowPlayerParser(),
                  'Pinnacle': PinnaclePlayerParser(),
+                 'Sports Interaction': SportsInteractionParser(),
                  }
         
         return books[self.book]

@@ -7,6 +7,7 @@ class PlayerProps():
     propClass = ''
     book = ''
     gameInfo = ''
+    bookFile = ''
 
     def __init__(self, site):
         self.site = site
@@ -26,10 +27,10 @@ class PlayerProps():
                 if playerProp.is_valid():
                     self.playerProps.append(playerProp)
 
-                    f = open("gameinfos.txt", "a")
+                    f = open(f'tests/{self.bookFile}/gameinfo.txt', 'a')
                     f.write(f'{gameInfo.text} \n \n')
                     
-                    f = open("prop.txt", "a")
+                    f = open(f'tests/{self.bookFile}/prop.txt', 'a')
                     f.write(f'{prop.text} \n \n')
 
     def get_player_props(self):
@@ -39,6 +40,7 @@ class PlayerProps():
 class PlayNow(PlayerProps):
 
     book = 'Play Now'
+    bookFile = 'playnow'
     siteURL = 'https://www.playnow.com/sports/sport/9/basketball/matches?preselectedFilters=49'
     showMoreClass = 'content-loader__load-more-link'
     gameClass = 'event-list__item__event-market__market-count__link'
@@ -145,6 +147,7 @@ def bet365PlayerProps(site):
 class Pinnacle(PlayerProps):
 
     book = 'Pinnacle'
+    bookFile = 'pinnacle'
     siteURL = 'https://www.pinnacle.com/en/basketball/nba/matchups#period:0'
     gameClass = 'style_metadata__1FIzs'
     propClass = 'style_marketGroup__1-qlF'
@@ -171,5 +174,43 @@ class Pinnacle(PlayerProps):
         game.click()
         site.click_by_name('Player Props')
 
+class SportsInteraction(PlayerProps):
+    
+    book = 'Sports Interaction'
+    bookFile = 'sportsinteraction'
+    siteURL = 'https://www.sportsinteraction.com/basketball/nba-prop-betting/'
+    gameClass = 'Game--listPage'
+    gameInfoClass = 'GameHeader'
+    propClass = 'BetType--displayAllEvents'
 
+    def __init__(self, site):
+        super().__init__(site)
 
+    def automate(self):
+        site = self.site
+        self.go_to_site()
+
+        allGames = site.find_class(self.gameClass)
+        numGames = len(allGames)
+
+        for i in range(numGames):
+            self.add_player_props(i)
+
+    def add_player_props(self, index):
+        site = self.site
+        curGame = site.find_class(self.gameClass)[index]
+
+        gameInfo = site.find_class(self.gameInfoClass, curGame)[0]
+        props = site.find_class(self.propClass, curGame)
+
+        for prop in props:
+            if prop:
+                #playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
+                #if playerProp.is_valid():
+                #self.playerProps.append(playerProp)
+
+                f = open(f'tests/{self.bookFile}/gameinfo.txt', 'a')
+                f.write(f'{gameInfo.text} \n \n')
+                
+                f = open(f'tests/{self.bookFile}/prop.txt', 'a')
+                f.write(f'{prop.text} \n \n')
