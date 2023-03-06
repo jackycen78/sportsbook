@@ -76,8 +76,9 @@ class PlayNow(PlayerProps):
         todayBets = site.find_class(self.tmrClass)[0]
         game = site.find_class(self.gameClass, todayBets)[index]
         game.click()
+        time.sleep(1)
         site.click_by_name('Player Props')
-        time.sleep(2)
+        time.sleep(1)
 
 
     def show_all_data(self):

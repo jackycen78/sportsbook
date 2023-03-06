@@ -1,27 +1,26 @@
-from tests.player import *
-from utils.parser.player import PlayNowPlayerParser, PinnaclePlayerParser
 from models.playerprop import PlayerProp
 from models.allplayerprops import AllPlayerProps
+from tests.createdata import create_game_info, create_player_props
 
-pinProps = getPinnaclePlayerProps()
-pinGameInfo = getPinnacleGameInfo()
-
-playProps = getPlayNowPlayerProps()
-playGameInfo = getPlayNowPlayerProps()
 
 playerProps = []
+pinnaclePlayerProps = create_player_props('Pinnacle')
+pinnacleGameInfo = create_game_info('Pinnacle')
 
-for i in range(len(pinProps)):
-    prop = pinProps[i]
-    gameInfo = pinGameInfo[i]
+playNowPlayerProps = create_player_props('Play Now')
+playNowGameInfo = create_game_info('Play Now')
+
+for i in range(len(pinnaclePlayerProps)):
+    prop = pinnaclePlayerProps[i]
+    gameInfo = pinnacleGameInfo[i]
 
     playerProp = PlayerProp('Pinnacle', gameInfo, prop)
     if playerProp.is_valid():
         playerProps.append(playerProp)
 
-for i in range(len(playProps)):
-    prop = playProps[i]
-    gameInfo = playGameInfo[i]
+for i in range(len(playNowPlayerProps)):
+    prop = playNowPlayerProps[i]
+    gameInfo = playNowGameInfo[i]
     playerProp = PlayerProp('Play Now', gameInfo, prop)
 
     if playerProp.is_valid():
@@ -29,6 +28,5 @@ for i in range(len(playProps)):
 
 allProps = AllPlayerProps()
 allProps.add_prop(playerProps)
-
 
 print(allProps)

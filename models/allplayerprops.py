@@ -15,28 +15,22 @@ class AllPlayerProps:
             
             self.games[team][prop.player].append(prop)
 
-        for prop in props:
-            if prop.player not in self.games:
-                self.games[prop.player] = []
-                
-            self.games[prop.player].append(prop)
-
     def __str__(self):
         output = ''
         for game in self.games:
             output += f'{game} \n'
             
             for player in self.games[game]:
-                output += f'{player} \n'
+                output += f'    {player} \n'
 
                 for prop in self.games[game][player]:
-                    output += f'{prop.book}: {prop.type} \n'
+                    output += f'        {prop.book}: {prop.type} \n'
 
-                    '''  for amount, odd in prop.odds:
+                    for amount, odd in prop.odds:
                             overUnder = 'Over ' if amount[0] == 'O' else 'Under '
                             amount = overUnder + amount[1:]
 
-                            output += f'    {amount}: {odd} \n' '''
+                            output += f'            {amount}: {odd} \n'
                 output += '\n' 
 
         return output
