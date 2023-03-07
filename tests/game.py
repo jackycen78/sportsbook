@@ -168,10 +168,11 @@ testPinnacleBet2.overUnder = {'over': '217.0',
                             'underOdds': '2.08',
                             }
 
-allBets = AllBets()
-allBets.add_bets([testPlayNowBet1, testPlayNowBet2])
-allBets.add_bets([testSportsIntBet1, testSportsIntBet2])
-allBets.add_bets([testBet365Bet1, testBet365Bet2])
-allBets.add_bets([testPinnacleBet1, testPinnacleBet2])
+def get_all_games():
+    allBets = AllBets()
+    allBets.add_bets([testPlayNowBet1, testPlayNowBet2])
+    allBets.add_bets([testSportsIntBet1, testSportsIntBet2])
+    allBets.add_bets([testBet365Bet1, testBet365Bet2])
+    allBets.add_bets([testPinnacleBet1, testPinnacleBet2])
 
-games = allBets.games
+    return allBets.games

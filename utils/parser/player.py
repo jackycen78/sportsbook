@@ -111,28 +111,29 @@ class SportsInteractionParser(PlayerParser):
 
     def parseProp(self, bet):
         
-        type, info = bet.split(' - ')
-        info = info.split('\n')
+        try:
+            type, info = bet.split(' - ')
+            info = info.split('\n')
 
-        if type in self.propTypes:
-            type = self.propTypes[type]
+            if type in self.propTypes:
+                type = self.propTypes[type]
 
-            if len(info) == 5:
-                player = info[0]
-                if player[-1] == ']':
-                    player = player[:-6]
+                if len(info) == 5:
+                    player = info[0]
+                    if player[-1] == ']':
+                        player = player[:-6]
 
-                over = 'O' + info[1][4:]
-                overOdds = info[2]
-                under = 'U' + info[3][5:]
-                underOdds = info[4]
+                    over = 'O' + info[1][4:]
+                    overOdds = info[2]
+                    under = 'U' + info[3][5:]
+                    underOdds = info[4]
 
-                odds = [(over, overOdds), 
-                        (under, underOdds)]
-                    
-                return player, type, odds
-            
-        return '', '', ''
+                    odds = [(over, overOdds), 
+                            (under, underOdds)]
+                        
+                    return player, type, odds
+        except:
+            return '', '', ''
     
     def parseGameInfo(self, gameInfo):
         try:

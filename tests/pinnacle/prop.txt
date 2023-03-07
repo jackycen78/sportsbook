@@ -1,1497 +1,1720 @@
-Darius Garland (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-2.000
-Under 2.5 ThreePointFieldGoals
-1.751 
- 
-Darius Garland (Assists)(must play)
-Over 7.5 Assists
-2.130
-Under 7.5 Assists
-1.662 
- 
-Darius Garland (Points)(must play)
-Over 22.5 Points
-1.980
-Under 22.5 Points
-1.769 
- 
-Darius Garland (Pts+Rebs+Asts)(must play)
-Over 33.5 PointsReboundsAssist
-1.952
-Under 33.5 PointsReboundsAssist
-1.793 
- 
-Darius Garland (Rebounds)(must play)
-Over 2.5 Rebounds
-1.709
-Under 2.5 Rebounds
-2.060 
- 
-Derrick White (3 Point FG)(must play)
+Bobby Portis (3 Point FG)(must play)
+Hide All
 Over 1.5 ThreePointFieldGoals
-1.641
+2.550
 Under 1.5 ThreePointFieldGoals
+1.460 
+ 
+Bobby Portis (Assists)(must play)
+Over 1.5 Assists
+1.666
+Under 1.5 Assists
+2.100 
+ 
+Bobby Portis (Points)(must play)
+Over 16.5 Points
+1.917
+Under 16.5 Points
+1.833 
+ 
+Bobby Portis (Pts+Rebs+Asts)(must play)
+Over 28.5 PointsReboundsAssist
+1.900
+Under 28.5 PointsReboundsAssist
+1.847 
+ 
+Bobby Portis (Rebounds)(must play)
+Over 9.5 Rebounds
+1.671
+Under 9.5 Rebounds
+2.110 
+ 
+Bol Bol (Points)(must play)
+Over 7.5 Points
+1.943
+Under 7.5 Points
+1.800 
+ 
+Bol Bol (Pts+Rebs+Asts)(must play)
+Over 13.5 PointsReboundsAssist
+1.925
+Under 13.5 PointsReboundsAssist
+1.813 
+ 
+Bol Bol (Rebounds)(must play)
+Over 4.5 Rebounds
+1.636
+Under 4.5 Rebounds
 2.170 
  
-Derrick White (Assists)(must play)
-Over 4.5 Assists
-1.990
-Under 4.5 Assists
-1.763 
+Brook Lopez (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.568
+Under 1.5 ThreePointFieldGoals
+2.290 
  
-Derrick White (Points)(must play)
-Over 15.5 Points
-1.877
-Under 15.5 Points
-1.862 
- 
-Derrick White (Pts+Rebs+Asts)(must play)
-Over 24.5 PointsReboundsAssist
-1.806
-Under 24.5 PointsReboundsAssist
-1.952 
- 
-Derrick White (Rebounds)(must play)
-Over 4.5 Rebounds
-2.270
-Under 4.5 Rebounds
-1.588 
- 
-Evan Mobley (3 Point FG)(must play)
-Over 0.5 ThreePointFieldGoals
-2.790
-Under 0.5 ThreePointFieldGoals
-1.387 
- 
-Evan Mobley (Assists)(must play)
-Over 2.5 Assists
-1.900
-Under 2.5 Assists
-1.840 
- 
-Evan Mobley (Points)(must play)
-Over 16.5 Points
-1.806
-Under 16.5 Points
-1.934 
- 
-Evan Mobley (Pts+Rebs+Asts)(must play)
-Over 29.5 PointsReboundsAssist
-1.862
-Under 29.5 PointsReboundsAssist
-1.877 
- 
-Evan Mobley (Rebounds)(must play)
-Over 9.5 Rebounds
-1.854
-Under 9.5 Rebounds
-1.884 
- 
-Isaac Okoro (3 Point FG)(must play)
-Over 0.5 ThreePointFieldGoals
-1.709
-Under 0.5 ThreePointFieldGoals
-2.060 
- 
-Isaac Okoro (Assists)(must play)
-Over 0.5 Assists
-1.366
-Under 0.5 Assists
-2.860 
- 
-Isaac Okoro (Points)(must play)
-Over 6.5 Points
-1.854
-Under 6.5 Points
-1.884 
- 
-Isaac Okoro (Pts+Rebs+Asts)(must play)
-Over 10.5 PointsReboundsAssist
-1.925
-Under 10.5 PointsReboundsAssist
-1.813 
- 
-Isaac Okoro (Rebounds)(must play)
-Over 2.5 Rebounds
-1.934
-Under 2.5 Rebounds
-1.813 
- 
-Jarrett Allen (Assists)(must play)
+Brook Lopez (Assists)(must play)
 Over 1.5 Assists
-2.180
+2.140
 Under 1.5 Assists
-1.632 
- 
-Jarrett Allen (Points)(must play)
-Over 14.5 Points
-1.952
-Under 14.5 Points
-1.793 
- 
-Jarrett Allen (Pts+Rebs+Asts)(must play)
-Over 26.5 PointsReboundsAssist
-1.869
-Under 26.5 PointsReboundsAssist
-1.869 
- 
-Jarrett Allen (Rebounds)(must play)
-Over 10.5 Rebounds
-1.961
-Under 10.5 Rebounds
-1.781 
- 
-Jaylen Brown (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-1.800
-Under 2.5 ThreePointFieldGoals
-1.943 
- 
-Jaylen Brown (Assists)(must play)
-Over 3.5 Assists
-2.280
-Under 3.5 Assists
-1.578 
- 
-Jaylen Brown (Points)(must play)
-Over 27.5 Points
-1.813
-Under 27.5 Points
-1.934 
- 
-Jaylen Brown (Pts+Rebs+Asts)(must play)
-Over 37.5 PointsReboundsAssist
-1.813
-Under 37.5 PointsReboundsAssist
-1.925 
- 
-Jaylen Brown (Rebounds)(must play)
-Over 7.5 Rebounds
-2.130
-Under 7.5 Rebounds
 1.666 
  
-Malcolm Brogdon (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-1.689
-Under 1.5 ThreePointFieldGoals
-2.080 
+Brook Lopez (Points)(must play)
+Over 17.5 Points
+1.943
+Under 17.5 Points
+1.793 
  
-Malcolm Brogdon (Assists)(must play)
+Brook Lopez (Pts+Rebs+Asts)(must play)
+Over 27.5 PointsReboundsAssist
+2.060
+Under 27.5 PointsReboundsAssist
+1.714 
+ 
+Brook Lopez (Rebounds)(must play)
+Over 7.5 Rebounds
+2.170
+Under 7.5 Rebounds
+1.657 
+ 
+Cole Anthony (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+2.420
+Under 1.5 ThreePointFieldGoals
+1.512 
+ 
+Cole Anthony (Assists)(must play)
 Over 3.5 Assists
-1.775
+1.564
 Under 3.5 Assists
-1.970 
+2.300 
  
-Malcolm Brogdon (Points)(must play)
-Over 14.5 Points
-1.819
-Under 14.5 Points
-1.925 
- 
-Malcolm Brogdon (Pts+Rebs+Asts)(must play)
-Over 23.5 PointsReboundsAssist
-1.925
-Under 23.5 PointsReboundsAssist
-1.819 
- 
-Malcolm Brogdon (Rebounds)(must play)
-Over 4.5 Rebounds
-1.934
-Under 4.5 Rebounds
-1.813 
- 
-Marcus Smart (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-1.649
-Under 1.5 ThreePointFieldGoals
-2.150 
- 
-Marcus Smart (Assists)(must play)
-Over 5.5 Assists
-1.740
-Under 5.5 Assists
-2.020 
- 
-Marcus Smart (Points)(must play)
+Cole Anthony (Points)(must play)
 Over 12.5 Points
 1.769
 Under 12.5 Points
 1.980 
  
-Marcus Smart (Pts+Rebs+Asts)(must play)
-Over 22.5 PointsReboundsAssist
+Cole Anthony (Pts+Rebs+Asts)(must play)
+Over 21.5 PointsReboundsAssist
 1.793
-Under 22.5 PointsReboundsAssist
+Under 21.5 PointsReboundsAssist
 1.952 
  
-Marcus Smart (Rebounds)(must play)
-Over 3.5 Rebounds
-1.641
-Under 3.5 Rebounds
-2.160 
- 
-Cam Reddish (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-1.657
-Under 1.5 ThreePointFieldGoals
-2.140 
- 
-Cam Reddish (Assists)(must play)
-Over 1.5 Assists
-1.483
-Under 1.5 Assists
-2.490 
- 
-Cam Reddish (Points)(must play)
-Over 14.5 Points
-1.909
-Under 14.5 Points
-1.833 
- 
-Cam Reddish (Pts+Rebs+Asts)(must play)
-Over 19.5 PointsReboundsAssist
-1.892
-Under 19.5 PointsReboundsAssist
-1.847 
- 
-Cam Reddish (Rebounds)(must play)
-Over 2.5 Rebounds
-1.649
-Under 2.5 Rebounds
-2.150 
- 
-Damian Lillard (3 Point FG)(must play)
-Over 4.5 ThreePointFieldGoals
+Cole Anthony (Rebounds)(must play)
+Over 4.5 Rebounds
 1.751
-Under 4.5 ThreePointFieldGoals
+Under 4.5 Rebounds
 2.000 
  
-Damian Lillard (Assists)(must play)
-Over 7.5 Assists
-2.030
-Under 7.5 Assists
-1.729 
- 
-Damian Lillard (Points)(must play)
-Over 36.5 Points
-1.724
-Under 36.5 Points
-2.050 
- 
-Damian Lillard (Pts+Rebs+Asts)(must play)
-Over 49.5 PointsReboundsAssist
-1.787
-Under 49.5 PointsReboundsAssist
-1.961 
- 
-Damian Lillard (Rebounds)(must play)
-Over 5.5 Rebounds
-2.090
-Under 5.5 Rebounds
-1.699 
- 
-Drew Eubanks (Assists)(must play)
-Over 1.5 Assists
-1.621
-Under 1.5 Assists
-2.190 
- 
-Drew Eubanks (Points)(must play)
-Over 7.5 Points
-1.787
-Under 7.5 Points
-1.961 
- 
-Drew Eubanks (Pts+Rebs+Asts)(must play)
-Over 17.5 PointsReboundsAssist
-1.934
-Under 17.5 PointsReboundsAssist
-1.806 
- 
-Drew Eubanks (Rebounds)(must play)
-Over 7.5 Rebounds
-2.220
-Under 7.5 Rebounds
-1.609 
- 
-Jaden Ivey (3 Point FG)(must play)
+Franz Wagner (3 Point FG)(must play)
 Over 1.5 ThreePointFieldGoals
-1.877
+1.729
 Under 1.5 ThreePointFieldGoals
-1.862 
+2.030 
  
-Jaden Ivey (Assists)(must play)
-Over 5.5 Assists
-2.180
-Under 5.5 Assists
-1.628 
- 
-Jaden Ivey (Points)(must play)
-Over 16.5 Points
-1.833
-Under 16.5 Points
-1.909 
- 
-Jaden Ivey (Pts+Rebs+Asts)(must play)
-Over 26.5 PointsReboundsAssist
-1.952
-Under 26.5 PointsReboundsAssist
-1.793 
- 
-Jaden Ivey (Rebounds)(must play)
-Over 4.5 Rebounds
-2.220
-Under 4.5 Rebounds
-1.609 
- 
-Jerami Grant (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-2.210
-Under 2.5 ThreePointFieldGoals
-1.613 
- 
-Jerami Grant (Assists)(must play)
+Franz Wagner (Assists)(must play)
 Over 2.5 Assists
-1.684
-Under 2.5 Assists
-2.090 
- 
-Jerami Grant (Points)(must play)
-Over 22.5 Points
-1.781
-Under 22.5 Points
-1.970 
- 
-Jerami Grant (Pts+Rebs+Asts)(must play)
-Over 30.5 PointsReboundsAssist
-1.909
-Under 30.5 PointsReboundsAssist
-1.833 
- 
-Jerami Grant (Rebounds)(must play)
-Over 5.5 Rebounds
-2.170
-Under 5.5 Rebounds
-1.649 
- 
-Matisse Thybulle (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-1.800
-Under 1.5 ThreePointFieldGoals
-1.943 
- 
-Matisse Thybulle (Assists)(must play)
-Over 1.5 Assists
-1.740
-Under 1.5 Assists
-2.020 
- 
-Matisse Thybulle (Points)(must play)
-Over 8.5 Points
-1.892
-Under 8.5 Points
-1.847 
- 
-Matisse Thybulle (Pts+Rebs+Asts)(must play)
-Over 14.5 PointsReboundsAssist
-1.840
-Under 14.5 PointsReboundsAssist
-1.909 
- 
-Matisse Thybulle (Rebounds)(must play)
-Over 4.5 Rebounds
-2.240
-Under 4.5 Rebounds
-1.598 
- 
-Nassir Little (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-2.280
-Under 1.5 ThreePointFieldGoals
-1.574 
- 
-Nassir Little (Points)(must play)
-Over 8.5 Points
-2.080
-Under 8.5 Points
-1.694 
- 
-Nassir Little (Pts+Rebs+Asts)(must play)
-Over 12.5 PointsReboundsAssist
-1.854
-Under 12.5 PointsReboundsAssist
-1.884 
- 
-Nassir Little (Rebounds)(must play)
-Over 3.5 Rebounds
-1.934
-Under 3.5 Rebounds
-1.813 
- 
-Shaedon Sharpe (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-2.510
-Under 1.5 ThreePointFieldGoals
-1.476 
- 
-Shaedon Sharpe (Points)(must play)
-Over 8.5 Points
-1.735
-Under 8.5 Points
-2.020 
- 
-Shaedon Sharpe (Pts+Rebs+Asts)(must play)
-Over 13.5 PointsReboundsAssist
-1.884
-Under 13.5 PointsReboundsAssist
-1.854 
- 
-Shaedon Sharpe (Rebounds)(must play)
-Over 3.5 Rebounds
-2.390
-Under 3.5 Rebounds
-1.523 
- 
-Trendon Watford (Assists)(must play)
-Over 2.5 Assists
-1.740
+1.746
 Under 2.5 Assists
 2.010 
  
-Trendon Watford (Points)(must play)
-Over 8.5 Points
-2.050
-Under 8.5 Points
-1.714 
+Franz Wagner (Points)(must play)
+Over 17.5 Points
+1.961
+Under 17.5 Points
+1.787 
  
-Trendon Watford (Pts+Rebs+Asts)(must play)
-Over 15.5 PointsReboundsAssist
-1.806
-Under 15.5 PointsReboundsAssist
-1.943 
+Franz Wagner (Pts+Rebs+Asts)(must play)
+Over 24.5 PointsReboundsAssist
+1.934
+Under 24.5 PointsReboundsAssist
+1.806 
  
-Trendon Watford (Rebounds)(must play)
+Franz Wagner (Rebounds)(must play)
 Over 4.5 Rebounds
-1.847
+2.440
 Under 4.5 Rebounds
-1.892 
+1.510 
  
-James Harden (3 Point FG)(must play)
+Giannis Antetokounmpo (3 Point FG)(must play)
+Over 0.5 ThreePointFieldGoals
+1.662
+Under 0.5 ThreePointFieldGoals
+2.130 
+ 
+Giannis Antetokounmpo (Assists)(must play)
+Over 5.5 Assists
+1.628
+Under 5.5 Assists
+2.190 
+ 
+Giannis Antetokounmpo (Points)(must play)
+Over 32.5 Points
+1.781
+Under 32.5 Points
+1.980 
+ 
+Giannis Antetokounmpo (Pts+Rebs+Asts)(must play)
+Over 50.5 PointsReboundsAssist
+1.877
+Under 50.5 PointsReboundsAssist
+1.862 
+ 
+Giannis Antetokounmpo (Rebounds)(must play)
+Over 12.5 Rebounds
+1.980
+Under 12.5 Rebounds
+1.763 
+ 
+Grayson Allen (3 Point FG)(must play)
 Over 2.5 ThreePointFieldGoals
-1.649
-Under 2.5 ThreePointFieldGoals
-2.150 
- 
-James Harden (Assists)(must play)
-Over 10.5 Assists
 2.060
-Under 10.5 Assists
+Under 2.5 ThreePointFieldGoals
 1.709 
  
-James Harden (Points)(must play)
-Over 22.5 Points
-1.892
-Under 22.5 Points
-1.847 
+Grayson Allen (Assists)(must play)
+Over 2.5 Assists
+1.699
+Under 2.5 Assists
+2.070 
  
-James Harden (Pts+Rebs+Asts)(must play)
-Over 39.5 PointsReboundsAssist
-1.952
-Under 39.5 PointsReboundsAssist
-1.793 
+Grayson Allen (Points)(must play)
+Over 11.5 Points
+1.662
+Under 11.5 Points
+2.150 
  
-James Harden (Rebounds)(must play)
-Over 6.5 Rebounds
-2.150
-Under 6.5 Rebounds
-1.657 
+Grayson Allen (Pts+Rebs+Asts)(must play)
+Over 17.5 PointsReboundsAssist
+1.787
+Under 17.5 PointsReboundsAssist
+1.961 
  
-Joel Embiid (Assists)(must play)
-Over 3.5 Assists
-1.671
-Under 3.5 Assists
-2.120 
+Grayson Allen (Rebounds)(must play)
+Over 3.5 Rebounds
+1.925
+Under 3.5 Rebounds
+1.806 
  
-Joel Embiid (Points)(must play)
-Over 32.5 Points
+Jalen Suggs (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+2.380
+Under 1.5 ThreePointFieldGoals
+1.529 
+ 
+Jalen Suggs (Assists)(must play)
+Over 2.5 Assists
+1.684
+Under 2.5 Assists
+2.080 
+ 
+Jalen Suggs (Points)(must play)
+Over 12.5 Points
+2.030
+Under 12.5 Points
+1.735 
+ 
+Jalen Suggs (Pts+Rebs+Asts)(must play)
+Over 20.5 PointsReboundsAssist
+2.130
+Under 20.5 PointsReboundsAssist
+1.671 
+ 
+Jalen Suggs (Rebounds)(must play)
+Over 4.5 Rebounds
+2.130
+Under 4.5 Rebounds
+1.666 
+ 
+Jevon Carter (3 Point FG)(must play)
+Over 2.5 ThreePointFieldGoals
 1.862
-Under 32.5 Points
+Under 2.5 ThreePointFieldGoals
 1.877 
  
-Joel Embiid (Pts+Rebs+Asts)(must play)
-Over 47.5 PointsReboundsAssist
-1.840
-Under 47.5 PointsReboundsAssist
-1.900 
- 
-Joel Embiid (Rebounds)(must play)
-Over 11.5 Rebounds
-1.952
-Under 11.5 Rebounds
-1.793 
- 
-Tyrese Maxey (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-2.280
-Under 2.5 ThreePointFieldGoals
-1.574 
- 
-Tyrese Maxey (Assists)(must play)
-Over 2.5 Assists
-1.529
-Under 2.5 Assists
-2.380 
- 
-Tyrese Maxey (Points)(must play)
-Over 21.5 Points
-1.826
-Under 21.5 Points
-1.925 
- 
-Tyrese Maxey (Pts+Rebs+Asts)(must play)
-Over 27.5 PointsReboundsAssist
-1.900
-Under 27.5 PointsReboundsAssist
-1.833 
- 
-Tyrese Maxey (Rebounds)(must play)
-Over 2.5 Rebounds
-1.751
-Under 2.5 Rebounds
-1.990 
- 
-Bam Adebayo (Assists)(must play)
-Hide All
+Jevon Carter (Assists)(must play)
 Over 3.5 Assists
-2.060
+1.833
 Under 3.5 Assists
-1.704 
- 
-Bam Adebayo (Points)(must play)
-Over 20.5 Points
-1.840
-Under 20.5 Points
 1.909 
  
-Bam Adebayo (Pts+Rebs+Asts)(must play)
-Over 32.5 PointsReboundsAssist
-1.671
-Under 32.5 PointsReboundsAssist
+Jevon Carter (Points)(must play)
+Over 12.5 Points
+1.714
+Under 12.5 Points
+2.060 
+ 
+Jevon Carter (Pts+Rebs+Asts)(must play)
+Over 20.5 PointsReboundsAssist
+1.862
+Under 20.5 PointsReboundsAssist
+1.877 
+ 
+Jevon Carter (Rebounds)(must play)
+Over 3.5 Rebounds
+1.666
+Under 3.5 Rebounds
 2.120 
  
-Bam Adebayo (Rebounds)(must play)
-Over 9.5 Rebounds
-2.030
-Under 9.5 Rebounds
-1.740 
+Markelle Fultz (3 Point FG)(must play)
+Over 0.5 ThreePointFieldGoals
+2.470
+Under 0.5 ThreePointFieldGoals
+1.490 
  
-Bogdan Bogdanovic (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-2.180
-Under 2.5 ThreePointFieldGoals
-1.628 
+Markelle Fultz (Assists)(must play)
+Over 5.5 Assists
+2.270
+Under 5.5 Assists
+1.588 
  
-Bogdan Bogdanovic (Assists)(must play)
-Over 2.5 Assists
-1.980
-Under 2.5 Assists
-1.769 
- 
-Bogdan Bogdanovic (Points)(must play)
-Over 11.5 Points
-1.826
-Under 11.5 Points
-1.909 
- 
-Bogdan Bogdanovic (Pts+Rebs+Asts)(must play)
-Over 17.5 PointsReboundsAssist
+Markelle Fultz (Points)(must play)
+Over 15.5 Points
 2.020
-Under 17.5 PointsReboundsAssist
-1.740 
+Under 15.5 Points
+1.735 
  
-Caleb Martin (3 Point FG)(must play)
+Markelle Fultz (Pts+Rebs+Asts)(must play)
+Over 25.5 PointsReboundsAssist
+1.877
+Under 25.5 PointsReboundsAssist
+1.862 
+ 
+Markelle Fultz (Rebounds)(must play)
+Over 4.5 Rebounds
+1.694
+Under 4.5 Rebounds
+2.070 
+ 
+Moritz Wagner (3 Point FG)(must play)
 Over 1.5 ThreePointFieldGoals
-2.080
+1.900
 Under 1.5 ThreePointFieldGoals
-1.694 
+1.833 
  
-Caleb Martin (Points)(must play)
-Over 10.5 Points
+Moritz Wagner (Points)(must play)
+Over 15.5 Points
+1.862
+Under 15.5 Points
+1.877 
+ 
+Moritz Wagner (Pts+Rebs+Asts)(must play)
+Over 23.5 PointsReboundsAssist
 1.840
-Under 10.5 Points
+Under 23.5 PointsReboundsAssist
 1.892 
  
-Caleb Martin (Pts+Rebs+Asts)(must play)
-Over 17.5 PointsReboundsAssist
-1.813
-Under 17.5 PointsReboundsAssist
-1.934 
+Moritz Wagner (Rebounds)(must play)
+Over 6.5 Rebounds
+1.900
+Under 6.5 Rebounds
+1.847 
  
-Caleb Martin (Rebounds)(must play)
-Over 5.5 Rebounds
-2.000
-Under 5.5 Rebounds
-1.751 
+Paolo Banchero (3 Point FG)(must play)
+Over 0.5 ThreePointFieldGoals
+1.423
+Under 0.5 ThreePointFieldGoals
+2.660 
  
-Clint Capela (Assists)(must play)
-Over 0.5 Assists
-1.641
-Under 0.5 Assists
-2.160 
+Paolo Banchero (Assists)(must play)
+Over 3.5 Assists
+2.150
+Under 3.5 Assists
+1.641 
  
-Clint Capela (Points)(must play)
-Over 10.5 Points
-2.000
-Under 10.5 Points
-1.751 
- 
-Clint Capela (Pts+Rebs+Asts)(must play)
-Over 21.5 PointsReboundsAssist
-1.961
-Under 21.5 PointsReboundsAssist
-1.781 
- 
-Clint Capela (Rebounds)(must play)
-Over 9.5 Rebounds
-1.613
-Under 9.5 Rebounds
-2.220 
- 
-De'Andre Hunter (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-2.100
-Under 1.5 ThreePointFieldGoals
+Paolo Banchero (Points)(must play)
+Over 20.5 Points
+2.110
+Under 20.5 Points
 1.684 
  
-De'Andre Hunter (Assists)(must play)
+Paolo Banchero (Pts+Rebs+Asts)(must play)
+Over 31.5 PointsReboundsAssist
+1.980
+Under 31.5 PointsReboundsAssist
+1.775 
+ 
+Paolo Banchero (Rebounds)(must play)
+Over 7.5 Rebounds
+2.120
+Under 7.5 Rebounds
+1.684 
+ 
+Isaiah Livers (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.476
+Under 1.5 ThreePointFieldGoals
+2.510 
+ 
+Isaiah Livers (Assists)(must play)
 Over 1.5 Assists
 2.250
 Under 1.5 Assists
 1.595 
  
-De'Andre Hunter (Points)(must play)
-Over 14.5 Points
-2.000
-Under 14.5 Points
-1.757 
- 
-De'Andre Hunter (Pts+Rebs+Asts)(must play)
-Over 19.5 PointsReboundsAssist
-1.925
-Under 19.5 PointsReboundsAssist
-1.813 
- 
-De'Andre Hunter (Rebounds)(must play)
-Over 3.5 Rebounds
-1.769
-Under 3.5 Rebounds
-1.980 
- 
-Dejounte Murray (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-1.606
-Under 1.5 ThreePointFieldGoals
-2.220 
- 
-Dejounte Murray (Assists)(must play)
-Over 5.5 Assists
-2.170
-Under 5.5 Assists
-1.632 
- 
-Dejounte Murray (Points)(must play)
-Over 19.5 Points
-1.925
-Under 19.5 Points
-1.813 
- 
-Dejounte Murray (Pts+Rebs+Asts)(must play)
-Over 29.5 PointsReboundsAssist
-1.900
-Under 29.5 PointsReboundsAssist
-1.840 
- 
-Dejounte Murray (Rebounds)(must play)
-Over 4.5 Rebounds
-1.714
-Under 4.5 Rebounds
-2.060 
- 
-Gabe Vincent (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-1.515
-Under 1.5 ThreePointFieldGoals
-2.410 
- 
-Gabe Vincent (Assists)(must play)
-Over 2.5 Assists
-1.826
-Under 2.5 Assists
-1.909 
- 
-Gabe Vincent (Points)(must play)
-Over 10.5 Points
-1.813
-Under 10.5 Points
-1.943 
- 
-Gabe Vincent (Pts+Rebs+Asts)(must play)
-Over 15.5 PointsReboundsAssist
-1.793
-Under 15.5 PointsReboundsAssist
-1.952 
- 
-Gabe Vincent (Rebounds)(must play)
-Over 2.5 Rebounds
-2.140
-Under 2.5 Rebounds
-1.662 
- 
-Jimmy Butler (3 Point FG)(must play)
-Over 0.5 ThreePointFieldGoals
-2.380
-Under 0.5 ThreePointFieldGoals
-1.529 
- 
-Jimmy Butler (Assists)(must play)
-Over 5.5 Assists
-1.980
-Under 5.5 Assists
-1.769 
- 
-Jimmy Butler (Points)(must play)
-Over 22.5 Points
-1.847
-Under 22.5 Points
-1.892 
- 
-Jimmy Butler (Pts+Rebs+Asts)(must play)
-Over 34.5 PointsReboundsAssist
-1.826
-Under 34.5 PointsReboundsAssist
-1.909 
- 
-Jimmy Butler (Rebounds)(must play)
-Over 6.5 Rebounds
-2.050
-Under 6.5 Rebounds
-1.709 
- 
-John Collins (3 Point FG)(must play)
-Over 0.5 ThreePointFieldGoals
-1.952
-Under 0.5 ThreePointFieldGoals
-1.787 
- 
-John Collins (Assists)(must play)
-Over 0.5 Assists
-1.787
-Under 0.5 Assists
+Isaiah Livers (Points)(must play)
+Over 9.5 Points
+1.781
+Under 9.5 Points
 1.961 
  
-John Collins (Points)(must play)
-Over 9.5 Points
-1.854
-Under 9.5 Points
-1.884 
- 
-John Collins (Pts+Rebs+Asts)(must play)
+Isaiah Livers (Pts+Rebs+Asts)(must play)
 Over 14.5 PointsReboundsAssist
-1.826
-Under 14.5 PointsReboundsAssist
-1.909 
- 
-John Collins (Rebounds)(must play)
-Over 4.5 Rebounds
-1.909
-Under 4.5 Rebounds
-1.833 
- 
-Max Strus (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-1.751
-Under 1.5 ThreePointFieldGoals
-2.000 
- 
-Max Strus (Assists)(must play)
-Over 1.5 Assists
-1.617
-Under 1.5 Assists
-2.210 
- 
-Max Strus (Points)(must play)
-Over 9.5 Points
-1.952
-Under 9.5 Points
-1.793 
- 
-Max Strus (Pts+Rebs+Asts)(must play)
-Over 14.5 PointsReboundsAssist
-1.877
-Under 14.5 PointsReboundsAssist
-1.862 
- 
-Onyeka Okongwu (Points)(must play)
-Over 7.5 Points
-2.000
-Under 7.5 Points
-1.751 
- 
-Onyeka Okongwu (Pts+Rebs+Asts)(must play)
-Over 13.5 PointsReboundsAssist
-1.862
-Under 13.5 PointsReboundsAssist
-1.877 
- 
-Onyeka Okongwu (Rebounds)(must play)
-Over 5.5 Rebounds
-1.699
-Under 5.5 Rebounds
-2.070 
- 
-Saddiq Bey (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-1.552
-Under 1.5 ThreePointFieldGoals
-2.360 
- 
-Saddiq Bey (Points)(must play)
-Over 11.5 Points
-1.854
-Under 11.5 Points
-1.884 
- 
-Saddiq Bey (Pts+Rebs+Asts)(must play)
-Over 17.5 PointsReboundsAssist
-1.900
-Under 17.5 PointsReboundsAssist
-1.840 
- 
-Saddiq Bey (Rebounds)(must play)
-Over 3.5 Rebounds
-1.515
-Under 3.5 Rebounds
-2.440 
- 
-Trae Young (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-2.460
-Under 2.5 ThreePointFieldGoals
-1.495 
- 
-Trae Young (Assists)(must play)
-Over 9.5 Assists
-1.833
-Under 9.5 Assists
-1.909 
- 
-Trae Young (Points)(must play)
-Over 23.5 Points
-1.763
-Under 23.5 Points
-1.990 
- 
-Trae Young (Pts+Rebs+Asts)(must play)
-Over 36.5 PointsReboundsAssist
-1.746
-Under 36.5 PointsReboundsAssist
-2.020 
- 
-Trae Young (Rebounds)(must play)
-Over 2.5 Rebounds
-1.609
-Under 2.5 Rebounds
-2.210 
- 
-Tyler Herro (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-1.680
-Under 2.5 ThreePointFieldGoals
-2.090 
- 
-Tyler Herro (Assists)(must play)
-Over 4.5 Assists
-1.729
-Under 4.5 Assists
-2.030 
- 
-Tyler Herro (Points)(must play)
-Over 20.5 Points
-1.980
-Under 20.5 Points
-1.775 
- 
-Tyler Herro (Pts+Rebs+Asts)(must play)
-Over 30.5 PointsReboundsAssist
-1.787
-Under 30.5 PointsReboundsAssist
-1.952 
- 
-Tyler Herro (Rebounds)(must play)
-Over 5.5 Rebounds
-2.140
-Under 5.5 Rebounds
-1.657 
- 
-Victor Oladipo (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-2.630
-Under 1.5 ThreePointFieldGoals
-1.434 
- 
-Victor Oladipo (Assists)(must play)
-Over 2.5 Assists
-1.636
-Under 2.5 Assists
-2.170 
- 
-Victor Oladipo (Points)(must play)
-Over 9.5 Points
-1.970
-Under 9.5 Points
-1.775 
- 
-Victor Oladipo (Pts+Rebs+Asts)(must play)
-Over 15.5 PointsReboundsAssist
-2.020
-Under 15.5 PointsReboundsAssist
-1.746 
- 
-Aaron Gordon (3 Point FG)(must play)
-Hide All
-Over 0.5 ThreePointFieldGoals
-1.628
-Under 0.5 ThreePointFieldGoals
-2.180 
- 
-Aaron Gordon (Assists)(must play)
-Over 2.5 Assists
-1.800
-Under 2.5 Assists
-1.943 
- 
-Aaron Gordon (Points)(must play)
-Over 14.5 Points
-1.793
-Under 14.5 Points
-1.952 
- 
-Aaron Gordon (Pts+Rebs+Asts)(must play)
-Over 24.5 PointsReboundsAssist
-1.819
-Under 24.5 PointsReboundsAssist
-1.917 
- 
-Aaron Gordon (Rebounds)(must play)
-Over 6.5 Rebounds
-1.813
-Under 6.5 Rebounds
-1.925 
- 
-Fred VanVleet (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-1.609
-Under 2.5 ThreePointFieldGoals
-2.210 
- 
-Fred VanVleet (Assists)(must play)
-Over 7.5 Assists
-2.310
-Under 7.5 Assists
-1.564 
- 
-Fred VanVleet (Points)(must play)
-Over 20.5 Points
-2.120
-Under 20.5 Points
-1.689 
- 
-Fred VanVleet (Pts+Rebs+Asts)(must play)
-Over 31.5 PointsReboundsAssist
-1.925
-Under 31.5 PointsReboundsAssist
-1.826 
- 
-Fred VanVleet (Rebounds)(must play)
-Over 4.5 Rebounds
-2.290
-Under 4.5 Rebounds
-1.571 
- 
-Gary Trent Jr. (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-1.507
-Under 1.5 ThreePointFieldGoals
-2.430 
- 
-Gary Trent Jr. (Assists)(must play)
-Over 1.5 Assists
-2.260
-Under 1.5 Assists
-1.584 
- 
-Gary Trent Jr. (Points)(must play)
-Over 14.5 Points
-1.943
-Under 14.5 Points
-1.800 
- 
-Gary Trent Jr. (Pts+Rebs+Asts)(must play)
-Over 17.5 PointsReboundsAssist
-1.793
-Under 17.5 PointsReboundsAssist
-1.952 
- 
-Gary Trent Jr. (Rebounds)(must play)
-Over 2.5 Rebounds
-2.210
-Under 2.5 Rebounds
-1.613 
- 
-Jakob Poeltl (Assists)(must play)
-Over 2.5 Assists
-2.260
-Under 2.5 Assists
-1.584 
- 
-Jakob Poeltl (Points)(must play)
-Over 11.5 Points
-1.854
-Under 11.5 Points
-1.892 
- 
-Jakob Poeltl (Pts+Rebs+Asts)(must play)
-Over 22.5 PointsReboundsAssist
-1.763
-Under 22.5 PointsReboundsAssist
-1.980 
- 
-Jakob Poeltl (Rebounds)(must play)
-Over 8.5 Rebounds
-1.884
-Under 8.5 Rebounds
-1.862 
- 
-Jamal Murray (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-1.625
-Under 2.5 ThreePointFieldGoals
-2.190 
- 
-Jamal Murray (Assists)(must play)
-Over 6.5 Assists
-2.030
-Under 6.5 Assists
-1.729 
- 
-Jamal Murray (Points)(must play)
-Over 22.5 Points
-1.970
-Under 22.5 Points
-1.775 
- 
-Jamal Murray (Pts+Rebs+Asts)(must play)
-Over 32.5 PointsReboundsAssist
-1.826
-Under 32.5 PointsReboundsAssist
-1.917 
- 
-Jamal Murray (Rebounds)(must play)
-Over 4.5 Rebounds
-2.150
-Under 4.5 Rebounds
-1.649 
- 
-Kentavious Caldwell-Pope (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-1.813
-Under 1.5 ThreePointFieldGoals
-1.934 
- 
-Kentavious Caldwell-Pope (Assists)(must play)
-Over 2.5 Assists
-1.884
-Under 2.5 Assists
-1.854 
- 
-Kentavious Caldwell-Pope (Points)(must play)
-Over 10.5 Points
-1.854
-Under 10.5 Points
-1.884 
- 
-Kentavious Caldwell-Pope (Pts+Rebs+Asts)(must play)
-Over 15.5 PointsReboundsAssist
-1.800
-Under 15.5 PointsReboundsAssist
-1.943 
- 
-Kentavious Caldwell-Pope (Rebounds)(must play)
-Over 2.5 Rebounds
-2.000
-Under 2.5 Rebounds
-1.751 
- 
-Nikola Jokic (3 Point FG)(must play)
-Over 0.5 ThreePointFieldGoals
-2.150
-Under 0.5 ThreePointFieldGoals
-1.649 
- 
-Nikola Jokic (Assists)(must play)
-Over 10.5 Assists
-1.952
-Under 10.5 Assists
-1.787 
- 
-Nikola Jokic (Points)(must play)
-Over 22.5 Points
-1.649
-Under 22.5 Points
-2.170 
- 
-Nikola Jokic (Pts+Rebs+Asts)(must play)
-Over 45.5 PointsReboundsAssist
-1.847
-Under 45.5 PointsReboundsAssist
-1.892 
- 
-Nikola Jokic (Rebounds)(must play)
-Over 12.5 Rebounds
 1.775
-Under 12.5 Rebounds
+Under 14.5 PointsReboundsAssist
 1.970 
  
-OG Anunoby (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-1.813
-Under 1.5 ThreePointFieldGoals
-1.934 
- 
-OG Anunoby (Assists)(must play)
-Over 1.5 Assists
-1.689
-Under 1.5 Assists
-2.080 
- 
-OG Anunoby (Points)(must play)
-Over 13.5 Points
-1.862
-Under 13.5 Points
-1.877 
- 
-OG Anunoby (Pts+Rebs+Asts)(must play)
-Over 19.5 PointsReboundsAssist
-1.793
-Under 19.5 PointsReboundsAssist
-1.952 
- 
-OG Anunoby (Rebounds)(must play)
-Over 4.5 Rebounds
-1.970
-Under 4.5 Rebounds
-1.775 
- 
-Pascal Siakam (3 Point FG)(must play)
-Over 1.5 ThreePointFieldGoals
-2.780
-Under 1.5 ThreePointFieldGoals
-1.387 
- 
-Pascal Siakam (Assists)(must play)
-Over 5.5 Assists
-2.180
-Under 5.5 Assists
-1.628 
- 
-Pascal Siakam (Points)(must play)
-Over 22.5 Points
-1.892
-Under 22.5 Points
-1.840 
- 
-Pascal Siakam (Pts+Rebs+Asts)(must play)
-Over 34.5 PointsReboundsAssist
-1.892
-Under 34.5 PointsReboundsAssist
-1.847 
- 
-Pascal Siakam (Rebounds)(must play)
-Over 6.5 Rebounds
-1.847
-Under 6.5 Rebounds
-1.892 
- 
-Scottie Barnes (3 Point FG)(must play)
-Over 0.5 ThreePointFieldGoals
-1.769
-Under 0.5 ThreePointFieldGoals
-1.980 
- 
-Scottie Barnes (Assists)(must play)
-Over 4.5 Assists
-2.300
-Under 4.5 Assists
-1.564 
- 
-Scottie Barnes (Points)(must play)
-Over 14.5 Points
-1.925
-Under 14.5 Points
-1.813 
- 
-Scottie Barnes (Pts+Rebs+Asts)(must play)
-Over 24.5 PointsReboundsAssist
-1.869
-Under 24.5 PointsReboundsAssist
-1.869 
- 
-Scottie Barnes (Rebounds)(must play)
-Over 5.5 Rebounds
-1.757
-Under 5.5 Rebounds
-1.980 
- 
-Brandon Ingram (3 Point FG)(must play)
-Hide All
-Over 1.5 ThreePointFieldGoals
-1.869
-Under 1.5 ThreePointFieldGoals
-1.869 
- 
-Brandon Ingram (Assists)(must play)
-Over 5.5 Assists
-2.190
-Under 5.5 Assists
-1.628 
- 
-Brandon Ingram (Points)(must play)
-Over 26.5 Points
-1.793
-Under 26.5 Points
-1.952 
- 
-Brandon Ingram (Pts+Rebs+Asts)(must play)
-Over 37.5 PointsReboundsAssist
-1.909
-Under 37.5 PointsReboundsAssist
-1.833 
- 
-Brandon Ingram (Rebounds)(must play)
-Over 5.5 Rebounds
+Isaiah Livers (Rebounds)(must play)
+Over 3.5 Rebounds
 1.800
-Under 5.5 Rebounds
+Under 3.5 Rebounds
 1.943 
  
-CJ McCollum (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-1.769
-Under 2.5 ThreePointFieldGoals
-1.980 
- 
-CJ McCollum (Assists)(must play)
-Over 5.5 Assists
-1.724
-Under 5.5 Assists
-2.040 
- 
-CJ McCollum (Points)(must play)
-Over 22.5 Points
-1.892
-Under 22.5 Points
-1.840 
- 
-CJ McCollum (Pts+Rebs+Asts)(must play)
-Over 32.5 PointsReboundsAssist
-1.900
-Under 32.5 PointsReboundsAssist
-1.840 
- 
-CJ McCollum (Rebounds)(must play)
-Over 4.5 Rebounds
-2.270
-Under 4.5 Rebounds
-1.584 
- 
-Domantas Sabonis (3 Point FG)(must play)
-Over 0.5 ThreePointFieldGoals
-2.550
-Under 0.5 ThreePointFieldGoals
-1.458 
- 
-Domantas Sabonis (Assists)(must play)
-Over 7.5 Assists
-2.180
-Under 7.5 Assists
-1.636 
- 
-Domantas Sabonis (Points)(must play)
-Over 20.5 Points
-1.990
-Under 20.5 Points
-1.763 
- 
-Domantas Sabonis (Pts+Rebs+Asts)(must play)
-Over 40.5 PointsReboundsAssist
-1.980
-Under 40.5 PointsReboundsAssist
-1.775 
- 
-Domantas Sabonis (Rebounds)(must play)
-Over 12.5 Rebounds
-1.917
-Under 12.5 Rebounds
-1.819 
- 
-Harrison Barnes (3 Point FG)(must play)
+Jaden Ivey (3 Point FG)(must play)
 Over 1.5 ThreePointFieldGoals
 1.740
 Under 1.5 ThreePointFieldGoals
 2.020 
  
-Harrison Barnes (Assists)(must play)
-Over 1.5 Assists
-1.925
-Under 1.5 Assists
-1.813 
+Jaden Ivey (Assists)(must play)
+Over 6.5 Assists
+1.699
+Under 6.5 Assists
+2.080 
  
-Harrison Barnes (Points)(must play)
-Over 15.5 Points
-1.934
-Under 15.5 Points
-1.813 
+Jaden Ivey (Points)(must play)
+Over 17.5 Points
+1.751
+Under 17.5 Points
+2.010 
  
-Harrison Barnes (Pts+Rebs+Asts)(must play)
-Over 21.5 PointsReboundsAssist
-1.892
-Under 21.5 PointsReboundsAssist
-1.847 
+Jaden Ivey (Pts+Rebs+Asts)(must play)
+Over 28.5 PointsReboundsAssist
+1.833
+Under 28.5 PointsReboundsAssist
+1.909 
  
-Harrison Barnes (Rebounds)(must play)
-Over 4.5 Rebounds
-1.854
-Under 4.5 Rebounds
-1.884 
+Jaden Ivey (Rebounds)(must play)
+Over 3.5 Rebounds
+1.813
+Under 3.5 Rebounds
+1.917 
  
-Herbert Jones (3 Point FG)(must play)
+James Wiseman (Assists)(must play)
+Over 0.5 Assists
+1.571
+Under 0.5 Assists
+2.290 
+ 
+James Wiseman (Points)(must play)
+Over 13.5 Points
+1.847
+Under 13.5 Points
+1.892 
+ 
+James Wiseman (Pts+Rebs+Asts)(must play)
+Over 22.5 PointsReboundsAssist
+1.714
+Under 22.5 PointsReboundsAssist
+2.060 
+ 
+James Wiseman (Rebounds)(must play)
+Over 7.5 Rebounds
+1.581
+Under 7.5 Rebounds
+2.290 
+ 
+Marvin Bagley III (3 Point FG)(must play)
 Over 0.5 ThreePointFieldGoals
-1.787
+2.440
 Under 0.5 ThreePointFieldGoals
-1.961 
+1.505 
  
-Herbert Jones (Assists)(must play)
-Over 2.5 Assists
-1.990
-Under 2.5 Assists
-1.763 
- 
-Herbert Jones (Points)(must play)
-Over 9.5 Points
-1.980
-Under 9.5 Points
-1.775 
- 
-Herbert Jones (Pts+Rebs+Asts)(must play)
-Over 16.5 PointsReboundsAssist
-1.990
-Under 16.5 PointsReboundsAssist
-1.757 
- 
-Herbert Jones (Rebounds)(must play)
-Over 4.5 Rebounds
-2.150
-Under 4.5 Rebounds
-1.649 
- 
-Keegan Murray (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-2.110
-Under 2.5 ThreePointFieldGoals
-1.675 
- 
-Keegan Murray (Assists)(must play)
+Marvin Bagley III (Assists)(must play)
 Over 1.5 Assists
-2.300
+2.440
 Under 1.5 Assists
-1.564 
+1.502 
  
-Keegan Murray (Points)(must play)
-Over 11.5 Points
+Marvin Bagley III (Points)(must play)
+Over 18.5 Points
 1.862
-Under 11.5 Points
+Under 18.5 Points
 1.877 
  
-Keegan Murray (Pts+Rebs+Asts)(must play)
+Marvin Bagley III (Pts+Rebs+Asts)(must play)
+Over 30.5 PointsReboundsAssist
+2.030
+Under 30.5 PointsReboundsAssist
+1.729 
+ 
+Marvin Bagley III (Rebounds)(must play)
+Over 10.5 Rebounds
+1.952
+Under 10.5 Rebounds
+1.787 
+ 
+Dennis Smith Jr. (Assists)(must play)
+Hide All
+Over 5.5 Assists
+2.060
+Under 5.5 Assists
+1.709 
+ 
+Dennis Smith Jr. (Points)(must play)
+Over 9.5 Points
+1.952
+Under 9.5 Points
+1.787 
+ 
+Dennis Smith Jr. (Pts+Rebs+Asts)(must play)
 Over 17.5 PointsReboundsAssist
 1.781
 Under 17.5 PointsReboundsAssist
 1.961 
  
-Keegan Murray (Rebounds)(must play)
+Dennis Smith Jr. (Rebounds)(must play)
+Over 2.5 Rebounds
+1.819
+Under 2.5 Rebounds
+1.909 
+ 
+Gordon Hayward (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+2.810
+Under 1.5 ThreePointFieldGoals
+1.380 
+ 
+Gordon Hayward (Assists)(must play)
+Over 4.5 Assists
+1.900
+Under 4.5 Assists
+1.840 
+ 
+Gordon Hayward (Points)(must play)
+Over 15.5 Points
+1.751
+Under 15.5 Points
+2.010 
+ 
+Gordon Hayward (Pts+Rebs+Asts)(must play)
+Over 24.5 PointsReboundsAssist
+1.854
+Under 24.5 PointsReboundsAssist
+1.884 
+ 
+Gordon Hayward (Rebounds)(must play)
 Over 4.5 Rebounds
-1.699
-Under 4.5 Rebounds
-2.070 
- 
-Kevin Huerter (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-2.050
-Under 2.5 ThreePointFieldGoals
-1.719 
- 
-Kevin Huerter (Assists)(must play)
-Over 2.5 Assists
-1.917
-Under 2.5 Assists
-1.833 
- 
-Kevin Huerter (Points)(must play)
-Over 14.5 Points
-1.806
-Under 14.5 Points
-1.934 
- 
-Kevin Huerter (Pts+Rebs+Asts)(must play)
-Over 20.5 PointsReboundsAssist
-1.813
-Under 20.5 PointsReboundsAssist
-1.934 
- 
-Kevin Huerter (Rebounds)(must play)
-Over 3.5 Rebounds
-2.280
-Under 3.5 Rebounds
-1.578 
- 
-Trey Murphy III (3 Point FG)(must play)
-Over 2.5 ThreePointFieldGoals
-2.110
-Under 2.5 ThreePointFieldGoals
-1.675 
- 
-Trey Murphy III (Assists)(must play)
-Over 1.5 Assists
-2.100
-Under 1.5 Assists
-1.684 
- 
-Trey Murphy III (Points)(must play)
-Over 14.5 Points
 1.970
-Under 14.5 Points
-1.775 
+Under 4.5 Rebounds
+1.781 
  
-Trey Murphy III (Pts+Rebs+Asts)(must play)
-Over 19.5 PointsReboundsAssist
+Immanuel Quickley (3 Point FG)(must play)
+Over 3.5 ThreePointFieldGoals
+2.420
+Under 3.5 ThreePointFieldGoals
+1.520 
+ 
+Immanuel Quickley (Assists)(must play)
+Over 5.5 Assists
+1.943
+Under 5.5 Assists
+1.800 
+ 
+Immanuel Quickley (Points)(must play)
+Over 21.5 Points
 1.961
-Under 19.5 PointsReboundsAssist
+Under 21.5 Points
 1.787 
  
-Trey Murphy III (Rebounds)(must play)
+Immanuel Quickley (Pts+Rebs+Asts)(must play)
+Over 31.5 PointsReboundsAssist
+2.060
+Under 31.5 PointsReboundsAssist
+1.714 
+ 
+Immanuel Quickley (Rebounds)(must play)
+Over 4.5 Rebounds
+1.729
+Under 4.5 Rebounds
+2.030 
+ 
+Josh Hart (3 Point FG)(must play)
+Over 0.5 ThreePointFieldGoals
+1.393
+Under 0.5 ThreePointFieldGoals
+2.760 
+ 
+Josh Hart (Assists)(must play)
+Over 3.5 Assists
+1.862
+Under 3.5 Assists
+1.877 
+ 
+Josh Hart (Points)(must play)
+Over 11.5 Points
+1.990
+Under 11.5 Points
+1.763 
+ 
+Josh Hart (Pts+Rebs+Asts)(must play)
+Over 21.5 PointsReboundsAssist
+1.925
+Under 21.5 PointsReboundsAssist
+1.819 
+ 
+Josh Hart (Rebounds)(must play)
+Over 6.5 Rebounds
+1.970
+Under 6.5 Rebounds
+1.781 
+ 
+Julius Randle (3 Point FG)(must play)
+Over 3.5 ThreePointFieldGoals
+1.925
+Under 3.5 ThreePointFieldGoals
+1.813 
+ 
+Julius Randle (Assists)(must play)
+Over 5.5 Assists
+2.180
+Under 5.5 Assists
+1.641 
+ 
+Julius Randle (Points)(must play)
+Over 28.5 Points
+1.970
+Under 28.5 Points
+1.787 
+ 
+Julius Randle (Pts+Rebs+Asts)(must play)
+Over 44.5 PointsReboundsAssist
+2.130
+Under 44.5 PointsReboundsAssist
+1.675 
+ 
+Julius Randle (Rebounds)(must play)
+Over 10.5 Rebounds
+2.350
+Under 10.5 Rebounds
+1.543 
+ 
+Kelly Oubre Jr. (3 Point FG)(must play)
+Over 2.5 ThreePointFieldGoals
+1.847
+Under 2.5 ThreePointFieldGoals
+1.892 
+ 
+Kelly Oubre Jr. (Assists)(must play)
+Over 1.5 Assists
+2.280
+Under 1.5 Assists
+1.581 
+ 
+Kelly Oubre Jr. (Points)(must play)
+Over 21.5 Points
+1.980
+Under 21.5 Points
+1.769 
+ 
+Kelly Oubre Jr. (Pts+Rebs+Asts)(must play)
+Over 29.5 PointsReboundsAssist
+1.884
+Under 29.5 PointsReboundsAssist
+1.854 
+ 
+Kelly Oubre Jr. (Rebounds)(must play)
+Over 6.5 Rebounds
+2.160
+Under 6.5 Rebounds
+1.645 
+ 
+Mark Williams (Assists)(must play)
+Over 0.5 Assists
+1.694
+Under 0.5 Assists
+2.080 
+ 
+Mark Williams (Points)(must play)
+Over 10.5 Points
+1.680
+Under 10.5 Points
+2.090 
+ 
+Mark Williams (Pts+Rebs+Asts)(must play)
+Over 20.5 PointsReboundsAssist
+1.917
+Under 20.5 PointsReboundsAssist
+1.826 
+ 
+Mark Williams (Rebounds)(must play)
+Over 8.5 Rebounds
+1.813
+Under 8.5 Rebounds
+1.934 
+ 
+Mitchell Robinson (Assists)(must play)
+Over 0.5 Assists
+1.746
+Under 0.5 Assists
+2.000 
+ 
+Mitchell Robinson (Points)(must play)
+Over 10.5 Points
+2.130
+Under 10.5 Points
+1.662 
+ 
+Mitchell Robinson (Pts+Rebs+Asts)(must play)
+Over 23.5 PointsReboundsAssist
+2.260
+Under 23.5 PointsReboundsAssist
+1.598 
+ 
+Mitchell Robinson (Rebounds)(must play)
+Over 11.5 Rebounds
+1.869
+Under 11.5 Rebounds
+1.862 
+ 
+PJ Washington (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.487
+Under 1.5 ThreePointFieldGoals
+2.480 
+ 
+PJ Washington (Assists)(must play)
+Over 2.5 Assists
+1.680
+Under 2.5 Assists
+2.090 
+ 
+PJ Washington (Points)(must play)
+Over 14.5 Points
+1.925
+Under 14.5 Points
+1.819 
+ 
+PJ Washington (Pts+Rebs+Asts)(must play)
+Over 22.5 PointsReboundsAssist
+1.877
+Under 22.5 PointsReboundsAssist
+1.862 
+ 
+PJ Washington (Rebounds)(must play)
+Over 4.5 Rebounds
+1.609
+Under 4.5 Rebounds
+2.220 
+ 
+Quentin Grimes (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.719
+Under 1.5 ThreePointFieldGoals
+2.040 
+ 
+Quentin Grimes (Assists)(must play)
+Over 1.5 Assists
+1.740
+Under 1.5 Assists
+2.020 
+ 
+Quentin Grimes (Points)(must play)
+Over 9.5 Points
+1.990
+Under 9.5 Points
+1.763 
+ 
+Quentin Grimes (Pts+Rebs+Asts)(must play)
+Over 13.5 PointsReboundsAssist
+1.884
+Under 13.5 PointsReboundsAssist
+1.854 
+ 
+Quentin Grimes (Rebounds)(must play)
+Over 2.5 Rebounds
+1.952
+Under 2.5 Rebounds
+1.793 
+ 
+RJ Barrett (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.549
+Under 1.5 ThreePointFieldGoals
+2.340 
+ 
+RJ Barrett (Assists)(must play)
+Over 2.5 Assists
+1.684
+Under 2.5 Assists
+2.070 
+ 
+RJ Barrett (Points)(must play)
+Over 22.5 Points
+2.110
+Under 22.5 Points
+1.689 
+ 
+RJ Barrett (Pts+Rebs+Asts)(must play)
+Over 30.5 PointsReboundsAssist
+2.140
+Under 30.5 PointsReboundsAssist
+1.662 
+ 
+RJ Barrett (Rebounds)(must play)
+Over 4.5 Rebounds
+1.819
+Under 4.5 Rebounds
+1.925 
+ 
+Terry Rozier (3 Point FG)(must play)
+Over 2.5 ThreePointFieldGoals
+1.609
+Under 2.5 ThreePointFieldGoals
+2.210 
+ 
+Terry Rozier (Assists)(must play)
+Over 5.5 Assists
+2.070
+Under 5.5 Assists
+1.709 
+ 
+Terry Rozier (Points)(must play)
+Over 21.5 Points
+1.917
+Under 21.5 Points
+1.826 
+ 
+Terry Rozier (Pts+Rebs+Asts)(must play)
+Over 30.5 PointsReboundsAssist
+2.020
+Under 30.5 PointsReboundsAssist
+1.735 
+ 
+Terry Rozier (Rebounds)(must play)
+Over 3.5 Rebounds
+1.787
+Under 3.5 Rebounds
+1.943 
+ 
+Josh Giddey (3 Point FG)(must play)
+Over 0.5 ThreePointFieldGoals
+1.606
+Under 0.5 ThreePointFieldGoals
+2.210 
+ 
+Josh Giddey (Assists)(must play)
+Over 6.5 Assists
+1.961
+Under 6.5 Assists
+1.787 
+ 
+Josh Giddey (Points)(must play)
+Over 18.5 Points
+2.130
+Under 18.5 Points
+1.662 
+ 
+Josh Giddey (Pts+Rebs+Asts)(must play)
+Over 32.5 PointsReboundsAssist
+1.884
+Under 32.5 PointsReboundsAssist
+1.854 
+ 
+Josh Giddey (Rebounds)(must play)
+Over 7.5 Rebounds
+1.763
+Under 7.5 Rebounds
+1.990 
+ 
+Luguentz Dort (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.515
+Under 1.5 ThreePointFieldGoals
+2.410 
+ 
+Luguentz Dort (Assists)(must play)
+Over 1.5 Assists
+1.591
+Under 1.5 Assists
+2.250 
+ 
+Luguentz Dort (Points)(must play)
+Over 15.5 Points
+1.961
+Under 15.5 Points
+1.787 
+ 
+Luguentz Dort (Pts+Rebs+Asts)(must play)
+Over 21.5 PointsReboundsAssist
+1.909
+Under 21.5 PointsReboundsAssist
+1.833 
+ 
+Luguentz Dort (Rebounds)(must play)
+Over 4.5 Rebounds
+2.240
+Under 4.5 Rebounds
+1.598 
+ 
+Shai Gilgeous-Alexander (3 Point FG)(must play)
+Over 0.5 ThreePointFieldGoals
+1.628
+Under 0.5 ThreePointFieldGoals
+2.180 
+ 
+Shai Gilgeous-Alexander (Assists)(must play)
+Over 5.5 Assists
+1.719
+Under 5.5 Assists
+2.040 
+ 
+Shai Gilgeous-Alexander (Points)(must play)
+Over 30.5 Points
+1.704
+Under 30.5 Points
+2.070 
+ 
+Shai Gilgeous-Alexander (Pts+Rebs+Asts)(must play)
+Over 42.5 PointsReboundsAssist
+2.110
+Under 42.5 PointsReboundsAssist
+1.680 
+ 
+Shai Gilgeous-Alexander (Rebounds)(must play)
+Over 5.5 Rebounds
+2.250
+Under 5.5 Rebounds
+1.613 
+ 
+Alperen Sengun (3 Point FG)(must play)
+Hide All
+Over 0.5 ThreePointFieldGoals
+3.990
+Under 0.5 ThreePointFieldGoals
+1.188 
+ 
+Alperen Sengun (Assists)(must play)
+Over 4.5 Assists
+2.460
+Under 4.5 Assists
+1.502 
+ 
+Alperen Sengun (Points)(must play)
+Over 14.5 Points
+1.980
+Under 14.5 Points
+1.763 
+ 
+Alperen Sengun (Pts+Rebs+Asts)(must play)
+Over 27.5 PointsReboundsAssist
+1.862
+Under 27.5 PointsReboundsAssist
+1.877 
+ 
+Alperen Sengun (Rebounds)(must play)
+Over 9.5 Rebounds
+2.290
+Under 9.5 Rebounds
+1.578 
+ 
+Cameron Johnson (3 Point FG)(must play)
+Over 2.5 ThreePointFieldGoals
+1.609
+Under 2.5 ThreePointFieldGoals
+2.240 
+ 
+Cameron Johnson (Assists)(must play)
+Over 1.5 Assists
+1.724
+Under 1.5 Assists
+2.040 
+ 
+Cameron Johnson (Points)(must play)
+Over 17.5 Points
+1.689
+Under 17.5 Points
+2.120 
+ 
+Cameron Johnson (Pts+Rebs+Asts)(must play)
+Over 24.5 PointsReboundsAssist
+2.010
+Under 24.5 PointsReboundsAssist
+1.740 
+ 
+Cameron Johnson (Rebounds)(must play)
+Over 4.5 Rebounds
+1.909
+Under 4.5 Rebounds
+1.833 
+ 
+Dorian Finney-Smith (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.813
+Under 1.5 ThreePointFieldGoals
+1.934 
+ 
+Dorian Finney-Smith (Assists)(must play)
+Over 1.5 Assists
+1.793
+Under 1.5 Assists
+1.943 
+ 
+Dorian Finney-Smith (Points)(must play)
+Over 8.5 Points
+1.793
+Under 8.5 Points
+1.952 
+ 
+Dorian Finney-Smith (Pts+Rebs+Asts)(must play)
+Over 16.5 PointsReboundsAssist
+1.970
+Under 16.5 PointsReboundsAssist
+1.775 
+ 
+Dorian Finney-Smith (Rebounds)(must play)
+Over 5.5 Rebounds
+1.826
+Under 5.5 Rebounds
+1.909 
+ 
+Jabari Smith Jr (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+2.730
+Under 1.5 ThreePointFieldGoals
+1.403 
+ 
+Jabari Smith Jr (Assists)(must play)
+Over 1.5 Assists
+2.380
+Under 1.5 Assists
+1.529 
+ 
+Jabari Smith Jr (Points)(must play)
+Over 10.5 Points
+1.751
+Under 10.5 Points
+2.000 
+ 
+Jabari Smith Jr (Pts+Rebs+Asts)(must play)
+Over 18.5 PointsReboundsAssist
+1.877
+Under 18.5 PointsReboundsAssist
+1.862 
+ 
+Jabari Smith Jr (Rebounds)(must play)
+Over 6.5 Rebounds
+1.909
+Under 6.5 Rebounds
+1.833 
+ 
+Jae'Sean Tate (Assists)(must play)
+Over 1.5 Assists
+1.877
+Under 1.5 Assists
+1.862 
+ 
+Jae'Sean Tate (Points)(must play)
+Over 8.5 Points
+1.990
+Under 8.5 Points
+1.763 
+ 
+Jae'Sean Tate (Pts+Rebs+Asts)(must play)
+Over 12.5 PointsReboundsAssist
+1.793
+Under 12.5 PointsReboundsAssist
+1.952 
+ 
+Jae'Sean Tate (Rebounds)(must play)
+Over 2.5 Rebounds
+1.529
+Under 2.5 Rebounds
+2.380 
+ 
+Jalen Green (3 Point FG)(must play)
+Over 2.5 ThreePointFieldGoals
+2.120
+Under 2.5 ThreePointFieldGoals
+1.671 
+ 
+Jalen Green (Assists)(must play)
+Over 3.5 Assists
+2.380
+Under 3.5 Assists
+1.529 
+ 
+Jalen Green (Points)(must play)
+Over 21.5 Points
+1.862
+Under 21.5 Points
+1.884 
+ 
+Jalen Green (Pts+Rebs+Asts)(must play)
+Over 27.5 PointsReboundsAssist
+1.892
+Under 27.5 PointsReboundsAssist
+1.847 
+ 
+Jalen Green (Rebounds)(must play)
+Over 2.5 Rebounds
+1.529
+Under 2.5 Rebounds
+2.380 
+ 
+KJ Martin (3 Point FG)(must play)
+Over 0.5 ThreePointFieldGoals
+1.581
+Under 0.5 ThreePointFieldGoals
+2.270 
+ 
+KJ Martin (Assists)(must play)
+Over 1.5 Assists
+1.649
+Under 1.5 Assists
+2.150 
+ 
+KJ Martin (Points)(must play)
+Over 13.5 Points
+1.763
+Under 13.5 Points
+1.990 
+ 
+KJ Martin (Pts+Rebs+Asts)(must play)
+Over 21.5 PointsReboundsAssist
+1.813
+Under 21.5 PointsReboundsAssist
+1.925 
+ 
+KJ Martin (Rebounds)(must play)
+Over 6.5 Rebounds
+1.970
+Under 6.5 Rebounds
+1.775 
+ 
+Kevin Porter Jr. (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.534
+Under 1.5 ThreePointFieldGoals
+2.380 
+ 
+Kevin Porter Jr. (Assists)(must play)
+Over 5.5 Assists
+2.180
+Under 5.5 Assists
+1.628 
+ 
+Kevin Porter Jr. (Pts+Rebs+Asts)(must play)
+Over 26.5 PointsReboundsAssist
+1.854
+Under 26.5 PointsReboundsAssist
+1.884 
+ 
+Kevin Porter Jr. (Rebounds)(must play)
+Over 4.5 Rebounds
+1.952
+Under 4.5 Rebounds
+1.793 
+ 
+Mikal Bridges (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.487
+Under 1.5 ThreePointFieldGoals
+2.480 
+ 
+Mikal Bridges (Assists)(must play)
+Over 3.5 Assists
+1.735
+Under 3.5 Assists
+2.030 
+ 
+Mikal Bridges (Points)(must play)
+Over 23.5 Points
+1.531
+Under 23.5 Points
+2.400 
+ 
+Mikal Bridges (Pts+Rebs+Asts)(must play)
+Over 32.5 PointsReboundsAssist
+1.757
+Under 32.5 PointsReboundsAssist
+2.000 
+ 
+Mikal Bridges (Rebounds)(must play)
+Over 4.5 Rebounds
+1.606
+Under 4.5 Rebounds
+2.230 
+ 
+Nicolas Claxton (Assists)(must play)
+Over 1.5 Assists
+1.549
+Under 1.5 Assists
+2.350 
+ 
+Nicolas Claxton (Points)(must play)
+Over 11.5 Points
+2.000
+Under 11.5 Points
+1.751 
+ 
+Nicolas Claxton (Pts+Rebs+Asts)(must play)
+Over 22.5 PointsReboundsAssist
+1.813
+Under 22.5 PointsReboundsAssist
+1.934 
+ 
+Nicolas Claxton (Rebounds)(must play)
+Over 9.5 Rebounds
+1.943
+Under 9.5 Rebounds
+1.806 
+ 
+Spencer Dinwiddie (3 Point FG)(must play)
+Over 2.5 ThreePointFieldGoals
+2.060
+Under 2.5 ThreePointFieldGoals
+1.709 
+ 
+Spencer Dinwiddie (Assists)(must play)
+Over 7.5 Assists
+1.943
+Under 7.5 Assists
+1.793 
+ 
+Spencer Dinwiddie (Points)(must play)
+Over 19.5 Points
+1.787
+Under 19.5 Points
+1.980 
+ 
+Spencer Dinwiddie (Pts+Rebs+Asts)(must play)
+Over 30.5 PointsReboundsAssist
+1.884
+Under 30.5 PointsReboundsAssist
+1.854 
+ 
+Spencer Dinwiddie (Rebounds)(must play)
+Over 3.5 Rebounds
+2.120
+Under 3.5 Rebounds
+1.671 
+ 
+Tari Eason (3 Point FG)(must play)
+Over 0.5 ThreePointFieldGoals
+1.877
+Under 0.5 ThreePointFieldGoals
+1.862 
+ 
+Tari Eason (Points)(must play)
+Over 10.5 Points
+1.729
+Under 10.5 Points
+2.030 
+ 
+Tari Eason (Pts+Rebs+Asts)(must play)
+Over 18.5 PointsReboundsAssist
+1.854
+Under 18.5 PointsReboundsAssist
+1.892 
+ 
+Tari Eason (Rebounds)(must play)
+Over 6.5 Rebounds
+1.970
+Under 6.5 Rebounds
+1.775 
+ 
+Josh Green (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+2.700
+Under 1.5 ThreePointFieldGoals
+1.411 
+ 
+Josh Green (Assists)(must play)
+Over 1.5 Assists
+1.625
+Under 1.5 Assists
+2.190 
+ 
+Josh Green (Points)(must play)
+Over 8.5 Points
+1.769
+Under 8.5 Points
+1.980 
+ 
+Josh Green (Pts+Rebs+Asts)(must play)
+Over 14.5 PointsReboundsAssist
+1.900
+Under 14.5 PointsReboundsAssist
+1.840 
+ 
+Josh Green (Rebounds)(must play)
 Over 3.5 Rebounds
 2.050
 Under 3.5 Rebounds
 1.714 
+ 
+Kelly Olynyk (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+2.510
+Under 1.5 ThreePointFieldGoals
+1.476 
+ 
+Kelly Olynyk (Assists)(must play)
+Over 2.5 Assists
+1.529
+Under 2.5 Assists
+2.380 
+ 
+Kelly Olynyk (Points)(must play)
+Over 12.5 Points
+1.800
+Under 12.5 Points
+1.943 
+ 
+Kelly Olynyk (Pts+Rebs+Asts)(must play)
+Over 22.5 PointsReboundsAssist
+1.819
+Under 22.5 PointsReboundsAssist
+1.917 
+ 
+Kelly Olynyk (Rebounds)(must play)
+Over 6.5 Rebounds
+1.709
+Under 6.5 Rebounds
+2.070 
+ 
+Kyrie Irving (3 Point FG)(must play)
+Over 3.5 ThreePointFieldGoals
+2.380
+Under 3.5 ThreePointFieldGoals
+1.529 
+ 
+Kyrie Irving (Assists)(must play)
+Over 5.5 Assists
+1.613
+Under 5.5 Assists
+2.210 
+ 
+Kyrie Irving (Points)(must play)
+Over 25.5 Points
+1.847
+Under 25.5 Points
+1.892 
+ 
+Kyrie Irving (Pts+Rebs+Asts)(must play)
+Over 36.5 PointsReboundsAssist
+1.775
+Under 36.5 PointsReboundsAssist
+1.970 
+ 
+Kyrie Irving (Rebounds)(must play)
+Over 4.5 Rebounds
+1.854
+Under 4.5 Rebounds
+1.884 
+ 
+Lauri Markkanen (3 Point FG)(must play)
+Over 2.5 ThreePointFieldGoals
+1.546
+Under 2.5 ThreePointFieldGoals
+2.340 
+ 
+Lauri Markkanen (Assists)(must play)
+Over 1.5 Assists
+1.469
+Under 1.5 Assists
+2.520 
+ 
+Lauri Markkanen (Points)(must play)
+Over 26.5 Points
+1.662
+Under 26.5 Points
+2.140 
+ 
+Lauri Markkanen (Pts+Rebs+Asts)(must play)
+Over 38.5 PointsReboundsAssist
+1.892
+Under 38.5 PointsReboundsAssist
+1.847 
+ 
+Lauri Markkanen (Rebounds)(must play)
+Over 9.5 Rebounds
+1.990
+Under 9.5 Rebounds
+1.763 
+ 
+Luka Doncic (3 Point FG)(must play)
+Over 2.5 ThreePointFieldGoals
+1.724
+Under 2.5 ThreePointFieldGoals
+2.040 
+ 
+Luka Doncic (Assists)(must play)
+Over 7.5 Assists
+1.952
+Under 7.5 Assists
+1.793 
+ 
+Luka Doncic (Points)(must play)
+Over 33.5 Points
+1.675
+Under 33.5 Points
+2.120 
+ 
+Luka Doncic (Pts+Rebs+Asts)(must play)
+Over 49.5 PointsReboundsAssist
+1.877
+Under 49.5 PointsReboundsAssist
+1.862 
+ 
+Luka Doncic (Rebounds)(must play)
+Over 8.5 Rebounds
+2.150
+Under 8.5 Rebounds
+1.649 
+ 
+Reggie Bullock (3 Point FG)(must play)
+Over 2.5 ThreePointFieldGoals
+2.490
+Under 2.5 ThreePointFieldGoals
+1.483 
+ 
+Reggie Bullock (Assists)(must play)
+Over 1.5 Assists
+2.040
+Under 1.5 Assists
+1.724 
+ 
+Reggie Bullock (Points)(must play)
+Over 8.5 Points
+1.970
+Under 8.5 Points
+1.775 
+ 
+Reggie Bullock (Pts+Rebs+Asts)(must play)
+Over 13.5 PointsReboundsAssist
+1.840
+Under 13.5 PointsReboundsAssist
+1.900 
+ 
+Reggie Bullock (Rebounds)(must play)
+Over 3.5 Rebounds
+2.080
+Under 3.5 Rebounds
+1.694 
+ 
+Talen Horton-Tucker (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+2.420
+Under 1.5 ThreePointFieldGoals
+1.512 
+ 
+Talen Horton-Tucker (Assists)(must play)
+Over 4.5 Assists
+1.617
+Under 4.5 Assists
+2.210 
+ 
+Talen Horton-Tucker (Points)(must play)
+Over 14.5 Points
+2.080
+Under 14.5 Points
+1.694 
+ 
+Talen Horton-Tucker (Pts+Rebs+Asts)(must play)
+Over 23.5 PointsReboundsAssist
+1.826
+Under 23.5 PointsReboundsAssist
+1.917 
+ 
+Talen Horton-Tucker (Rebounds)(must play)
+Over 4.5 Rebounds
+1.917
+Under 4.5 Rebounds
+1.826 
+ 
+Anthony Davis (3 Point FG)(must play)
+Hide All
+Over 0.5 ThreePointFieldGoals
+2.410
+Under 0.5 ThreePointFieldGoals
+1.523 
+ 
+Anthony Davis (Assists)(must play)
+Over 3.5 Assists
+2.580
+Under 3.5 Assists
+1.460 
+ 
+Anthony Davis (Points)(must play)
+Over 28.5 Points
+1.806
+Under 28.5 Points
+1.952 
+ 
+Anthony Davis (Pts+Rebs+Asts)(must play)
+Over 45.5 PointsReboundsAssist
+1.833
+Under 45.5 PointsReboundsAssist
+1.909 
+ 
+Anthony Davis (Rebounds)(must play)
+Over 13.5 Rebounds
+1.740
+Under 13.5 Rebounds
+2.030 
+ 
+Desmond Bane (3 Point FG)(must play)
+Over 2.5 ThreePointFieldGoals
+1.649
+Under 2.5 ThreePointFieldGoals
+2.150 
+ 
+Desmond Bane (Assists)(must play)
+Over 4.5 Assists
+1.813
+Under 4.5 Assists
+1.917 
+ 
+Desmond Bane (Points)(must play)
+Over 24.5 Points
+2.010
+Under 24.5 Points
+1.751 
+ 
+Desmond Bane (Pts+Rebs+Asts)(must play)
+Over 35.5 PointsReboundsAssist
+2.050
+Under 35.5 PointsReboundsAssist
+1.714 
+ 
+Desmond Bane (Rebounds)(must play)
+Over 5.5 Rebounds
+1.892
+Under 5.5 Rebounds
+1.840 
+ 
+Dillon Brooks (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.729
+Under 1.5 ThreePointFieldGoals
+2.030 
+ 
+Dillon Brooks (Assists)(must play)
+Over 2.5 Assists
+1.854
+Under 2.5 Assists
+1.892 
+ 
+Dillon Brooks (Points)(must play)
+Over 14.5 Points
+2.070
+Under 14.5 Points
+1.714 
+ 
+Dillon Brooks (Pts+Rebs+Asts)(must play)
+Over 20.5 PointsReboundsAssist
+1.909
+Under 20.5 PointsReboundsAssist
+1.833 
+ 
+Dillon Brooks (Rebounds)(must play)
+Over 3.5 Rebounds
+2.210
+Under 3.5 Rebounds
+1.613 
+ 
+Jaren Jackson Jr. (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.746
+Under 1.5 ThreePointFieldGoals
+2.010 
+ 
+Jaren Jackson Jr. (Assists)(must play)
+Over 0.5 Assists
+1.438
+Under 0.5 Assists
+2.610 
+ 
+Jaren Jackson Jr. (Points)(must play)
+Over 19.5 Points
+2.060
+Under 19.5 Points
+1.719 
+ 
+Jaren Jackson Jr. (Pts+Rebs+Asts)(must play)
+Over 27.5 PointsReboundsAssist
+1.943
+Under 27.5 PointsReboundsAssist
+1.806 
+ 
+Jaren Jackson Jr. (Rebounds)(must play)
+Over 7.5 Rebounds
+1.990
+Under 7.5 Rebounds
+1.763 
+ 
+Jarred Vanderbilt (3 Point FG)(must play)
+Over 0.5 ThreePointFieldGoals
+3.250
+Under 0.5 ThreePointFieldGoals
+1.285 
+ 
+Jarred Vanderbilt (Assists)(must play)
+Over 1.5 Assists
+1.471
+Under 1.5 Assists
+2.530 
+ 
+Jarred Vanderbilt (Points)(must play)
+Over 8.5 Points
+1.900
+Under 8.5 Points
+1.840 
+ 
+Jarred Vanderbilt (Pts+Rebs+Asts)(must play)
+Over 19.5 PointsReboundsAssist
+1.961
+Under 19.5 PointsReboundsAssist
+1.781 
+ 
+Jarred Vanderbilt (Rebounds)(must play)
+Over 8.5 Rebounds
+1.961
+Under 8.5 Rebounds
+1.787 
+ 
+Luke Kennard (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.617
+Under 1.5 ThreePointFieldGoals
+2.210 
+ 
+Luke Kennard (Assists)(must play)
+Over 1.5 Assists
+2.010
+Under 1.5 Assists
+1.746 
+ 
+Luke Kennard (Points)(must play)
+Over 9.5 Points
+2.020
+Under 9.5 Points
+1.740 
+ 
+Luke Kennard (Pts+Rebs+Asts)(must play)
+Over 13.5 PointsReboundsAssist
+1.793
+Under 13.5 PointsReboundsAssist
+1.952 
+ 
+Malik Beasley (3 Point FG)(must play)
+Over 2.5 ThreePointFieldGoals
+1.549
+Under 2.5 ThreePointFieldGoals
+2.330 
+ 
+Malik Beasley (Assists)(must play)
+Over 1.5 Assists
+1.581
+Under 1.5 Assists
+2.260 
+ 
+Malik Beasley (Points)(must play)
+Over 14.5 Points
+1.900
+Under 14.5 Points
+1.840 
+ 
+Malik Beasley (Pts+Rebs+Asts)(must play)
+Over 20.5 PointsReboundsAssist
+1.900
+Under 20.5 PointsReboundsAssist
+1.833 
+ 
+Malik Beasley (Rebounds)(must play)
+Over 3.5 Rebounds
+1.775
+Under 3.5 Rebounds
+1.970 
+ 
+Santi Aldama (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+2.780
+Under 1.5 ThreePointFieldGoals
+1.387 
+ 
+Santi Aldama (Points)(must play)
+Over 9.5 Points
+1.970
+Under 9.5 Points
+1.775 
+ 
+Santi Aldama (Pts+Rebs+Asts)(must play)
+Over 15.5 PointsReboundsAssist
+1.917
+Under 15.5 PointsReboundsAssist
+1.826 
+ 
+Santi Aldama (Rebounds)(must play)
+Over 4.5 Rebounds
+1.990
+Under 4.5 Rebounds
+1.757 
+ 
+Tyus Jones (3 Point FG)(must play)
+Over 1.5 ThreePointFieldGoals
+1.568
+Under 1.5 ThreePointFieldGoals
+2.290 
+ 
+Tyus Jones (Assists)(must play)
+Over 7.5 Assists
+1.699
+Under 7.5 Assists
+2.090 
+ 
+Tyus Jones (Points)(must play)
+Over 15.5 Points
+1.793
+Under 15.5 Points
+1.943 
+ 
+Tyus Jones (Pts+Rebs+Asts)(must play)
+Over 26.5 PointsReboundsAssist
+1.735
+Under 26.5 PointsReboundsAssist
+2.030 
+ 
+Tyus Jones (Rebounds)(must play)
+Over 3.5 Rebounds
+2.310
+Under 3.5 Rebounds
+1.568 
+ 
+Xavier Tillman (Assists)(must play)
+Over 2.5 Assists
+1.862
+Under 2.5 Assists
+1.869 
+ 
+Xavier Tillman (Points)(must play)
+Over 11.5 Points
+2.060
+Under 11.5 Points
+1.714 
+ 
+Xavier Tillman (Pts+Rebs+Asts)(must play)
+Over 23.5 PointsReboundsAssist
+2.040
+Under 23.5 PointsReboundsAssist
+1.729 
+ 
+Xavier Tillman (Rebounds)(must play)
+Over 8.5 Rebounds
+1.909
+Under 8.5 Rebounds
+1.833 
  

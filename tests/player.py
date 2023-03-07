@@ -1,3 +1,6 @@
+from models.allplayerprops import AllPlayerProps
+from models.playerprop import PlayerProp
+
 PINNACLE_PLAYERFILE = 'tests/pinnacle/prop.txt'
 PINNACLE_GAMEFILE = 'tests/pinnacle/gameinfo.txt'
 PLAYNOW_PLAYERFILE = 'tests/playnow/prop.txt'
@@ -28,7 +31,7 @@ def parse_player_props(book):
     curStr = ''
     for line in playerData:
         if line == ' \n':
-            curStr = curStr[:-3]
+            curStr = curStr[:-2]
             lst.append(curStr)
             curStr = ''
         else:
@@ -49,3 +52,23 @@ def parse_game_info(book):
         else:
             curStr += line
     return lst
+
+def create_player_props(book):
+    playerProps = []
+    props = parse_player_props(book)
+    gameInfos = parse_game_info(book)
+
+    for i in range(len(props)):
+        prop = props[i]
+        gameInfo = gameInfos[i]
+        playerProp = PlayerProp(book, gameInfo, prop)
+        if playerProp.is_valid():
+            playerProps.append(playerProp)
+    return playerProps
+
+def get_all_props():
+    allProps = AllPlayerProps()
+    allProps.add_prop(create_player_props('Pinnacle'))
+    allProps.add_prop(create_player_props('Play Now'))
+    allProps.add_prop(create_player_props('Sports Interaction'))
+    return allProps

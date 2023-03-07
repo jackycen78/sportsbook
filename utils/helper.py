@@ -45,3 +45,20 @@ def getDate():
     return f'{month} {day}'
 
 
+def write_file(path, content):
+    file = open(path, 'a')
+    file.write(content)
+
+def write_tests(book, text, type):
+    path = f'tests/{book}/{type}.txt'
+    write_file(path, text)
+
+def clear_file(path):
+    open(path, 'w').close()
+
+def clear_tests(book):
+    
+    files = ['prop', 'gameinfo']
+    for file in files:
+        path = f'tests/{book}/{file}.txt'
+        clear_file(path)

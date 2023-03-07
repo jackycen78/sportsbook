@@ -1,13 +1,13 @@
-def getCellHTML(text):
-    outputStr =  '''
+def getCellHTML(text, size):
+    outputStr =  f'''
                     <td style="border-radius: 4px;
                                text-align: center;
-                               width: 20%;
+                               width: {100 / size}%;
                                background-color: #FFFFFF;
                                padding: 0.5rem;
                                margin: 1.5px;
                               "> 
-                 '''
+                  '''
     
     if type(text) == str:
             outputStr += f'{text} \n'
@@ -35,7 +35,7 @@ def getTableHTML(betType, columnNames, dataRows):
                    '''
     
     for col in columnNames:
-        outputStr += f' {getCellHTML(col)} \n'
+        outputStr += f' {getCellHTML(text=col, size=len(columnNames))} \n'
 
     outputStr += f'''
                              </tr>
@@ -48,20 +48,37 @@ def getTableHTML(betType, columnNames, dataRows):
     return outputStr
 
 def getGamesHTML(games, betType):
+    numBooks = 4
     format = getFormat(betType)
     outputStr = ''
     for team in games:
-        if len(games[team]) == 4:
+        if len(games[team]) == numBooks:
             outputStr += '<tr> \n'
             curGame = games[team][0]
-            outputStr += getCellHTML([curGame.get_away_city(), 
-                                      'at', 
-                                      curGame.get_home_city(),
-                                     ])
+            outputStr += getCellHTML(text=[curGame.get_away_city(), 
+                                           'at', 
+                                           curGame.get_home_city(),
+                                           ],
+                                     size=numBooks+1)
             for bet in games[team]:
-                outputStr+= getCellHTML(format(bet))
+                outputStr+= getCellHTML(format(bet), size=numBooks+1)
             outputStr += '</tr>'
     return outputStr
+
+def getPropsHTML(game):
+    numBooks = 3
+    outputStr = ''
+
+    for player in game:
+        curPlayer = game[player]
+
+        for type in curPlayer:
+            curType = curPlayer[type]
+
+            
+
+
+
 
 def getFormat(betType):
     if betType == 'Money Lines':

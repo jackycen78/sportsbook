@@ -1,6 +1,7 @@
 from models.playerprop import PlayerProp
-from utils.website import Website
 from models.allplayerprops import AllPlayerProps
+from utils.website import Website
+from utils.helper import write_tests, clear_tests
 
 import time
 
@@ -16,7 +17,7 @@ class PlayerProps():
         self.site = site
         self.playerProps = []
 
-    def go_to_site(self, sleepTime=3):
+    def go_to_site(self, sleepTime=4):
         self.site.go_to(self.siteURL, sleepTime)
 
     def add_player_props(self, parent=None):
@@ -25,16 +26,16 @@ class PlayerProps():
         gameInfo = site.find_class(self.gameInfoClass, parent)[0]
         props = site.find_class(self.propClass, parent)
         for prop in props:
-            if prop:
-                playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
-                if playerProp.is_valid():
-                    self.playerProps.append(playerProp)
+            try:
+                if prop:
+                    playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
+                    if playerProp.is_valid():
+                        self.playerProps.append(playerProp)
 
-                    f = open(f'tests/{self.bookFile}/gameinfo.txt', 'a')
-                    f.write(f'{gameInfo.text} \n \n')
-                    
-                    f = open(f'tests/{self.bookFile}/prop.txt', 'a')
-                    f.write(f'{prop.text} \n \n')
+                        write_tests(self.bookFile, gameInfo.text, 'gameinfo')
+                        write_tests(self.bookFile, prop.text, 'prop')
+            except:
+                pass
 
     def get_player_props(self):
 
@@ -66,7 +67,7 @@ class PlayNow(PlayerProps):
         site = self.site
         self.go_to_site()
 
-        todayBets = site.find_class(self.tmrClass)[0]
+        todayBets = site.find_class(self.todayClass)[0]
         numGames = len(site.find_class(self.gameClass, todayBets))
 
         for i in range(numGames):
@@ -78,7 +79,7 @@ class PlayNow(PlayerProps):
     def go_to_game(self, index):
         site = self.site
 
-        todayBets = site.find_class(self.tmrClass)[0]
+        todayBets = site.find_class(self.todayClass)[0]
         game = site.find_class(self.gameClass, todayBets)[index]
         game.click()
         time.sleep(1)
@@ -211,6 +212,7 @@ def get_game_props():
              ]
 
     for book in books:
+        clear_tests(book.bookFile)
         book.automate()
         props = book.get_player_props()
         allPlayerProps.add_prop(props)
