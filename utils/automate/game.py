@@ -66,9 +66,9 @@ def getSportsInteractionGameBets(site):
         teams = site.find_class(teamClass, bet) 
         spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
         newBet = SportsInteractionGameBet([teams[0], 
-                                       spreads, 
-                                       moneylines, 
-                                       overUnders])
+                                           spreads, 
+                                           moneylines, 
+                                           overUnders])
         newBet.changeToAmerican()
         betsList.append(newBet)
     return betsList
@@ -127,20 +127,6 @@ def getPinnacleGameBets(site):
     return betsList
 
 def getGameBets():
-
-    site = Website()
-    allBets = AllBets()
-
-    allBets.add_bets(getPlayNowGameBets(site))
-    allBets.add_bets(getSportsInteractionGameBets(site))
-    allBets.add_bets(getBet365GameBets(site))
-    allBets.add_bets(getPinnacleGameBets(site))
-
-    allBets.print_bets()
-
-    return allBets.games
-
-def getGameProps():
 
     site = Website()
     allBets = AllBets()

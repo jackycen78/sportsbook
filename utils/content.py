@@ -6,7 +6,7 @@ from .config import GAME_BETS, GAME_SITES, PLAYER_PROPS, PLAYER_SITES
 
 def getGameBetContent():
     columns = ['Game'] + GAME_SITES
-    #games = getGameProps()
+    games = getGameBets()
     content = []
     for prop in GAME_BETS:
         contentHTML = getTableHTML(betType=prop, 

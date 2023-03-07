@@ -35,6 +35,20 @@ sportsInteractionNameChanges = {'LA Lakers': 'Los Angeles Lakers',
                                 'Oklahoma City': 'Oklahoma City Thunder',
                                 }
 
+sportsInteractionTeamChanges = {'76ers': 'Philadelphia 76ers',
+                                'Pacers': 'Indiana Pacers',
+                                'Celtics': 'Boston Celtics',
+                                'Cavaliers': 'Cleveland Cavaliers',
+                                'Trail Blazers': 'Portland Trail Blazers',
+                                'Pistons': 'Detroit Pistons',
+                                'Hawks': 'Atlanta Hawks',
+                                'Heat': 'Miami Heat',
+                                'Raptors': 'Toronto Raptors',
+                                'Nuggets': 'Denver Nuggets',
+                                'Pelicans': 'New Orleans Pelicans',
+                                'Kings': 'Sacramento Kings',
+                                }
+
 teams = {'Boston Celtics' : 'Celtics',
          'Denver Nuggets' : 'Nuggets',
          'Philadelphia 76ers' : '76ers',
@@ -98,3 +112,6 @@ cities = {'Boston Celtics' : 'Boston',
          'Charlotte Hornets' : 'Charlotte',   
          'Houston Rockets' : 'Houston',
         }
+
+
+

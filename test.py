@@ -1,44 +1,24 @@
 from models.playerprop import PlayerProp
 from models.allplayerprops import AllPlayerProps
-from tests.createdata import create_game_info, create_player_props
-
-playerProps = []
-SportsInteractionProps = create_player_props('Sports Interaction')
-SportsInteractionGameInfo = create_game_info('Sports Interaction')
-
-pinnaclePlayerProps = create_player_props('Pinnacle')
-pinnacleGameInfo = create_game_info('Pinnacle')
-
-playNowPlayerProps = create_player_props('Play Now')
-playNowGameInfo = create_game_info('Play Now')
+from tests.createdata import parse_game_info, parse_player_props
 
 
-for i in range(len(SportsInteractionProps)):
-    prop = SportsInteractionProps[i]
-    gameInfo = SportsInteractionGameInfo[i]
+def create_player_props(book):
+    playerProps = []
+    props = parse_player_props(book)
+    gameInfos = parse_game_info(book)
 
-    playerProp = PlayerProp('Sports Interaction', gameInfo, prop)
-    if playerProp.is_valid():
-        playerProps.append(playerProp)
-
-
-for i in range(len(pinnaclePlayerProps)):
-    prop = pinnaclePlayerProps[i]
-    gameInfo = pinnacleGameInfo[i]
-
-    playerProp = PlayerProp('Pinnacle', gameInfo, prop)
-    if playerProp.is_valid():
-        playerProps.append(playerProp)
-
-for i in range(len(playNowPlayerProps)):
-    prop = playNowPlayerProps[i]
-    gameInfo = playNowGameInfo[i]
-    playerProp = PlayerProp('Play Now', gameInfo, prop)
-
-    if playerProp.is_valid():
-        playerProps.append(playerProp)
+    for i in range(len(props)):
+        prop = props[i]
+        gameInfo = gameInfos[i]
+        playerProp = PlayerProp(book, gameInfo, prop)
+        if playerProp.is_valid():
+            playerProps.append(playerProp)
+    return playerProps
 
 allProps = AllPlayerProps()
-allProps.add_prop(playerProps)
+allProps.add_prop(create_player_props('Pinnacle'))
+allProps.add_prop(create_player_props('Play Now'))
+allProps.add_prop(create_player_props('Sports Interaction'))
 
 print(allProps)

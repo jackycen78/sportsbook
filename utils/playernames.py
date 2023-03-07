@@ -48,6 +48,7 @@ playNowPlayerName = {
                     'J. Tatum': 'Jayson Tatum',
                     'M. Smart': 'Marcus Smart',
                     'R. Williams III': 'Robert Williams',
+                    'D. White': 'Derrick White',
 
                     # Nets
                     'D. Finney-Smith': 'Dorian Finney-Smith',
@@ -61,6 +62,9 @@ playNowPlayerName = {
                     'D. Hunter': "De'Andre Hunter",
                     'D. Murray': 'Dejounte Murray',
                     'Trae Young': 'Trae Young',
+                    'J. Collins': 'John Collins', 
+                    'O. Okongwu': 'Onyeka Okongwu',
+                    'S. Bey': 'Saddiq Bey',
 
                     # Trailblazers
                     'D. Eubanks': 'Drew Eubanks',
@@ -68,10 +72,16 @@ playNowPlayerName = {
                     'J. Grant': 'Jerami Grant',
                     'M. Thybulle': 'Matisse Thybulle',
                     'C. Reddish': 'Cam Reddish',
+                    'N. Little': 'Nassir Little',
 
                     # Heat
                     'B. Adebayo': 'Bam Adebayo',
                     'T. Herro': 'Tyler Herro',
+                    'J. Butler': 'Jimmy Butler',
+                    'M. Strus': 'Max Strus'
+                    'V. Oladipo' 'Victor Oladipo',
+                    'G. Vincent': 'Gabe Vincent',
+
 
                     # Knicks
                     'J. Brunson': 'Jalen Brunson',
@@ -145,4 +155,20 @@ playNowPlayerName = {
                     'K. Irving': 'Kyrie Irving',
                     'L. Doncic': 'Luka Doncic',
                     'R. Bullock': 'Reggie Bullock',
+
+                    # Raptors
+                    'F. VanVleet': 'Fred VanVleet',
+                    'G. Trent Jr.': 'Gary Trent Jr',
+                    'J. Poeltl': 'Jakob Poeltl',
+                    'P. Siakam': 'Pascal Siakam',
+                    'O.G. Anunoby': 'OG Anunoby',
+
+                    # Cavaliers:
+                    'D. Garland': 'Darius Garland',
+                    'I. Okoro': 'Isaac Okoro',
+                    'J. Allen': 'Jarrett Allen',
+
+                    # Pacers:
+                    'M. Turner': 'Myles Turner',
+
                     }

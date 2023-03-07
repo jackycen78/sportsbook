@@ -26,11 +26,11 @@ class AllPlayerProps:
                 for prop in self.games[game][player]:
                     output += f'        {prop.book}: {prop.type} \n'
 
-                    for amount, odd in prop.odds:
+                    '''for amount, odd in prop.odds:
                             overUnder = 'Over ' if amount[0] == 'O' else 'Under '
                             amount = overUnder + amount[1:]
 
-                            output += f'            {amount}: {odd} \n'
+                            output += f'            {amount}: {odd} \n' '''
                 output += '\n' 
 
         return output

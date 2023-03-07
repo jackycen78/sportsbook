@@ -1,4 +1,5 @@
 from utils.playernames import playNowPlayerName
+from utils.teamnames import sportsInteractionTeamChanges
 
 class PlayerParser():
 
@@ -43,7 +44,7 @@ class PlayNowPlayerParser(PlayerParser):
 
     def parseGameInfo(self, gameInfo):
         try:
-            time, home, away = gameInfo.split('\n')
+            time, away, home = gameInfo.split('\n')
             time = time.split(' ')[1]
             return time, home, away
         except:
@@ -92,7 +93,7 @@ class PinnaclePlayerParser(PlayerParser):
 
     def parseGameInfo(self, gameInfo):
         try:
-            time, home, away = gameInfo.split('\n')
+            time, away, home = gameInfo.split('\n')
             time = time.split(' ')[-1]
             return time, home, away
         except:
@@ -111,7 +112,6 @@ class SportsInteractionParser(PlayerParser):
     def parseProp(self, bet):
         
         type, info = bet.split(' - ')
-        print([info])
         info = info.split('\n')
 
         if type in self.propTypes:
@@ -138,6 +138,6 @@ class SportsInteractionParser(PlayerParser):
         try:
             time, teams = gameInfo.split('\n')
             away, home = teams.split(' @ ')
-            return time, home, away
+            return time, sportsInteractionTeamChanges[home], sportsInteractionTeamChanges[away]
         except:
             return '', '', ''

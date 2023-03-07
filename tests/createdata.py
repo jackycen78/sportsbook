@@ -19,7 +19,7 @@ def get_file(book, type):
     return files[book][type]
 
 
-def create_player_props(book):
+def parse_player_props(book):
     file = get_file(book, 'Player')
 
     with open(file) as f:
@@ -35,7 +35,7 @@ def create_player_props(book):
             curStr += line
     return lst
 
-def create_game_info(book):
+def parse_game_info(book):
     file = get_file(book, 'Game')
     with open(file) as f:
         gameData = f.readlines()

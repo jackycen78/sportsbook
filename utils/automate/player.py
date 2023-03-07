@@ -1,4 +1,7 @@
 from models.playerprop import PlayerProp
+from utils.website import Website
+from models.allplayerprops import AllPlayerProps
+
 import time
 
 class PlayerProps():
@@ -16,11 +19,11 @@ class PlayerProps():
     def go_to_site(self, sleepTime=3):
         self.site.go_to(self.siteURL, sleepTime)
 
-    def add_player_props(self):
+    def add_player_props(self, parent=None):
         site = self.site
 
-        gameInfo = site.find_class(self.gameInfoClass)[0]
-        props = site.find_class(self.propClass)
+        gameInfo = site.find_class(self.gameInfoClass, parent)[0]
+        props = site.find_class(self.propClass, parent)
         for prop in props:
             if prop:
                 playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
@@ -194,23 +197,23 @@ class SportsInteraction(PlayerProps):
         numGames = len(allGames)
 
         for i in range(numGames):
-            self.add_player_props(i)
+            curGame = site.find_class(self.gameClass)[i]
+            self.add_player_props(parent=curGame)
 
-    def add_player_props(self, index):
-        site = self.site
-        curGame = site.find_class(self.gameClass)[index]
+def get_game_props():
 
-        gameInfo = site.find_class(self.gameInfoClass, curGame)[0]
-        props = site.find_class(self.propClass, curGame)
+    site = Website()
+    allPlayerProps = AllPlayerProps()
 
-        for prop in props:
-            if prop:
-                #playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
-                #if playerProp.is_valid():
-                #self.playerProps.append(playerProp)
+    books = [PlayNow(site), 
+             Pinnacle(site), 
+             SportsInteraction(site),
+             ]
 
-                f = open(f'tests/{self.bookFile}/gameinfo.txt', 'a')
-                f.write(f'{gameInfo.text} \n \n')
-                
-                f = open(f'tests/{self.bookFile}/prop.txt', 'a')
-                f.write(f'{prop.text} \n \n')
+    for book in books:
+        book.automate()
+        props = book.get_player_props()
+        allPlayerProps.add_prop(props)
+    
+    return allPlayerProps
+
