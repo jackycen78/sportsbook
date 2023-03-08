@@ -30,6 +30,8 @@ playNowPlayerName = {
                     'K. Anderson': 'Kyle Anderson',
                     'M. Conley': 'Mike Conley',
                     'R. Gobert': 'Rudy Gobert',
+                    'N. Reid': 'Naz Reid',
+                    'N. Alexander-Walker': 'Nickeil Alexander-Walker',
 
                     # Magic
                     'G. Harris': 'Gary Harris',
@@ -43,7 +45,7 @@ playNowPlayerName = {
                     'K. Oubre Jr.': 'Kelly Oubre Jr.',
                     'T. Rozier': 'Terry Rozier',
                     'Mark Williams': 'Mark Williams',
-                    'P.J. Washington': '',
+                    'P.J. Washington': 'P.J Washington',
                     'D. Smith Jr.': 'Dennis Smith Jr.',
                     
                     # Celtics
@@ -185,7 +187,7 @@ playNowPlayerName = {
 
                     # Rockets
                     'K. Porter Jr.': 'Kevin Porter Jr.',
-                    'K. Martin Jr.': 'Kenyon Martin Jr.',
+                    'K. Martin Jr.': 'KJ Martin',
                     'J. Green': 'Jalen Green',
                     'Jabari Smith Jr.': 'Jabari Smith Jr.',
                     'A. Sengün': 'Alperen Sengun',
