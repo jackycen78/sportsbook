@@ -55,6 +55,7 @@ playNowPlayerName = {
                     'M. Smart': 'Marcus Smart',
                     'R. Williams III': 'Robert Williams',
                     'D. White': 'Derrick White',
+                    'M. Brogdon': 'Malcolm Brogdon',
 
                     # Nets
                     'D. Finney-Smith': 'Dorian Finney-Smith',
@@ -88,6 +89,7 @@ playNowPlayerName = {
                     'M. Strus': 'Max Strus',
                     'V. Oladipo': 'Victor Oladipo',
                     'G. Vincent': 'Gabe Vincent',
+                    'K. Love': 'Kevin Love',
 
 
                     # Knicks
@@ -105,12 +107,14 @@ playNowPlayerName = {
                     'N. Vucevic': 'Nikola Vucevic',
                     'P. Beverley': 'Patrick Beverley',
                     'Z. LaVine': 'Zach LaVine',
+                    'C. White': 'Coby White',
 
                     # Suns
                     'C. Paul': 'Chris Paul',
                     'D. Ayton': 'Deandre Ayton',
                     'D. Booker': 'Devin Booker',
                     'K. Durant': 'Kevin Durant',
+                    'J. Okogie': 'Josh Okogie',
 
                     # Jazz
                     'K. Olynyk': 'Kelly Olynyk',
@@ -131,6 +135,7 @@ playNowPlayerName = {
                     'K. Caldwell-Pope': 'Kentavious Caldwell-Pope',
                     'M. Porter Jr.': 'Michael Porter Jr.',
                     'N. Jokic': 'Nikola Jokic',
+                    'R. Jackson': 'Reggie Jackson',
 
                     # Grizzlies
                     'D. Bane': 'Desmond Bane',
@@ -145,6 +150,7 @@ playNowPlayerName = {
                     'B. Ingram': 'Brandon Ingram',
                     'CJ. McCollum': 'CJ McCollum',
                     'Herb Jones': 'Herbert Jones',
+                    'J. Valanciunas': 'Jonas Valanciunas',
                     
                     # Warriors
                     'J. Poole': 'Jordan Poole',
@@ -163,24 +169,32 @@ playNowPlayerName = {
                     # Clippers
                     'P. George': 'Paul George',
                     'K. Leonard': 'Kawhi Leonard',
+                    'I. Zubac': 'Ivica Zubac',
+                    'R. Westbrook': 'Russell Westbrook',
+                    'Marcus Morris': 'Marcus Morris Sr.',
 
                     # Mavericks
                     'D. Powell': 'Dwight Powell',
                     'K. Irving': 'Kyrie Irving',
                     'L. Doncic': 'Luka Doncic',
                     'R. Bullock': 'Reggie Bullock',
+                    'C. Wood': 'Christian Wood',
+                    'T. Hardaway Jr.': 'Tim Hardaway Jr.',
 
                     # Raptors
                     'F. VanVleet': 'Fred VanVleet',
-                    'G. Trent Jr.': 'Gary Trent Jr',
+                    'G. Trent Jr.': 'Gary Trent Jr.',
                     'J. Poeltl': 'Jakob Poeltl',
                     'P. Siakam': 'Pascal Siakam',
                     'O.G. Anunoby': 'OG Anunoby',
+                    'P. Achiuwa': 'Precious Achiuwa',
 
                     # Cavaliers
                     'D. Garland': 'Darius Garland',
                     'I. Okoro': 'Isaac Okoro',
                     'J. Allen': 'Jarrett Allen',
+                    'C. LeVert': 'Caris LeVert',
+                    'D. Mitchell': 'Donovan Mitchell',
 
                     # Pacers
                     'M. Turner': 'Myles Turner',
@@ -197,6 +211,7 @@ playNowPlayerName = {
                     'D. Gafford': 'Daniel Gafford',
                     'D. Wright': 'Delon Wright',
                     'K. Porzingis': 'Kristaps Porzingis',
+                    'K. Kuzma': 'Kyle Kuzma',
 
                     # Pistons
                     'M. Bagley III': 'Marvin Bagley III',

@@ -120,8 +120,9 @@ class SportsInteractionParser(PlayerParser):
 
                 if len(info) == 5:
                     player = info[0]
-                    if player[-1] == ']':
-                        player = player[:-6]
+                    if '[' in player:
+                        bracketIndex = player.find('[') - 1
+                        player = player[:bracketIndex]
 
                     over = 'O' + info[1][4:]
                     overOdds = info[2]

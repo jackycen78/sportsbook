@@ -1,204 +1,160 @@
-Player Points B. Lopez
-12+
+Player Points B. Beal
+18+
 1.15
-15+
-1.40
-18+
-1.83
 20+
-2.40
+1.27
 25+
-5.40 
- 
-Player Points B. Portis
-12+
-1.23
-15+
-1.56
-18+
-2.25
-20+
-3.00
-25+
-8.00 
- 
-Player Points Bol Bol
-2+
-1.02
-5+
-1.24
-8+
 1.87
-10+
-2.85
-12+
-4.60 
+30+
+3.70
+35+
+8.50 
  
-Player Points Cole Anthony
+Player Points Bogdan Bogdanovic
 8+
-1.17
+1.22
+10+
+1.43
+12+
+1.80
+15+
+2.80
+18+
+4.90 
+ 
+Player Points C. Capela
+8+
+1.14
 10+
 1.34
 12+
-1.69
+1.71
 15+
-2.60
-18+
-4.60 
- 
-Player Points Franz Wagner
-12+
-1.18
-15+
-1.45
-18+
-2.05
-20+
-2.70
-25+
-6.50 
- 
-Player Points G. Allen
-8+
-1.27
-10+
-1.54
-12+
-2.00
-15+
-3.30
-18+
-6.00 
- 
-Player Points Jalen Suggs
-8+
-1.15
-10+
-1.36
-12+
-1.69
-15+
-2.70
-18+
-5.00 
- 
-Player Points K. Middleton
-15+
-1.33
-18+
-1.74
-20+
-2.25
-25+
-5.25
-30+
-13.00 
- 
-Player Points M. Fultz
-10+
-1.14
-12+
-1.31
-15+
-1.83
-18+
-2.90
-20+
-4.30 
- 
-Player Points Moritz Wagner
-10+
-1.14
-12+
-1.30
-15+
-1.74
-18+
-2.65
-20+
-3.80 
- 
-Player Points P. Connaughton
-5+
-1.15
-8+
-1.51
-10+
-2.00
-12+
 2.85
-15+
-5.50 
+18+
+5.80 
  
-Player Points Paolo Banchero
+Player Points D. Avdija
+2+
+1.03
+5+
+1.22
+8+
+1.80
+10+
+2.65
+12+
+4.10 
+ 
+Player Points D. Gafford
+5+
+1.07
+8+
+1.36
+10+
+1.77
+12+
+2.55
 15+
-1.19
+5.10 
+ 
+Player Points D. Hunter
+10+
+1.18
+12+
+1.38
+15+
+1.91
+18+
+3.00
+20+
+4.50 
+ 
+Player Points D. Murray
+15+
+1.21
 18+
 1.45
 20+
 1.80
 25+
-3.70
+3.50
 30+
+8.50 
+ 
+Player Points J. Collins
+8+
+1.27
+10+
+1.56
+12+
+2.10
+15+
+3.80
+18+
+8.00 
+ 
+Player Points K. Kuzma
+15+
+1.14
+18+
+1.33
+20+
+1.56
+25+
+2.70
+30+
+6.00 
+ 
+Player Points K. Porzingis
+18+
+1.21
+20+
+1.36
+25+
+2.05
+30+
+3.80
+35+
 9.00 
  
-Player Assists B. Lopez
+Player Points O. Okongwu
 2+
-1.95
+1.01
 5+
-18.00
+1.21
 8+
-46.00 
- 
-Player Assists B. Portis
-2+
-1.56
-5+
-11.00
-8+
-41.00 
- 
-Player Assists Bol Bol
-2+
-2.90
-5+
-31.00 
- 
-Player Assists Cole Anthony
-2+
-1.07
-5+
-2.35
-8+
-10.50
+1.83
 10+
-26.00 
+2.85
+12+
+4.80 
  
-Player Assists Franz Wagner
-2+
-1.27
-5+
-5.25
-8+
-31.00 
+Player Points S. Bey
+10+
+1.29
+12+
+1.56
+15+
+2.25
+18+
+3.60
+20+
+5.40 
  
-Player Assists G. Allen
-2+
-1.24
-5+
-4.90
-8+
-26.00 
- 
-Player Assists Jalen Suggs
-2+
+Player Points Trae Young
+18+
+1.11
+20+
 1.20
-5+
-4.10
-8+
-26.00 
+25+
+1.69
+30+
+2.90
+35+
+6.25 
  
-Player Assists K. Middleton
+Player Assists B. Beal
 2+
 1.01
 5+
@@ -206,11 +162,47 @@ Player Assists K. Middleton
 8+
 3.50
 10+
-9.00 
+8.50 
  
-Player Assists M. Fultz
+Player Assists Bogdan Bogdanovic
 2+
-1.03
+1.38
+5+
+7.25
+8+
+36.00 
+ 
+Player Assists C. Capela
+2+
+3.30
+5+
+36.00 
+ 
+Player Assists D. Avdija
+2+
+1.51
+5+
+9.50
+8+
+41.00 
+ 
+Player Assists D. Gafford
+2+
+2.80
+5+
+31.00 
+ 
+Player Assists D. Hunter
+2+
+2.20
+5+
+21.00
+8+
+46.00 
+ 
+Player Assists D. Murray
+2+
+1.02
 5+
 1.61
 8+
@@ -218,2129 +210,117 @@ Player Assists M. Fultz
 10+
 14.00 
  
-Player Assists Moritz Wagner
+Player Assists J. Collins
 2+
-1.53
-5+
-10.50
-8+
-41.00 
- 
-Player Assists P. Connaughton
-2+
-1.45
-5+
-9.50
-8+
-41.00 
- 
-Player Assists Paolo Banchero
-2+
-1.19
-5+
-3.80
-8+
-21.00 
- 
-Player Rebounds B. Lopez
-2+
-1.001
-5+
-1.14
-8+
-1.95
-10+
-3.50
-12+
-7.75 
- 
-Player Rebounds B. Portis
-5+
-1.03
-8+
-1.25
-10+
-1.69
-12+
-2.70
-15+
-7.25 
- 
-Player Rebounds Bol Bol
-2+
-1.03
-5+
-1.65
-8+
-5.40
-10+
-14.00 
- 
-Player Rebounds Cole Anthony
-2+
-1.04
-5+
-1.80
-8+
-6.25
-10+
-18.00 
- 
-Player Rebounds Franz Wagner
-2+
-1.07
-5+
-2.30
-8+
-11.00
-10+
-31.00 
- 
-Player Rebounds G. Allen
-2+
-1.15
-5+
 3.60
-8+
-21.00 
- 
-Player Rebounds Jalen Suggs
-2+
-1.06
-5+
-2.10
-8+
-9.50
-10+
-26.00 
- 
-Player Rebounds K. Middleton
-2+
-1.02
-5+
-1.56
-8+
-5.25
-10+
-14.00 
- 
-Player Rebounds M. Fultz
-2+
-1.03
-5+
-1.65
-8+
-5.50
-10+
-15.00 
- 
-Player Rebounds Moritz Wagner
-2+
-1.01
-5+
-1.28
-8+
-2.90
-10+
-7.00 
- 
-Player Rebounds P. Connaughton
-2+
-1.01
-5+
-1.34
-8+
-3.30
-10+
-8.00 
- 
-Player Rebounds Paolo Banchero
-2+
-1.001
-5+
-1.14
-8+
-1.95
-10+
-4.00
-12+
-9.00 
- 
-Player Three Pointers B. Lopez
-1+
-1.12
-2+
-1.56
-3+
-2.65 
- 
-Player Three Pointers B. Portis
-1+
-1.36
-2+
-2.55 
- 
-Player Three Pointers Bol Bol
-1+
-2.25
-2+
-7.25 
- 
-Player Three Pointers Cole Anthony
-1+
-1.34
-2+
-2.50 
- 
-Player Three Pointers Franz Wagner
-1+
-1.18
-2+
-1.77
-3+
-3.40 
- 
-Player Three Pointers G. Allen
-1+
-1.07
-2+
-1.38
-3+
-2.15 
- 
-Player Three Pointers Jalen Suggs
-1+
-1.33
-2+
-2.40 
- 
-Player Three Pointers K. Middleton
-1+
-1.12
-2+
-1.54
-3+
-2.60 
- 
-Player Three Pointers M. Fultz
-1+
-2.55 
- 
-Player Three Pointers Moritz Wagner
-1+
-1.21
-2+
-1.95
-3+
-3.80 
- 
-Player Three Pointers P. Connaughton
-1+
-1.13
-2+
-1.56
-3+
-2.80 
- 
-Player Three Pointers Paolo Banchero
-1+
-1.50
-2+
-3.20 
- 
-Player Points + Assists + Rebounds B. Lopez
-20+
-1.17
-25+
-1.54
-30+
-2.45
-35+
-4.70
-40+
-10.00 
- 
-Player Points + Assists + Rebounds B. Portis
-20+
-1.10
-25+
-1.40
-30+
-2.10
-35+
-3.80
-40+
-7.75 
- 
-Player Points + Assists + Rebounds Bol Bol
-12+
-1.40
-13+
-1.56
-14+
-1.80
-15+
-2.05
-16+
-2.45 
- 
-Player Points + Assists + Rebounds Cole Anthony
-15+
-1.13
-20+
-1.56
-25+
-2.70
-30+
-6.25 
- 
-Player Points + Assists + Rebounds Franz Wagner
-15+
-1.05
-20+
-1.30
-25+
-2.00
-30+
-4.10
-35+
-9.50 
- 
-Player Points + Assists + Rebounds G. Allen
-14+
-1.30
-16+
-1.54
-18+
-1.91
-20+
-2.50
-22+
-3.40 
- 
-Player Points + Assists + Rebounds Jalen Suggs
-15+
-1.19
-20+
-1.80
-25+
-3.80
-30+
-10.00 
- 
-Player Points + Assists + Rebounds K. Middleton
-20+
-1.06
-25+
-1.29
-30+
-1.91
-35+
-3.50
-40+
-7.75 
- 
-Player Points + Assists + Rebounds M. Fultz
-20+
-1.19
-25+
-1.74
-30+
-3.30
-35+
-8.00 
- 
-Player Points + Assists + Rebounds Moritz Wagner
-15+
-1.05
-20+
-1.30
-25+
-2.05
-30+
-4.30
-35+
-10.50 
- 
-Player Points + Assists + Rebounds P. Connaughton
-14+
-1.28
-16+
-1.51
-18+
-1.87
-20+
-2.50
-22+
-3.40 
- 
-Player Points + Assists + Rebounds Paolo Banchero
-20+
-1.04
-25+
-1.20
-30+
-1.69
-35+
-2.90
-40+
-6.25 
- 
-Player Points B. Beal
-18+
-1.15
-20+
-1.26
-25+
-1.91
-30+
-3.80
-35+
-9.00 
- 
-Player Points D. Gafford
-5+
-1.06
-8+
-1.31
-10+
-1.71
-12+
-2.45
-15+
-5.10 
- 
-Player Points D. Wright
-5+
-1.13
-8+
-1.50
-10+
-2.00
-12+
-2.90
-15+
-6.00 
- 
-Player Points Isaiah Livers
-5+
-1.12
-8+
-1.42
-10+
-1.83
-12+
-2.50
-15+
-4.50 
- 
-Player Points J. Wiseman
-10+
-1.22
-12+
-1.45
-15+
-2.25
-18+
-4.00
-20+
-6.25 
- 
-Player Points Jaden Ivey
-12+
-1.17
-15+
-1.43
-18+
-2.00
-20+
-2.60
-25+
-6.00 
- 
-Player Points K. Porzingis
-18+
-1.20
-20+
-1.34
-25+
-2.15
-30+
-4.50
-35+
-11.00 
- 
-Player Points M. Bagley III
-12+
-1.11
-15+
-1.31
-18+
-1.74
-20+
-2.25
-25+
-5.50 
- 
-Player Assists B. Beal
-2+
-1.01
-5+
-1.27
-8+
-2.90
-10+
-6.75 
- 
-Player Assists D. Gafford
-2+
-2.05
-5+
-21.00 
- 
-Player Assists D. Wright
-2+
-1.02
-5+
-1.54
-8+
-4.70
-10+
-12.00 
- 
-Player Assists Isaiah Livers
-2+
-1.23
-5+
-4.50
-8+
-31.00 
- 
-Player Assists J. Wiseman
-2+
-3.40
 5+
 41.00 
  
-Player Assists Jaden Ivey
+Player Assists K. Kuzma
 2+
-1.001
+1.20
 5+
-1.21
+4.00
 8+
-2.35
-10+
-4.90
-12+
-11.00 
+21.00 
  
 Player Assists K. Porzingis
 2+
-1.18
+1.33
 5+
-3.80
-8+
-21.00 
- 
-Player Assists M. Bagley III
-2+
-2.50
-5+
-31.00 
- 
-Player Rebounds B. Beal
-2+
-1.07
-5+
-2.20
-8+
-10.00
-10+
-26.00 
- 
-Player Rebounds D. Gafford
-2+
-1.001
-5+
-1.14
-8+
-2.00
-10+
-3.80
-12+
-8.50 
- 
-Player Rebounds D. Wright
-2+
-1.06
-5+
-2.00
-8+
-8.00
-10+
-21.00 
- 
-Player Rebounds Isaiah Livers
-2+
-1.09
-5+
-2.60
-8+
-13.00
-10+
-36.00 
- 
-Player Rebounds J. Wiseman
-2+
-1.001
-5+
-1.10
-8+
-1.74
-10+
-3.20
-12+
-6.75 
- 
-Player Rebounds Jaden Ivey
-2+
-1.07
-5+
-2.45
-8+
-12.00
-10+
-31.00 
- 
-Player Rebounds K. Porzingis
-5+
-1.05
-8+
-1.38
-10+
-2.05
-12+
-3.80
-15+
-12.00 
- 
-Player Rebounds M. Bagley III
-5+
-1.02
-8+
-1.23
-10+
-1.67
-12+
-2.70
-15+
-7.75 
- 
-Player Three Pointers B. Beal
-1+
-1.14
-2+
-1.61
-3+
-2.90 
- 
-Player Three Pointers D. Wright
-1+
-1.37
-2+
-2.60 
- 
-Player Three Pointers Isaiah Livers
-1+
-1.10
-2+
-1.45
-3+
-2.40 
- 
-Player Three Pointers Jaden Ivey
-1+
-1.18
-2+
-1.80
-3+
-3.40 
- 
-Player Three Pointers K. Porzingis
-1+
-1.11
-2+
-1.53
-3+
-2.60 
- 
-Player Three Pointers M. Bagley III
-1+
-2.45 
- 
-Player Points + Assists + Rebounds B. Beal
-25+
-1.07
-30+
-1.27
-35+
-1.80
-40+
-3.00
-45+
-6.25 
- 
-Player Points + Assists + Rebounds D. Gafford
-16+
-1.29
-18+
-1.54
-20+
-1.95
-22+
-2.70
-24+
-4.00 
- 
-Player Points + Assists + Rebounds D. Wright
-16+
-1.31
-18+
-1.56
-20+
-1.95
-22+
-2.65
-24+
-3.70 
- 
-Player Points + Assists + Rebounds Isaiah Livers
-14+
-1.34
-16+
-1.61
-18+
-2.10
-20+
-2.80
-22+
-3.80 
- 
-Player Points + Assists + Rebounds J. Wiseman
-15+
-1.07
-20+
-1.40
-25+
-2.45
-30+
 6.00
-35+
-18.00 
+8+
+31.00 
  
-Player Points + Assists + Rebounds Jaden Ivey
-20+
-1.10
-25+
-1.38
-30+
-2.20
-35+
-4.10
-40+
-9.00 
- 
-Player Points + Assists + Rebounds K. Porzingis
-25+
-1.06
-30+
-1.23
-35+
-1.65
-40+
-2.70
-45+
-5.50 
- 
-Player Points + Assists + Rebounds M. Bagley III
-20+
-1.05
-25+
-1.25
-30+
-1.83
-35+
-3.40
-40+
-8.00 
- 
-Player Points A. Edwards
-18+
-1.09
-20+
-1.18
-25+
-1.61
-30+
-2.80
-35+
-5.80 
- 
-Player Points J. Embiid
-25+
-1.18
-30+
-1.54
-35+
-2.40
-40+
+Player Assists O. Okongwu
+2+
 4.30
-45+
-8.50 
+5+
+41.00 
  
-Player Points Jaden McDaniels
-8+
-1.21
-10+
-1.45
-12+
+Player Assists S. Bey
+2+
 1.87
-15+
-3.10
-18+
-6.00 
- 
-Player Points K. Anderson
-5+
-1.06
-8+
-1.28
-10+
-1.61
-12+
-2.25
-15+
-4.30 
- 
-Player Points M. Conley
-8+
-1.26
-10+
-1.54
-12+
-2.00
-15+
-3.40
-18+
-6.50 
- 
-Player Points N. Alexander-Walker
-2+
-1.02
-5+
-1.19
-8+
-1.65
-10+
-2.35
-12+
-3.50 
- 
-Player Points N. Reid
-5+
-1.09
-8+
-1.38
-10+
-1.77
-12+
-2.45
-15+
-4.70 
- 
-Player Points R. Gobert
-10+
-1.13
-12+
-1.29
-15+
-1.74
-18+
-2.80
-20+
-4.20 
- 
-Player Points T. Maxey
-18+
-1.22
-20+
-1.37
-25+
-2.20
-30+
-4.50
-35+
-10.00 
- 
-Player Points T. Prince
-2+
-1.02
-5+
-1.18
-8+
-1.65
-10+
-2.30
-12+
-3.50 
- 
-Player Assists A. Edwards
-2+
-1.07
-5+
-2.15
-8+
-9.50
-10+
-26.00 
- 
-Player Assists J. Embiid
-2+
-1.06
-5+
-2.00
-8+
-8.00
-10+
-21.00 
- 
-Player Assists Jaden McDaniels
-2+
-1.54
-5+
-10.00
-8+
-41.00 
- 
-Player Assists K. Anderson
-2+
-1.06
-5+
-2.00
-8+
-8.00
-10+
-21.00 
- 
-Player Assists M. Conley
-2+
-1.01
-5+
-1.38
-8+
-3.60
-10+
-9.00 
- 
-Player Assists N. Alexander-Walker
-2+
-1.67
-5+
-12.00
-8+
-46.00 
- 
-Player Assists N. Reid
-2+
-2.45
-5+
-26.00 
- 
-Player Assists R. Gobert
-2+
-3.30
-5+
-41.00 
- 
-Player Assists T. Maxey
-2+
-1.07
-5+
-2.20
-8+
-10.00
-10+
-26.00 
- 
-Player Assists T. Prince
-2+
-1.95
 5+
 18.00
 8+
 46.00 
  
-Player Rebounds A. Edwards
-2+
-1.03
+Player Assists Trae Young
 5+
-1.61
+1.03
 8+
-5.35
+1.34
 10+
-14.00 
+2.00
+12+
+3.70
+15+
+12.00 
  
-Player Rebounds J. Embiid
+Player Rebounds B. Beal
+2+
+1.04
+5+
+1.83
+8+
+7.00
+10+
+20.00 
+ 
+Player Rebounds Bogdan Bogdanovic
+2+
+1.34
+5+
+6.50
+8+
+36.00 
+ 
+Player Rebounds C. Capela
 8+
 1.14
 10+
-1.43
+1.45
 12+
-2.00
+2.15
 15+
-4.50
+5.50
 18+
-11.00 
+15.00 
  
-Player Rebounds Jaden McDaniels
-2+
-1.07
-5+
-2.30
-8+
-11.00
-10+
-31.00 
- 
-Player Rebounds K. Anderson
+Player Rebounds D. Avdija
 2+
 1.02
 5+
 1.43
 8+
-4.10
+3.70
 10+
-10.00 
- 
-Player Rebounds M. Conley
-2+
-1.27
-5+
-5.20
-8+
-31.00 
- 
-Player Rebounds N. Alexander-Walker
-2+
-1.45
-5+
-8.50
-8+
-36.00 
- 
-Player Rebounds N. Reid
-2+
-1.04
-5+
-1.71
-8+
-6.00
-10+
-15.00 
- 
-Player Rebounds R. Gobert
-8+
-1.10
-10+
-1.31
-12+
-1.77
-15+
-3.60
-18+
 8.50 
  
-Player Rebounds T. Maxey
+Player Rebounds D. Gafford
 2+
-1.15
+1.001
 5+
-3.40
+1.20
 8+
-20.00 
- 
-Player Rebounds T. Prince
-2+
-1.38
-5+
-7.00
-8+
-36.00 
- 
-Player Three Pointers A. Edwards
-2+
-1.31
-3+
-1.91
-4+
-3.30 
- 
-Player Three Pointers J. Embiid
-1+
-1.56
-2+
-3.50 
- 
-Player Three Pointers Jaden McDaniels
-1+
-1.26
-2+
-2.15 
- 
-Player Three Pointers K. Anderson
-1+
-1.91
-2+
-5.50 
- 
-Player Three Pointers M. Conley
-1+
-1.15
-2+
-1.71
-3+
-3.10 
- 
-Player Three Pointers N. Alexander-Walker
-1+
-1.30
-2+
-2.35 
- 
-Player Three Pointers N. Reid
-1+
-1.34
-2+
-2.60 
- 
-Player Three Pointers T. Maxey
-2+
-1.25
-3+
-1.77
-4+
-3.00 
- 
-Player Three Pointers T. Prince
-1+
-1.38
-2+
-2.70 
- 
-Player Points + Assists + Rebounds A. Edwards
-25+
-1.07
-30+
-1.25
-35+
-1.71
-40+
-2.70
-45+
-5.25 
- 
-Player Points + Assists + Rebounds J. Embiid
-40+
-1.23
-45+
-1.53
-50+
-2.10
-55+
-3.20
-60+
-5.40 
- 
-Player Points + Assists + Rebounds Jaden McDaniels
-14+
-1.24
-16+
-1.45
-18+
-1.80
-20+
-2.35
-22+
-3.25 
- 
-Player Points + Assists + Rebounds K. Anderson
-15+
-1.12
-20+
-1.61
-25+
-3.30
-30+
-9.00 
- 
-Player Points + Assists + Rebounds M. Conley
-15+
-1.19
-20+
-1.80
-25+
-3.70
-30+
+2.15
+10+
+4.20
+12+
 9.50 
  
-Player Points + Assists + Rebounds N. Alexander-Walker
-11+
-1.45
-12+
-1.61
-13+
-1.87
-14+
-2.10
-15+
-2.50 
- 
-Player Points + Assists + Rebounds N. Reid
-12+
-1.20
-14+
-1.40
-16+
-1.71
-18+
-2.25
-20+
-3.10 
- 
-Player Points + Assists + Rebounds R. Gobert
-20+
+Player Rebounds D. Hunter
+2+
 1.09
-25+
-1.38
-30+
-2.20
-35+
-4.50
-40+
-10.50 
- 
-Player Points + Assists + Rebounds T. Maxey
-20+
-1.05
-25+
-1.22
-30+
-1.67
-35+
-2.80
-40+
-5.60 
- 
-Player Points + Assists + Rebounds T. Prince
-11+
-1.45
-12+
-1.65
-13+
-1.87
-14+
-2.20
-15+
-2.60 
- 
-Player Points D. Smith Jr.
 5+
-1.10
-8+
-1.42
-10+
-1.87
-12+
-2.70
-15+
-5.40 
- 
-Player Points G. Hayward
-10+
-1.13
-12+
-1.28
-15+
-1.69
-18+
 2.60
-20+
-3.70 
- 
-Player Points I. Quickley
-15+
-1.17
-18+
-1.38
-20+
-1.61
-25+
-2.90
-30+
-6.75 
- 
-Player Points J. Hart
-8+
-1.24
-10+
-1.45
-12+
-1.91
-15+
-3.10
-18+
-6.00 
- 
-Player Points J. Randle
-20+
-1.13
-25+
-1.42
-30+
-2.10
-35+
-3.60
-40+
-7.75 
- 
-Player Points K. Oubre Jr.
-15+
-1.15
-18+
-1.37
-20+
-1.61
-25+
-2.85
-30+
-6.25 
- 
-Player Points M. Robinson
-8+
-1.31
-10+
-1.61
-12+
-2.15
-15+
-3.60
-18+
-7.00 
- 
-Player Points Mark Williams
-8+
-1.20
-10+
-1.45
-12+
-1.95
-15+
-3.50
-18+
-7.25 
- 
-Player Points Quentin Grimes
-5+
-1.14
-8+
-1.45
-10+
-1.95
-12+
-2.70
-15+
-5.35 
- 
-Player Points R.J. Barrett
-15+
-1.11
-18+
-1.29
-20+
-1.50
-25+
-2.60
-30+
-5.80 
- 
-Player Points T. Rozier
-15+
-1.17
-18+
-1.40
-20+
-1.67
-25+
-3.00
-30+
-6.75 
- 
-Player Assists D. Smith Jr.
-2+
-1.02
-5+
-1.50
-8+
-4.00
-10+
-10.50 
- 
-Player Assists G. Hayward
-2+
-1.05
-5+
-1.83
-8+
-7.00
-10+
-20.00 
- 
-Player Assists I. Quickley
-2+
-1.02
-5+
-1.43
-8+
-4.10
-10+
-10.50 
- 
-Player Assists J. Hart
-2+
-1.10
-5+
-2.70
 8+
 13.00
 10+
 31.00 
  
-Player Assists J. Randle
-2+
-1.03
-5+
-1.56
-8+
-4.70
-10+
-12.00 
- 
-Player Assists K. Oubre Jr.
-2+
-2.30
-5+
-26.00
-8+
-46.00 
- 
-Player Assists M. Robinson
-2+
-2.10
-5+
-20.00
-8+
-46.00 
- 
-Player Assists Mark Williams
-2+
-4.50
-5+
-41.00 
- 
-Player Assists Quentin Grimes
-2+
-1.74
-5+
-15.00
-8+
-46.00 
- 
-Player Assists R.J. Barrett
-2+
-1.19
-5+
-4.20
-8+
-21.00 
- 
-Player Assists T. Rozier
-2+
-1.02
-5+
-1.51
-8+
-4.40
-10+
-12.00 
- 
-Player Rebounds D. Smith Jr.
-2+
-1.20
-5+
-4.00
-8+
-21.00 
- 
-Player Rebounds G. Hayward
-2+
-1.06
-5+
-2.10
-8+
-9.00
-10+
-26.00 
- 
-Player Rebounds I. Quickley
-2+
-1.04
-5+
-1.77
-8+
-6.50
-10+
-19.00 
- 
-Player Rebounds J. Hart
-2+
-1.01
-5+
-1.22
-8+
-2.45
-10+
-5.00
-12+
-11.00 
- 
-Player Rebounds J. Randle
-5+
-1.03
-8+
-1.26
-10+
-1.71
-12+
-2.70
-15+
-7.25 
- 
-Player Rebounds K. Oubre Jr.
-2+
-1.01
-5+
-1.27
-8+
-2.85
-10+
-6.50 
- 
-Player Rebounds M. Robinson
-8+
-1.15
-10+
-1.38
-12+
-1.77
-15+
-2.90
-18+
-5.90 
- 
-Player Rebounds Mark Williams
-5+
-1.04
-8+
-1.38
-10+
-2.05
-12+
-3.70
-15+
-11.00 
- 
-Player Rebounds Quentin Grimes
-2+
-1.31
-5+
-5.90
-8+
-31.00 
- 
-Player Rebounds R.J. Barrett
-2+
-1.03
-5+
-1.65
-8+
-5.60
-10+
-16.00 
- 
-Player Rebounds T. Rozier
-2+
-1.07
-5+
-2.30
-8+
-10.50
-10+
-31.00 
- 
-Player Three Pointers D. Smith Jr.
-1+
-2.25
-2+
-7.75 
- 
-Player Three Pointers G. Hayward
-1+
-1.40
-2+
-2.85 
- 
-Player Three Pointers I. Quickley
-2+
-1.17
-3+
-1.53
-4+
-2.30 
- 
-Player Three Pointers J. Hart
-1+
-1.45
-2+
-3.00 
- 
-Player Three Pointers J. Randle
-3+
-1.38
-4+
-1.95
-5+
-3.10 
- 
-Player Three Pointers K. Oubre Jr.
-2+
-1.30
-3+
-1.87
-4+
-3.20 
- 
-Player Three Pointers Quentin Grimes
-1+
-1.15
-2+
-1.69
-3+
-3.10 
- 
-Player Three Pointers R.J. Barrett
-1+
-1.13
-2+
-1.61
-3+
-2.80 
- 
-Player Three Pointers T. Rozier
-2+
-1.22
-3+
-1.67
-4+
-2.65 
- 
-Player Points + Assists + Rebounds D. Smith Jr.
-14+
-1.21
-16+
-1.40
-18+
-1.71
-20+
-2.20
-22+
-3.00 
- 
-Player Points + Assists + Rebounds G. Hayward
-15+
-1.04
-20+
-1.25
-25+
-1.87
-30+
-3.60
-35+
-8.50 
- 
-Player Points + Assists + Rebounds I. Quickley
-25+
-1.19
-30+
-1.56
-35+
-2.50
-40+
-5.00 
- 
-Player Points + Assists + Rebounds J. Hart
-15+
-1.10
-20+
-1.45
-25+
-2.45
-30+
-5.40
-35+
-13.00 
- 
-Player Points + Assists + Rebounds J. Randle
-35+
-1.18
-40+
-1.43
-45+
-1.95
-50+
-3.00
-55+
-5.00 
- 
-Player Points + Assists + Rebounds K. Oubre Jr.
-20+
-1.07
-25+
-1.33
-30+
-2.00
-35+
-3.60
-40+
-7.75 
- 
-Player Points + Assists + Rebounds M. Robinson
-15+
-1.09
-20+
-1.36
-25+
-1.87
-30+
-3.00
-35+
-5.90 
- 
-Player Points + Assists + Rebounds Mark Williams
-15+
-1.09
-20+
-1.51
-25+
-2.90
-30+
-7.75 
- 
-Player Points + Assists + Rebounds Quentin Grimes
-12+
-1.42
-13+
-1.56
-14+
-1.80
-15+
-2.05
-16+
-2.35 
- 
-Player Points + Assists + Rebounds R.J. Barrett
-20+
-1.05
-25+
-1.24
-30+
-1.74
-35+
-3.10
-40+
-6.50 
- 
-Player Points + Assists + Rebounds T. Rozier
-20+
-1.06
-25+
-1.24
-30+
-1.71
-35+
-2.85
-40+
-5.80 
- 
-Player Points A. Sengün
-10+
-1.17
-12+
-1.38
-15+
-2.00
-18+
-3.40
-20+
-5.25 
- 
-Player Points C. Johnson
-12+
-1.14
-15+
-1.36
-18+
-1.77
-20+
-2.25
-25+
-5.00 
- 
-Player Points D. Finney-Smith
-5+
-1.15
-8+
-1.54
-10+
-2.05
-12+
-2.90
-15+
-5.80 
- 
-Player Points J. Green
-15+
-1.14
-18+
-1.34
-20+
-1.56
-25+
-2.90
-30+
-6.50 
- 
-Player Points Jabari Smith Jr.
-8+
-1.24
-10+
-1.51
-12+
-1.95
-15+
-3.40
-18+
-6.75 
- 
-Player Points Jae'Sean Tate
-2+
-1.01
-5+
-1.15
-8+
-1.61
-10+
-2.30
-12+
-3.50 
- 
-Player Points K. Martin Jr.
-10+
-1.24
-12+
-1.45
-15+
-2.25
-18+
-3.80
-20+
-6.00 
- 
-Player Points K. Porter Jr.
-12+
-1.20
-15+
-1.53
-18+
-2.10
-20+
-2.90
-25+
-7.25 
- 
-Player Points Mikal Bridges
-18+
-1.14
-20+
-1.26
-25+
-1.83
-30+
-3.60
-35+
-8.00 
- 
-Player Points N. Claxton
-8+
-1.17
-10+
-1.38
-12+
-1.77
-15+
-3.10
-18+
-6.25 
- 
-Player Points R. O'Neale
-2+
-1.07
-5+
-1.40
-8+
-2.25
-10+
-3.60
-12+
-5.80 
- 
-Player Points S. Dinwiddie
-15+
-1.22
-18+
-1.51
-20+
-1.87
-25+
-3.70
-30+
-9.00 
- 
-Player Points Tari Eason
-8+
-1.22
-10+
-1.45
-12+
-1.91
-15+
-3.20
-18+
-6.25 
- 
-Player Assists A. Sengün
-2+
-1.07
-5+
-2.30
-8+
-10.50
-10+
-26.00 
- 
-Player Assists C. Johnson
-2+
-1.71
-5+
-15.00
-8+
-46.00 
- 
-Player Assists D. Finney-Smith
-2+
-1.61
-5+
-12.00
-8+
-46.00 
- 
-Player Assists J. Green
-2+
-1.19
-5+
-4.10
-8+
-21.00 
- 
-Player Assists Jabari Smith Jr.
-2+
-2.30
-5+
-26.00
-8+
-46.00 
- 
-Player Assists Jae'Sean Tate
-2+
-1.83
-5+
-16.00
-8+
-46.00 
- 
-Player Assists K. Martin Jr.
-2+
-1.69
-5+
-13.00
-8+
-46.00 
- 
-Player Assists K. Porter Jr.
-2+
-1.02
-5+
-1.56
-8+
-5.00
-10+
-13.00 
- 
-Player Assists Mikal Bridges
-2+
-1.07
-5+
-2.55
-8+
-13.00
-10+
-31.00 
- 
-Player Assists N. Claxton
-2+
-1.61
-5+
-12.00
-8+
-46.00 
- 
-Player Assists R. O'Neale
-2+
-1.29
-5+
-5.60
-8+
-31.00 
- 
-Player Assists S. Dinwiddie
-2+
-1.001
-5+
-1.13
-8+
-1.95
-10+
-3.80
-12+
-9.00 
- 
-Player Assists Tari Eason
-2+
-2.70
-5+
-31.00 
- 
-Player Rebounds A. Sengün
-5+
-1.05
-8+
-1.42
-10+
-2.15
-12+
-3.80
-15+
-12.00 
- 
-Player Rebounds C. Johnson
-2+
-1.04
-5+
-1.91
-8+
-7.50
-10+
-21.00 
- 
-Player Rebounds D. Finney-Smith
-2+
-1.01
-5+
-1.43
-8+
-4.00
-10+
-10.50 
- 
-Player Rebounds J. Green
-2+
-1.20
-5+
-4.10
-8+
-21.00 
- 
-Player Rebounds Jabari Smith Jr.
-2+
-1.001
-5+
-1.20
-8+
-2.30
-10+
-4.80
-12+
-12.00 
- 
-Player Rebounds Jae'Sean Tate
-2+
-1.17
-5+
-3.50
-8+
-20.00 
- 
-Player Rebounds K. Martin Jr.
-2+
-1.001
-5+
-1.25
-8+
-2.70
-10+
-6.00
-12+
-15.00 
- 
-Player Rebounds K. Porter Jr.
-2+
-1.05
-5+
-1.95
-8+
-7.75
-10+
-21.00 
- 
-Player Rebounds Mikal Bridges
+Player Rebounds D. Murray
 2+
 1.03
 5+
@@ -2350,959 +330,95 @@ Player Rebounds Mikal Bridges
 10+
 17.00 
  
-Player Rebounds N. Claxton
-5+
-1.02
-8+
-1.22
-10+
-1.61
-12+
-2.60
-15+
-6.50 
- 
-Player Rebounds R. O'Neale
+Player Rebounds J. Collins
 2+
-1.12
-5+
-2.90
-8+
-16.00
-10+
-36.00 
- 
-Player Rebounds S. Dinwiddie
-2+
-1.13
-5+
-3.20
-8+
-19.00
-10+
-41.00 
- 
-Player Rebounds Tari Eason
-2+
-1.001
-5+
-1.22
-8+
-2.40
-10+
-4.90
-12+
-11.00 
- 
-Player Three Pointers C. Johnson
-2+
-1.24
-3+
-1.71
-4+
-2.80 
- 
-Player Three Pointers D. Finney-Smith
-1+
-1.15
-2+
-1.71
-3+
-3.20 
- 
-Player Three Pointers J. Green
-1+
-1.07
-2+
-1.38
-3+
-2.15 
- 
-Player Three Pointers Jabari Smith Jr.
-1+
-1.34
-2+
-2.60 
- 
-Player Three Pointers Jae'Sean Tate
-1+
-2.35
-2+
-8.00 
- 
-Player Three Pointers K. Martin Jr.
-1+
-1.61
-2+
-3.80 
- 
-Player Three Pointers K. Porter Jr.
-1+
-1.13
-2+
-1.61
-3+
-2.85 
- 
-Player Three Pointers Mikal Bridges
-1+
-1.11
-2+
-1.51
-3+
-2.50 
- 
-Player Three Pointers R. O'Neale
-1+
-1.24
-2+
-2.05
-3+
-4.30 
- 
-Player Three Pointers S. Dinwiddie
-2+
-1.34
-3+
-2.05
-4+
-3.60 
- 
-Player Three Pointers Tari Eason
-1+
-1.83
-2+
-5.20 
- 
-Player Points + Assists + Rebounds A. Sengün
-20+
-1.10
-25+
-1.43
-30+
-2.40
-35+
-5.00
-40+
-12.00 
- 
-Player Points + Assists + Rebounds C. Johnson
-15+
-1.05
-20+
-1.27
-25+
-1.87
-30+
-3.40
-35+
-7.50 
- 
-Player Points + Assists + Rebounds D. Finney-Smith
-12+
-1.17
-14+
-1.34
-16+
-1.61
-18+
-2.10
-20+
-2.85 
- 
-Player Points + Assists + Rebounds J. Green
-20+
-1.12
-25+
-1.43
-30+
-2.30
-35+
-4.60
-40+
-10.00 
- 
-Player Points + Assists + Rebounds Jabari Smith Jr.
-16+
-1.27
-18+
-1.50
-20+
-1.87
-22+
-2.45
-24+
-3.40 
- 
-Player Points + Assists + Rebounds Jae'Sean Tate
-12+
-1.45
-13+
-1.61
-14+
-1.87
-15+
-2.15
-16+
-2.55 
- 
-Player Points + Assists + Rebounds K. Martin Jr.
-15+
-1.09
-20+
-1.45
-25+
-2.70
-30+
-6.25 
- 
-Player Points + Assists + Rebounds K. Porter Jr.
-20+
-1.15
-25+
-1.56
-30+
-2.70
-35+
-5.60 
- 
-Player Points + Assists + Rebounds Mikal Bridges
-25+
-1.11
-30+
-1.37
-35+
-2.05
-40+
-3.70
-45+
-7.75 
- 
-Player Points + Assists + Rebounds N. Claxton
-15+
 1.04
-20+
-1.25
-25+
-1.95
-30+
-4.10
-35+
-10.00 
- 
-Player Points + Assists + Rebounds R. O'Neale
-11+
-1.42
-12+
-1.56
-13+
-1.77
-14+
-2.05
-15+
-2.40 
- 
-Player Points + Assists + Rebounds S. Dinwiddie
-20+
-1.05
-25+
-1.22
-30+
-1.69
-35+
-2.90
-40+
-5.90 
- 
-Player Points + Assists + Rebounds Tari Eason
-15+
-1.21
-20+
+5+
 1.83
-25+
-3.80
-30+
-9.50 
- 
-Player Points Josh Giddey
-12+
-1.10
-15+
-1.31
-18+
-1.74
-20+
-2.25
-25+
-5.50 
- 
-Player Points L. Dort
-10+
-1.15
-12+
-1.31
-15+
-1.77
-18+
-2.70
-20+
-3.80 
- 
-Player Points S. Gilgeous-Alexander
-20+
-1.03
-25+
-1.19
-30+
-1.61
-35+
-2.70
-40+
-5.60 
- 
-Player Assists Josh Giddey
-2+
-1.001
-5+
-1.26
 8+
-2.70
-10+
-6.50
-12+
-16.00 
- 
-Player Assists L. Dort
-2+
-1.61
-5+
-12.00
-8+
-46.00 
- 
-Player Assists S. Gilgeous-Alexander
-2+
-1.01
-5+
-1.34
-8+
-3.40
-10+
-8.50 
- 
-Player Rebounds Josh Giddey
-2+
-1.001
-5+
-1.10
-8+
-1.77
-10+
-3.25
-12+
-7.00 
- 
-Player Rebounds L. Dort
-2+
-1.07
-5+
-2.15
-8+
-10.00
-10+
-26.00 
- 
-Player Rebounds S. Gilgeous-Alexander
-2+
-1.02
-5+
-1.54
-8+
-4.90
-10+
-13.00 
- 
-Player Three Pointers Josh Giddey
-1+
-1.56
-2+
-3.50 
- 
-Player Three Pointers L. Dort
-1+
-1.11
-2+
-1.51
-3+
-2.65 
- 
-Player Three Pointers S. Gilgeous-Alexander
-1+
-1.69
-2+
-4.20 
- 
-Player Points + Assists + Rebounds Josh Giddey
-25+
-1.12
-30+
-1.45
-35+
-2.30
-40+
-4.50
-45+
-10.50 
- 
-Player Points + Assists + Rebounds L. Dort
-15+
-1.13
-20+
-1.56
-25+
-2.85
-30+
-7.00 
- 
-Player Points + Assists + Rebounds S. Gilgeous-Alexander
-35+
-1.17
-40+
-1.45
-45+
-2.20
-50+
-3.80
-55+
-7.75 
- 
-Player Points Josh Green
-2+
-1.02
-5+
-1.17
-8+
-1.61
-10+
-2.30
-12+
-3.40 
- 
-Player Points K. Irving
-18+
-1.13
-20+
-1.23
-25+
-1.69
-30+
-2.90
-35+
-6.25 
- 
-Player Points L. Doncic
-25+
-1.10
-30+
-1.38
-35+
-2.10
-40+
-3.80
-45+
-8.50 
- 
-Player Points R. Bullock
-2+
-1.03
-5+
-1.20
-8+
-1.67
-10+
-2.35
-12+
-3.40 
- 
-Player Assists Josh Green
-2+
-1.61
-5+
-13.00
-8+
-46.00 
- 
-Player Assists K. Irving
-2+
-1.01
-5+
-1.31
-8+
-3.10
-10+
-7.25 
- 
-Player Assists L. Doncic
-2+
-1.001
-5+
-1.12
-8+
-1.95
-10+
-3.80
-12+
-9.00 
- 
-Player Assists R. Bullock
-2+
-1.83
-5+
-18.00
-8+
-46.00 
- 
-Player Rebounds Josh Green
-2+
-1.14
-5+
-3.25
-8+
-19.00 
- 
-Player Rebounds K. Irving
-2+
-1.06
-5+
-2.05
-8+
-8.00
+7.25
 10+
 21.00 
  
-Player Rebounds L. Doncic
-2+
-1.001
-5+
-1.07
-8+
-1.61
-10+
-2.85
-12+
-6.00 
- 
-Player Rebounds R. Bullock
-2+
-1.13
-5+
-3.10
-8+
-17.00
-10+
-41.00 
- 
-Player Three Pointers Josh Green
-1+
-1.38
-2+
-2.70 
- 
-Player Three Pointers K. Irving
-2+
-1.17
-3+
-1.51
-4+
-2.30 
- 
-Player Three Pointers L. Doncic
-2+
-1.24
-3+
-1.77
-4+
-2.90 
- 
-Player Three Pointers R. Bullock
-1+
-1.10
-2+
-1.51
-3+
-2.55 
- 
-Player Points + Assists + Rebounds Josh Green
-12+
-1.40
-13+
-1.56
-14+
-1.77
-15+
-2.05
-16+
-2.40 
- 
-Player Points + Assists + Rebounds K. Irving
-25+
-1.06
-30+
-1.23
-35+
-1.61
-40+
-2.50
-45+
-4.60 
- 
-Player Points + Assists + Rebounds L. Doncic
-40+
-1.12
-45+
-1.37
-50+
-1.91
-55+
-3.10
-60+
-5.90 
- 
-Player Points + Assists + Rebounds R. Bullock
-12+
-1.45
-13+
-1.61
-14+
-1.83
-15+
-2.10
-16+
-2.45 
- 
-Player Points A. Davis
-20+
-1.09
-25+
-1.38
-30+
-2.20
-35+
-4.50
-40+
-10.50 
- 
-Player Points D. Bane
-18+
-1.17
-20+
-1.30
-25+
-1.91
-30+
-3.60
-35+
-8.00 
- 
-Player Points D. Brooks
-10+
-1.20
-12+
-1.40
-15+
-1.95
-18+
-3.25
-20+
-4.70 
- 
-Player Points J. Jackson Jr.
-15+
-1.24
-18+
-1.54
-20+
-1.95
-25+
-4.10
-30+
-10.50 
- 
-Player Points J. Vanderbilt
-5+
-1.14
-8+
-1.61
-10+
-2.35
-12+
-3.70
-15+
-8.00 
- 
-Player Points L. Kennard
-5+
-1.12
-8+
-1.45
-10+
-1.87
-12+
-2.60
-15+
-4.60 
- 
-Player Points Malik Beasley
-10+
-1.25
-12+
-1.45
-15+
-2.10
-18+
-3.20
-20+
-4.60 
- 
-Player Points S. Aldama
-5+
-1.11
-8+
-1.43
-10+
-1.83
-12+
-2.60
-15+
-4.90 
- 
-Player Points Tyus Jones
-10+
-1.13
-12+
-1.27
-15+
-1.65
-18+
-2.50
-20+
-3.50 
- 
-Player Points X. Tillman Sr.
-8+
-1.15
-10+
-1.37
-12+
-1.77
-15+
-3.00
-18+
-6.00 
- 
-Player Assists A. Davis
-2+
-1.20
-5+
-4.30
-8+
-26.00 
- 
-Player Assists D. Bane
-2+
-1.05
-5+
-1.83
-8+
-7.00
-10+
-20.00 
- 
-Player Assists D. Brooks
-2+
-1.31
-5+
-6.00
-8+
-36.00 
- 
-Player Assists J. Jackson Jr.
-2+
-3.10
-5+
-36.00
-8+
-46.00 
- 
-Player Assists J. Vanderbilt
-2+
-1.45
-5+
-9.50
-8+
-41.00 
- 
-Player Assists L. Kennard
-2+
-1.83
-5+
-16.00
-8+
-46.00 
- 
-Player Assists Malik Beasley
-2+
-1.56
-5+
-11.00
-8+
-46.00 
- 
-Player Assists S. Aldama
-2+
-2.45
-5+
-26.00
-8+
-46.00 
- 
-Player Assists Tyus Jones
-2+
-1.001
-5+
-1.09
-8+
-1.69
-10+
-3.00
-12+
-6.50 
- 
-Player Assists X. Tillman Sr.
-2+
-1.22
-5+
-4.50
-8+
-26.00 
- 
-Player Rebounds A. Davis
-10+
-1.13
-12+
-1.34
-15+
-2.20
-18+
-4.90
-20+
-9.00 
- 
-Player Rebounds D. Bane
+Player Rebounds K. Kuzma
 2+
 1.01
 5+
-1.33
+1.31
 8+
 3.20
 10+
-7.75 
+7.50 
  
-Player Rebounds D. Brooks
-2+
-1.15
-5+
-3.40
-8+
-19.00 
- 
-Player Rebounds J. Jackson Jr.
-2+
-1.001
-5+
-1.12
-8+
-1.87
-10+
-3.40
-12+
-7.75 
- 
-Player Rebounds J. Vanderbilt
+Player Rebounds K. Porzingis
 2+
 1.001
 5+
 1.07
 8+
-1.56
+1.54
 10+
-2.60
+2.40
 12+
-5.35 
+4.40 
  
-Player Rebounds L. Kennard
+Player Rebounds O. Okongwu
 2+
-1.23
+1.02
 5+
-4.80
+1.54
 8+
-26.00 
- 
-Player Rebounds Malik Beasley
-2+
-1.12
-5+
-2.85
-8+
-15.00
+4.60
 10+
-36.00 
+12.00 
  
-Player Rebounds S. Aldama
+Player Rebounds S. Bey
 2+
-1.04
+1.05
 5+
-1.77
+1.91
 8+
-6.00
+7.50
 10+
-15.00 
+21.00 
  
-Player Rebounds Tyus Jones
+Player Rebounds Trae Young
 2+
-1.15
+1.18
 5+
-3.40
+3.80
 8+
-19.00 
+21.00 
  
-Player Rebounds X. Tillman Sr.
-5+
-1.03
-8+
-1.34
-10+
-1.95
-12+
-3.50
-15+
-10.50 
- 
-Player Three Pointers A. Davis
+Player Three Pointers B. Beal
 1+
-2.30
+1.21
 2+
-8.00 
- 
-Player Three Pointers D. Bane
-2+
-1.22
+1.91
 3+
-1.65
-4+
-2.65 
+3.80 
  
-Player Three Pointers D. Brooks
+Player Three Pointers Bogdan Bogdanovic
+1+
+1.09
+2+
+1.45
+3+
+2.35 
+ 
+Player Three Pointers D. Avdija
+1+
+1.71
+2+
+4.20 
+ 
+Player Three Pointers D. Hunter
+1+
+1.26
+2+
+2.20 
+ 
+Player Three Pointers D. Murray
 1+
 1.17
 2+
@@ -3310,7 +426,1727 @@ Player Three Pointers D. Brooks
 3+
 3.30 
  
-Player Three Pointers J. Jackson Jr.
+Player Three Pointers J. Collins
+1+
+1.80
+2+
+4.80 
+ 
+Player Three Pointers K. Kuzma
+2+
+1.31
+3+
+1.91
+4+
+3.25 
+ 
+Player Three Pointers K. Porzingis
+1+
+1.11
+2+
+1.51
+3+
+2.55 
+ 
+Player Three Pointers S. Bey
+1+
+1.12
+2+
+1.56
+3+
+2.70 
+ 
+Player Three Pointers Trae Young
+1+
+1.10
+2+
+1.50
+3+
+2.50 
+ 
+Player Points + Assists + Rebounds B. Beal
+25+
+1.07
+30+
+1.28
+35+
+1.77
+40+
+2.90
+45+
+5.80 
+ 
+Player Points + Assists + Rebounds Bogdan Bogdanovic
+14+
+1.34
+16+
+1.61
+18+
+2.00
+20+
+2.60
+22+
+3.60 
+ 
+Player Points + Assists + Rebounds C. Capela
+15+
+1.03
+20+
+1.23
+25+
+1.91
+30+
+4.10
+35+
+11.00 
+ 
+Player Points + Assists + Rebounds D. Avdija
+12+
+1.21
+14+
+1.43
+16+
+1.77
+18+
+2.40
+20+
+3.30 
+ 
+Player Points + Assists + Rebounds D. Gafford
+14+
+1.22
+16+
+1.40
+18+
+1.71
+20+
+2.20
+22+
+3.00 
+ 
+Player Points + Assists + Rebounds D. Hunter
+15+
+1.19
+20+
+1.83
+25+
+3.70
+30+
+9.50 
+ 
+Player Points + Assists + Rebounds D. Murray
+20+
+1.05
+25+
+1.25
+30+
+1.77
+35+
+3.00
+40+
+6.00 
+ 
+Player Points + Assists + Rebounds J. Collins
+12+
+1.17
+14+
+1.34
+16+
+1.65
+18+
+2.20
+20+
+3.00 
+ 
+Player Points + Assists + Rebounds K. Kuzma
+20+
+1.05
+25+
+1.22
+30+
+1.67
+35+
+2.70
+40+
+5.50 
+ 
+Player Points + Assists + Rebounds K. Porzingis
+25+
+1.10
+30+
+1.34
+35+
+1.83
+40+
+2.85
+45+
+5.00 
+ 
+Player Points + Assists + Rebounds O. Okongwu
+12+
+1.40
+13+
+1.56
+14+
+1.80
+15+
+2.10
+16+
+2.50 
+ 
+Player Points + Assists + Rebounds S. Bey
+15+
+1.23
+20+
+1.87
+25+
+3.70
+30+
+8.50 
+ 
+Player Points + Assists + Rebounds Trae Young
+30+
+1.13
+35+
+1.43
+40+
+2.10
+45+
+3.60
+50+
+6.75 
+ 
+Player Points B. Adebayo
+12+
+1.09
+15+
+1.27
+18+
+1.61
+20+
+2.10
+25+
+4.90 
+ 
+Player Points B. Ingram
+18+
+1.10
+20+
+1.18
+25+
+1.65
+30+
+2.90
+35+
+6.25 
+ 
+Player Points C. Wood
+12+
+1.42
+15+
+2.00
+18+
+3.20
+20+
+4.80
+25+
+13.00 
+ 
+Player Points CJ. McCollum
+15+
+1.17
+18+
+1.40
+20+
+1.65
+25+
+3.00
+30+
+6.75 
+ 
+Player Points D. Powell
+2+
+1.03
+5+
+1.34
+8+
+2.40
+10+
+4.20
+12+
+8.00 
+ 
+Player Points Herb Jones
+5+
+1.14
+8+
+1.56
+10+
+2.15
+12+
+3.25
+15+
+7.00 
+ 
+Player Points J. Valanciunas
+10+
+1.18
+12+
+1.37
+15+
+1.83
+18+
+2.80
+20+
+3.80 
+ 
+Player Points Josh Green
+8+
+1.42
+10+
+1.87
+12+
+2.70
+15+
+5.40
+18+
+11.00 
+ 
+Player Points K. Irving
+20+
+1.15
+25+
+1.53
+30+
+2.50
+35+
+5.00
+40+
+11.00 
+ 
+Player Points L. Doncic
+30+
+1.54
+35+
+2.45
+40+
+4.90
+45+
+11.00
+50+
+21.00 
+ 
+Player Points N. Marshall
+2+
+1.03
+5+
+1.25
+8+
+1.91
+10+
+2.90
+12+
+4.50 
+ 
+Player Points T. Hardaway Jr.
+12+
+1.36
+15+
+1.83
+18+
+2.70
+20+
+3.80
+25+
+10.00 
+ 
+Player Assists B. Ingram
+2+
+1.03
+5+
+1.61
+8+
+5.10
+10+
+13.00 
+ 
+Player Assists C. Wood
+2+
+2.20
+5+
+21.00
+8+
+46.00 
+ 
+Player Assists CJ. McCollum
+2+
+1.02
+5+
+1.54
+8+
+4.50
+10+
+11.00 
+ 
+Player Assists D. Powell
+2+
+3.20
+5+
+36.00 
+ 
+Player Assists Herb Jones
+2+
+1.37
+5+
+7.25
+8+
+36.00 
+ 
+Player Assists J. Valanciunas
+2+
+1.95
+5+
+16.00
+8+
+46.00 
+ 
+Player Assists Josh Green
+2+
+1.80
+5+
+16.00
+8+
+46.00 
+ 
+Player Assists K. Irving
+2+
+1.01
+5+
+1.26
+8+
+2.70
+10+
+6.25
+12+
+16.00 
+ 
+Player Assists L. Doncic
+2+
+1.001
+5+
+1.19
+8+
+2.30
+10+
+5.00
+12+
+12.00 
+ 
+Player Assists N. Marshall
+2+
+1.45
+5+
+8.00
+8+
+36.00 
+ 
+Player Assists T. Hardaway Jr.
+2+
+1.91
+5+
+18.00
+8+
+46.00 
+ 
+Player Rebounds B. Ingram
+2+
+1.02
+5+
+1.56
+8+
+4.90
+10+
+12.00 
+ 
+Player Rebounds C. Wood
+2+
+1.01
+5+
+1.34
+8+
+3.20
+10+
+7.75 
+ 
+Player Rebounds CJ. McCollum
+2+
+1.07
+5+
+2.40
+8+
+11.00
+10+
+26.00 
+ 
+Player Rebounds D. Powell
+2+
+1.03
+5+
+1.71
+8+
+6.00
+10+
+16.00 
+ 
+Player Rebounds Herb Jones
+2+
+1.05
+5+
+2.00
+8+
+8.50
+10+
+21.00 
+ 
+Player Rebounds J. Valanciunas
+8+
+1.20
+10+
+1.50
+12+
+2.10
+15+
+4.20
+18+
+9.50 
+ 
+Player Rebounds Josh Green
+2+
+1.15
+5+
+3.40
+8+
+19.00 
+ 
+Player Rebounds K. Irving
+2+
+1.05
+5+
+1.87
+8+
+7.25
+10+
+19.00 
+ 
+Player Rebounds L. Doncic
+2+
+1.001
+5+
+1.06
+8+
+1.51
+10+
+2.50
+12+
+5.00 
+ 
+Player Rebounds N. Marshall
+2+
+1.11
+5+
+2.70
+8+
+13.00
+10+
+31.00 
+ 
+Player Rebounds T. Hardaway Jr.
+2+
+1.11
+5+
+2.70
+8+
+15.00
+10+
+31.00 
+ 
+Player Three Pointers B. Ingram
+1+
+1.25
+2+
+2.10
+3+
+4.50 
+ 
+Player Three Pointers C. Wood
+1+
+1.21
+2+
+1.91
+3+
+3.80 
+ 
+Player Three Pointers CJ. McCollum
+1+
+1.07
+2+
+1.36
+3+
+2.10 
+ 
+Player Three Pointers Herb Jones
+1+
+1.91
+2+
+5.50 
+ 
+Player Three Pointers J. Valanciunas
+1+
+2.90 
+ 
+Player Three Pointers Josh Green
+1+
+1.34
+2+
+2.45 
+ 
+Player Three Pointers K. Irving
+2+
+1.18
+3+
+1.54
+4+
+2.35 
+ 
+Player Three Pointers L. Doncic
+2+
+1.23
+3+
+1.71
+4+
+2.70 
+ 
+Player Three Pointers N. Marshall
+1+
+1.95
+2+
+5.80 
+ 
+Player Three Pointers T. Hardaway Jr.
+2+
+1.20
+3+
+1.61
+4+
+2.55 
+ 
+Player Points + Assists + Rebounds B. Ingram
+25+
+1.05
+30+
+1.21
+35+
+1.56
+40+
+2.50
+45+
+4.60 
+ 
+Player Points + Assists + Rebounds C. Wood
+15+
+1.12
+20+
+1.53
+25+
+2.65
+30+
+6.00
+35+
+15.00 
+ 
+Player Points + Assists + Rebounds CJ. McCollum
+20+
+1.06
+25+
+1.25
+30+
+1.74
+35+
+2.90
+40+
+5.60 
+ 
+Player Points + Assists + Rebounds D. Powell
+13+
+1.83
+14+
+2.20
+15+
+2.70
+16+
+3.40
+17+
+4.50 
+ 
+Player Points + Assists + Rebounds Herb Jones
+12+
+1.21
+14+
+1.43
+16+
+1.80
+18+
+2.40
+20+
+3.50 
+ 
+Player Points + Assists + Rebounds J. Valanciunas
+20+
+1.17
+25+
+1.51
+30+
+2.20
+35+
+3.80
+40+
+7.50 
+ 
+Player Points + Assists + Rebounds Josh Green
+12+
+1.30
+14+
+1.56
+16+
+2.10
+18+
+2.90
+20+
+4.40 
+ 
+Player Points + Assists + Rebounds K. Irving
+30+
+1.15
+35+
+1.45
+40+
+2.10
+45+
+3.60
+50+
+7.00 
+ 
+Player Points + Assists + Rebounds L. Doncic
+45+
+1.50
+55+
+3.80
+65+
+14.00 
+ 
+Player Points + Assists + Rebounds N. Marshall
+12+
+1.45
+13+
+1.61
+14+
+1.83
+15+
+2.10
+16+
+2.50 
+ 
+Player Points + Assists + Rebounds T. Hardaway Jr.
+15+
+1.18
+20+
+1.74
+25+
+3.30
+30+
+7.75 
+ 
+Player Points A. Horford
+5+
+1.11
+8+
+1.38
+10+
+1.74
+12+
+2.35
+15+
+4.00 
+ 
+Player Points C. Reddish
+8+
+1.13
+10+
+1.28
+12+
+1.54
+15+
+2.30
+18+
+3.80 
+ 
+Player Points D. Lillard
+25+
+1.12
+30+
+1.38
+35+
+2.00
+40+
+3.50
+45+
+7.00 
+ 
+Player Points D. White
+10+
+1.26
+12+
+1.53
+15+
+2.20
+18+
+3.70
+20+
+5.60 
+ 
+Player Points G. Williams
+2+
+1.02
+5+
+1.18
+8+
+1.65
+10+
+2.30
+12+
+3.50 
+ 
+Player Points J. Brown
+18+
+1.11
+20+
+1.19
+25+
+1.61
+30+
+2.80
+35+
+5.90 
+ 
+Player Points J. Grant
+15+
+1.20
+18+
+1.45
+20+
+1.77
+25+
+3.40
+30+
+8.00 
+ 
+Player Points J. Tatum
+20+
+1.10
+25+
+1.34
+30+
+1.95
+35+
+3.40
+40+
+7.00 
+ 
+Player Points M. Brogdon
+10+
+1.30
+12+
+1.56
+15+
+2.30
+18+
+3.80
+20+
+5.60 
+ 
+Player Points M. Smart
+8+
+1.22
+10+
+1.45
+12+
+1.87
+15+
+2.90
+18+
+5.50 
+ 
+Player Points M. Thybulle
+2+
+1.04
+5+
+1.30
+8+
+1.95
+10+
+3.00
+12+
+4.80 
+ 
+Player Assists A. Horford
+2+
+1.26
+5+
+5.10
+8+
+31.00 
+ 
+Player Assists C. Reddish
+2+
+1.54
+5+
+10.50
+8+
+41.00 
+ 
+Player Assists D. Lillard
+2+
+1.001
+5+
+1.22
+8+
+2.40
+10+
+5.25
+12+
+13.00 
+ 
+Player Assists D. White
+2+
+1.10
+5+
+2.70
+8+
+15.00
+10+
+31.00 
+ 
+Player Assists G. Williams
+2+
+1.17
+5+
+3.60
+8+
+21.00 
+ 
+Player Assists J. Brown
+2+
+1.19
+5+
+3.80
+8+
+21.00 
+ 
+Player Assists J. Grant
+2+
+1.45
+5+
+8.50
+8+
+41.00 
+ 
+Player Assists J. Tatum
+2+
+1.02
+5+
+1.56
+8+
+4.80
+10+
+12.00 
+ 
+Player Assists M. Brogdon
+2+
+1.15
+5+
+3.30
+8+
+18.00
+10+
+36.00 
+ 
+Player Assists M. Smart
+2+
+1.02
+5+
+1.56
+8+
+5.10
+10+
+14.00 
+ 
+Player Assists M. Thybulle
+2+
+1.87
+5+
+18.00
+8+
+46.00 
+ 
+Player Rebounds A. Horford
+2+
+1.001
+5+
+1.17
+8+
+2.10
+10+
+4.10
+12+
+9.00 
+ 
+Player Rebounds C. Reddish
+2+
+1.25
+5+
+5.25
+8+
+31.00 
+ 
+Player Rebounds D. Lillard
+2+
+1.02
+5+
+1.50
+8+
+4.40
+10+
+12.00 
+ 
+Player Rebounds D. White
+2+
+1.07
+5+
+2.15
+8+
+9.50
+10+
+26.00 
+ 
+Player Rebounds G. Williams
+2+
+1.03
+5+
+1.51
+8+
+4.30
+10+
+10.50 
+ 
+Player Rebounds J. Brown
+2+
+1.001
+5+
+1.12
+8+
+1.87
+10+
+3.60
+12+
+7.75 
+ 
+Player Rebounds J. Grant
+2+
+1.05
+5+
+1.87
+8+
+7.50
+10+
+21.00 
+ 
+Player Rebounds J. Tatum
+5+
+1.03
+8+
+1.28
+10+
+1.77
+12+
+3.00
+15+
+8.00 
+ 
+Player Rebounds M. Brogdon
+2+
+1.06
+5+
+1.95
+8+
+7.50
+10+
+21.00 
+ 
+Player Rebounds M. Smart
+2+
+1.09
+5+
+2.40
+8+
+11.00
+10+
+31.00 
+ 
+Player Rebounds M. Thybulle
+2+
+1.10
+5+
+2.65
+8+
+14.00
+10+
+31.00 
+ 
+Player Three Pointers A. Horford
+1+
+1.11
+2+
+1.45
+3+
+2.40 
+ 
+Player Three Pointers C. Reddish
+1+
+1.14
+2+
+1.65
+3+
+3.00 
+ 
+Player Three Pointers D. Lillard
+3+
+1.19
+4+
+1.45
+5+
+2.05 
+ 
+Player Three Pointers D. White
+1+
+1.18
+2+
+1.80
+3+
+3.40 
+ 
+Player Three Pointers G. Williams
+1+
+1.40
+2+
+2.70 
+ 
+Player Three Pointers J. Brown
+2+
+1.36
+3+
+2.05
+4+
+3.60 
+ 
+Player Three Pointers J. Grant
+1+
+1.10
+2+
+1.45
+3+
+2.40 
+ 
+Player Three Pointers J. Tatum
+2+
+1.24
+3+
+1.69
+4+
+2.70 
+ 
+Player Three Pointers M. Brogdon
+1+
+1.17
+2+
+1.71
+3+
+3.10 
+ 
+Player Three Pointers M. Smart
+1+
+1.14
+2+
+1.65
+3+
+2.90 
+ 
+Player Three Pointers M. Thybulle
+1+
+1.26
+2+
+2.10
+3+
+4.70 
+ 
+Player Points + Assists + Rebounds A. Horford
+15+
+1.18
+20+
+1.71
+25+
+3.30
+30+
+7.75 
+ 
+Player Points + Assists + Rebounds C. Reddish
+14+
+1.23
+16+
+1.42
+18+
+1.74
+20+
+2.25
+22+
+3.00 
+ 
+Player Points + Assists + Rebounds D. Lillard
+35+
+1.10
+40+
+1.29
+45+
+1.69
+50+
+2.50
+55+
+4.20 
+ 
+Player Points + Assists + Rebounds D. White
+15+
+1.11
+20+
+1.53
+25+
+2.80
+30+
+6.50 
+ 
+Player Points + Assists + Rebounds G. Williams
+14+
+1.29
+16+
+1.56
+18+
+1.95
+20+
+2.55
+22+
+3.50 
+ 
+Player Points + Assists + Rebounds J. Brown
+25+
+1.05
+30+
+1.20
+35+
+1.56
+40+
+2.35
+45+
+4.20 
+ 
+Player Points + Assists + Rebounds J. Grant
+20+
+1.15
+25+
+1.51
+30+
+2.45
+35+
+4.70 
+ 
+Player Points + Assists + Rebounds J. Tatum
+35+
+1.15
+40+
+1.38
+45+
+1.87
+50+
+2.90
+55+
+4.90 
+ 
+Player Points + Assists + Rebounds M. Brogdon
+15+
+1.15
+20+
+1.61
+25+
+2.85
+30+
+6.25 
+ 
+Player Points + Assists + Rebounds M. Smart
+15+
+1.13
+20+
+1.61
+25+
+3.00
+30+
+7.25 
+ 
+Player Points + Assists + Rebounds M. Thybulle
+11+
+1.42
+12+
+1.56
+13+
+1.80
+14+
+2.10
+15+
+2.45 
+ 
+Player Points A. Gordon
+10+
+1.14
+12+
+1.30
+15+
+1.77
+18+
+2.80
+20+
+4.00 
+ 
+Player Points Ayo Dosunmu
+2+
+1.07
+5+
+1.56
+8+
+3.10
+10+
+5.80 
+ 
+Player Points Bruce Brown
+5+
+1.10
+8+
+1.40
+10+
+1.80
+12+
+2.45
+15+
+4.60 
+ 
+Player Points C. White
+2+
+1.03
+5+
+1.20
+8+
+1.69
+10+
+2.35
+12+
+3.50 
+ 
+Player Points D. DeRozan
+18+
+1.26
+20+
+1.45
+25+
+2.55
+30+
+5.90
+35+
+15.00 
+ 
+Player Points J. Murray
+15+
+1.15
+18+
+1.40
+20+
+1.65
+25+
+3.00
+30+
+7.00 
+ 
+Player Points K. Caldwell-Pope
+5+
+1.09
+8+
+1.38
+10+
+1.77
+12+
+2.40
+15+
+4.30 
+ 
+Player Points M. Porter Jr.
+12+
+1.18
+15+
+1.43
+18+
+1.91
+20+
+2.45
+25+
+5.60 
+ 
+Player Points N. Jokic
+15+
+1.09
+18+
+1.24
+20+
+1.43
+25+
+2.50
+30+
+5.80 
+ 
+Player Points N. Vucevic
+12+
+1.19
+15+
+1.45
+18+
+2.00
+20+
+2.65
+25+
+5.90 
+ 
+Player Points P. Beverley
+2+
+1.10
+5+
+1.54
+8+
+2.85
+10+
+4.80 
+ 
+Player Points R. Jackson
+2+
+1.02
+5+
+1.19
+8+
+1.67
+10+
+2.30
+12+
+3.40 
+ 
+Player Points Z. LaVine
+18+
+1.13
+20+
+1.24
+25+
+1.77
+30+
+3.25
+35+
+7.00 
+ 
+Player Assists A. Gordon
+2+
+1.21
+5+
+4.60
+8+
+26.00 
+ 
+Player Assists Ayo Dosunmu
+2+
+2.00
+5+
+19.00
+8+
+46.00 
+ 
+Player Assists Bruce Brown
+2+
+1.40
+5+
+7.75
+8+
+41.00 
+ 
+Player Assists C. White
+2+
+1.43
+5+
+7.50
+8+
+36.00 
+ 
+Player Assists D. DeRozan
+2+
+1.03
+5+
+1.71
+8+
+5.80
+10+
+15.00 
+ 
+Player Assists J. Murray
+2+
+1.001
+5+
+1.27
+8+
+2.90
+10+
+6.75 
+ 
+Player Assists K. Caldwell-Pope
+2+
+1.27
+5+
+5.60
+8+
+36.00 
+ 
+Player Assists M. Porter Jr.
+2+
+3.40
+5+
+41.00 
+ 
+Player Assists N. Jokic
+5+
+1.02
+8+
+1.24
+10+
+1.71
+12+
+2.85
+15+
+8.00 
+ 
+Player Assists N. Vucevic
+2+
+1.28
+5+
+4.80
+8+
+26.00 
+ 
+Player Assists P. Beverley
+2+
+1.21
+5+
+4.20
+8+
+21.00 
+ 
+Player Assists R. Jackson
+2+
+1.25
+5+
+5.00
+8+
+31.00 
+ 
+Player Assists Z. LaVine
+2+
+1.14
+5+
+3.20
+8+
+17.00
+10+
+36.00 
+ 
+Player Rebounds A. Gordon
+2+
+1.001
+5+
+1.28
+8+
+2.85
+10+
+6.50 
+ 
+Player Rebounds Ayo Dosunmu
+2+
+1.71
+5+
+13.00
+8+
+46.00 
+ 
+Player Rebounds Bruce Brown
+2+
+1.15
+5+
+3.40
+8+
+17.00 
+ 
+Player Rebounds C. White
+2+
+1.45
+5+
+8.50
+8+
+41.00 
+ 
+Player Rebounds D. DeRozan
+2+
+1.07
+5+
+2.40
+8+
+11.00
+10+
+31.00 
+ 
+Player Rebounds J. Murray
+2+
+1.07
+5+
+2.35
+8+
+10.50
+10+
+26.00 
+ 
+Player Rebounds K. Caldwell-Pope
+2+
+1.50
+5+
+9.50
+8+
+41.00 
+ 
+Player Rebounds M. Porter Jr.
+2+
+1.03
+5+
+1.65
+8+
+5.25
+10+
+14.00 
+ 
+Player Rebounds N. Jokic
+8+
+1.05
+10+
+1.18
+12+
+1.51
+15+
+2.70
+18+
+7.25 
+ 
+Player Rebounds N. Vucevic
+5+
+1.03
+8+
+1.28
+10+
+1.71
+12+
+2.60
+15+
+6.50 
+ 
+Player Rebounds P. Beverley
+2+
+1.07
+5+
+2.35
+8+
+11.00
+10+
+31.00 
+ 
+Player Rebounds R. Jackson
+2+
+1.67
+5+
+12.00
+8+
+46.00 
+ 
+Player Rebounds Z. LaVine
+2+
+1.07
+5+
+2.25
+8+
+10.00
+10+
+26.00 
+ 
+Player Three Pointers A. Gordon
+1+
+1.83
+2+
+5.00 
+ 
+Player Three Pointers Ayo Dosunmu
+1+
+2.50 
+ 
+Player Three Pointers Bruce Brown
+1+
+1.43
+2+
+2.80 
+ 
+Player Three Pointers C. White
+1+
+1.26
+2+
+2.10
+3+
+4.50 
+ 
+Player Three Pointers D. DeRozan
+1+
+2.35
+2+
+8.00 
+ 
+Player Three Pointers J. Murray
+2+
+1.22
+3+
+1.67
+4+
+2.65 
+ 
+Player Three Pointers K. Caldwell-Pope
 1+
 1.22
 2+
@@ -3318,153 +2154,1369 @@ Player Three Pointers J. Jackson Jr.
 3+
 4.00 
  
-Player Three Pointers J. Vanderbilt
-1+
-3.10 
- 
-Player Three Pointers L. Kennard
-1+
-1.13
+Player Three Pointers M. Porter Jr.
 2+
+1.20
+3+
 1.56
-3+
-2.80 
- 
-Player Three Pointers Malik Beasley
-2+
-1.21
-3+
-1.61
 4+
-2.55 
+2.45 
  
-Player Three Pointers S. Aldama
+Player Three Pointers N. Jokic
 1+
-1.37
-2+
-2.65 
- 
-Player Three Pointers Tyus Jones
-1+
-1.13
-2+
-1.61
-3+
-2.85 
- 
-Player Points + Assists + Rebounds A. Davis
-35+
-1.10
-40+
-1.31
-45+
-1.77
-50+
-2.90
-55+
-5.40 
- 
-Player Points + Assists + Rebounds D. Bane
-25+
-1.07
-30+
-1.29
-35+
-1.77
-40+
-2.90
-45+
-5.60 
- 
-Player Points + Assists + Rebounds D. Brooks
-15+
-1.17
-20+
-1.71
-25+
-3.40
-30+
-8.50 
- 
-Player Points + Assists + Rebounds J. Jackson Jr.
-20+
-1.07
-25+
-1.38
-30+
-2.15
-35+
-4.30
-40+
-10.00 
- 
-Player Points + Assists + Rebounds J. Vanderbilt
-16+
-1.26
-18+
-1.51
-20+
 1.95
-22+
-2.70
-24+
+2+
+5.90 
+ 
+Player Three Pointers N. Vucevic
+1+
+1.20
+2+
+1.87
+3+
 3.80 
  
-Player Points + Assists + Rebounds L. Kennard
-13+
-1.54
-14+
-1.71
-15+
+Player Three Pointers P. Beverley
+1+
+1.43
+2+
+2.90 
+ 
+Player Three Pointers R. Jackson
+1+
+1.34
+2+
+2.45 
+ 
+Player Three Pointers Z. LaVine
+2+
+1.30
+3+
 1.91
-16+
-2.20
-17+
-2.55 
+4+
+3.30 
  
-Player Points + Assists + Rebounds Malik Beasley
+Player Points + Assists + Rebounds A. Gordon
 15+
-1.23
+1.04
 20+
-1.83
-25+
-3.70
-30+
-8.50 
- 
-Player Points + Assists + Rebounds S. Aldama
-12+
-1.23
-14+
-1.45
-16+
-1.80
-18+
-2.35
-20+
-3.25 
- 
-Player Points + Assists + Rebounds Tyus Jones
-20+
-1.12
-25+
-1.45
-30+
-2.45
-35+
-5.20
-40+
-12.00 
- 
-Player Points + Assists + Rebounds X. Tillman Sr.
-15+
-1.02
-20+
-1.21
+1.24
 25+
 1.87
 30+
 3.80
 35+
+9.50 
+ 
+Player Points + Assists + Rebounds Ayo Dosunmu
+7+
+1.33
+8+
+1.51
+9+
+1.74
+10+
+2.10
+11+
+2.55 
+ 
+Player Points + Assists + Rebounds Bruce Brown
+12+
+1.25
+14+
+1.45
+16+
+1.80
+18+
+2.40
+20+
+3.30 
+ 
+Player Points + Assists + Rebounds C. White
+12+
+1.56
+13+
+1.77
+14+
+2.00
+15+
+2.35
+16+
+2.70 
+ 
+Player Points + Assists + Rebounds D. DeRozan
+25+
+1.19
+30+
+1.61
+35+
+2.65
+40+
+5.50 
+ 
+Player Points + Assists + Rebounds J. Murray
+25+
+1.18
+30+
+1.56
+35+
+2.55
+40+
+5.00 
+ 
+Player Points + Assists + Rebounds K. Caldwell-Pope
+12+
+1.30
+14+
+1.56
+16+
+2.00
+18+
+2.70
+20+
+3.80 
+ 
+Player Points + Assists + Rebounds M. Porter Jr.
+15+
+1.07
+20+
+1.34
+25+
+2.10
+30+
+4.00
+35+
+9.00 
+ 
+Player Points + Assists + Rebounds N. Jokic
+35+
+1.09
+40+
+1.28
+45+
+1.74
+50+
+2.80
+55+
+5.20 
+ 
+Player Points + Assists + Rebounds N. Vucevic
+20+
+1.07
+25+
+1.30
+30+
+1.80
+35+
+2.90
+40+
+5.50 
+ 
+Player Points + Assists + Rebounds P. Beverley
+12+
+1.54
+13+
+1.77
+14+
+2.05
+15+
+2.45
+16+
+3.00 
+ 
+Player Points + Assists + Rebounds R. Jackson
+12+
+1.53
+13+
+1.71
+14+
+1.95
+15+
+2.25
+16+
+2.65 
+ 
+Player Points + Assists + Rebounds Z. LaVine
+25+
+1.15
+30+
+1.45
+35+
+2.20
+40+
+4.00
+45+
+8.00 
+ 
+Player Points Aaron Wiggins
+8+
+1.26
+10+
+1.56
+12+
+2.10
+15+
+3.80
+18+
+8.00 
+ 
+Player Points C. Paul
+8+
+1.23
+10+
+1.45
+12+
+1.91
+15+
+3.20
+18+
+6.00 
+ 
+Player Points D. Ayton
+10+
+1.09
+12+
+1.20
+15+
+1.54
+18+
+2.25
+20+
+3.10 
+ 
+Player Points D. Booker
+18+
+1.07
+20+
+1.15
+25+
+1.56
+30+
+2.70
+35+
+5.75 
+ 
+Player Points I. Joe
+10+
+1.22
+12+
+1.40
+15+
+1.87
+18+
+2.80
+20+
+3.80 
+ 
+Player Points J. Okogie
+5+
+1.07
+8+
+1.34
+10+
+1.71
+12+
+2.35
+15+
+4.40 
+ 
+Player Points Josh Giddey
+12+
+1.12
+15+
+1.34
+18+
+1.80
+20+
+2.35
+25+
+5.60 
+ 
+Player Points K. Durant
+18+
+1.09
+20+
+1.18
+25+
+1.61
+30+
+2.90
+35+
+6.25 
+ 
+Player Points L. Dort
+12+
+1.24
+15+
+1.56
+18+
+2.25
+20+
+3.00
+25+
+8.00 
+ 
+Player Assists Aaron Wiggins
+2+
+1.91
+5+
+19.00
+8+
+46.00 
+ 
+Player Assists C. Paul
+5+
+1.05
+8+
+1.45
+10+
+2.30
+12+
+4.40
+15+
+14.00 
+ 
+Player Assists D. Ayton
+2+
+2.50
+5+
+26.00
+8+
+46.00 
+ 
+Player Assists D. Booker
+2+
+1.01
+5+
+1.34
+8+
+3.30
+10+
+8.00 
+ 
+Player Assists I. Joe
+2+
+1.56
+5+
+11.00
+8+
+41.00 
+ 
+Player Assists J. Okogie
+2+
+2.70
+5+
+36.00
+8+
+46.00 
+ 
+Player Assists Josh Giddey
+2+
+1.001
+5+
+1.14
+8+
+1.95
+10+
+3.80
+12+
+8.00 
+ 
+Player Assists K. Durant
+2+
+1.06
+5+
+2.20
+8+
+10.00
+10+
+26.00 
+ 
+Player Assists L. Dort
+2+
+1.45
+5+
+10.00
+8+
+41.00 
+ 
+Player Rebounds Aaron Wiggins
+2+
+1.06
+5+
+2.10
+8+
+9.00
+10+
+21.00 
+ 
+Player Rebounds C. Paul
+2+
+1.07
+5+
+2.35
+8+
+10.50
+10+
+31.00 
+ 
+Player Rebounds D. Ayton
+8+
+1.12
+10+
+1.37
+12+
+1.87
+15+
+3.80
+18+
+9.50 
+ 
+Player Rebounds D. Booker
+2+
+1.03
+5+
+1.61
+8+
+5.40
+10+
+15.00 
+ 
+Player Rebounds I. Joe
+2+
+1.23
+5+
+4.30
+8+
+21.00 
+ 
+Player Rebounds J. Okogie
+2+
+1.06
+5+
+2.25
+8+
+10.00
+10+
+26.00 
+ 
+Player Rebounds Josh Giddey
+2+
+1.001
+5+
+1.14
+8+
+1.95
+10+
+3.80
+12+
+9.00 
+ 
+Player Rebounds K. Durant
+2+
+1.001
+5+
+1.17
+8+
+2.15
+10+
+4.50
+12+
 10.50 
+ 
+Player Rebounds L. Dort
+2+
+1.06
+5+
+2.00
+8+
+8.50
+10+
+21.00 
+ 
+Player Three Pointers Aaron Wiggins
+1+
+1.69
+2+
+4.40 
+ 
+Player Three Pointers C. Paul
+1+
+1.26
+2+
+2.20 
+ 
+Player Three Pointers D. Booker
+1+
+1.09
+2+
+1.43
+3+
+2.30 
+ 
+Player Three Pointers I. Joe
+2+
+1.23
+3+
+1.69
+4+
+2.70 
+ 
+Player Three Pointers J. Okogie
+1+
+1.30
+2+
+2.35 
+ 
+Player Three Pointers Josh Giddey
+1+
+1.43
+2+
+3.00 
+ 
+Player Three Pointers K. Durant
+1+
+1.14
+2+
+1.65
+3+
+2.90 
+ 
+Player Three Pointers L. Dort
+1+
+1.11
+2+
+1.45
+3+
+2.55 
+ 
+Player Points + Assists + Rebounds Aaron Wiggins
+14+
+1.31
+16+
+1.56
+18+
+2.05
+20+
+2.80
+22+
+4.00 
+ 
+Player Points + Assists + Rebounds C. Paul
+15+
+1.03
+20+
+1.23
+25+
+1.87
+30+
+3.70
+35+
+8.50 
+ 
+Player Points + Assists + Rebounds D. Ayton
+20+
+1.07
+25+
+1.31
+30+
+1.91
+35+
+3.50
+40+
+7.25 
+ 
+Player Points + Assists + Rebounds D. Booker
+30+
+1.15
+35+
+1.45
+40+
+2.20
+45+
+4.00
+50+
+8.00 
+ 
+Player Points + Assists + Rebounds I. Joe
+15+
+1.25
+20+
+1.83
+25+
+3.40
+30+
+7.75 
+ 
+Player Points + Assists + Rebounds J. Okogie
+12+
+1.23
+14+
+1.45
+16+
+1.83
+18+
+2.50
+20+
+3.60 
+ 
+Player Points + Assists + Rebounds Josh Giddey
+25+
+1.11
+30+
+1.42
+35+
+2.20
+40+
+4.20
+45+
+9.00 
+ 
+Player Points + Assists + Rebounds K. Durant
+30+
+1.15
+35+
+1.50
+40+
+2.30
+45+
+4.10
+50+
+8.50 
+ 
+Player Points + Assists + Rebounds L. Dort
+15+
+1.09
+20+
+1.38
+25+
+2.30
+30+
+4.80
+35+
+12.00 
+ 
+Player Points C. Boucher
+2+
+1.03
+5+
+1.31
+8+
+2.10
+10+
+3.25
+12+
+5.40 
+ 
+Player Points E. Gordon
+8+
+1.30
+10+
+1.56
+12+
+2.10
+15+
+3.60
+18+
+6.75 
+ 
+Player Points F. VanVleet
+15+
+1.21
+18+
+1.45
+20+
+1.74
+25+
+3.30
+30+
+7.75 
+ 
+Player Points G. Trent Jr.
+8+
+1.14
+10+
+1.29
+12+
+1.54
+15+
+2.20
+18+
+3.70 
+ 
+Player Points I. Zubac
+5+
+1.12
+8+
+1.54
+10+
+2.20
+12+
+3.50
+15+
+8.00 
+ 
+Player Points J. Poeltl
+8+
+1.09
+10+
+1.22
+12+
+1.45
+15+
+2.20
+18+
+3.80 
+ 
+Player Points K. Leonard
+18+
+1.12
+20+
+1.21
+25+
+1.69
+30+
+3.10
+35+
+6.75 
+ 
+Player Points Marcus Morris
+2+
+1.02
+5+
+1.19
+8+
+1.67
+10+
+2.30
+12+
+3.50 
+ 
+Player Points O.G. Anunoby
+8+
+1.13
+10+
+1.28
+12+
+1.53
+15+
+2.25
+18+
+3.80 
+ 
+Player Points P. Achiuwa
+2+
+1.03
+5+
+1.33
+8+
+2.20
+10+
+3.60
+12+
+6.25 
+ 
+Player Points P. George
+18+
+1.21
+20+
+1.36
+25+
+2.15
+30+
+4.20
+35+
+10.00 
+ 
+Player Points P. Siakam
+15+
+1.09
+18+
+1.24
+20+
+1.42
+25+
+2.35
+30+
+5.10 
+ 
+Player Points R. Westbrook
+10+
+1.10
+12+
+1.23
+15+
+1.56
+18+
+2.40
+20+
+3.40 
+ 
+Player Points Scottie Barnes
+8+
+1.07
+10+
+1.19
+12+
+1.38
+15+
+1.95
+18+
+3.40 
+ 
+Player Points Terance Mann
+2+
+1.03
+5+
+1.24
+8+
+1.83
+10+
+2.70
+12+
+4.30 
+ 
+Player Assists C. Boucher
+2+
+5.10
+5+
+46.00 
+ 
+Player Assists E. Gordon
+2+
+1.45
+5+
+8.50
+8+
+41.00 
+ 
+Player Assists F. VanVleet
+2+
+1.001
+5+
+1.09
+8+
+1.74
+10+
+3.10
+12+
+6.50 
+ 
+Player Assists G. Trent Jr.
+2+
+2.45
+5+
+26.00 
+ 
+Player Assists I. Zubac
+2+
+3.10
+5+
+36.00 
+ 
+Player Assists J. Poeltl
+2+
+1.31
+5+
+6.00
+8+
+31.00 
+ 
+Player Assists K. Leonard
+2+
+1.09
+5+
+2.45
+8+
+12.00
+10+
+31.00 
+ 
+Player Assists Marcus Morris
+2+
+2.55
+5+
+31.00 
+ 
+Player Assists O.G. Anunoby
+2+
+1.71
+5+
+15.00
+8+
+46.00 
+ 
+Player Assists P. Achiuwa
+2+
+4.20
+5+
+46.00 
+ 
+Player Assists P. George
+2+
+1.05
+5+
+1.87
+8+
+7.50
+10+
+21.00 
+ 
+Player Assists P. Siakam
+2+
+1.03
+5+
+1.74
+8+
+6.00
+10+
+15.00 
+ 
+Player Assists R. Westbrook
+2+
+1.001
+5+
+1.11
+8+
+1.83
+10+
+3.30
+12+
+7.50 
+ 
+Player Assists Scottie Barnes
+2+
+1.07
+5+
+2.30
+8+
+10.00
+10+
+26.00 
+ 
+Player Assists Terance Mann
+2+
+1.45
+5+
+9.00
+8+
+41.00 
+ 
+Player Rebounds C. Boucher
+2+
+1.04
+5+
+1.80
+8+
+6.25
+10+
+15.00 
+ 
+Player Rebounds E. Gordon
+2+
+1.65
+5+
+12.00
+8+
+41.00 
+ 
+Player Rebounds F. VanVleet
+2+
+1.07
+5+
+2.40
+8+
+11.00
+10+
+26.00 
+ 
+Player Rebounds G. Trent Jr.
+2+
+1.45
+5+
+8.50
+8+
+41.00 
+ 
+Player Rebounds I. Zubac
+2+
+1.001
+5+
+1.10
+8+
+1.74
+10+
+3.10
+12+
+6.25 
+ 
+Player Rebounds J. Poeltl
+5+
+1.03
+8+
+1.33
+10+
+1.91
+12+
+3.25
+15+
+9.00 
+ 
+Player Rebounds K. Leonard
+2+
+1.001
+5+
+1.27
+8+
+2.90
+10+
+6.75 
+ 
+Player Rebounds Marcus Morris
+2+
+1.29
+5+
+5.80
+8+
+31.00 
+ 
+Player Rebounds O.G. Anunoby
+2+
+1.06
+5+
+2.20
+8+
+9.50
+10+
+21.00 
+ 
+Player Rebounds P. Achiuwa
+2+
+1.04
+5+
+1.83
+8+
+6.50
+10+
+17.00 
+ 
+Player Rebounds P. George
+2+
+1.01
+5+
+1.31
+8+
+3.10
+10+
+7.50 
+ 
+Player Rebounds P. Siakam
+2+
+1.001
+5+
+1.18
+8+
+2.25
+10+
+4.40
+12+
+10.00 
+ 
+Player Rebounds R. Westbrook
+2+
+1.02
+5+
+1.51
+8+
+4.50
+10+
+11.00 
+ 
+Player Rebounds Scottie Barnes
+2+
+1.001
+5+
+1.27
+8+
+2.80
+10+
+6.25 
+ 
+Player Rebounds Terance Mann
+2+
+1.29
+5+
+5.50
+8+
+31.00 
+ 
+Player Three Pointers C. Boucher
+1+
+1.77
+2+
+4.80 
+ 
+Player Three Pointers E. Gordon
+1+
+1.22
+2+
+1.95
+3+
+3.80 
+ 
+Player Three Pointers F. VanVleet
+2+
+1.18
+3+
+1.53
+4+
+2.30 
+ 
+Player Three Pointers G. Trent Jr.
+1+
+1.12
+2+
+1.54
+3+
+2.60 
+ 
+Player Three Pointers K. Leonard
+2+
+1.34
+3+
+2.00
+4+
+3.60 
+ 
+Player Three Pointers Marcus Morris
+1+
+1.25
+2+
+2.10
+3+
+4.50 
+ 
+Player Three Pointers O.G. Anunoby
+1+
+1.15
+2+
+1.69
+3+
+3.10 
+ 
+Player Three Pointers P. Achiuwa
+1+
+2.60 
+ 
+Player Three Pointers P. George
+2+
+1.18
+3+
+1.56
+4+
+2.35 
+ 
+Player Three Pointers P. Siakam
+1+
+1.38
+2+
+2.70 
+ 
+Player Three Pointers R. Westbrook
+1+
+1.38
+2+
+2.65 
+ 
+Player Three Pointers Scottie Barnes
+1+
+1.71
+2+
+4.40 
+ 
+Player Three Pointers Terance Mann
+1+
+1.45
+2+
+3.10 
+ 
+Player Points + Assists + Rebounds C. Boucher
+11+
+1.43
+12+
+1.61
+13+
+1.83
+14+
+2.15
+15+
+2.55 
+ 
+Player Points + Assists + Rebounds E. Gordon
+12+
+1.31
+14+
+1.56
+16+
+1.95
+18+
+2.65
+20+
+3.70 
+ 
+Player Points + Assists + Rebounds F. VanVleet
+20+
+1.03
+25+
+1.17
+30+
+1.51
+35+
+2.30
+40+
+4.10 
+ 
+Player Points + Assists + Rebounds G. Trent Jr.
+12+
+1.19
+14+
+1.36
+16+
+1.61
+18+
+2.00
+20+
+2.65 
+ 
+Player Points + Assists + Rebounds I. Zubac
+14+
+1.22
+16+
+1.43
+18+
+1.80
+20+
+2.40
+22+
+3.40 
+ 
+Player Points + Assists + Rebounds J. Poeltl
+15+
+1.02
+20+
+1.17
+25+
+1.65
+30+
+3.00
+35+
+6.75 
+ 
+Player Points + Assists + Rebounds K. Leonard
+25+
+1.06
+30+
+1.23
+35+
+1.65
+40+
+2.70
+45+
+5.20 
+ 
+Player Points + Assists + Rebounds Marcus Morris
+11+
+1.45
+12+
+1.67
+13+
+1.91
+14+
+2.25
+15+
+2.70 
+ 
+Player Points + Assists + Rebounds O.G. Anunoby
+14+
+1.17
+16+
+1.30
+18+
+1.54
+20+
+1.91
+22+
+2.40 
+ 
+Player Points + Assists + Rebounds P. Achiuwa
+10+
+1.31
+11+
+1.45
+12+
+1.65
+13+
+1.91
+14+
+2.25 
+ 
+Player Points + Assists + Rebounds P. George
+25+
+1.09
+30+
+1.34
+35+
+1.91
+40+
+3.30
+45+
+6.50 
+ 
+Player Points + Assists + Rebounds P. Siakam
+25+
+1.09
+30+
+1.31
+35+
+1.83
+40+
+3.10
+45+
+6.25 
+ 
+Player Points + Assists + Rebounds R. Westbrook
+20+
+1.06
+25+
+1.29
+30+
+1.95
+35+
+3.60
+40+
+8.50 
+ 
+Player Points + Assists + Rebounds Scottie Barnes
+15+
+1.03
+20+
+1.22
+25+
+1.83
+30+
+3.60
+35+
+8.00 
+ 
+Player Points + Assists + Rebounds Terance Mann
+11+
+1.43
+12+
+1.56
+13+
+1.83
+14+
+2.15
+15+
+2.55 
  

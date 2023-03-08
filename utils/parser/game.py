@@ -1,5 +1,5 @@
-from ..teamnames import bet365NameChanges, sportsInteractionNameChanges
-from ..helper import zipData, flatten
+from utils.teamnames import bet365NameChanges, sportsInteractionNameChanges
+from utils.helper import zipData, flatten
 
 emptyLists = [['', ''],
               ['', '', '', ''],

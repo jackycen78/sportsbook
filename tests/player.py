@@ -46,7 +46,7 @@ def parse_game_info(book):
     curStr = ''
     for line in gameData:
         if line == ' \n':
-            curStr = curStr[:-2]
+            curStr = curStr[:-1]
             lst.append(curStr)
             curStr = ''
         else:
@@ -71,4 +71,5 @@ def get_all_props():
     allProps.add_prop(create_player_props('Pinnacle'))
     allProps.add_prop(create_player_props('Play Now'))
     allProps.add_prop(create_player_props('Sports Interaction'))
+    
     return allProps

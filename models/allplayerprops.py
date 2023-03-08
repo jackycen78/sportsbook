@@ -31,7 +31,7 @@ class AllPlayerProps:
 
                     for type in curPlayer:
                         curType = curPlayer[type]
-                        output += f'        {type} \n'
+                        #output += f'        {type} \n'
 
                         for prop in curType:
                             curProp = curType[prop]

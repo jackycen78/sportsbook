@@ -32,8 +32,12 @@ class PlayerProps():
                     if playerProp.is_valid():
                         self.playerProps.append(playerProp)
 
-                        write_tests(self.bookFile, gameInfo.text, 'gameinfo')
-                        write_tests(self.bookFile, prop.text, 'prop')
+                        write_tests(book=self.bookFile, 
+                                    text=f'{gameInfo.text}\n \n', 
+                                    type='gameinfo')
+                        write_tests(book=self.bookFile, 
+                                    text=f'{prop.text} \n \n', 
+                                    type='prop')
             except:
                 pass
 
@@ -206,9 +210,9 @@ def get_game_props():
     site = Website()
     allPlayerProps = AllPlayerProps()
 
-    books = [PlayNow(site), 
+    books = [#PlayNow(site), 
              Pinnacle(site), 
-             SportsInteraction(site),
+             #SportsInteraction(site),
              ]
 
     for book in books:
