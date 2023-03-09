@@ -10,7 +10,7 @@ def getGameBetContent():
     games = getGameBets() #get_all_games() getGameBets()
     content = []
     for game in GAME_BETS:
-        contentHTML = getTableHTML(betType=game, 
+        contentHTML = getTableHTML(title=game, 
                                    columnNames=columns,
                                    dataRows=getGamesHTML(games, game)
                      )
@@ -22,18 +22,14 @@ def getPlayerPropsContent():
     columns = ['Player', 'Prop'] + PLAYER_SITES
     props = get_all_props()
 
+    content = []
     for team in props.games:
-    
         curTeam = props.games[team]
+        contentHTML = getTableHTML(title=team, 
+                                   columnNames=columns,
+                                   dataRows=getPropsHTML(curTeam))
+        content.append(contentHTML)
 
-        for player in curTeam:
-            curPlayer = curTeam[player]
-
-            for type in curPlayer:
-                curType = curPlayer[type]
-
-                for prop in curType:
-                    print(f'{prop.player}')
-                #print(prop)    
+    return getEmailHTML(content)
     
     

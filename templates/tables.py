@@ -8,7 +8,6 @@ def getCellHTML(text, size):
                                margin: 1.5px;
                               "> 
                   '''
-    
     if type(text) == str:
             outputStr += f'{text} \n'
     elif type(text) == list:
@@ -17,10 +16,10 @@ def getCellHTML(text, size):
     outputStr += '</td>'
     return outputStr
 
-def getTableHTML(betType, columnNames, dataRows):
+def getTableHTML(title, columnNames, dataRows):
      
     outputStr = f'''
-                    <h1> {betType} </h1>
+                    <h1> {title} </h1>
 
                         <table border="3" 
                             style="background-color: #FFFFFF;
@@ -65,20 +64,33 @@ def getGamesHTML(games, betType):
             outputStr += '</tr>'
     return outputStr
 
-def getPropsHTML(game):
+def getPropsHTML(team):
     numBooks = 3
     outputStr = ''
 
-    for player in game:
-        curPlayer = game[player]
+    for player in team:
+            curPlayer = team[player]
 
-        for type in curPlayer:
-            curType = curPlayer[type]
+            for propType in curPlayer:
+                curPropType = curPlayer[propType]
 
-            
+                outputStr += '<tr> \n'
+                outputStr += getCellHTML(player, 5)
+                outputStr += getCellHTML(propType, 5)
 
+                for book in ['Pinnacle', 'Play Now', 'Sports Interaction']:
+                    playerOdds = ['']
+                    if book in curPropType:
+                        playerOdds = []
+                        curProp = curPropType[book]
+                        for amount, odd in curProp.odds:
+                            overUnder = 'Over ' if amount[0] == 'O' else 'Under '
+                            amount = overUnder + amount[1:]
+                            playerOdds.append(f'{amount}: {odd}')
 
-
+                    outputStr += getCellHTML(playerOdds, 5)
+    return outputStr
+        
 
 def getFormat(betType):
     if betType == 'Money Lines':
@@ -105,12 +117,17 @@ def spreadFormat(bet):
     return format
 
 def overUnderFormat(bet):
-     format = [f"O {bet.overUnder['over']}",
-               bet.overUnder['overOdds'],
-               f"U {bet.overUnder['under']}", 
-               bet.overUnder['underOdds'],
-               ]
-     return format
+    over = f"O {bet.overUnder['over']}" if bet.overUnder['over'] else ''
+    overOdds = bet.overUnder['overOdds']
+    under = f"O {bet.overUnder['under']}" if bet.overUnder['under'] else ''
+    underOdds = bet.overUnder['underOdds']
+
+    format = [over,
+              overOdds,
+              under,
+              underOdds,
+              ]
+    return format
 
 
                             

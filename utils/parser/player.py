@@ -1,4 +1,4 @@
-from utils.playernames import playNowPlayerName
+from utils.playernames import playNowPlayerName, sportsInteractionPlayerNames
 from utils.teamnames import sportsInteractionTeamChanges
 
 class PlayerParser():
@@ -123,6 +123,9 @@ class SportsInteractionParser(PlayerParser):
                     if '[' in player:
                         bracketIndex = player.find('[') - 1
                         player = player[:bracketIndex]
+                    if player in sportsInteractionPlayerNames:
+                        player = sportsInteractionPlayerNames[player]
+                    player = player.upper()
 
                     over = 'O' + info[1][4:]
                     overOdds = info[2]

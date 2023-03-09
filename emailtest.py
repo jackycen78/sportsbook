@@ -1,5 +1,5 @@
 from utils.sendemail import sendEmail
-from utils.content import getGameBetContent
+from utils.content import getGameBetContent, getPlayerPropsContent
 from utils.helper import getDate
 from info import sender, receivers
 
@@ -12,5 +12,5 @@ sendEmail(  senderInfo=sender,
             senderName='Betting Odds', 
             receiverAddress=receivers, 
             subject= f'Test', 
-            content=getGameBetContent()
+            content=getPlayerPropsContent()
 )

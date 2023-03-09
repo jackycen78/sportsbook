@@ -47,6 +47,12 @@ sportsInteractionTeamChanges = {'76ers': 'Philadelphia 76ers',
                                 'Nuggets': 'Denver Nuggets',
                                 'Pelicans': 'New Orleans Pelicans',
                                 'Kings': 'Sacramento Kings',
+                                'Clippers': 'Los Angeles Clippers',
+                                'Bulls': 'Chicago Bulls',
+                                'Thunder': 'Oklahoma City Thunder',
+                                'Suns': 'Phoenix Suns',
+                                'Mavericks': 'Dallas Mavericks',
+                                'Wizards': 'Washington Wizards',
                                 }
 
 teams = {'Boston Celtics' : 'Celtics',

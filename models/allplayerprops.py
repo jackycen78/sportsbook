@@ -21,27 +21,26 @@ class AllPlayerProps:
     def __str__(self):
         output = ''
         for game in self.games:
-            if game == ' at ':
-                curGame = self.games[game]
-                output += f'{game} \n'
-                
-                for player in curGame:
-                    curPlayer = curGame[player]
-                    output += f'    {player} \n'
+            curGame = self.games[game]
+            output += f'{game} \n'
+        
+            for player in curGame:
+                curPlayer = curGame[player]
+                output += f'    {player} \n'
 
-                    for type in curPlayer:
-                        curType = curPlayer[type]
-                        #output += f'        {type} \n'
+                for type in curPlayer:
+                    curType = curPlayer[type]
+                    output += f'        {type} \n'
 
-                        for prop in curType:
-                            curProp = curType[prop]
-                            output += f'            {curProp.book}\n'
+                    for book in curType:
+                        curProp = curType[book]
+                        output += f'            {book}\n'
 
-                            '''for amount, odd in prop.odds:
-                                    overUnder = 'Over ' if amount[0] == 'O' else 'Under '
-                                    amount = overUnder + amount[1:]
+                        for amount, odd in curProp.odds:
+                                overUnder = 'Over ' if amount[0] == 'O' else 'Under '
+                                amount = overUnder + amount[1:]
 
-                                    output += f'            {amount}: {odd} \n' '''
-                    output += '\n' 
+                                output += f'                {amount}: {odd} \n'
+                output += '\n' 
 
         return output
