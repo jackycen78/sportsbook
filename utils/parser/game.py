@@ -1,5 +1,5 @@
-from utils.teamnames import bet365NameChanges, sportsInteractionNameChanges
-from utils.helper import zipData, flatten
+from utils.naming.teamnames import bet365NameChanges, sportsInteractionNameChanges
+from utils.helper import zipData, flatten, getBet365TeamName, getSportsIntTeamName
 
 emptyLists = [['', ''],
               ['', '', '', ''],
@@ -43,8 +43,8 @@ def SportsInteractionParser(data):
         atIndex = teams.index('@')
         awayTeam = " ".join(teams[0: atIndex])
         homeTeam = " ".join(teams[atIndex + 1:])
-        awayTeam = sportsInteractionNameChanges[awayTeam] if awayTeam in sportsInteractionNameChanges else awayTeam
-        homeTeam = sportsInteractionNameChanges[homeTeam] if homeTeam in sportsInteractionNameChanges else homeTeam
+        awayTeam = getSportsIntTeamName(awayTeam)
+        homeTeam = getSportsIntTeamName(homeTeam)
 
         teams = [awayTeam,
                  homeTeam,
@@ -70,7 +70,7 @@ def Bet365Parser(data):
     teams, spreads, moneyLines, overUnders = emptyLists
     
     if teamsData:
-        teams = [bet365NameChanges[team] for team in teamsData.text.split('\n')]
+        teams = [getBet365TeamName(team) for team in teamsData.text.split('\n')]
 
     if spreadsData and len(spreadsData[0].text.split('\n')) == 2:
         spreads = flatten([spread.text.split('\n') for spread in spreadsData])

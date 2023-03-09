@@ -1,5 +1,5 @@
-from utils.playernames import playNowPlayerName, sportsInteractionPlayerNames
-from utils.teamnames import sportsInteractionTeamChanges
+from utils.naming.playernames import playNowPlayerName, sportsInteractionPlayerNames
+from utils.naming.teamnames import sportsInteractionTeamChanges
 
 class PlayerParser():
 

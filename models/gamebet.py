@@ -1,5 +1,5 @@
 from utils.parser.game import *
-from utils.teamnames import teams, cities
+from utils.naming.teamnames import teams, cities
 from utils.helper import decimalToAmerican
 
 class GameBet:
