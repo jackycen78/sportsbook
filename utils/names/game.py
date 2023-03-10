@@ -35,38 +35,6 @@ sportsIntNameChanges = {'LA Lakers': 'Los Angeles Lakers',
                         'Oklahoma City': 'Oklahoma City Thunder',
                         }
 
-teamToFullTeam = {'76ers': 'Philadelphia 76ers',
-                  'Bucks': 'Milwaukee Bucks',
-                  'Bulls': 'Chicago Bulls',
-                  'Cavaliers': 'Cleveland Cavaliers',
-                  'Celtics': 'Boston Celtics',
-                  'Clippers': 'Los Angeles Clippers',
-                  'Grizzlies': 'Memphis Grizzlies',
-                  'Hawks': 'Atlanta Hawks',
-                  'Heat': 'Miami Heat',
-                  'Hornets': 'Charlotte Hornets',
-                  'Jazz': 'Utah Jazz',
-                  'Kings': 'Sacramento Kings',
-                  'Knicks': 'New York Knicks',
-                  'Lakers': 'Los Angeles Lakers',
-                  'Magic': 'Orlando Magic',
-                  'Mavericks': 'Dallas Mavericks',
-                  'Nets': 'Brooklyn Nets',
-                  'Nuggets': 'Denver Nuggets',
-                  'Pacers': 'Indiana Pacers',
-                  'Pelicans': 'New Orleans Pelicans',
-                  'Pistons': 'Detroit Pistons',
-                  'Raptors': 'Toronto Raptors',
-                  'Rockets': 'Houston Rockets',
-                  'Spurs': 'San Antonio Spurs',
-                  'Suns': 'Phoenix Suns',
-                  'Thunder': 'Oklahoma City Thunder',
-                  'Timberwolves': 'Minnesota Timberwolves',
-                  'Trail Blazers': 'Portland Trail Blazers',
-                  'Warriors': 'Golden State Warriors',
-                  'Wizards': 'Washington Wizards',
-                 }
-
 fullTeamToTeam = {'Boston Celtics' : 'Celtics',
                   'Denver Nuggets' : 'Nuggets',
                   'Philadelphia 76ers' : '76ers',
@@ -130,4 +98,27 @@ fullTeamToCity = {'Atlanta Hawks' : 'Atlanta',
                  }
 
 
+def getBet365TeamName(name):
+    if name in bet365NameChanges:
+        return bet365NameChanges[name]
+    return name
+
+def getSportsIntTeamName(name):
+    if name in sportsIntNameChanges:
+        return sportsIntNameChanges[name]
+    return name
+
+def getCityName(name):
+    if name != 'Portland Trail Blazers':
+        space = name.rfind(' ')
+        return name[:space]
+    else:
+        return 'Portland'
+
+def getTeamName(name):
+    if name != 'Portland Trail Blazers':
+        space = name.rfind(' ')
+        return name[space + 1:]
+    else:
+        return 'Trail Blazers'
 

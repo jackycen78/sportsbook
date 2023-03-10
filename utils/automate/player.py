@@ -25,21 +25,22 @@ class PlayerProps():
 
         gameInfo = site.find_class(self.gameInfoClass, parent)[0]
         props = site.find_class(self.propClass, parent)
-        for prop in props:
-            try:
-                if prop:
-                    playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
-                    if playerProp.is_valid():
-                        self.playerProps.append(playerProp)
 
-                        write_tests(book=self.bookFile, 
-                                    text=f'{gameInfo.text}\n \n', 
-                                    type='gameinfo')
-                        write_tests(book=self.bookFile, 
-                                    text=f'{prop.text} \n \n', 
-                                    type='prop')
-            except:
-                pass
+        for prop in props:
+                playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
+                if playerProp.is_valid():
+                    print('valid')
+                    self.playerProps.append(playerProp)
+                    print(playerProp)
+
+                    write_tests(book=self.bookFile, 
+                                text=f'{gameInfo.text}\n \n', 
+                                type='gameinfo')
+                    
+                    write_tests(book=self.bookFile, 
+                                text=f'{prop.text} \n \n', 
+                                type='prop')
+            
 
     def get_player_props(self):
 
@@ -211,8 +212,8 @@ def get_game_props():
     allPlayerProps = AllPlayerProps()
 
     books = [#PlayNow(site), 
-             Pinnacle(site), 
-             #SportsInteraction(site),
+             #Pinnacle(site), 
+             SportsInteraction(site),
              ]
 
     for book in books:

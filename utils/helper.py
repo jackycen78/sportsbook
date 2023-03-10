@@ -1,15 +1,4 @@
 from datetime import datetime
-from utils.naming.teamnames import bet365NameChanges, sportsIntNameChanges
-
-def getBet365TeamName(name):
-    if name in bet365NameChanges:
-        return bet365NameChanges[name]
-    return name
-
-def getSportsIntTeamName(name):
-    if name in sportsIntNameChanges:
-        return sportsIntNameChanges[name]
-    return name
 
 def decimalToAmerican(odds):
     if not odds:

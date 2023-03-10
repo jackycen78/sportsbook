@@ -1,5 +1,5 @@
-from utils.naming.playernames import playNowPlayerName, sportsInteractionPlayerNames
-from utils.naming.teamnames import sportsInteractionTeamChanges
+from utils.names.player import getPlayNowPlayerName, getSportsInteractionPlayerName, getPinnaclePlayerName, getFullTeam
+from utils.helper import decimalToAmerican
 
 class PlayerParser():
 
@@ -17,38 +17,40 @@ class PlayNowPlayerParser(PlayerParser):
     def __init__(self):
         super().__init__()
             
-    def parseProp(self, bet):
-
+    def parse_prop(self, bet):
         for type in self.propTypes:
-            if bet.startswith(type) and (not bet.startswith('Player Points +') or bet.startswith('Player Points + Assists + Rebounds')):
-
-                betInfo = bet[len(type) + 1:].split('\n')
-                type = self.propTypes[type]
-
-                player = betInfo[0]
-                if player in playNowPlayerName:
-                    player = playNowPlayerName[player]
-                player = player.upper()
-
-                odds = []
-                for i in range(1, len(betInfo) - 1, 2):
-                    amount = betInfo[i]
-                    amount = 'O' + betInfo[i][:-1]
-                    odd = betInfo[i + 1]
-
-                    odds.append((amount, odd))
-        
+            if self.valid_prop(bet, type):
+                playerInfo, oddsInfo = bet[len(type) + 1:].split('\n', 1)
+                type = self.parse_type(type)
+                player = self.parse_player(playerInfo)
+                odds = self.parse_odds(oddsInfo)
                 return player, type, odds
-            
         return '', '', ''
+    
+    def valid_prop(self, bet, type):
+        return bet.startswith(type) and (not bet.startswith('Player Points +') or bet.startswith('Player Points + Assists + Rebounds'))
+    
+    def parse_type(self, propType):
+        return self.propTypes[propType]
+    
+    def parse_player(self, playerInfo):
+        return getPlayNowPlayerName(playerInfo)
+    
+    def parse_odds(self, oddsInfo):
+        odds = []
+        oddsInfo = oddsInfo.split('\n')
 
-    def parseGameInfo(self, gameInfo):
-        try:
-            time, away, home = gameInfo.split('\n')
-            time = time.split(' ')[1]
-            return time, home, away
-        except:
-            return '', '', ''
+        for i in range(0,len(oddsInfo) - 1, 2):
+            amount = 'O' + oddsInfo[i][:-1]
+            odd = decimalToAmerican(oddsInfo[i + 1])
+            odds.append((amount, odd))
+        return odds
+
+    def parse_game_info(self, gameInfo):
+        time, away, home = gameInfo.split('\n')
+        time = time.split(' ')[1]
+        return time, home, away
+        
         
 
 class PinnaclePlayerParser(PlayerParser):
@@ -61,43 +63,51 @@ class PinnaclePlayerParser(PlayerParser):
     def __init__(self):
         super().__init__()
 
-    def parseProp(self, bet):
+    def parse_prop(self, bet):
         
-        betNameStart = bet.find('(')
-        betNameEnd = bet.find(')') + 1
-        last = bet.rfind(')') + 1
+        typeStart = bet.find('(')
+        typeEnd = bet.find(')')
+        infoStart = bet.rfind(')') + 1
 
-        player = bet[:betNameStart - 1]
-        player = player.upper()
-        type = bet[betNameStart + 1: betNameEnd - 1]
-        info = bet[last:]
+        playerInfo = bet[:typeStart - 1]
+        typeInfo = bet[typeStart + 1: typeEnd]
+        oddsInfo = bet[infoStart:].split('\n')[1:]
 
-        if info and type in self.propTypes:
-            info = info.split('\n')[1:]
-            type = self.propTypes[type]
-            
-            if len(info) >= 4:
+        if self.valid_prop(typeInfo, oddsInfo):
 
-                over = 'O' + info[-4].split(' ')[1]
-                overOdds = info[-3][:4]
-
-                under = 'U' + info[-2].split(' ')[1]
-                underOdds = info[-1][:4]
-
-                odds = [(over, overOdds), 
-                        (under, underOdds)]
-
-                return player, type, odds
+            type = self.parse_type(typeInfo)
+            player = self.parse_player(playerInfo)
+            odds = self.parse_odds(oddsInfo)
+            return player, type, odds
             
         return '', '', ''
 
-    def parseGameInfo(self, gameInfo):
-        try:
-            time, away, home = gameInfo.split('\n')
-            time = time.split(' ')[-1]
-            return time, home, away
-        except:
-            return '', '', ''
+
+    def valid_prop(self, type, info):
+        return type in self.propTypes and len(info) >= 4
+    
+    def parse_type(self, propType):
+        return self.propTypes[propType]
+    
+    def parse_player(self, playerInfo):
+        return playerInfo
+    
+    def parse_odds(self, oddsInfo):
+        over = 'O' + oddsInfo[-4].split(' ')[1]
+        overOdds = decimalToAmerican(oddsInfo[-3][:4])
+        under = 'U' + oddsInfo[-2].split(' ')[1]
+        underOdds = decimalToAmerican(oddsInfo[-1][:4])
+
+        odds = [(over, overOdds), 
+                (under, underOdds)]
+        return odds
+    
+    def parse_game_info(self, gameInfo):
+
+        time, away, home = gameInfo.split('\n')
+        time = time.split(' ')[-1]
+        return time, home, away
+      
         
 class SportsInteractionParser(PlayerParser):
     propTypes = {'TOTAL PTS / ASSISTS / REBS': 'Pts + Ast + Reb', 
@@ -109,40 +119,48 @@ class SportsInteractionParser(PlayerParser):
     def __init__(self):
         super().__init__()
 
-    def parseProp(self, bet):
-        
-        try:
-            type, info = bet.split(' - ')
-            info = info.split('\n')
-
-            if type in self.propTypes:
-                type = self.propTypes[type]
-
-                if len(info) == 5:
-                    player = info[0]
-                    if '[' in player:
-                        bracketIndex = player.find('[') - 1
-                        player = player[:bracketIndex]
-                    if player in sportsInteractionPlayerNames:
-                        player = sportsInteractionPlayerNames[player]
-                    player = player.upper()
-
-                    over = 'O' + info[1][4:]
-                    overOdds = info[2]
-                    under = 'U' + info[3][5:]
-                    underOdds = info[4]
-
-                    odds = [(over, overOdds), 
-                            (under, underOdds)]
-                        
-                    return player, type, odds
-        except:
-            return '', '', ''
+    def parse_prop(self, bet):
     
-    def parseGameInfo(self, gameInfo):
-        try:
-            time, teams = gameInfo.split('\n')
-            away, home = teams.split(' @ ')
-            return time, sportsInteractionTeamChanges[home], sportsInteractionTeamChanges[away]
-        except:
-            return '', '', ''
+        type, info = bet.split(' - ')
+        info = info.split('\n')
+
+        if self.valid_prop(type, info):
+            playerInfo = info[0]
+            oddsInfo = info[1:]
+
+            type = self.parse_type(type)
+            player = self.parse_player(playerInfo)
+            odds = self.parse_odds(oddsInfo)
+
+            return player, type, odds
+        
+        return '', '', ''
+    
+    def valid_prop(self, type, info):
+        return type in self.propTypes and len(info) == 7
+    
+    def parse_type(self, propType):
+        return self.propTypes[propType]
+    
+    def parse_player(self, playerInfo):
+        player = playerInfo
+        if '[' in player:
+                    bracketIndex = player.find('[') - 1
+                    player = player[:bracketIndex]
+
+        return getSportsInteractionPlayerName(player)
+    
+    def parse_odds(self, oddsInfo):
+        over = 'O' + oddsInfo[1]
+        overOdds = decimalToAmerican(oddsInfo[2])
+        under = 'U' + oddsInfo[4]
+        underOdds = decimalToAmerican(oddsInfo[5])
+        odds = [(over, overOdds), 
+                (under, underOdds)]
+        return odds
+    
+    def parse_game_info(self, gameInfo):
+        time, teams = gameInfo.split('\n')
+        away, home = teams.split(' @ ')
+        return time, getFullTeam(home), getFullTeam(away)
+    

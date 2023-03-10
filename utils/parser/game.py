@@ -1,5 +1,5 @@
-from utils.naming.teamnames import bet365NameChanges, sportsInteractionNameChanges
-from utils.helper import zipData, flatten, getBet365TeamName, getSportsIntTeamName
+from utils.names.game import getBet365TeamName, getSportsIntTeamName
+from utils.helper import zipData, flatten
 
 emptyLists = [['', ''],
               ['', '', '', ''],

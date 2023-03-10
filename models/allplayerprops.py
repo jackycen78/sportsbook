@@ -37,7 +37,7 @@ class AllPlayerProps:
                         output += f'            {book}\n'
 
                         for amount, odd in curProp.odds:
-                                overUnder = 'Over ' if amount[0] == 'O' else 'Under '
+                                overUnder = 'Over' if amount[0] == 'O' else 'Under'
                                 amount = overUnder + amount[1:]
 
                                 output += f'                {amount}: {odd} \n'

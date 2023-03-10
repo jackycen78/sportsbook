@@ -47,7 +47,7 @@ def getTableHTML(title, columnNames, dataRows):
     return outputStr
 
 def getGamesHTML(games, betType):
-    numBooks = 4
+    numBooks = 3
     format = getFormat(betType)
     outputStr = ''
     for team in games:
@@ -78,7 +78,7 @@ def getPropsHTML(team):
                 outputStr += getCellHTML(player, 5)
                 outputStr += getCellHTML(propType, 5)
 
-                for book in ['Pinnacle', 'Play Now', 'Sports Interaction']:
+                for book in ['Play Now', 'Pinnacle', 'Sports Interaction']:
                     playerOdds = ['']
                     if book in curPropType:
                         playerOdds = []

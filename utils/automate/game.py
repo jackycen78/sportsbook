@@ -82,6 +82,8 @@ def getBet365GameBets(site):
     teamsClass = 'scb-ParticipantFixtureDetailsHigherBasketball_TeamNames'
 
     site.go_to(bet365URL)
+    site.refresh_page()
+    site.refresh_page()
     betsList = []
 
     teams = site.find_class(teamsClass)
@@ -133,7 +135,7 @@ def getGameBets():
 
     allBets.add_bets(getPlayNowGameBets(site))
     allBets.add_bets(getSportsInteractionGameBets(site))
-    allBets.add_bets(getBet365GameBets(site))
+    #allBets.add_bets(getBet365GameBets(site))
     allBets.add_bets(getPinnacleGameBets(site))
 
     allBets.print_bets()

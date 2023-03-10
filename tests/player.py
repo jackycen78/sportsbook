@@ -68,8 +68,8 @@ def create_player_props(book):
 
 def get_all_props():
     allProps = AllPlayerProps()
-    allProps.add_prop(create_player_props('Pinnacle'))
+    #allProps.add_prop(create_player_props('Pinnacle'))
     allProps.add_prop(create_player_props('Play Now'))
-    allProps.add_prop(create_player_props('Sports Interaction'))
+    #allProps.add_prop(create_player_props('Sports Interaction'))
     
     return allProps

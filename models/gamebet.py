@@ -1,5 +1,5 @@
 from utils.parser.game import *
-from utils.naming.teamnames import teams, cities
+from utils.names.game import getCityName, getTeamName
 from utils.helper import decimalToAmerican
 
 class GameBet:
@@ -50,16 +50,16 @@ class GameBet:
         return f'{self.get_away_city()} at {self.get_home_city()}'   
 
     def get_home_city(self):
-        return cities[self.teams["home"]]
+        return getCityName(self.teams["home"])
 
     def get_away_city(self):
-        return cities[self.teams["away"]]
+        return getCityName(self.teams["away"])
 
     def get_home_team(self):
-        return teams[self.teams["home"]]
+        return getTeamName(self.teams["home"])
 
     def get_away_team(self):
-        return teams[self.teams["away"]]
+        return getTeamName(self.teams["away"])
 
     def get_teams(self):
         return f'{self.teams["away"]} at {self.teams["home"]}'

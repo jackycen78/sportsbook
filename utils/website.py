@@ -14,8 +14,11 @@ class Website:
         service = Service('./chromedriver')
         options = ChromeOptions()
         options.add_argument('--disable-blink-features=AutomationControlled')
+        options.add_experimental_option("excludeSwitches", ["enable-automation"]) 
+        options.add_experimental_option("useAutomationExtension", False) 
 
         self.driver = Chrome(options=options, service=service)
+        self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")  
         self.driver.set_window_size(1720, 1329)
         self.driver.set_window_position(0, 0)
 

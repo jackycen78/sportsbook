@@ -1,4 +1,4 @@
-playNowPlayerName = {
+playNowPlayerNames = {
                     # Bucks
                     'B. Lopez': 'Brook Lopez',
                     'G. Allen': 'Grayson Allen',
@@ -161,8 +161,8 @@ playNowPlayerName = {
                     'K. Thompson': 'Klay Thompson',
                     'Draymond Green': 'Draymond Green',
                     'Stephen Curry': 'Stephen Curry',
-        
-
+                    'D. DiVincenzo': 'Donte DiVincenzo',
+    
                     # Lakers
                     'A. Davis': 'Anthony Davis',                  
                     'D. Schröder': 'Dennis Schroder',
@@ -203,6 +203,8 @@ playNowPlayerName = {
 
                     # Pacers
                     'M. Turner': 'Myles Turner',
+                    'B. Hield': 'Buddy Hield',
+                    'T. Haliburton': 'Tyrese Haliburton',
 
                     # Rockets
                     'K. Porter Jr.': 'Kevin Porter Jr.',
@@ -224,7 +226,66 @@ playNowPlayerName = {
                     'Isiah Livers': 'Isiah Livers',
                     'Jaden Ivey': 'Jaden Ivey',
                     'J. Wiseman': 'James Wiseman',
+                    'K. Hayes': 'Killian Hayes',
+                    'P.J. Washington': 'PJ Washington',
                     }
 
 sportsInteractionPlayerNames = {'MICHAEL PORTER': 'Michael Porter Jr.',
-}
+                                
+                                }
+
+pinnaclePlayerNames = {}
+
+teamToFullTeam = {'76ers': 'Philadelphia 76ers',
+                  'Bucks': 'Milwaukee Bucks',
+                  'Bulls': 'Chicago Bulls',
+                  'Cavaliers': 'Cleveland Cavaliers',
+                  'Celtics': 'Boston Celtics',
+                  'Clippers': 'Los Angeles Clippers',
+                  'Grizzlies': 'Memphis Grizzlies',
+                  'Hawks': 'Atlanta Hawks',
+                  'Heat': 'Miami Heat',
+                  'Hornets': 'Charlotte Hornets',
+                  'Jazz': 'Utah Jazz',
+                  'Kings': 'Sacramento Kings',
+                  'Knicks': 'New York Knicks',
+                  'Lakers': 'Los Angeles Lakers',
+                  'Magic': 'Orlando Magic',
+                  'Mavericks': 'Dallas Mavericks',
+                  'Nets': 'Brooklyn Nets',
+                  'Nuggets': 'Denver Nuggets',
+                  'Pacers': 'Indiana Pacers',
+                  'Pelicans': 'New Orleans Pelicans',
+                  'Pistons': 'Detroit Pistons',
+                  'Raptors': 'Toronto Raptors',
+                  'Rockets': 'Houston Rockets',
+                  'Spurs': 'San Antonio Spurs',
+                  'Suns': 'Phoenix Suns',
+                  'Thunder': 'Oklahoma City Thunder',
+                  'Timberwolves': 'Minnesota Timberwolves',
+                  'Trail Blazers': 'Portland Trail Blazers',
+                  'Warriors': 'Golden State Warriors',
+                  'Wizards': 'Washington Wizards',
+                 }
+
+
+
+def getFullTeam(name):
+    if name in teamToFullTeam:
+        return teamToFullTeam[name]
+    return name
+
+def getPlayNowPlayerName(name):
+    if name in playNowPlayerNames:
+        return playNowPlayerNames[name]
+    return name
+
+def getSportsInteractionPlayerName(name):
+    if name in sportsInteractionPlayerNames:
+        return sportsInteractionPlayerNames[name]
+    return name
+
+def getPinnaclePlayerName(name):
+    if name in pinnaclePlayerNames:
+        return pinnaclePlayerNames[name]
+    return name
