@@ -1,12 +1,12 @@
 from models.allplayerprops import AllPlayerProps
 from models.playerprop import PlayerProp
 
-PINNACLE_PLAYERFILE = 'tests/pinnacle/prop.txt'
-PINNACLE_GAMEFILE = 'tests/pinnacle/gameinfo.txt'
-PLAYNOW_PLAYERFILE = 'tests/playnow/prop.txt'
-PLAYNOW_GAMEFILE = 'tests/playnow/gameinfo.txt'
-SPORTSINTERACTION_PLAYERFILE = 'tests/sportsinteraction/prop.txt'
-SPORTSINTERACTION_GAMEFILE = 'tests/sportsinteraction/gameinfo.txt'
+PINNACLE_PLAYERFILE = 'tests/props/pinnacle/prop.txt'
+PINNACLE_GAMEFILE = 'tests/props/pinnacle/gameinfo.txt'
+PLAYNOW_PLAYERFILE = 'tests/props/playnow/prop.txt'
+PLAYNOW_GAMEFILE = 'tests/props/playnow/gameinfo.txt'
+SPORTSINTERACTION_PLAYERFILE = 'tests/props/sportsinteraction/prop.txt'
+SPORTSINTERACTION_GAMEFILE = 'tests/props/sportsinteraction/gameinfo.txt'
 
 def get_file(book, type):
     files = {'Pinnacle': {'Player': PINNACLE_PLAYERFILE,

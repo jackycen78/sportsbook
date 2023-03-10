@@ -3,6 +3,7 @@ from utils.content import getGameBetContent
 from utils.helper import getDate
 from info import sender, receivers
 from tests.player import get_all_props
+from tests.game import get_all_games
 
 from utils.automate.player import get_game_props
 
@@ -16,4 +17,7 @@ content=getGameBetContent()
 #g = get_game_props()
 #print(g)
 
-print(get_all_props())
+#print(get_all_props())
+
+k = get_all_games()
+k.print_bets()

@@ -16,7 +16,7 @@ def decimalToAmerican(odds):
     except:
         return ''
     
-def zipData(teams, spreads, moneyLines, overUnders):
+def zip_data(teams, spreads, moneyLines, overUnders):
     teamNames = ['away', 'home']
     spreadNames = ['awaySpread', 'awaySpreadOdds', 'homeSpread', 'homeSpreadOdds']
     overUnderNames = ['over', 'overOdds', 'under', 'underOdds']
@@ -49,8 +49,9 @@ def write_file(path, content):
     file.write(content)
 
 def write_tests(book, text, type):
-    path = f'tests/{book}/{type}.txt'
+    path = f'tests/props/{book}/{type}.txt'
     write_file(path, text)
+
 
 def clear_file(path):
     open(path, 'w').close()
@@ -59,5 +60,5 @@ def clear_tests(book):
     
     files = ['prop', 'gameinfo']
     for file in files:
-        path = f'tests/{book}/{file}.txt'
+        path = f'tests/props/{book}/{file}.txt'
         clear_file(path)

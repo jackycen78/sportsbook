@@ -1,40 +1,23 @@
-from utils.parser.game import *
+from utils.parser.game import PlayNow, Pinnacle, Bet365, SportsInteraction
 from utils.names.game import getCityName, getTeamName
 from utils.helper import decimalToAmerican
 
+
 class GameBet:
 
-    def __init__(self):
-        self.time = None
-        self.book = {'name': None}
-        self.teams = {'home': None,
-                      'away': None,                      
-                     }
-
-        self.spread = {'homeSpread' : None,
-                       'homeSpreadOdds' : None,
-                       'awaySpread' : None,
-                       'awaySpreadOdds' : None,
-                       }
-
-        self.moneyLine = {'homeMoneyLine' : None,
-                          'awayMoneyLine' : None,
-                          }
-
-        self.overUnder = {'over': None,
-                          'overOdds': None,
-                          'under': None,
-                          'underOdds': None,
-                          }
-        
-        self.odds = [('spread', 'homeSpreadOdds'), 
-                     ('spread', 'awaySpreadOdds'),
-                     ('moneyLine', 'homeMoneyLine'),
-                     ('moneyLine', 'awayMoneyLine'),
-                     ('overUnder', 'overOdds'),
-                     ('overUnder', 'underOdds'), 
-                     ]
-
+    def __init__(self, book, data):
+        self.book = book
+        self.parser = self.get_parser()
+        self.teams, self.spread, self.moneyLine, self.overUnder = self.parser.parse_game(data)
+    
+    def get_parser(self):
+        books = {'Play Now': PlayNow(),
+                 'Pinnacle': Pinnacle(),
+                 'Sports Interaction': SportsInteraction(),
+                 'Bet 365': Bet365(),
+                 }
+        return books[self.book]
+    
     def changeToAmerican(self):
         self.spread['homeSpreadOdds'] = decimalToAmerican(self.spread['homeSpreadOdds'])
         self.spread['awaySpreadOdds'] = decimalToAmerican(self.spread['awaySpreadOdds'])
@@ -69,43 +52,7 @@ class GameBet:
 
     def __str__(self) -> str:
         return \
-               f'''Book: {self.book["name"]} \n 
+               f'''Book: {self.book} \n 
                    Home Team: {self.teams["home"]}\n 
                    Away Team: {self.teams["away"]} \n
                 '''
-                
-class PlayNowGameBet(GameBet):
-
-    def __init__(self, data):
-        super().__init__()
-        self.book['name'] = 'Play Now'
-        self.teams, self.spread, self.moneyLine, self.overUnder = PlayNowParser(data)
-
-class SportsInteractionGameBet(GameBet):
-
-    def __init__(self, data):
-        super().__init__()
-        self.book['name'] = 'Sports Interaction'
-        self.teams, self.spread, self.moneyLine, self.overUnder = SportsInteractionParser(data)
-
-class Bet365GameBet(GameBet):
-
-    def __init__(self, data):
-        super().__init__()
-        self.book['name'] = 'Bet 365'
-        self.teams, self.spread, self.moneyLine, self.overUnder = Bet365Parser(data)
-
-
-class PinnacleGameBet(GameBet):
-
-    def __init__(self, data):
-        super().__init__()
-        self.book['name'] = 'Pinnacle'
-        self.teams, self.spread, self.moneyLine, self.overUnder = PinnacleParser(data)
-
-
-
-
-
-    
-    

@@ -1,4 +1,4 @@
-from models.gamebet import * 
+from models.gamebet import GameBet
 from models.allgamebets import AllBets
 from utils.website import Website
 
@@ -40,10 +40,10 @@ def getPlayNowGameBets(site):
         spreads = site.find_class(spreadClass, bet)[0]
         moneyLines = site.find_class(moneyLineClass, bet)[0]
         overUnders = site.find_class(overUnderClass, bet)[0]
-        newBet = PlayNowGameBet([teams, 
-                             spreads, 
-                             moneyLines, 
-                             overUnders])
+        newBet = GameBet([teams, 
+                          spreads, 
+                          moneyLines, 
+                          overUnders])
         newBet.changeToAmerican()
         betsList.append(newBet)
     return betsList
@@ -65,10 +65,10 @@ def getSportsInteractionGameBets(site):
     for bet in bets:
         teams = site.find_class(teamClass, bet) 
         spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
-        newBet = SportsInteractionGameBet([teams[0], 
-                                           spreads, 
-                                           moneylines, 
-                                           overUnders])
+        newBet = GameBet([teams[0], 
+                          spreads, 
+                          moneylines, 
+                          overUnders])
         newBet.changeToAmerican()
         betsList.append(newBet)
     return betsList
@@ -95,10 +95,10 @@ def getBet365GameBets(site):
     moneyLines = betTypes[numTeams * 4:]
     
     for i in range(numTeams):
-        betsList.append(Bet365GameBet([teams[i], 
-                                   spreads[i * 2: (i + 1) * 2], 
-                                   moneyLines[i * 2: (i + 1) * 2], 
-                                   overUnders[i * 2: (i + 1) * 2], 
+        betsList.append(GameBet([teams[i], 
+                                 spreads[i * 2: (i + 1) * 2], 
+                                 moneyLines[i * 2: (i + 1) * 2], 
+                                 overUnders[i * 2: (i + 1) * 2], 
                                 ]))
     return betsList
 
@@ -119,10 +119,10 @@ def getPinnacleGameBets(site):
     for bet in bets:
         teams = site.find_class(teamClass, bet) 
         spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
-        newBet = PinnacleGameBet([teams[0], 
-                              spreads, 
-                              moneylines, 
-                              overUnders])
+        newBet = GameBet([teams[0], 
+                          spreads, 
+                          moneylines, 
+                          overUnders])
         newBet.changeToAmerican()
         betsList.append(newBet)
 
