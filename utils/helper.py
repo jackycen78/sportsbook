@@ -1,11 +1,10 @@
 from datetime import datetime
 
-def decimalToAmerican(odds):
+def decimal_to_american(odds):
     if not odds:
         return ''
     if odds.startswith('+') or odds.startswith('-'):
         return odds
-    
     try:
         odds = float(odds)
         if odds >= 2:
@@ -36,7 +35,7 @@ def checkAmericanOdds(odds):
         return True
     return False
 
-def getDate():
+def get_date():
     month = datetime.now().strftime("%B")
     day = datetime.now().strftime("%d")
     if day.startswith('0'):

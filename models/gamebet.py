@@ -1,6 +1,6 @@
 from utils.parser.game import PlayNow, Pinnacle, Bet365, SportsInteraction
 from utils.names.game import getCityName, getTeamName
-from utils.helper import decimalToAmerican
+from utils.helper import decimal_to_american
 
 
 class GameBet:
@@ -19,12 +19,12 @@ class GameBet:
         return books[self.book]
     
     def changeToAmerican(self):
-        self.spread['homeSpreadOdds'] = decimalToAmerican(self.spread['homeSpreadOdds'])
-        self.spread['awaySpreadOdds'] = decimalToAmerican(self.spread['awaySpreadOdds'])
-        self.moneyLine['homeMoneyLine'] = decimalToAmerican(self.moneyLine['homeMoneyLine'])
-        self.moneyLine['awayMoneyLine'] = decimalToAmerican(self.moneyLine['awayMoneyLine'])
-        self.overUnder['overOdds'] = decimalToAmerican(self.overUnder['overOdds'])
-        self.overUnder['underOdds'] = decimalToAmerican(self.overUnder['underOdds'])
+        self.spread['homeSpreadOdds'] = decimal_to_american(self.spread['homeSpreadOdds'])
+        self.spread['awaySpreadOdds'] = decimal_to_american(self.spread['awaySpreadOdds'])
+        self.moneyLine['homeMoneyLine'] = decimal_to_american(self.moneyLine['homeMoneyLine'])
+        self.moneyLine['awayMoneyLine'] = decimal_to_american(self.moneyLine['awayMoneyLine'])
+        self.overUnder['overOdds'] = decimal_to_american(self.overUnder['overOdds'])
+        self.overUnder['underOdds'] = decimal_to_american(self.overUnder['underOdds'])
 
     def get_spread(self):
         return self.spread

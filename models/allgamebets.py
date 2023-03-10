@@ -10,7 +10,12 @@ class AllBets:
                 self.games[teams] = []
             self.games[teams].append(bet)
         
-    def print_bets(self):
+    def __str__(self):
+        output = ''
         for team in self.games:
+            output += f'{team}\n'
             for bet in self.games[team]:
-                print(bet)
+                output += f'   {bet.book}\n'
+                
+            output += '\n'
+        return output

@@ -1,21 +1,15 @@
 from .automate.game import getGameBets
 from templates.tables import *
 from templates.email import *
+from templates.game import createGameEmail
 from tests.game import get_all_games
 from tests.player import get_all_props
-from .config import GAME_BETS, GAME_SITES, PLAYER_PROPS, PLAYER_SITES
+from .config import PLAYER_PROPS, PLAYER_SITES
 
 def getGameBetContent():
-    columns = ['Game'] + GAME_SITES
-    games = getGameBets() #get_all_games() getGameBets()
-    content = []
-    for game in GAME_BETS:
-        contentHTML = getTableHTML(title=game, 
-                                   columnNames=columns,
-                                   dataRows=getGamesHTML(games, game)
-                     )
-        content.append(contentHTML)
-    return getEmailHTML(content)
+    games = get_all_games().games #get_all_games() getGameBets()
+    
+    return createGameEmail(games)
 
 def getPlayerPropsContent():
 

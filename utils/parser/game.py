@@ -1,5 +1,5 @@
 from utils.names.game import getBet365TeamName, getSportsIntTeamName
-from utils.helper import zip_data, flatten
+from utils.helper import zip_data, flatten, decimal_to_american
 
 
 class GameParser():

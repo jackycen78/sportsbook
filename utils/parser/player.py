@@ -1,5 +1,5 @@
 from utils.names.player import getPlayNowPlayerName, getSportsInteractionPlayerName, getPinnaclePlayerName, getFullTeam
-from utils.helper import decimalToAmerican
+from utils.helper import decimal_to_american
 
 class PlayerParser():
 
@@ -42,7 +42,7 @@ class PlayNowPlayerParser(PlayerParser):
 
         for i in range(0,len(oddsInfo) - 1, 2):
             amount = 'O' + oddsInfo[i][:-1]
-            odd = decimalToAmerican(oddsInfo[i + 1])
+            odd = decimal_to_american(oddsInfo[i + 1])
             odds.append((amount, odd))
         return odds
 
@@ -94,9 +94,9 @@ class PinnaclePlayerParser(PlayerParser):
     
     def parse_odds(self, oddsInfo):
         over = 'O' + oddsInfo[-4].split(' ')[1]
-        overOdds = decimalToAmerican(oddsInfo[-3][:4])
+        overOdds = decimal_to_american(oddsInfo[-3][:4])
         under = 'U' + oddsInfo[-2].split(' ')[1]
-        underOdds = decimalToAmerican(oddsInfo[-1][:4])
+        underOdds = decimal_to_american(oddsInfo[-1][:4])
 
         odds = [(over, overOdds), 
                 (under, underOdds)]
@@ -152,9 +152,9 @@ class SportsInteractionParser(PlayerParser):
     
     def parse_odds(self, oddsInfo):
         over = 'O' + oddsInfo[1]
-        overOdds = decimalToAmerican(oddsInfo[2])
+        overOdds = decimal_to_american(oddsInfo[2])
         under = 'U' + oddsInfo[4]
-        underOdds = decimalToAmerican(oddsInfo[5])
+        underOdds = decimal_to_american(oddsInfo[5])
         odds = [(over, overOdds), 
                 (under, underOdds)]
         return odds

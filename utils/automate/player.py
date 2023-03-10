@@ -102,57 +102,6 @@ class PlayNow(PlayerProps):
             if prop:
                 prop.click()
 
-
-class Bet365(PlayerProps):
-    
-    siteURL = 'https://www.bet365.com/#/AC/B18/C20604387/D48/E1453/F10/'
-    gameClass = 'scb-ParticipantFixtureDetailsHigherBasketball_LhsContainer'
-
-    def __init__(self, site):
-        super().__init__(site)
-
-def bet365PlayerProps(site):
-
-    allGamesURL = 'https://www.bet365.com/#/AC/B18/C20604387/D48/E1453/F10/'
-    gameClass = 'scb-ParticipantFixtureDetailsHigherBasketball_LhsContainer'
-
-    site.go_to(allGamesURL)
-    games = site.find_class(gameClass)
-    numGames = len(games)
-
-    propTypes = ['Player Points',
-                 'Player Assists',
-                 'Player Rebounds',
-                 'Player Steals',
-                 'Player Blocks',
-                 ]
-    playerProps = []
-    
-
-    for i in range(numGames):
-        games = site.find_class(gameClass)
-        games[i].click()
-
-        site.refresh_page()
-        site.click_by_name('Player Props')
-
-        for prop in propTypes:
-            curProp = site.find_name(name=prop,
-                                     exact=True)[0]
-            curProp.click()
-            #site.click_by_name(name='Show more', 
-            #                   parent=curProp)
-
-            bet = site.find_name(name=prop, 
-                                 path='/ancestor::*/following-sibling::div',
-                                 exact=True)[0].text
-            
-            playerProps.append(prop + bet)
-            print(prop + bet)
-
-        site.go_to(allGamesURL)
-    print(playerProps)
-
 class Pinnacle(PlayerProps):
 
     book = 'Pinnacle'
@@ -205,6 +154,7 @@ class SportsInteraction(PlayerProps):
         for i in range(numGames):
             curGame = site.find_class(self.gameClass)[i]
             self.add_player_props(parent=curGame)
+
 
 def get_game_props():
 
