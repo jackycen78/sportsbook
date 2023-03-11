@@ -16,6 +16,6 @@ class AllBets:
             output += f'{team}\n'
             for bet in self.games[team]:
                 output += f'   {bet.book}\n'
-                
+
             output += '\n'
         return output

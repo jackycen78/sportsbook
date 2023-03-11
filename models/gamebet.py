@@ -13,7 +13,7 @@ class GameBet:
     def get_parser(self):
         books = {'Play Now': PlayNow(),
                  'Pinnacle': Pinnacle(),
-                 'Sports Interaction': SportsInteract(),
+                 'Sports Interact': SportsInteract(),
                  'Bet 365': Bet365(),
                  }
         return books[self.book]

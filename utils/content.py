@@ -1,15 +1,16 @@
-from automate.game import getGameBets
+from automate.game import GameBets
 from templates.tables import *
 from templates.email import *
 from templates.game import createGameEmail
 from templates.player import getPropsHTML
-from tests.game import get_all_games
+#from tests.game import get_all_games
 from tests.player import get_all_props
 from .config import PLAYER_PROPS, PLAYER_BOOKS
 
 def getGameBetContent():
-    games = getGameBets() #get_all_games().games #get_all_games() getGameBets()
-    
+    bets = GameBets() #get_all_games().games #get_all_games() getGameBets()
+    games = bets.get_all_bets()
+
     return createGameEmail(games)
 
 def getPlayerPropsContent():

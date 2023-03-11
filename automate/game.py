@@ -1,77 +1,155 @@
 from models.gamebet import GameBet
 from models.allgamebets import AllBets
 from utils.website import Website
+from utils.config import GAME_BOOKS, PLAYNOW_TIMES
+from utils.helper import write_file, clear_file
 
 
-def getPlayNowGameBets(site):
+class GameBets():
 
-    playNowURL = 'https://www.playnow.com/sports/sport/9/basketball/matches?preselectedFilters=49'
+    def __init__(self, site):
+        self.site = site
+        self.bets = []
+
+    def go_to_site(self, sleepTime=2):
+        self.site.go_to(self.siteURL, sleepTime)
+
+    def automate(self):
+        self.go_to_site()
+        betList = self.find_bets()
+        for bet in betList:
+            self.add_game_data(bet)
+
+    def create_bet(self, data):
+        return GameBet(self.book, data)
+    
+    def write_tests(self, data):
+        path = f'tests/games/{self.bookFile}/game.txt'
+        for d in data:
+            write_file(path, f'{d}\n\n')
+
+    def clear_tests(self):
+        path = f'tests/games/{self.bookFile}/game.txt'
+        clear_file(path)
+
+    def check_game_data(self, data):
+        for i, d in enumerate(data):
+            if d:
+                data[i] = d.text
+            else:
+                data[i] = ''
+        return data
+
+    def get_all_bets(self):
+        allBets = AllBets()
+
+        for b in GAME_BOOKS:
+            book = self.get_book_class(b)
+            book.automate()
+            allBets.add_bets(book.bets)
+
+        return allBets
+    
+    def get_book_class(self, book):
+        books = {'Play Now': PlayNow(self.site),
+                 'Pinnacle': Pinnacle(self.site),
+                 'Sports Interact': SportsInteract(self.site),
+                 }
+        return books[book]
+
+class PlayNow(GameBets):
+
+    book = 'Play Now'
+    bookFile = 'playnow'
+    siteURL = 'https://www.playnow.com/sports/sport/9/basketball/matches?preselectedFilters=49'
     showMoreClass = 'content-loader__load-more-link'
     
-    todayClass = 'heading--timeband--today'
-    nextToGoClass = 'heading--timeband--next_to_go'
-    liveClass = 'heading--timeband--live'
-    tmrClass = 'heading--timeband--tomorrow'
+    timeClasses = {'today' : 'heading--timeband--today',
+                   'next' : 'heading--timeband--next_to_go',
+                   'live' : 'heading--timeband--live',
+                   'tommorrow' : 'heading--timeband--tomorrow',
+                   }
 
     nbaClass = 'event-list__item--basketball'
     teamClass = 'event-card__body__name'
     spreadClass = 'market__body--WH'
     moneyLineClass = 'market__body--HH'
     overUnderClass = 'market__body--HL'
+    
+    def __init__(self, site):
+        super().__init__(site)
 
-    site.go_to(playNowURL, sleepTime=2)
-    site.click_by_class(showMoreClass, sleepTime=1)
-    bets = []
+    def go_to_site(self, sleepTime=2):
+        super().go_to_site(sleepTime)
+        self.site.click_by_class(self.showMoreClass, sleepTime=1)
 
-    if site.class_exists(todayClass):
-        bets += site.find_class(className=nbaClass,
-                            parent=site.find_class(todayClass)[0])
-    if site.class_exists(nextToGoClass):
-        bets = site.find_class(className=nbaClass,
-                            parent=site.find_class(nextToGoClass)[0])
-    if site.class_exists(liveClass):
-        bets = site.find_class(className=nbaClass,
-                            parent=site.find_class(liveClass)[0])
-        
-    betsList = []
+    def find_bets(self):
+        site = self.site
+        bets = []
 
-    for bet in bets:
-        teams = site.find_class(teamClass, bet)[0]
-        spreads = site.find_class(spreadClass, bet)[0]
-        moneyLines = site.find_class(moneyLineClass, bet)[0]
-        overUnders = site.find_class(overUnderClass, bet)[0]
-        newBet = GameBet('Play Now', [teams, 
-                          spreads, 
-                          moneyLines, 
-                          overUnders])
+        for time in PLAYNOW_TIMES:
+            timeClass = self.timeClasses[time]
+
+            if site.class_exists(timeClass):
+                bets += site.find_class(className=self.nbaClass,
+                                        parent=site.find_class(timeClass)[0])
+        return bets
+                
+    def add_game_data(self, bet):
+        site = self. site
+
+        teams = site.find_class(self.teamClass, bet)[0]
+        spreads = site.find_class(self.spreadClass, bet)[0]
+        moneyLines = site.find_class(self.moneyLineClass, bet)[0]
+        overUnders = site.find_class(self.overUnderClass, bet)[0]
+
+        data = self.check_game_data([teams, 
+                                     spreads, 
+                                     moneyLines, 
+                                     overUnders])
+
+        newBet = self.create_bet(data)
+        self.write_tests(data)
+
         newBet.changeToAmerican()
-        betsList.append(newBet)
-    return betsList
+        self.bets.append(newBet)
 
-def getSportsInteractionGameBets(site):
 
-    sportsInteractionURL = 'https://www.sportsinteraction.com/basketball/nba-betting-lines/'
+class SportsInteract(GameBets):
+
+    book = 'Sports Interact'
+    bookFile = 'sportsinteract'
+    siteURL = 'https://www.sportsinteraction.com/basketball/nba-betting-lines/'
+    
     nbaClass = 'Game--mainMarkets'
     todayClass = 'GameDateGroup'
     teamClass = 'GameHeader__name'
     betTypesClass = 'MainMarketTable__event'
+    
+    def __init__(self, site):
+        super().__init__(site)
 
-    site.go_to(sportsInteractionURL, sleepTime=2)
+    def find_bets(self):
+        site = self.site
 
-    todayBets = site.find_class(todayClass)[0]
-    bets = site.find_class(nbaClass, todayBets)
-    betsList = []
+        todayBets = site.find_class(self.todayClass)[0]
+        return site.find_class(self.nbaClass, todayBets)
 
-    for bet in bets:
-        teams = site.find_class(teamClass, bet) 
-        spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
-        newBet = GameBet('Sports Interaction',[teams[0], 
-                          spreads, 
-                          moneylines, 
-                          overUnders])
-        newBet.changeToAmerican()
-        betsList.append(newBet)
-    return betsList
+    def add_game_data(self, bet):
+            site = self.site
+
+            teams = site.find_class(self.teamClass, bet)[0]
+            spreads, moneyLines, overUnders = site.find_class(self.betTypesClass, bet)[:3]
+            data = self.check_game_data([teams, 
+                                         spreads, 
+                                         moneyLines, 
+                                         overUnders])
+            
+            newBet = self.create_bet(data)
+            newBet.changeToAmerican()
+            self.write_tests(data)
+
+            self.bets.append(newBet)
 
 
 def getBet365GameBets(site):
@@ -103,41 +181,34 @@ def getBet365GameBets(site):
     return betsList
 
 
-def getPinnacleGameBets(site):
+class Pinnacle(GameBets):
 
-    pinnacleURL = 'https://www.pinnacle.com/en/basketball/nba/matchups#period:0'
+    book = 'Pinnacle'
+    bookFile = 'pinnacle'
+    siteURL = 'https://www.pinnacle.com/en/basketball/nba/matchups#period:0'
 
     betsClass = 'style_row__3q4g_'
     teamClass = 'style_matchupMetadata__Ey_nj'
     betTypesClass = 'style_buttons__XEQem'
 
-    site.go_to(pinnacleURL, sleepTime=2)
-    betsList = []
+    def __init__(self, site):
+        super().__init__(site)
 
-    bets = site.find_class(betsClass)[1:]
+    def find_bets(self):
+        site = self.site
+        return site.find_class(self.betsClass)[1:]
 
-    for bet in bets:
-        teams = site.find_class(teamClass, bet) 
-        spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
-        newBet = GameBet('Pinnacle', [teams[0], 
-                          spreads, 
-                          moneylines, 
-                          overUnders])
-        newBet.changeToAmerican()
-        betsList.append(newBet)
+    def add_game_data(self, bet):
+            site = self.site
+            teams = site.find_class(self.teamClass, bet)[0]
+            spreads, moneyLines, overUnders = site.find_class(self.betTypesClass, bet)[:3]
+            data = self.check_game_data([teams, 
+                                         spreads, 
+                                         moneyLines, 
+                                         overUnders])
+            
+            newBet = self.create_bet(data)
+            newBet.changeToAmerican()
+            self.write_tests(data)
 
-    return betsList
-
-def getGameBets():
-
-    site = Website()
-    allBets = AllBets()
-
-    allBets.add_bets(getPlayNowGameBets(site))
-    allBets.add_bets(getSportsInteractionGameBets(site))
-    allBets.add_bets(getBet365GameBets(site))
-    allBets.add_bets(getPinnacleGameBets(site))
-
-    print(allBets)
-
-    return allBets.games
+            self.bets.append(newBet)

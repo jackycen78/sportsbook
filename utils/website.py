@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+from selenium_stealth import stealth
 import time
 
 class Website:
@@ -13,14 +14,24 @@ class Website:
 
         service = Service('./chromedriver')
         options = ChromeOptions()
+        options.add_argument("start-maximized")
+        #options.add_argument("--headless")
         options.add_argument('--disable-blink-features=AutomationControlled')
         options.add_experimental_option("excludeSwitches", ["enable-automation"]) 
         options.add_experimental_option("useAutomationExtension", False) 
 
         self.driver = Chrome(options=options, service=service)
-        self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")  
-        self.driver.set_window_size(1720, 1329)
-        self.driver.set_window_position(0, 0)
+        '''stealth(self.driver,
+                languages=["en-US", "en"],
+                vendor="Google Inc.",
+                platform="Win32",
+                webgl_vendor="Intel Inc.",
+                renderer="Intel Iris OpenGL Engine",
+                fix_hairline=True,
+                )'''
+        
+        #self.go_to('https://www.bet365.com/#/AC/B18/C20604387/D48/E1453/F10/')
+        #time.sleep(10)
 
     def go_to(self, website, sleepTime=1):
         self.driver.get(website)

@@ -1,7 +1,7 @@
 from models.playerprop import PlayerProp
 from models.allplayerprops import AllPlayerProps
 from utils.website import Website
-from utils.helper import write_tests, clear_tests
+from utils.helper import write_file, clear_tests
 
 import time
 
@@ -30,15 +30,16 @@ class PlayerProps():
                 playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
                 if playerProp.is_valid():
                     self.playerProps.append(playerProp)
-        
-                    write_tests(book=self.bookFile, 
-                                text=f'{gameInfo.text}\n \n', 
-                                type='gameinfo')
                     
-                    write_tests(book=self.bookFile, 
-                                text=f'{prop.text} \n \n', 
-                                type='prop')
+                    self.write_tests(text=f'{gameInfo.text}\n \n', 
+                                     type='gameinfo')
+                    
+                    self.write_tests(text=f'{prop.text} \n \n', 
+                                     type='prop')
             
+    def write_tests(self, text, type):
+        path = f'tests/props/{self.bookFile}/{type}.txt'
+        write_file(path, text)
 
     def get_player_props(self):
 
