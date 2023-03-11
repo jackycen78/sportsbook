@@ -1,5 +1,6 @@
 from models.allgamebets import AllBets
 from models.gamebet import GameBet
+from utils.config import GAME_BOOKS
 
 PLAYNOW_FILE = 'tests/games/playnow/game.txt'
 SPORTSINTERACT_FILE = 'tests/games/sportsinteract/game.txt'
@@ -35,8 +36,7 @@ def parse_book(book):
 def create_book_bet(book):
     gameBets = []
     games = parse_book(book)
-
-    print(len(games))
+    
     for i in range(0, len(games), 4):
         data = [games[i],
                 games[i+1],
@@ -50,9 +50,7 @@ def create_book_bet(book):
 
 def get_all_test_bets():
     
-    allProps = AllBets()
-    allProps.add_bets(create_book_bet('Pinnacle'))
-    allProps.add_bets(create_book_bet('Play Now'))
-    allProps.add_bets(create_book_bet('Sports Interact'))
-    
-    return allProps
+    allBets = AllBets()
+    for book in GAME_BOOKS:
+        allBets.add_bets(create_book_bet(book))
+    return allBets

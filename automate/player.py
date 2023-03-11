@@ -1,6 +1,7 @@
 from models.playerprop import PlayerProp
 from models.allplayerprops import AllPlayerProps
 from utils.website import Website
+from utils.config import PLAYER_BOOKS
 from utils.helper import write_file, clear_tests
 
 import time
@@ -41,9 +42,23 @@ class PlayerProps():
         path = f'tests/props/{self.bookFile}/{type}.txt'
         write_file(path, text)
 
-    def get_player_props(self):
+    def get_all_props(self):
+        allProps = AllPlayerProps()
 
-        return self.playerProps
+        for b in PLAYER_BOOKS:
+            book = self.get_book_class(b)
+            clear_tests(book.bookFile)
+            book.automate()
+            allProps.add_prop(book.playerProps)
+
+        return allProps
+
+    def get_book_class(self, book):
+        books = {'Play Now': PlayNow(self.site),
+                 'Pinnacle': Pinnacle(self.site),
+                 'Sports Interact': SportsInteract(self.site),
+                 }
+        return books[book]
 
 class PlayNow(PlayerProps):
 
@@ -131,7 +146,7 @@ class Pinnacle(PlayerProps):
         game.click()
         site.click_by_name('Player Props')
 
-class SportsInteraction(PlayerProps):
+class SportsInteract(PlayerProps):
     
     book = 'Sports Interact'
     bookFile = 'sportsinteract'
@@ -153,22 +168,3 @@ class SportsInteraction(PlayerProps):
         for i in range(numGames):
             curGame = site.find_class(self.gameClass)[i]
             self.add_player_props(parent=curGame)
-
-def get_game_props():
-
-    site = Website()
-    allPlayerProps = AllPlayerProps()
-
-    books = [PlayNow(site), 
-             Pinnacle(site), 
-             SportsInteraction(site),
-             ]
-
-    for book in books:
-        clear_tests(book.bookFile)
-        book.automate()
-        props = book.get_player_props()
-        allPlayerProps.add_prop(props)
-    
-    return allPlayerProps
-

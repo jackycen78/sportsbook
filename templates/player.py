@@ -1,7 +1,21 @@
 from templates.tables import getCellHTML, getTableHTML
+from templates.email import getEmailHTML
 from utils.config import PLAYER_PROPS, PLAYER_BOOKS
 
-def getPropsHTML(team):
+def createPlayerEmail(props):
+    columns = ['Player', 'Prop'] + PLAYER_BOOKS
+
+    content = []
+    for team in props.games:
+        curTeam = props.games[team]
+        contentHTML = getTableHTML(title=team, 
+                                   columnNames=columns,
+                                   dataRows=createPlayerRows(curTeam))
+        content.append(contentHTML)
+
+    return getEmailHTML(content)
+
+def createPlayerRows(team):
     numBooks = len(PLAYER_BOOKS)
     outputStr = ''
 

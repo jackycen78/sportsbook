@@ -1,18 +1,20 @@
 from utils.sendemail import sendEmail
-from utils.content import getGameBetContent
+from content.game import getGameBetContent
+from content.player import getPlayerPropsContent
 from utils.helper import get_date
 from info import sender, receivers
 
 
-'''
-sendEmail(senderInfo=sender, 
-          senderName='Betting Odds', 
-          receiverAddress=receivers, 
-          subject= f'Game Props {get_date()}', 
-          content=getGameBetContent())
+playerContent = getPlayerPropsContent()
+gameContent = getGameBetContent()
 
-'''
+contents = [(f'Player Props{get_date()}', playerContent),
+           (f'Game Props{get_date()}', gameContent),]
 
-from tests.game import get_all_test_bets
+for sub, cont in contents:
+    sendEmail(senderInfo=sender, 
+            senderName='Betting Odds', 
+            receiverAddress=receivers, 
+            subject=sub, 
+            content=cont)
 
-print(get_all_test_bets())

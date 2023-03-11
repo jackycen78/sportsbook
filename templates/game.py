@@ -1,6 +1,6 @@
 from templates.tables import getCellHTML, getTableHTML
-from utils.config import GAME_BETS, GAME_BOOKS
 from templates.email import getEmailHTML
+from utils.config import GAME_BETS, GAME_BOOKS
 
 def createGameEmail(games):
     columns = ['Game'] + GAME_BOOKS

@@ -1,5 +1,6 @@
 from models.allplayerprops import AllPlayerProps
 from models.playerprop import PlayerProp
+from utils.config import PLAYER_BOOKS
 
 PINNACLE_PLAYERFILE = 'tests/props/pinnacle/prop.txt'
 PINNACLE_GAMEFILE = 'tests/props/pinnacle/gameinfo.txt'
@@ -66,11 +67,8 @@ def create_player_props(book):
             playerProps.append(playerProp)
     return playerProps
 
-def get_all_props():
-    
+def get_all_test_props():
     allProps = AllPlayerProps()
-    allProps.add_prop(create_player_props('Pinnacle'))
-    allProps.add_prop(create_player_props('Play Now'))
-    allProps.add_prop(create_player_props('Sports Interact'))
-    
+    for book in PLAYER_BOOKS:
+        allProps.add_prop(create_player_props(book))
     return allProps

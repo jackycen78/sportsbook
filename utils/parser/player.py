@@ -102,11 +102,12 @@ class PinnaclePlayerParser(PlayerParser):
         return odds
     
     def parse_game_info(self, gameInfo):
-
-        time, away, home = gameInfo.split('\n')
-        time = time.split(' ')[-1]
-        return time, home, away
-      
+        try:
+            time, away, home = gameInfo.split('\n')
+            time = time.split(' ')[-1]
+            return time, home, away
+        except:
+            return '', '', ''
         
 class SportsInteractParser(PlayerParser):
     propTypes = {'TOTAL PTS / ASSISTS / REBS': 'Pts + Ast + Reb', 

@@ -1,35 +1,21 @@
-New York Knicks @ LA Clippers
-
-2ND HALF SPREAD
-Closed
-Closed
-
-2H MONEYLINE
-Closed
-Closed
-
-2ND HALF O/U
-Closed
-Closed
-
 Indiana Pacers @ Detroit Pistons
 
 POINTSPREAD
--5.5
+-3.5
 1.91
-+5.5
++3.5
 1.91
 
 MONEYLINE
-1.45
-2.85
+1.61
+2.36
 
 OVER/UNDER
 O
-229.0
+228.0
 1.91
 U
-229.0
+228.0
 1.91
 
 Miami Heat @ Orlando Magic
@@ -46,19 +32,19 @@ MONEYLINE
 
 OVER/UNDER
 O
-221.0
+222.5
 1.91
 U
-221.0
+222.5
 1.91
 
 Utah Jazz @ Charlotte Hornets
 
 POINTSPREAD
--2.0
-1.93
-+2.0
-1.89
+-1.0
+1.91
++1.0
+1.91
 
 MONEYLINE
 1.78
@@ -86,10 +72,10 @@ MONEYLINE
 
 OVER/UNDER
 O
-238.5
+238.0
 1.91
 U
-238.5
+238.0
 1.91
 
 Chicago Bulls @ Houston Rockets
@@ -106,10 +92,10 @@ MONEYLINE
 
 OVER/UNDER
 O
-224.5
+224.0
 1.93
 U
-224.5
+224.0
 1.89
 
 Dallas Mavericks @ Memphis Grizzlies
