@@ -45,36 +45,3 @@ def getTableHTML(title, columnNames, dataRows):
                   '''     
     
     return outputStr
-
-def getPropsHTML(team):
-    numBooks = 3
-    outputStr = ''
-
-    for player in team:
-            curPlayer = team[player]
-
-            for propType in curPlayer:
-                curPropType = curPlayer[propType]
-
-                outputStr += '<tr> \n'
-                outputStr += getCellHTML(player, 5)
-                outputStr += getCellHTML(propType, 5)
-
-                for book in ['Play Now', 'Pinnacle', 'Sports Interaction']:
-                    playerOdds = ['']
-                    if book in curPropType:
-                        playerOdds = []
-                        curProp = curPropType[book]
-                        for amount, odd in curProp.odds:
-                            overUnder = 'Over ' if amount[0] == 'O' else 'Under '
-                            amount = overUnder + amount[1:]
-                            playerOdds.append(f'{amount}: {odd}')
-
-                    outputStr += getCellHTML(playerOdds, 5)
-    return outputStr
-    
-
-
-                            
-
-    

@@ -40,7 +40,7 @@ def getPlayNowGameBets(site):
         spreads = site.find_class(spreadClass, bet)[0]
         moneyLines = site.find_class(moneyLineClass, bet)[0]
         overUnders = site.find_class(overUnderClass, bet)[0]
-        newBet = GameBet([teams, 
+        newBet = GameBet('Play Now', [teams, 
                           spreads, 
                           moneyLines, 
                           overUnders])
@@ -65,7 +65,7 @@ def getSportsInteractionGameBets(site):
     for bet in bets:
         teams = site.find_class(teamClass, bet) 
         spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
-        newBet = GameBet([teams[0], 
+        newBet = GameBet('Sports Interaction',[teams[0], 
                           spreads, 
                           moneylines, 
                           overUnders])
@@ -95,7 +95,7 @@ def getBet365GameBets(site):
     moneyLines = betTypes[numTeams * 4:]
     
     for i in range(numTeams):
-        betsList.append(GameBet([teams[i], 
+        betsList.append(GameBet('Bet 365', [teams[i], 
                                  spreads[i * 2: (i + 1) * 2], 
                                  moneyLines[i * 2: (i + 1) * 2], 
                                  overUnders[i * 2: (i + 1) * 2], 
@@ -119,7 +119,7 @@ def getPinnacleGameBets(site):
     for bet in bets:
         teams = site.find_class(teamClass, bet) 
         spreads, moneylines, overUnders = site.find_class(betTypesClass, bet)[:3]
-        newBet = GameBet([teams[0], 
+        newBet = GameBet('Pinnacle', [teams[0], 
                           spreads, 
                           moneylines, 
                           overUnders])
@@ -135,9 +135,9 @@ def getGameBets():
 
     allBets.add_bets(getPlayNowGameBets(site))
     allBets.add_bets(getSportsInteractionGameBets(site))
-    #allBets.add_bets(getBet365GameBets(site))
+    allBets.add_bets(getBet365GameBets(site))
     allBets.add_bets(getPinnacleGameBets(site))
 
-    allBets.print_bets()
+    print(allBets)
 
     return allBets.games

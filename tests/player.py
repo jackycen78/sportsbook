@@ -5,8 +5,8 @@ PINNACLE_PLAYERFILE = 'tests/props/pinnacle/prop.txt'
 PINNACLE_GAMEFILE = 'tests/props/pinnacle/gameinfo.txt'
 PLAYNOW_PLAYERFILE = 'tests/props/playnow/prop.txt'
 PLAYNOW_GAMEFILE = 'tests/props/playnow/gameinfo.txt'
-SPORTSINTERACTION_PLAYERFILE = 'tests/props/sportsinteraction/prop.txt'
-SPORTSINTERACTION_GAMEFILE = 'tests/props/sportsinteraction/gameinfo.txt'
+SPORTSINTERACT_PLAYERFILE = 'tests/props/sportsinteract/prop.txt'
+SPORTSINTERACT_GAMEFILE = 'tests/props/sportsinteract/gameinfo.txt'
 
 def get_file(book, type):
     files = {'Pinnacle': {'Player': PINNACLE_PLAYERFILE,
@@ -15,8 +15,8 @@ def get_file(book, type):
              'Play Now': {'Player': PLAYNOW_PLAYERFILE,
                           'Game': PLAYNOW_GAMEFILE,
                           },
-             'Sports Interaction': {'Player': SPORTSINTERACTION_PLAYERFILE,
-                                    'Game': SPORTSINTERACTION_GAMEFILE,
+             'Sports Interact': {'Player': SPORTSINTERACT_PLAYERFILE,
+                                    'Game': SPORTSINTERACT_GAMEFILE,
                                     },
                          }
     return files[book][type]
@@ -67,9 +67,10 @@ def create_player_props(book):
     return playerProps
 
 def get_all_props():
+    
     allProps = AllPlayerProps()
-    #allProps.add_prop(create_player_props('Pinnacle'))
+    allProps.add_prop(create_player_props('Pinnacle'))
     allProps.add_prop(create_player_props('Play Now'))
-    #allProps.add_prop(create_player_props('Sports Interaction'))
+    allProps.add_prop(create_player_props('Sports Interact'))
     
     return allProps

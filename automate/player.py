@@ -29,10 +29,8 @@ class PlayerProps():
         for prop in props:
                 playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
                 if playerProp.is_valid():
-                    print('valid')
                     self.playerProps.append(playerProp)
-                    print(playerProp)
-
+        
                     write_tests(book=self.bookFile, 
                                 text=f'{gameInfo.text}\n \n', 
                                 type='gameinfo')
@@ -134,8 +132,8 @@ class Pinnacle(PlayerProps):
 
 class SportsInteraction(PlayerProps):
     
-    book = 'Sports Interaction'
-    bookFile = 'sportsinteraction'
+    book = 'Sports Interact'
+    bookFile = 'sportsinteract'
     siteURL = 'https://www.sportsinteraction.com/basketball/nba-prop-betting/'
     gameClass = 'Game--listPage'
     gameInfoClass = 'GameHeader'
@@ -155,14 +153,13 @@ class SportsInteraction(PlayerProps):
             curGame = site.find_class(self.gameClass)[i]
             self.add_player_props(parent=curGame)
 
-
 def get_game_props():
 
     site = Website()
     allPlayerProps = AllPlayerProps()
 
-    books = [#PlayNow(site), 
-             #Pinnacle(site), 
+    books = [PlayNow(site), 
+             Pinnacle(site), 
              SportsInteraction(site),
              ]
 

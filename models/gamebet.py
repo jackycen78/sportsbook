@@ -1,4 +1,4 @@
-from utils.parser.game import PlayNow, Pinnacle, Bet365, SportsInteraction
+from utils.parser.game import PlayNow, Pinnacle, Bet365, SportsInteract
 from utils.names.game import getCityName, getTeamName
 from utils.helper import decimal_to_american
 
@@ -13,7 +13,7 @@ class GameBet:
     def get_parser(self):
         books = {'Play Now': PlayNow(),
                  'Pinnacle': Pinnacle(),
-                 'Sports Interaction': SportsInteraction(),
+                 'Sports Interaction': SportsInteract(),
                  'Bet 365': Bet365(),
                  }
         return books[self.book]

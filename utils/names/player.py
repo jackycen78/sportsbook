@@ -1,3 +1,5 @@
+from utils.helper import capitialize_first_letter
+
 playNowPlayerNames = {
                     # Bucks
                     'B. Lopez': 'Brook Lopez',
@@ -11,7 +13,7 @@ playNowPlayerNames = {
                     # Sixers
                     'J. Embiid': 'Joel Embiid',
                     'J. Harden': 'James Harden',
-                    'P.J. Tucker': 'P.J. Tucker',
+                    'P.J. Tucker': 'PJ Tucker',
                     'T. Harris': 'Tobias Harris',
                     'T. Maxey': 'Tyrese Maxey',
                     'D. Melton': "De'Anthony Melton",
@@ -32,6 +34,7 @@ playNowPlayerNames = {
                     'R. Gobert': 'Rudy Gobert',
                     'N. Reid': 'Naz Reid',
                     'N. Alexander-Walker': 'Nickeil Alexander-Walker',
+                    'T. Prince': 'Taurean Prince',
 
                     # Magic
                     'G. Harris': 'Gary Harris',
@@ -82,6 +85,7 @@ playNowPlayerNames = {
                     'M. Thybulle': 'Matisse Thybulle',
                     'C. Reddish': 'Cam Reddish',
                     'N. Little': 'Nassir Little',
+                    'J. Nurkic': 'Jusuf Nurkic',
 
                     # Heat
                     'B. Adebayo': 'Bam Adebayo',
@@ -168,6 +172,8 @@ playNowPlayerNames = {
                     'D. Schröder': 'Dennis Schroder',
                     'Malik Beasley': 'Malik Beasley',
                     'J. Vanderbilt': 'Jarred Vanderbilt',
+                    'R. Hachimura': 'Rui Hachimura',
+                    'D. Russell': "D'Angelo Russell",
 
                     # Clippers
                     'P. George': 'Paul George',
@@ -228,15 +234,24 @@ playNowPlayerNames = {
                     'J. Wiseman': 'James Wiseman',
                     'K. Hayes': 'Killian Hayes',
                     'P.J. Washington': 'PJ Washington',
+
+                    # Spurs
+                    'Z. Collins': 'Zach Collins',
+                    'K. Johnson': 'Keldon Johnson',
+                    'D. Vassell': 'Devin Vassell',
                     }
 
-sportsInteractionPlayerNames = {'MICHAEL PORTER': 'Michael Porter Jr.',
-                                
+sportsInteractPlayerNames = {'Michael Porter': 'Michael Porter Jr.',
+                                'Fred Vanvleet': 'Fred VanVleet',
+                                'Og Anunoby': 'OG Anunoby',
+                                'Kentavious Caldwell-pope': 'Kentavious Caldwell-Pope',
+                                "De'andre Hunter": "De'Andre Hunter",                                
                                 }
 
 pinnaclePlayerNames = {}
 
 teamToFullTeam = {'76ers': 'Philadelphia 76ers',
+                  '76er': 'Philadelphia 76ers',
                   'Bucks': 'Milwaukee Bucks',
                   'Bulls': 'Chicago Bulls',
                   'Cavaliers': 'Cleveland Cavaliers',
@@ -268,8 +283,6 @@ teamToFullTeam = {'76ers': 'Philadelphia 76ers',
                   'Wizards': 'Washington Wizards',
                  }
 
-
-
 def getFullTeam(name):
     if name in teamToFullTeam:
         return teamToFullTeam[name]
@@ -280,9 +293,10 @@ def getPlayNowPlayerName(name):
         return playNowPlayerNames[name]
     return name
 
-def getSportsInteractionPlayerName(name):
-    if name in sportsInteractionPlayerNames:
-        return sportsInteractionPlayerNames[name]
+def getSportsInteractPlayerName(name):
+    name = capitialize_first_letter(name)
+    if name in sportsInteractPlayerNames:
+        return sportsInteractPlayerNames[name]
     return name
 
 def getPinnaclePlayerName(name):

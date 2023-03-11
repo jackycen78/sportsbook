@@ -34,13 +34,13 @@ class AllPlayerProps:
 
                     for book in curType:
                         curProp = curType[book]
-                        output += f'            {book}\n'
+                        output += f'            {book} {curProp.time}\n'
 
                         for amount, odd in curProp.odds:
                                 overUnder = 'Over ' if amount[0] == 'O' else 'Under '
                                 amount = overUnder + amount[1:]
 
-                                output += f'                {amount}: {odd} \n'
+                                #output += f'                {amount}: {odd} \n'
                 output += '\n' 
 
         return output

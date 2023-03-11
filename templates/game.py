@@ -1,9 +1,9 @@
 from templates.tables import getCellHTML, getTableHTML
-from utils.config import GAME_BETS, GAME_SITES
+from utils.config import GAME_BETS, GAME_BOOKS
 from templates.email import getEmailHTML
 
 def createGameEmail(games):
-    columns = ['Game'] + GAME_SITES
+    columns = ['Game'] + GAME_BOOKS
     content = []
     for betType in GAME_BETS:
         contentHTML = getTableHTML(title=betType, 
@@ -15,7 +15,7 @@ def createGameEmail(games):
 
 
 def createGameRows(games, betType):
-    numBooks = len(GAME_SITES)
+    numBooks = len(GAME_BOOKS)
     format = getFormat(betType)
     outputStr = ''
     for team in games:

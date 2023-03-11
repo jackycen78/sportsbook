@@ -1,4 +1,4 @@
-from utils.names.player import getPlayNowPlayerName, getSportsInteractionPlayerName, getPinnaclePlayerName, getFullTeam
+from utils.names.player import getPlayNowPlayerName, getSportsInteractPlayerName, getPinnaclePlayerName, getFullTeam
 from utils.helper import decimal_to_american
 
 class PlayerParser():
@@ -48,7 +48,6 @@ class PlayNowPlayerParser(PlayerParser):
 
     def parse_game_info(self, gameInfo):
         time, away, home = gameInfo.split('\n')
-        time = time.split(' ')[1]
         return time, home, away
         
         
@@ -109,7 +108,7 @@ class PinnaclePlayerParser(PlayerParser):
         return time, home, away
       
         
-class SportsInteractionParser(PlayerParser):
+class SportsInteractParser(PlayerParser):
     propTypes = {'TOTAL PTS / ASSISTS / REBS': 'Pts + Ast + Reb', 
                  'TOTAL POINTS': 'Points', 
                  'TOTAL ASSISTS': 'Assists', 
@@ -148,7 +147,7 @@ class SportsInteractionParser(PlayerParser):
                     bracketIndex = player.find('[') - 1
                     player = player[:bracketIndex]
 
-        return getSportsInteractionPlayerName(player)
+        return getSportsInteractPlayerName(player)
     
     def parse_odds(self, oddsInfo):
         over = 'O' + oddsInfo[1]

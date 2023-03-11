@@ -35,6 +35,12 @@ def checkAmericanOdds(odds):
         return True
     return False
 
+def capitialize_first_letter(string):
+    words = string.split(' ')
+    for i, word in enumerate(words):
+        words[i] = word[0].upper() + word[1:].lower()
+    return ' '.join(words)
+
 def get_date():
     month = datetime.now().strftime("%B")
     day = datetime.now().strftime("%d")

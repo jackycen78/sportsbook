@@ -105,7 +105,7 @@ class Bet365(GameParser):
             return overUnders
         return self.emptyOverUnders
 
-class SportsInteraction(GameParser):
+class SportsInteract(GameParser):
 
     def __init__(self):
         super().__init__()
