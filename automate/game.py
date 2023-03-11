@@ -17,10 +17,12 @@ class GameBets():
     def automate(self):
         self.go_to_site()
         betList = self.find_bets()
+        self.clear_tests()
         for bet in betList:
             self.add_game_data(bet)
 
     def create_bet(self, data):
+        self.write_tests(data)
         return GameBet(self.book, data)
     
     def write_tests(self, data):
@@ -109,7 +111,6 @@ class PlayNow(GameBets):
                                      overUnders])
 
         newBet = self.create_bet(data)
-        self.write_tests(data)
 
         newBet.changeToAmerican()
         self.bets.append(newBet)
@@ -139,6 +140,7 @@ class SportsInteract(GameBets):
             site = self.site
 
             teams = site.find_class(self.teamClass, bet)[0]
+
             spreads, moneyLines, overUnders = site.find_class(self.betTypesClass, bet)[:3]
             data = self.check_game_data([teams, 
                                          spreads, 
@@ -147,7 +149,6 @@ class SportsInteract(GameBets):
             
             newBet = self.create_bet(data)
             newBet.changeToAmerican()
-            self.write_tests(data)
 
             self.bets.append(newBet)
 
@@ -209,6 +210,4 @@ class Pinnacle(GameBets):
             
             newBet = self.create_bet(data)
             newBet.changeToAmerican()
-            self.write_tests(data)
-
             self.bets.append(newBet)

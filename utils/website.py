@@ -14,15 +14,15 @@ class Website:
 
         service = Service('./chromedriver')
         options = ChromeOptions()
-        options.add_argument("start-maximized")
-        #options.add_argument("--headless")
+        options.add_argument("--start-maximized")
         options.add_argument('--disable-blink-features=AutomationControlled')
         options.add_experimental_option("excludeSwitches", ["enable-automation"]) 
         options.add_experimental_option("useAutomationExtension", False) 
 
+
         self.driver = Chrome(options=options, service=service)
         '''stealth(self.driver,
-                languages=["en-US", "en"],
+                languages=["en-US", "en"],  
                 vendor="Google Inc.",
                 platform="Win32",
                 webgl_vendor="Intel Inc.",
@@ -30,9 +30,6 @@ class Website:
                 fix_hairline=True,
                 )'''
         
-        #self.go_to('https://www.bet365.com/#/AC/B18/C20604387/D48/E1453/F10/')
-        #time.sleep(10)
-
     def go_to(self, website, sleepTime=1):
         self.driver.get(website)
         time.sleep(sleepTime)
@@ -93,9 +90,13 @@ class Website:
         self.driver.refresh()
         time.sleep(1)
 
+    def screenshot(self, file='screenshot.png'):
+        self.driver.get_screenshot_as_file(file)
+
     def enter_text(self, location, text):
         self.locate(location).send_keys(text)
 
     def enter_and_clear_text(self, location, text):
         self.locate(location).clear()
         self.locate(location).send_keys(text)
+

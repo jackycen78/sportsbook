@@ -18,14 +18,16 @@ def parse_book(book):
     file = get_file(book)
     with open(file) as f:
         gameData = f.readlines()
-
     games = []
     curStr = ''
     for line in gameData:
         if line == '\n':
-            curStr = curStr[:-2]
-            games.append(curStr)
+            curStr = curStr[:-1]
+            if curStr:
+                games.append(curStr)
             curStr = ''
+        elif line == 'HANDICAP\n' or line == 'MONEY LINE\n' or line == 'OVER\n' or line=='UNDER\n':
+            pass
         else:
             curStr += line
     return games
@@ -34,13 +36,23 @@ def create_book_bet(book):
     gameBets = []
     games = parse_book(book)
 
+    print(len(games))
     for i in range(0, len(games), 4):
         data = [games[i],
                 games[i+1],
                 games[i+2],
-                games[i+3],]
+                games[i+3],
+                ]
         gameBet = GameBet(book, data)
 
         gameBets.append(gameBet)
     return gameBets
 
+def get_all_test_bets():
+    
+    allProps = AllBets()
+    allProps.add_bets(create_book_bet('Pinnacle'))
+    allProps.add_bets(create_book_bet('Play Now'))
+    allProps.add_bets(create_book_bet('Sports Interact'))
+    
+    return allProps

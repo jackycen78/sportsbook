@@ -1,4 +1,4 @@
-GAME_BOOKS = ['Play Now', 'Sports Interact', 'Pinnacle']
+GAME_BOOKS = ['Play Now', 'Pinnacle', 'Sports Interact']
 GAME_BETS = ['Money Lines', 'Spreads', 'Over Unders']
 
 PLAYER_BOOKS = ['Play Now', 'Sports Interact', 'Pinnacle']

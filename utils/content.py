@@ -3,13 +3,15 @@ from templates.tables import *
 from templates.email import *
 from templates.game import createGameEmail
 from templates.player import getPropsHTML
+
 #from tests.game import get_all_games
+from utils.website import Website
 from tests.player import get_all_props
 from .config import PLAYER_PROPS, PLAYER_BOOKS
 
 def getGameBetContent():
-    bets = GameBets() #get_all_games().games #get_all_games() getGameBets()
-    games = bets.get_all_bets()
+    bets = GameBets(Website()) #get_all_games().games #get_all_games() getGameBets()
+    games = bets.get_all_bets().games
 
     return createGameEmail(games)
 

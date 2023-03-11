@@ -135,8 +135,15 @@ class SportsInteract(GameParser):
     def parse_over_unders(self, overUnderInfo):
         if overUnderInfo and 'Closed' not in overUnderInfo:
             overUnders = overUnderInfo.split('\n')[1:]
-            overUnders[0] = overUnders[0][1:]
-            overUnders[2] = overUnders[2][1:]
-            return overUnders
+
+            over = overUnders[1]
+            overOdds = decimal_to_american(overUnders[2])
+            under = overUnders[4]
+            underOdds = decimal_to_american(overUnders[5])
+
+            return [over,
+                    overOdds,
+                    under,
+                    underOdds]
         return self.emptyOverUnders
 
