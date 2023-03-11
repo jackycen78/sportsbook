@@ -1,29 +1,31 @@
-from .automate import getGameProps
+from automate.game import GameBets
 from templates.tables import *
 from templates.email import *
-from tests.test import games
+from templates.game import createGameEmail
+from templates.player import getPropsHTML
+#from tests.game import get_all_games
+from tests.player import get_all_props
+from .config import PLAYER_PROPS, PLAYER_BOOKS
 
+def getGameBetContent():
+    bets = GameBets() #get_all_games().games #get_all_games() getGameBets()
+    games = bets.get_all_bets()
 
-def getGamePropsContent():
+    return createGameEmail(games)
 
-    games = getGameProps()
-    columns = ['Game', 'PlayNow', 'Sports Interact', 'Bet365', 'Pinnacle']
+def getPlayerPropsContent():
 
-    moneyLinesTable = getTableHTML(titleName='Money Lines', 
+    columns = ['Player', 'Prop'] + PLAYER_BOOKS
+    props = get_all_props()
+
+    content = []
+    for team in props.games:
+        curTeam = props.games[team]
+        contentHTML = getTableHTML(title=team, 
                                    columnNames=columns,
-                                   dataRows=getGamesHTML(games, moneyLineFormat))
+                                   dataRows=getPropsHTML(curTeam))
+        content.append(contentHTML)
 
-    spreadsTable = getTableHTML(titleName='Spreads', 
-                                columnNames=columns,
-                                dataRows=getGamesHTML(games, spreadFormat))
-
-    overUndersTable = getTableHTML(titleName='Over Unders', 
-                                columnNames=columns,
-                                dataRows=getGamesHTML(games, overUnderFormat))
-
-    content = [moneyLinesTable,
-               spreadsTable,
-               overUndersTable,
-               ]
-    
     return getEmailHTML(content)
+    
+    

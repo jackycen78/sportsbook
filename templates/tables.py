@@ -1,14 +1,13 @@
-def getCellHTML(text):
-    outputStr =  '''
+def getCellHTML(text, size):
+    outputStr =  f'''
                     <td style="border-radius: 4px;
                                text-align: center;
-                               width: 20%;
+                               width: {100 / size}%;
                                background-color: #FFFFFF;
                                padding: 0.5rem;
                                margin: 1.5px;
                               "> 
-                 '''
-    
+                  '''
     if type(text) == str:
             outputStr += f'{text} \n'
     elif type(text) == list:
@@ -17,10 +16,10 @@ def getCellHTML(text):
     outputStr += '</td>'
     return outputStr
 
-def getTableHTML(titleName, columnNames, dataRows):
+def getTableHTML(title, columnNames, dataRows):
      
     outputStr = f'''
-                    <h1> {titleName} </h1>
+                    <h1> {title} </h1>
 
                         <table border="3" 
                             style="background-color: #FFFFFF;
@@ -35,7 +34,7 @@ def getTableHTML(titleName, columnNames, dataRows):
                    '''
     
     for col in columnNames:
-        outputStr += f' {getCellHTML(col)} \n'
+        outputStr += f' {getCellHTML(text=col, size=len(columnNames))} \n'
 
     outputStr += f'''
                              </tr>
@@ -46,48 +45,3 @@ def getTableHTML(titleName, columnNames, dataRows):
                   '''     
     
     return outputStr
-
-def getGamesHTML(games, format):
-    outputStr = ''
-    for team in games:
-        if len(games[team]) == 4:
-            outputStr += '<tr> \n'
-            curGame = games[team][0]
-            outputStr += getCellHTML([curGame.get_away_city(), 
-                                      'at', 
-                                      curGame.get_home_city(),
-                                     ])
-            for bet in games[team]:
-                outputStr+= getCellHTML(format(bet))
-            outputStr += '</tr>'
-    return outputStr
-
-
-def moneyLineFormat(bet):
-    format = [bet.get_away_team(),
-              bet.moneyLine['awayMoneyLine'],
-              bet.get_home_team(),
-              bet.moneyLine['homeMoneyLine'],
-              ]
-    return format 
-
-def spreadFormat(bet):
-    format = [f"{bet.get_away_team()} {bet.spread['awaySpread']}",
-              bet.spread['awaySpreadOdds'],
-              f"{bet.get_home_team()} {bet.spread['homeSpread']}",
-              bet.spread['homeSpreadOdds'],
-              ]
-    return format
-
-def overUnderFormat(bet):
-     format = [f"O {bet.overUnder['over']}",
-               bet.overUnder['overOdds'],
-               f"U {bet.overUnder['under']}", 
-               bet.overUnder['underOdds'],
-               ]
-     return format
-
-
-                            
-
-    
