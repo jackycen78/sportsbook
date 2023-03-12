@@ -3,9 +3,9 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium_stealth import stealth
+import undetected_chromedriver as uc
 import time
 
 class Website:
@@ -18,17 +18,15 @@ class Website:
         options.add_argument('--disable-blink-features=AutomationControlled')
         options.add_experimental_option("excludeSwitches", ["enable-automation"]) 
         options.add_experimental_option("useAutomationExtension", False) 
-
-
         self.driver = Chrome(options=options, service=service)
-        '''stealth(self.driver,
+        stealth(self.driver,
                 languages=["en-US", "en"],  
                 vendor="Google Inc.",
                 platform="Win32",
                 webgl_vendor="Intel Inc.",
                 renderer="Intel Iris OpenGL Engine",
                 fix_hairline=True,
-                )'''
+                )
         
     def go_to(self, website, sleepTime=1):
         self.driver.get(website)

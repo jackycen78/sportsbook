@@ -8,8 +8,8 @@ from info import sender, receivers
 playerContent = getPlayerPropsContent()
 gameContent = getGameBetContent()
 
-contents = [(f'Player Props{get_date()}', playerContent),
-           (f'Game Props{get_date()}', gameContent),]
+contents = [(f'Player Props {get_date()}', playerContent),
+           (f'Game Props {get_date()}', gameContent),]
 
 for sub, cont in contents:
     sendEmail(senderInfo=sender, 

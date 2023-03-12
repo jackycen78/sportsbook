@@ -115,7 +115,6 @@ class PlayNow(GameBets):
         newBet.changeToAmerican()
         self.bets.append(newBet)
 
-
 class SportsInteract(GameBets):
 
     book = 'Sports Interact'
@@ -152,11 +151,9 @@ class SportsInteract(GameBets):
 
             self.bets.append(newBet)
 
-
 def getBet365GameBets(site):
 
     bet365URL = 'https://www.bet365.com/#/AC/B18/C20604387/D48/E1453/F10/'
-
     betTypesClass = 'gl-Participant_General'
     teamsClass = 'scb-ParticipantFixtureDetailsHigherBasketball_TeamNames'
 
@@ -180,7 +177,6 @@ def getBet365GameBets(site):
                                  overUnders[i * 2: (i + 1) * 2], 
                                 ]))
     return betsList
-
 
 class Pinnacle(GameBets):
 

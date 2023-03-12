@@ -3,7 +3,6 @@ from models.allplayerprops import AllPlayerProps
 from utils.website import Website
 from utils.config import PLAYER_BOOKS
 from utils.helper import write_file, clear_tests
-
 import time
 
 class PlayerProps():
