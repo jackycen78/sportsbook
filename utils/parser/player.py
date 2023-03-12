@@ -89,7 +89,7 @@ class PinnaclePlayerParser(PlayerParser):
         return self.propTypes[propType]
     
     def parse_player(self, playerInfo):
-        return playerInfo
+        return getPinnaclePlayerName(playerInfo)
     
     def parse_odds(self, oddsInfo):
         over = 'O' + oddsInfo[-4].split(' ')[1]

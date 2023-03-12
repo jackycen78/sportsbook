@@ -9,6 +9,8 @@ playNowPlayerNames = {
                     'K. Middleton': 'Khris Middleton',
                     'P. Connaughton': 'Pat Connaughton',
                     'B. Portis': 'Bobby Portis',
+                    'J. Crowder': 'Jae Crowder',
+                    'J. Ingles': 'Joe Ingles',
 
                     # Sixers
                     'J. Embiid': 'Joel Embiid',
@@ -50,6 +52,7 @@ playNowPlayerNames = {
                     'Mark Williams': 'Mark Williams',
                     'P.J. Washington': 'P.J Washington',
                     'D. Smith Jr.': 'Dennis Smith Jr.',
+                    'N. Richards': 'Nick Richards',
                     
                     # Celtics
                     'A. Horford': 'Al Horford',
@@ -113,6 +116,7 @@ playNowPlayerNames = {
                     'P. Beverley': 'Patrick Beverley',
                     'Z. LaVine': 'Zach LaVine',
                     'C. White': 'Coby White',
+                    'P. Williams': 'Patrick Williams',
 
                     # Suns
                     'C. Paul': 'Chris Paul',
@@ -120,6 +124,9 @@ playNowPlayerNames = {
                     'D. Booker': 'Devin Booker',
                     'K. Durant': 'Kevin Durant',
                     'J. Okogie': 'Josh Okogie',
+                    'C. Payne': 'Cameron Payne',
+                    'T. Craig': 'Torrey Craig',
+                    'T. Lyles': 'Trey Lyles',
 
                     # Jazz
                     'K. Olynyk': 'Kelly Olynyk',
@@ -127,6 +134,7 @@ playNowPlayerNames = {
                     'T. Horton-Tucker': 'Talen Horton-Tucker',
                     'Walker Kessler': 'Walker Kessler',
                     'J. Clarkson': 'Jordan Clarkson',
+                    'K. Dunn': 'Kris Dunn',
 
                     # Thunder
                     'L. Dort': 'Luguentz Dort',
@@ -151,7 +159,8 @@ playNowPlayerNames = {
                     'X. Tillman Sr.': 'Xavier Tillman',
                     'S. Aldama': 'Santi Aldama',
                     'L. Kennard': 'Luke Kennard',
-                    
+                    'J. Konchar': 'John Konchar',
+
                     # Pelicans
                     'B. Ingram': 'Brandon Ingram',
                     'CJ. McCollum': 'CJ McCollum',
@@ -211,6 +220,7 @@ playNowPlayerNames = {
                     'M. Turner': 'Myles Turner',
                     'B. Hield': 'Buddy Hield',
                     'T. Haliburton': 'Tyrese Haliburton',
+                    'A. Nesmith': 'Aaron Nesmith',
 
                     # Rockets
                     'K. Porter Jr.': 'Kevin Porter Jr.',
@@ -234,6 +244,7 @@ playNowPlayerNames = {
                     'J. Wiseman': 'James Wiseman',
                     'K. Hayes': 'Killian Hayes',
                     'P.J. Washington': 'PJ Washington',
+                    'R.J. Hampton': 'RJ Hampton',
 
                     # Spurs
                     'Z. Collins': 'Zach Collins',
@@ -242,13 +253,24 @@ playNowPlayerNames = {
                     }
 
 sportsInteractPlayerNames = {'Michael Porter': 'Michael Porter Jr.',
-                                'Fred Vanvleet': 'Fred VanVleet',
-                                'Og Anunoby': 'OG Anunoby',
-                                'Kentavious Caldwell-pope': 'Kentavious Caldwell-Pope',
-                                "De'andre Hunter": "De'Andre Hunter",                                
-                                }
+                             'Fred Vanvleet': 'Fred VanVleet',
+                             'Og Anunoby': 'OG Anunoby',
+                             'Kentavious Caldwell-pope': 'Kentavious Caldwell-Pope',
+                             "De'andre Hunter": "De'Andre Hunter", 
+                             'Kelly Oubre': 'Kelly Oubre Jr.',
+                             'P.j. Washington': 'PJ Washington',    
+                             'Zach Lavine': 'Zach LaVine',
+                             'Demar Derozan': 'DeMar DeRozan',     
+                             'Kenyon Martin': 'KJ Martin',
+                             'Jabari Smith': 'Jabari Smith Jr.',           
+                             'Shai Gilgeous-alexander': 'Shai Gilgeous-Alexander',     
+                             'Trey Murphy Iii': 'Trey Murphy III',
+                             'Cj Mccollum': 'CJ McCollum',
+                             "De'aaron Fox": "De'Aaron Fox",
+                            }
 
-pinnaclePlayerNames = {}
+pinnaclePlayerNames = {'R.J. Hampton': 'RJ Hampton',
+                       'Jabari Smith Jr': 'Jabari Smith Jr.',}
 
 teamToFullTeam = {'76ers': 'Philadelphia 76ers',
                   '76er': 'Philadelphia 76ers',
