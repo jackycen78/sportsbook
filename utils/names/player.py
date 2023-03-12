@@ -183,6 +183,7 @@ playNowPlayerNames = {
                     'J. Vanderbilt': 'Jarred Vanderbilt',
                     'R. Hachimura': 'Rui Hachimura',
                     'D. Russell': "D'Angelo Russell",
+                    'T. Brown Jr.': 'Troy Brown Jr.',
 
                     # Clippers
                     'P. George': 'Paul George',
@@ -267,10 +268,18 @@ sportsInteractPlayerNames = {'Michael Porter': 'Michael Porter Jr.',
                              'Trey Murphy Iii': 'Trey Murphy III',
                              'Cj Mccollum': 'CJ McCollum',
                              "De'aaron Fox": "De'Aaron Fox",
+                             'Dorian Finney-smith': 'Dorian Finney-Smith',
+                             'Kelly Oubre Jr': 'Kelly Oubre Jr.',
+                             'Pj Washington': 'PJ Washington',
+                             'P.j. Tucker': 'PJ Tucker',
+                             'Rj Barrett': 'RJ Barrett',
+                             "D'angelo Russell": "D'Angelo Russell",
                             }
 
 pinnaclePlayerNames = {'R.J. Hampton': 'RJ Hampton',
-                       'Jabari Smith Jr': 'Jabari Smith Jr.',}
+                       'Jabari Smith Jr': 'Jabari Smith Jr.',
+                       'P.J. Tucker': 'PJ Tucker',
+                       }
 
 teamToFullTeam = {'76ers': 'Philadelphia 76ers',
                   '76er': 'Philadelphia 76ers',

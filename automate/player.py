@@ -27,15 +27,16 @@ class PlayerProps():
         props = site.find_class(self.propClass, parent)
 
         for prop in props:
-                playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
-                if playerProp.is_valid():
-                    self.playerProps.append(playerProp)
-                    
-                    self.write_tests(text=f'{gameInfo.text}\n \n', 
-                                     type='gameinfo')
-                    
-                    self.write_tests(text=f'{prop.text} \n \n', 
-                                     type='prop')
+                if gameInfo and prop:
+                    playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
+                    if playerProp.is_valid():
+                        self.playerProps.append(playerProp)
+                        
+                        self.write_tests(text=f'{gameInfo.text}\n \n', 
+                                        type='gameinfo')
+                        
+                        self.write_tests(text=f'{prop.text} \n \n', 
+                                        type='prop')
             
     def write_tests(self, text, type):
         path = f'tests/props/{self.bookFile}/{type}.txt'

@@ -4,8 +4,11 @@ from content.player import getPlayerPropsContent
 from utils.helper import get_date
 from info import sender, receivers
 
-playerContent = getPlayerPropsContent()
-gameContent = getGameBetContent()
+
+test = True
+
+playerContent = getPlayerPropsContent(test)
+gameContent = getGameBetContent(test)
 
 contents = [(f'Player Props {get_date()}', playerContent),
            (f'Game Props {get_date()}', gameContent),]
@@ -19,3 +22,35 @@ def send(sub, cont):
     
 for sub, cont in contents:
     send(sub, cont)
+
+
+'''from utils.website import Website
+from joblib import Parallel, delayed
+from automate.game import *
+
+
+def get_all_bets(book):
+        book = get_book_class(book)
+
+        book.automate()
+        allBets.add_bets(book.bets)
+        return allBets
+    
+
+
+def get_book_class(book):
+    books = {'Play Now': PlayNow(s1),
+             'Pinnacle': Pinnacle(s2),
+             'Sports Interact': SportsInteract(s3),
+             }
+    return books[book]
+
+allBets = AllBets()
+
+s1 = Website()
+s2 = Website()
+s3 = Website()
+
+Parallel(n_jobs=-1, prefer="threads")(delayed(get_all_bets)(url) for url in ['Play Now', 'Pinnacle', 'Sports Interact'])
+
+print(allBets)'''

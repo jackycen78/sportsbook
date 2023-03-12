@@ -1,180 +1,120 @@
-Indiana Pacers
-Detroit Pistons
+Brooklyn Nets
+Denver Nuggets
 
--3.5
++9.0
 1.90
-+3.5
+-9.0
 1.90
 
-Indiana Pacers
-1.60
-Detroit Pistons
-2.40
+Brooklyn Nets
+4.05
+Denver Nuggets
+1.25
 
 Over
-228.0
+230.5
 1.90
 Under
-228.0
+230.5
 1.90
 
-Miami Heat
-Orlando Magic
+Cleveland Cavaliers
+Charlotte Hornets
+
+-7.5
+1.91
++7.5
+1.83
+
+Cleveland Cavaliers
+1.27
+Charlotte Hornets
+3.80
+
+Over
+220.0
+1.90
+Under
+220.0
+1.90
+
+Washington Wizards
+Philadelphia 76ers
+
++7.5
+1.90
+-7.5
+1.90
+
+Washington Wizards
+3.45
+Philadelphia 76ers
+1.32
+
+Over
+227.0
+1.90
+Under
+227.0
+1.90
+
+Oklahoma City Thunder
+San Antonio Spurs
+
+-3.5
+1.95
++3.5
+1.86
+
+Oklahoma City Thunder
+1.62
+San Antonio Spurs
+2.35
+
+Over
+237.5
+1.87
+Under
+237.5
+1.87
+
+Portland Trail Blazers
+New Orleans Pelicans
 
 -2.5
 1.90
 +2.5
 1.90
 
-Miami Heat
-1.71
-Orlando Magic
-2.20
-
-Over
-222.0
-1.90
-Under
-222.0
-1.90
-
-Utah Jazz
-Charlotte Hornets
-
--1.0
-1.90
-+1.0
-1.90
-
-Utah Jazz
-1.86
-Charlotte Hornets
-1.95
-
-Over
-228.5
-1.90
-Under
-228.5
-1.90
-
-Boston Celtics
-Atlanta Hawks
-
--5.0
-1.90
-+5.0
-1.90
-
-Boston Celtics
-1.46
-Atlanta Hawks
-2.75
-
-Over
-238.0
-1.90
-Under
-238.0
-1.90
-
-Chicago Bulls
-Houston Rockets
-
--8.0
-1.90
-+8.0
-1.90
-
-Chicago Bulls
-1.28
-Houston Rockets
-3.70
-
-Over
-224.0
-1.90
-Under
-224.0
-1.90
-
-Dallas Mavericks
-Memphis Grizzlies
-
-+5.0
-1.90
--5.0
-1.90
-
-Dallas Mavericks
-2.65
-Memphis Grizzlies
-1.50
-
-Over
-225.0
-1.90
-Under
-225.0
-1.90
-
-Milwaukee Bucks
-Golden State Warriors
-
-+3.5
-1.90
--3.5
-1.90
-
-Milwaukee Bucks
-2.35
-Golden State Warriors
-1.62
-
-Over
-240.5
-1.90
-Under
-240.5
-1.90
-
-Oklahoma City Thunder
+Portland Trail Blazers
+1.68
 New Orleans Pelicans
-
-+2.0
-1.90
--2.0
-1.90
-
-Oklahoma City Thunder
-2.15
-New Orleans Pelicans
-1.74
+2.25
 
 Over
-233.5
-1.90
+229.5
+1.87
 Under
-233.5
+229.5
+1.87
+
+New York Knicks
+Los Angeles Lakers
+
++3.0
+1.90
+-3.0
 1.90
 
-Sacramento Kings
-Phoenix Suns
-
-+4.0
-1.90
--4.0
-1.90
-
-Sacramento Kings
-2.40
-Phoenix Suns
-1.60
+New York Knicks
+2.30
+Los Angeles Lakers
+1.64
 
 Over
-240.0
+226.0
 1.90
 Under
-240.0
+226.0
 1.90
 
