@@ -73,6 +73,7 @@ class PlayNow(PlayerProps):
     gameInfoClass = 'scoreboard--teams'
     allBetsClass = 'event-markets--basketball'
     hiddenPropsClass = 'collapsed'
+    timeClass = 'event-list__item__event-market-footer'
 
     def __init__(self, site):
         super().__init__(site)
@@ -90,11 +91,27 @@ class PlayNow(PlayerProps):
         numGames = len(site.find_class(self.gameClass, todayBets))
 
         for i in range(numGames):
-            self.go_to_game(i)
-            self.show_all_data()
-            self.add_player_props()
-            self.go_to_site()
+            if self.valid_time(i):
+                self.go_to_game(i)
+                self.show_all_data()
+                self.add_player_props()
+                self.go_to_site()
     
+    def valid_time(self, i, minutesBefore=16):
+        todayBets = self.site.find_class(self.todayClass)[0]
+        timeInfo = self.site.find_class(self.timeClass, todayBets)[i]
+
+        timeText = timeInfo.split('\n')[0]
+        time = timeText.split(' ')[0]
+        timeType = time[-1]
+        time = time[:-1]
+        
+        if 'h' == timeType:
+            return False
+        elif 'm' == timeType and int(time) > minutesBefore:
+            return False
+        return True
+
     def go_to_game(self, index):
         site = self.site
 

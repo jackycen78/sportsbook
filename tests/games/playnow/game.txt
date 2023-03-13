@@ -1,43 +1,3 @@
-Brooklyn Nets
-Denver Nuggets
-
-+9.0
-1.90
--9.0
-1.90
-
-Brooklyn Nets
-4.05
-Denver Nuggets
-1.25
-
-Over
-230.5
-1.90
-Under
-230.5
-1.90
-
-Cleveland Cavaliers
-Charlotte Hornets
-
--7.5
-1.91
-+7.5
-1.83
-
-Cleveland Cavaliers
-1.27
-Charlotte Hornets
-3.80
-
-Over
-220.0
-1.90
-Under
-220.0
-1.90
-
 Washington Wizards
 Philadelphia 76ers
 
@@ -61,35 +21,35 @@ Under
 Oklahoma City Thunder
 San Antonio Spurs
 
--3.5
-1.95
-+3.5
-1.86
+-3.0
+1.90
++3.0
+1.90
 
 Oklahoma City Thunder
-1.62
+1.64
 San Antonio Spurs
-2.35
+2.30
 
 Over
-237.5
-1.87
+236.5
+1.86
 Under
-237.5
-1.87
+236.5
+1.95
 
 Portland Trail Blazers
 New Orleans Pelicans
 
--2.5
+-3.5
 1.90
-+2.5
++3.5
 1.90
 
 Portland Trail Blazers
-1.68
+1.62
 New Orleans Pelicans
-2.25
+2.35
 
 Over
 229.5
@@ -112,9 +72,9 @@ Los Angeles Lakers
 1.64
 
 Over
-226.0
+225.5
 1.90
 Under
-226.0
+225.5
 1.90
 

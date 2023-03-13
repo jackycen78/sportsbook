@@ -18,6 +18,18 @@ class GameParser():
                         self.parse_money_lines(moneyLineInfo),
                         self.parse_over_unders(overUnderInfo),
                         )
+    
+    def change_american_odds(self, data):
+        if len(data) == 2:
+            return [decimal_to_american(data[0]),
+                    decimal_to_american(data[1])]
+        
+        elif len(data) == 4:
+            return [data[0],
+                    decimal_to_american(data[1]),
+                    data[2],
+                    decimal_to_american(data[3]),
+                    ]
 
 class PlayNow(GameParser):
 
@@ -31,7 +43,7 @@ class PlayNow(GameParser):
 
     def parse_spreads(self, spreadInfo):
         if spreadInfo:
-            return spreadInfo.split('\n')
+            return self.change_american_odds(spreadInfo.split('\n'))
         return self.emptySpreads
 
     def parse_money_lines(self, moneyLineInfo):
@@ -39,17 +51,17 @@ class PlayNow(GameParser):
             moneyLineInfo = moneyLineInfo.split('\n')
             moneyLines = [moneyLineInfo[1], 
                           moneyLineInfo[3]]
-            return moneyLines
+            return self.change_american_odds(moneyLines)
         return self.emptyMoneyLines
     
     def parse_over_unders(self, overUnderInfo):
         if overUnderInfo:
             overUnderInfo = overUnderInfo.split('\n')
             overUnders = [overUnderInfo[1], 
-                        overUnderInfo[2], 
-                        overUnderInfo[4], 
-                        overUnderInfo[5]]
-            return overUnders
+                          overUnderInfo[2], 
+                          overUnderInfo[4], 
+                          overUnderInfo[5]]
+            return self.change_american_odds(overUnders)
         return self.emptyOverUnders
 
 class Pinnacle(GameParser):
@@ -65,17 +77,17 @@ class Pinnacle(GameParser):
 
     def parse_spreads(self, spreadInfo):
         if spreadInfo and len(spreadInfo.split('\n')) == 4:
-            return spreadInfo.split('\n')
+            return self.change_american_odds(spreadInfo.split('\n'))
         return self.emptySpreads
     
     def parse_money_lines(self, moneyLineInfo):
         if moneyLineInfo and len(moneyLineInfo.split('\n')) == 2:
-            return moneyLineInfo.split('\n')
+            return self.change_american_odds(moneyLineInfo.split('\n'))
         return self.emptyMoneyLines
     
     def parse_over_unders(self, overUnderInfo):
         if overUnderInfo and len(overUnderInfo.split('\n')) == 4:
-            return overUnderInfo.split('\n')
+            return self.change_american_odds(overUnderInfo.split('\n'))
         return self.emptyOverUnders
         
 class Bet365(GameParser):
@@ -124,12 +136,12 @@ class SportsInteract(GameParser):
 
     def parse_spreads(self, spreadInfo):
         if spreadInfo and len(spreadInfo.split('\n')) == 5 and 'Closed' not in spreadInfo:
-            return spreadInfo.split('\n')[1:]
+            return self.change_american_odds(spreadInfo.split('\n')[1:])
         return self.emptySpreads
 
     def parse_money_lines(self, moneyLineInfo):
         if moneyLineInfo and 'Closed' not in moneyLineInfo:
-            return moneyLineInfo.split('\n')[1:]
+            return self.change_american_odds(moneyLineInfo.split('\n')[1:])
         return self.emptyMoneyLines
     
     def parse_over_unders(self, overUnderInfo):
@@ -141,9 +153,9 @@ class SportsInteract(GameParser):
             under = overUnders[4]
             underOdds = decimal_to_american(overUnders[5])
 
-            return [over,
-                    overOdds,
-                    under,
-                    underOdds]
+            return self.change_american_odds([over,
+                                              overOdds,
+                                              under,
+                                              underOdds])
         return self.emptyOverUnders
 

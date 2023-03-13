@@ -167,6 +167,7 @@ playNowPlayerNames = {
                     'Herb Jones': 'Herbert Jones',
                     'J. Valanciunas': 'Jonas Valanciunas',
                     'N. Marshall': 'Naji Marshall',
+                    'J. Richardson': 'Josh Richardson',
                     
                     # Warriors
                     'J. Poole': 'Jordan Poole',
@@ -309,7 +310,7 @@ teamToFullTeam = {'76ers': 'Philadelphia 76ers',
                   'Suns': 'Phoenix Suns',
                   'Thunder': 'Oklahoma City Thunder',
                   'Timberwolves': 'Minnesota Timberwolves',
-                  'Trail Blazers': 'Portland Trail Blazers',
+                  'Blazers': 'Portland Trail Blazers',
                   'Warriors': 'Golden State Warriors',
                   'Wizards': 'Washington Wizards',
                  }
