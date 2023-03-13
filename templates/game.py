@@ -1,4 +1,4 @@
-from templates.tables import getCellHTML, getTableHTML
+from templates.tables import getCellHTML, getTableHTML, getColumnHeadersHTML
 from templates.email import getEmailHTML
 from utils.config import GAME_BETS, GAME_BOOKS
 
@@ -7,7 +7,7 @@ def createGameEmail(games):
     content = []
     for betType in GAME_BETS:
         contentHTML = getTableHTML(title=betType, 
-                                   columnNames=columns,
+                                   columns=getColumnHeadersHTML(columns),
                                    dataRows=createGameRows(games, betType)
                      )
         content.append(contentHTML)

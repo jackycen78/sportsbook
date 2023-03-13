@@ -47,7 +47,10 @@ class PlayNowPlayerParser(PlayerParser):
         return odds
 
     def parse_game_info(self, gameInfo):
-        time, away, home = gameInfo.split('\n')
+        timeInfo, away, home = gameInfo.split('\n')
+        time = timeInfo.split(' ')[1]
+        amPm = timeInfo.split(' ')[2].upper()
+        time = f'{time} {amPm}'
         return time, home, away
         
         

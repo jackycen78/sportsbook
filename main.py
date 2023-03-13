@@ -1,21 +1,12 @@
-from utils.sendemail import sendEmail
 from utils.helper import get_date
 from utils.config import GET_PLAYER, GET_GAME, SEND_EMAIL, TEST_DATA
-from info import sender, receivers
-
+from utils.sendemail import send_email
 
 from content.game import getGameBetContent
 from content.player import getPlayerPropsContent
 from tests.player import get_all_test_props
 from tests.game import get_all_test_bets
 
-def send(sub, cont):
-    sendEmail(senderInfo=sender, 
-              senderName='Betting Odds', 
-              receiverAddress=receivers, 
-              subject=sub, 
-              content=cont)
-    
 
 contents = []
 if GET_PLAYER:
@@ -32,7 +23,7 @@ if GET_GAME:
         print(get_all_test_bets())
 
 for sub, cont in contents:
-   send(sub, cont)
+   send_email(sub, cont)
 
 
 '''from utils.website import Website

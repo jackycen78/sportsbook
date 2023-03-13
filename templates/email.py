@@ -12,10 +12,9 @@ def getEmailHTML(tables):
 
                 '''
     for table in tables:
-        outputStr += f'{table} \n'
+        outputStr += f'{table} \n \n'
 
     outputStr += '''
-
                     </body>
                  </html>
                  '''

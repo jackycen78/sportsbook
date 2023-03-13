@@ -7,7 +7,7 @@ def getCellHTML(text, size, rows=1):
                                padding: 0.5rem;
                                margin: 1.5px;
                               "
-                        rowspan="{rows}"      
+                        rowspan="{rows}"
                     > 
                   '''
     if type(text) == str:
@@ -44,18 +44,19 @@ def getTableHTML(title, columns, dataRows):
                     <h1> {title} </h1>
 
                         <table border="3" 
-                            style="background-color: #FFFFFF;
-                                border:0px solid #000000;
-                                border-radius: 4px;
-                                width: 100%;
-                                " 
-                            cellpadding="10"
-                            cellspacing="3"           
+                               style="background-color: #FFFFFF;
+                                      border:0px solid #000000;
+                                      border-radius: 4px;
+                                      width: 100%;
+                                    " 
+                               cellpadding="10"
+                               cellspacing="3"
+                               text-align: ":" center;           
                         >
+ 
                             {columns}
-
                             {dataRows}
-
+                        
                         </table>
                   '''     
     

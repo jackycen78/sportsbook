@@ -2,14 +2,17 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-def sendEmail(senderInfo, senderName, receiverAddress, subject, content):
+from info import sender, receivers
+
+
+def send_email(subject, content):
     
-    senderAddress = senderInfo['userEmail']
-    senderPass = senderInfo['password']
+    senderAddress = sender['userEmail']
+    senderPass = sender['password']
     
     message = MIMEMultipart()
-    message['From'] = senderName
-    message['To'] = receiverAddress
+    message['From'] = 'NBA Betting Odds'
+    message['To'] = receivers
     message['Subject'] = subject
     message.attach(MIMEText(content, "html"))
 
@@ -18,6 +21,7 @@ def sendEmail(senderInfo, senderName, receiverAddress, subject, content):
     session.login(senderAddress, senderPass) 
 
     text = message.as_string()
-    session.sendmail(senderAddress, receiverAddress, text)
+    session.sendmail(senderAddress, receivers, text)
     session.quit()
     print('Mail Sent')
+
