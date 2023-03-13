@@ -275,6 +275,9 @@ sportsInteractPlayerNames = {'Michael Porter': 'Michael Porter Jr.',
                              'P.j. Tucker': 'PJ Tucker',
                              'Rj Barrett': 'RJ Barrett',
                              "D'angelo Russell": "D'Angelo Russell",
+                             'Talen Horton-tucker': 'Talen Horton-Tucker',
+                             'Jaden Mcdaniels': 'Jaden McDaniels',
+                             'Kevin Porter': 'Kevin Porter Jr.',
                             }
 
 pinnaclePlayerNames = {'R.J. Hampton': 'RJ Hampton',

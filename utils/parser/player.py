@@ -48,11 +48,7 @@ class PlayNowPlayerParser(PlayerParser):
 
     def parse_game_info(self, gameInfo):
         timeInfo, away, home = gameInfo.split('\n')
-        time = timeInfo.split(' ')[1]
-        amPm = timeInfo.split(' ')[2].upper()
-        time = f'{time} {amPm}'
-        return time, home, away
-        
+        return timeInfo, home, away
         
 
 class PinnaclePlayerParser(PlayerParser):
@@ -124,7 +120,7 @@ class SportsInteractParser(PlayerParser):
 
     def parse_prop(self, bet):
     
-        type, info = bet.split(' - ')
+        type, info = bet.split(' -', 1)
         info = info.split('\n')
 
         if self.valid_prop(type, info):
@@ -150,7 +146,8 @@ class SportsInteractParser(PlayerParser):
         if '[' in player:
                     bracketIndex = player.find('[') - 1
                     player = player[:bracketIndex]
-
+        if player[0] == ' ':
+            player = player[1:]
         return getSportsInteractPlayerName(player)
     
     def parse_odds(self, oddsInfo):

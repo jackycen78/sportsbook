@@ -92,11 +92,11 @@ class PlayNow(PlayerProps):
         numGames = len(site.find_class(self.gameClass, todayBets))
 
         for i in range(numGames):
-            if self.valid_time(i):
-                self.go_to_game(i)
-                self.show_all_data()
-                self.add_player_props()
-                self.go_to_site()
+            #if self.valid_time(i):
+            self.go_to_game(i)
+            self.show_all_data()
+            self.add_player_props()
+            self.go_to_site()
     
     def valid_time(self, i, minutesBefore=16):
         todayBets = self.site.find_class(self.todayClass)[0]

@@ -8,13 +8,12 @@ def getCellHTML(text, size, rows=1):
                                margin: 1.5px;
                               "
                         rowspan="{rows}"
-                    > 
-                  '''
+                    > '''
     if type(text) == str:
             outputStr += f'{text} \n'
     elif type(text) == list:
         for t in text:
-            outputStr += f'<br> {t} </br> \n'
+            outputStr += f'<br> {t} </br>'
     outputStr += '</td>'
     return outputStr
 
@@ -50,14 +49,11 @@ def getTableHTML(title, columns, dataRows):
                                       width: 100%;
                                     " 
                                cellpadding="10"
-                               cellspacing="3"
-                               text-align: ":" center;           
+                               cellspacing="3"       
                         >
- 
                             {columns}
                             {dataRows}
-                        
                         </table>
                   '''     
-    
+    print(outputStr)
     return outputStr

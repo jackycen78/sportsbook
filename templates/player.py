@@ -24,7 +24,6 @@ def createPlayerRows(team):
 
             for i, propType in enumerate(curPlayer):
                 curPropType = curPlayer[propType]
-
                 outputStr += '<tr> \n'
                 if i == 0:
                     outputStr += getCellHTML(player, numBooks + 2, len(curPlayer))
@@ -39,7 +38,10 @@ def createPlayerRows(team):
                         for amount, odd in curProp.odds:
                             overUnder = 'Over ' if amount[0] == 'O' else 'Under '
                             amount = overUnder + amount[1:]
-                            playerOdds.append(f'{amount}: {odd}')
+                            playerOdds.append(f'''<div style="float:left;width:49.35%;text-align:right">{amount}:</div> 
+                                                  <div style="float:right;width:49.35%;text-align:left">{odd}</div> 
+                                               '''
+                                              )
 
                     outputStr += getCellHTML(playerOdds, numBooks + 2)
     return outputStr

@@ -6,7 +6,7 @@ class AllPlayerProps:
     def add_prop(self, props):
 
         for prop in props:
-            team = f'{prop.away} at {prop.home} {prop.time}'
+            team = f'{prop.away} at {prop.home}'
             if team not in self.games:
                 self.games[team] = {}
             
