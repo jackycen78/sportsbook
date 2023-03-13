@@ -1,18 +1,13 @@
 from utils.sendemail import sendEmail
-from content.game import getGameBetContent
-from content.player import getPlayerPropsContent
 from utils.helper import get_date
+from utils.config import GET_PLAYER, GET_GAME, SEND_EMAIL, TEST_DATA
 from info import sender, receivers
 
 
-test = True
-
-#playerContent = getPlayerPropsContent(test)
-#gameContent = getGameBetContent(test)
-
-#contents = [(f'Player Props {get_date()}', playerContent),
-           #(f'Game Props {get_date()}', gameContent),
- #           ]
+from content.game import getGameBetContent
+from content.player import getPlayerPropsContent
+from tests.player import get_all_test_props
+from tests.game import get_all_test_bets
 
 def send(sub, cont):
     sendEmail(senderInfo=sender, 
@@ -21,26 +16,23 @@ def send(sub, cont):
               subject=sub, 
               content=cont)
     
-#for sub, cont in contents:
-#    send(sub, cont)
 
-def valid_time(txt, minutesBefore=16):
+contents = []
+if GET_PLAYER:
+    if SEND_EMAIL:
+        playerContent = getPlayerPropsContent(TEST_DATA)
+        contents.append((f'Player Props {get_date()}', playerContent))
+    else:
+        print(get_all_test_props())
+if GET_GAME:
+    if SEND_EMAIL:
+        gameContent = getGameBetContent(TEST_DATA)
+        contents.append((f'Game Props {get_date()}', gameContent))
+    else:
+        print(get_all_test_bets())
 
-    for t in txt.split(' '):
-        time = t[-1]
-        if 'h' == time:
-            return False
-        elif 'm' == time and int(t[:-1]) >= minutesBefore:
-            return False
-        return True
-    
-times = ['53s',
-            '3m 34s',
-            '43m',
-            '2h 23m',]
-
-for t in times:
-    print(t, valid_time(t))
+for sub, cont in contents:
+   send(sub, cont)
 
 
 '''from utils.website import Website

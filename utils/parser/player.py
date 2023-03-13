@@ -1,5 +1,5 @@
 from utils.names.player import getPlayNowPlayerName, getSportsInteractPlayerName, getPinnaclePlayerName, getFullTeam
-from utils.helper import decimal_to_american
+from utils.helper import decimal_to_american, change_12_hour_clock
 
 class PlayerParser():
 
@@ -105,7 +105,7 @@ class PinnaclePlayerParser(PlayerParser):
         try:
             time, away, home = gameInfo.split('\n')
             time = time.split(' ')[-1]
-            return time, home, away
+            return change_12_hour_clock(time), home, away
         except:
             return '', '', ''
         
@@ -162,5 +162,5 @@ class SportsInteractParser(PlayerParser):
     def parse_game_info(self, gameInfo):
         time, teams = gameInfo.split('\n')
         away, home = teams.split(' @ ')
-        return time, getFullTeam(home), getFullTeam(away)
+        return change_12_hour_clock(time), getFullTeam(home), getFullTeam(away)
     

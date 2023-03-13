@@ -1,7 +1,7 @@
 from models.playerprop import PlayerProp
 from models.allplayerprops import AllPlayerProps
 from utils.website import Website
-from utils.config import PLAYER_BOOKS
+from utils.config import PLAYER_BOOKS, WRITE_TESTS
 from utils.helper import write_file, clear_tests
 import time
 
@@ -32,11 +32,12 @@ class PlayerProps():
                     if playerProp.is_valid():
                         self.playerProps.append(playerProp)
                         
-                        self.write_tests(text=f'{gameInfo.text}\n \n', 
-                                        type='gameinfo')
-                        
-                        self.write_tests(text=f'{prop.text} \n \n', 
-                                        type='prop')
+                        if WRITE_TESTS:
+                            self.write_tests(text=f'{gameInfo.text}\n \n', 
+                                            type='gameinfo')
+                            
+                            self.write_tests(text=f'{prop.text} \n \n', 
+                                            type='prop')
             
     def write_tests(self, text, type):
         path = f'tests/props/{self.bookFile}/{type}.txt'
@@ -99,7 +100,7 @@ class PlayNow(PlayerProps):
     
     def valid_time(self, i, minutesBefore=16):
         todayBets = self.site.find_class(self.todayClass)[0]
-        timeInfo = self.site.find_class(self.timeClass, todayBets)[i]
+        timeInfo = self.site.find_class(self.timeClass, todayBets)[i].text
 
         timeText = timeInfo.split('\n')[0]
         time = timeText.split(' ')[0]

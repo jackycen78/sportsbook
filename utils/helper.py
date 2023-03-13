@@ -49,6 +49,17 @@ def get_date():
 
     return f'{month} {day}'
 
+def change_12_hour_clock(time):
+    try:
+        hour = int(time[:2])
+        minute = int(time[-2:])
+        if hour >= 13:
+            return f'{hour - 12}:{minute} PM'
+        else:
+            return f'{hour}:{minute} AM'
+    except:
+        return time
+
 def write_file(path, content):
     file = open(path, 'a')
     file.write(content)
@@ -62,3 +73,5 @@ def clear_tests(book):
     for file in files:
         path = f'tests/props/{book}/{file}.txt'
         clear_file(path)
+
+

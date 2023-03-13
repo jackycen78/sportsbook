@@ -1,4 +1,4 @@
-from templates.tables import getCellHTML, getTableHTML
+from templates.tables import getCellHTML, getTableHTML, getColumnHeadersHTML
 from templates.email import getEmailHTML
 from utils.config import PLAYER_PROPS, PLAYER_BOOKS
 
@@ -9,7 +9,7 @@ def createPlayerEmail(props):
     for team in props.games:
         curTeam = props.games[team]
         contentHTML = getTableHTML(title=team, 
-                                   columnNames=columns,
+                                   columns=getColumnHeadersHTML(columns),
                                    dataRows=createPlayerRows(curTeam))
         content.append(contentHTML)
 
@@ -22,15 +22,17 @@ def createPlayerRows(team):
     for player in team:
             curPlayer = team[player]
 
-            for propType in curPlayer:
+            for i, propType in enumerate(curPlayer):
                 curPropType = curPlayer[propType]
 
                 outputStr += '<tr> \n'
-                outputStr += getCellHTML(player, numBooks + 2)
-                outputStr += getCellHTML(propType, numBooks + 2)
+                if i == 0:
+                    outputStr += getCellHTML(player, numBooks + 2, len(curPlayer))
 
+                outputStr += getCellHTML(propType, numBooks + 2)
                 for book in PLAYER_BOOKS:
                     playerOdds = ['']
+
                     if book in curPropType:
                         playerOdds = []
                         curProp = curPropType[book]
@@ -39,7 +41,7 @@ def createPlayerRows(team):
                             amount = overUnder + amount[1:]
                             playerOdds.append(f'{amount}: {odd}')
 
-                    outputStr += getCellHTML(playerOdds, 5)
+                    outputStr += getCellHTML(playerOdds, numBooks + 2)
     return outputStr
     
 

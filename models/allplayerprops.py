@@ -6,7 +6,7 @@ class AllPlayerProps:
     def add_prop(self, props):
 
         for prop in props:
-            team = f'{prop.away} at {prop.home}'
+            team = f'{prop.away} at {prop.home} {prop.time}'
             if team not in self.games:
                 self.games[team] = {}
             
@@ -20,9 +20,9 @@ class AllPlayerProps:
 
     def __str__(self):
         output = ''
-        for game in self.games:
-            curGame = self.games[game]
-            output += f'{game} \n'
+        for team in self.games:
+            curGame = self.games[team]
+            output += f'{team} \n'
         
             for player in curGame:
                 curPlayer = curGame[player]
@@ -34,7 +34,7 @@ class AllPlayerProps:
 
                     for book in curType:
                         curProp = curType[book]
-                        output += f'            {book} {curProp.time}\n'
+                        output += f'            {book} \n'
 
                         for amount, odd in curProp.odds:
                                 overUnder = 'Over ' if amount[0] == 'O' else 'Under '
