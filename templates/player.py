@@ -23,6 +23,7 @@ def createPlayerRows(team):
             curPlayer = team[player]
 
             for i, propType in enumerate(curPlayer):
+                
                 curPropType = curPlayer[propType]
                 outputStr += '<tr> \n'
                 if i == 0:

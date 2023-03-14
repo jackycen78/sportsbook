@@ -15,8 +15,10 @@ class Website:
 
         service = Service('./chromedriver')
         options = ChromeOptions()
-        options.add_argument("--start-maximized")
+        #options.add_argument("--start-maximized")
+        options.add_argument('--window-size=1920,1080')  
         options.add_argument('--disable-blink-features=AutomationControlled')
+        options.add_argument("--headless")
         options.add_experimental_option("excludeSwitches", ["enable-automation"]) 
         options.add_experimental_option("useAutomationExtension", False) 
         self.driver = Chrome(options=options, service=service)
@@ -41,7 +43,7 @@ class Website:
         except TimeoutError:
             return None
 
-    def find_class(self, className, parent=None, waitSeconds=2):
+    def find_class(self, className, parent=None, waitSeconds=10):
         if not parent:
             parent = self.driver
         try: 

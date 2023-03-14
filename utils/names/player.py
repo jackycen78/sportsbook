@@ -98,6 +98,7 @@ playNowPlayerNames = {
                     'V. Oladipo': 'Victor Oladipo',
                     'G. Vincent': 'Gabe Vincent',
                     'K. Love': 'Kevin Love',
+                    'K. Lowry': 'Kyle Lowry',
 
 
                     # Knicks
@@ -201,6 +202,7 @@ playNowPlayerNames = {
                     'R. Bullock': 'Reggie Bullock',
                     'C. Wood': 'Christian Wood',
                     'T. Hardaway Jr.': 'Tim Hardaway Jr.',
+                    'M. Kleber': 'Maxi Kleber',
 
                     # Raptors
                     'F. VanVleet': 'Fred VanVleet',
@@ -217,12 +219,15 @@ playNowPlayerNames = {
                     'J. Allen': 'Jarrett Allen',
                     'C. LeVert': 'Caris LeVert',
                     'D. Mitchell': 'Donovan Mitchell',
+                    'L. Stevens': 'Lamar Stevens',
 
                     # Pacers
                     'M. Turner': 'Myles Turner',
                     'B. Hield': 'Buddy Hield',
                     'T. Haliburton': 'Tyrese Haliburton',
                     'A. Nesmith': 'Aaron Nesmith',
+                    'J. Nwora': 'Jordan Nwora',
+                    'J. Smith': 'Jalen Smith',
 
                     # Rockets
                     'K. Porter Jr.': 'Kevin Porter Jr.',
@@ -247,6 +252,10 @@ playNowPlayerNames = {
                     'K. Hayes': 'Killian Hayes',
                     'P.J. Washington': 'PJ Washington',
                     'R.J. Hampton': 'RJ Hampton',
+                    'C. Joseph': 'Cory Joseph',
+                    'R. McGruder': 'Rodney McGruder',
+                    'O. Brissett': 'Oshae Brissett',
+
 
                     # Spurs
                     'Z. Collins': 'Zach Collins',
@@ -254,30 +263,33 @@ playNowPlayerNames = {
                     'D. Vassell': 'Devin Vassell',
                     }
 
-sportsInteractPlayerNames = {'Michael Porter': 'Michael Porter Jr.',
-                             'Fred Vanvleet': 'Fred VanVleet',
-                             'Og Anunoby': 'OG Anunoby',
-                             'Kentavious Caldwell-pope': 'Kentavious Caldwell-Pope',
-                             "De'andre Hunter": "De'Andre Hunter", 
-                             'Kelly Oubre': 'Kelly Oubre Jr.',
-                             'P.j. Washington': 'PJ Washington',    
-                             'Zach Lavine': 'Zach LaVine',
-                             'Demar Derozan': 'DeMar DeRozan',     
-                             'Kenyon Martin': 'KJ Martin',
-                             'Jabari Smith': 'Jabari Smith Jr.',           
-                             'Shai Gilgeous-alexander': 'Shai Gilgeous-Alexander',     
-                             'Trey Murphy Iii': 'Trey Murphy III',
-                             'Cj Mccollum': 'CJ McCollum',
-                             "De'aaron Fox": "De'Aaron Fox",
-                             'Dorian Finney-smith': 'Dorian Finney-Smith',
-                             'Kelly Oubre Jr': 'Kelly Oubre Jr.',
-                             'Pj Washington': 'PJ Washington',
-                             'P.j. Tucker': 'PJ Tucker',
-                             'Rj Barrett': 'RJ Barrett',
+sportsInteractPlayerNames = {'Cj Mccollum': 'CJ McCollum',
                              "D'angelo Russell": "D'Angelo Russell",
-                             'Talen Horton-tucker': 'Talen Horton-Tucker',
+                             "De'andre Hunter": "De'Andre Hunter", 
+                             "De'aaron Fox": "De'Aaron Fox",
+                             'Demar Derozan': 'DeMar DeRozan', 
+                             'Dorian Finney-smith': 'Dorian Finney-Smith',
+                             'Fred Vanvleet': 'Fred VanVleet',
+                             'Jabari Smith': 'Jabari Smith Jr.',  
                              'Jaden Mcdaniels': 'Jaden McDaniels',
+                             'Jakob Peoltl': 'Jakob Poeltl',
+                             'Jaren Jackson': 'Jaren Jackson Jr.',
+                             'Kelly Oubre': 'Kelly Oubre Jr.',
+                             'Kelly Oubre Jr': 'Kelly Oubre Jr.',
+                             'Kentavious Caldwell-pope': 'Kentavious Caldwell-Pope',
+                             'Kenyon Martin': 'KJ Martin',   
                              'Kevin Porter': 'Kevin Porter Jr.',
+                             'Michael Porter': 'Michael Porter Jr.',
+                             'Og Anunoby': 'OG Anunoby',
+                             'P.j. Tucker': 'PJ Tucker',
+                             'P.j. Washington': 'PJ Washington',    
+                             'Pj Washington': 'PJ Washington',
+                             'Rj Barrett': 'RJ Barrett',
+                             'Rodney Mcgruder': 'Rodney McGruder',
+                             'Shai Gilgeous-alexander': 'Shai Gilgeous-Alexander',     
+                             'Talen Horton-tucker': 'Talen Horton-Tucker',
+                             'Trey Murphy Iii': 'Trey Murphy III',
+                             'Zach Lavine': 'Zach LaVine',    
                             }
 
 pinnaclePlayerNames = {'R.J. Hampton': 'RJ Hampton',

@@ -1,8 +1,9 @@
 from models.playerprop import PlayerProp
 from models.allplayerprops import AllPlayerProps
 from utils.website import Website
-from utils.config import PLAYER_BOOKS, WRITE_TESTS
-from utils.helper import write_file, clear_tests
+from utils.config import PLAYER_BOOKS, WRITE_TESTS, MINUTES_BEFORE
+from utils.helper import write_file, clear_tests, within_time
+
 import time
 
 class PlayerProps():
@@ -12,12 +13,13 @@ class PlayerProps():
     book = ''
     gameInfo = ''
     bookFile = ''
+    minutesBefore = MINUTES_BEFORE
 
     def __init__(self, site):
         self.site = site
         self.playerProps = []
 
-    def go_to_site(self, sleepTime=4):
+    def go_to_site(self, sleepTime=0.5):
         self.site.go_to(self.siteURL, sleepTime)
 
     def add_player_props(self, parent=None):
@@ -38,7 +40,18 @@ class PlayerProps():
                             
                             self.write_tests(text=f'{prop.text} \n \n', 
                                             type='prop')
-            
+                            
+    def print_data(self, parent=None):
+            site = self.site
+
+            gameInfo = site.find_class(self.gameInfoClass, parent)[0]
+            props = site.find_class(self.propClass, parent)
+
+            for prop in props:
+                    if gameInfo and prop:
+                        playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
+                        print(playerProp)
+                
     def write_tests(self, text, type):
         path = f'tests/props/{self.bookFile}/{type}.txt'
         write_file(path, text)
@@ -47,10 +60,14 @@ class PlayerProps():
         allProps = AllPlayerProps()
 
         for b in PLAYER_BOOKS:
+            start_time = time.time()
+            print(f'Getting {b} Player Props...')
             book = self.get_book_class(b)
-            clear_tests(book.bookFile)
+            if WRITE_TESTS:
+                clear_tests(book.bookFile)
             book.automate()
             allProps.add_prop(book.playerProps)
+            print(f'{b} done in {round(time.time() - start_time, 2)} seconds')
 
         return allProps
 
@@ -92,24 +109,28 @@ class PlayNow(PlayerProps):
         numGames = len(site.find_class(self.gameClass, todayBets))
 
         for i in range(numGames):
-            #if self.valid_time(i):
-            self.go_to_game(i)
-            self.show_all_data()
-            self.add_player_props()
-            self.go_to_site()
+            if self.valid_time(i):
+                self.go_to_game(i)
+                self.show_all_data()
+                self.add_player_props()
+                self.go_to_site()
     
-    def valid_time(self, i, minutesBefore=16):
+    def valid_time(self, i):
         todayBets = self.site.find_class(self.todayClass)[0]
         timeInfo = self.site.find_class(self.timeClass, todayBets)[i].text
 
-        timeText = timeInfo.split('\n')[0]
-        time = timeText.split(' ')[0]
-        timeType = time[-1]
-        time = time[:-1]
-        
-        if 'h' == timeType:
+        if 'Today' in timeInfo:
             return False
-        elif 'm' == timeType and int(time) > minutesBefore:
+        timeText = timeInfo.split('\n')[0]
+
+        timeAway = 0
+        for t in timeText.split(' '):
+            if t[-1] == 'h':
+                timeAway += int(t[:-1]) * 60
+            if t[-1] == 'm':
+                timeAway += int(t[:-1])
+
+        if timeAway > self.minutesBefore:
             return False
         return True
 
@@ -134,6 +155,17 @@ class PlayNow(PlayerProps):
             if prop:
                 prop.click()
 
+    def print_data(self, parent=None):
+        site = self.site
+
+        gameInfo = site.find_class(self.gameInfoClass, parent)[0]
+        props = site.find_class(self.propClass, parent)
+
+        for prop in props:
+                if gameInfo and prop:
+                    playerProp = PlayerProp(self.book, gameInfo.text, prop.text)
+                    print(playerProp)
+
 class Pinnacle(PlayerProps):
 
     book = 'Pinnacle'
@@ -142,6 +174,7 @@ class Pinnacle(PlayerProps):
     gameClass = 'style_metadata__1FIzs'
     propClass = 'style_marketGroup__1-qlF'
     gameInfoClass = 'style_content__1q8Kz'
+    timeClass = 'style_matchupDate__1gnX6'
 
     def __init__(self, site):
         super().__init__(site)
@@ -149,13 +182,22 @@ class Pinnacle(PlayerProps):
     def automate(self):
         site = self.site
     
-        self.go_to_site()
+        self.go_to_site(2)
         numGames = len(site.find_class(self.gameClass))
 
         for i in range(numGames):
-            self.go_to_game(i)
-            self.add_player_props()
-            self.go_to_site()
+            if self.valid_time(i):
+                self.go_to_game(i)
+                self.add_player_props()
+                self.go_to_site()
+
+    def valid_time(self, i):
+        timeInfo = self.site.find_class(self.timeClass)[i].text
+        if timeInfo == 'Live Now':
+            return False
+        
+        return within_time(gameTime=timeInfo, 
+                           minutesBefore=self.minutesBefore)
 
     def go_to_game(self, index):
         site = self.site
@@ -184,5 +226,14 @@ class SportsInteract(PlayerProps):
         numGames = len(allGames)
 
         for i in range(numGames):
-            curGame = site.find_class(self.gameClass)[i]
-            self.add_player_props(parent=curGame)
+            if self.valid_time(i):
+                curGame = site.find_class(self.gameClass)[i]
+                self.add_player_props(parent=curGame)
+
+    def valid_time(self, i):
+        timeInfo = self.site.find_class(self.gameClass)[i].text
+        timeInfo = timeInfo.split('\n')[0]
+        
+        return within_time(gameTime=timeInfo, 
+                           minutesBefore=self.minutesBefore,
+                           hoursAhead=3)

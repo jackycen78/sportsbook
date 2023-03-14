@@ -7,9 +7,9 @@ PLAYER_PROPS = ['Points', 'Assists', 'Rebounds', '3 Pts Made', 'Points + Reb + A
 PLAYNOW_TIMES = ['Today']
 # Today, Tommorrow, Live, Next
 
-
+MINUTES_BEFORE = 120
 WRITE_TESTS = True
-TEST_DATA = True
+TEST_DATA = False
 GET_PLAYER = True
 GET_GAME = False
 SEND_EMAIL = True

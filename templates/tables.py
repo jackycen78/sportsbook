@@ -55,5 +55,5 @@ def getTableHTML(title, columns, dataRows):
                             {dataRows}
                         </table>
                   '''     
-    print(outputStr)
+
     return outputStr

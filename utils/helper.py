@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 def decimal_to_american(odds):
     if not odds:
@@ -48,6 +48,14 @@ def get_date():
         day = day[1]
 
     return f'{month} {day}'
+
+def within_time(gameTime, minutesBefore, hoursAhead=0):
+    gameTime = datetime.strptime(gameTime, '%H:%M') - timedelta(hours=hoursAhead)
+    curTime = datetime.now() + timedelta(minutes=minutesBefore)
+
+    if curTime.time() >= gameTime.time():
+        return True
+    return False
 
 def change_12_hour_clock(time):
     try:

@@ -1,0 +1,4 @@
+remove white line at top of cell
+order player props
+uniform time for all games
+multiprocess

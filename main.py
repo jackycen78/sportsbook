@@ -7,6 +7,9 @@ from content.player import getPlayerPropsContent
 from tests.player import get_all_test_props
 from tests.game import get_all_test_bets
 
+import time
+
+start_time = time.time()
 
 contents = []
 if GET_PLAYER:
@@ -25,34 +28,4 @@ if GET_GAME:
 for sub, cont in contents:
    send_email(sub, cont)
 
-
-'''from utils.website import Website
-from joblib import Parallel, delayed
-from automate.game import *
-
-
-def get_all_bets(book):
-        book = get_book_class(book)
-
-        book.automate()
-        allBets.add_bets(book.bets)
-        return allBets
-    
-
-
-def get_book_class(book):
-    books = {'Play Now': PlayNow(s1),
-             'Pinnacle': Pinnacle(s2),
-             'Sports Interact': SportsInteract(s3),
-             }
-    return books[book]
-
-allBets = AllBets()
-
-s1 = Website()
-s2 = Website()
-s3 = Website()
-
-Parallel(n_jobs=-1, prefer="threads")(delayed(get_all_bets)(url) for url in ['Play Now', 'Pinnacle', 'Sports Interact'])
-
-print(allBets)'''
+print(f'--- Total Time: {round(time.time() - start_time, 2)} ---')

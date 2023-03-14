@@ -23,5 +23,5 @@ def send_email(subject, content):
     text = message.as_string()
     session.sendmail(senderAddress, receivers, text)
     session.quit()
-    print('Mail Sent')
+    print('Email Sent')
 
